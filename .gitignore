@@ -1,8 +1,8 @@
 data/
-results/
-!results/kraken2/
-!results/ECMSD/
-results/ECMSD/mapping/
+results/*
+!results/kraken2/*
+!results/ECMSD/*
+results/ECMSD/mapping/*
 !results/ECMSD/mapping/*.txt
 !results/ECMSD/mapping/*.png
 !results/mapDamage/Tityra_leucura/*.png
