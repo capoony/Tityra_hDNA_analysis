@@ -1,7 +1,7 @@
 data/
 results/*
-!results/kraken2/*
-!results/ECMSD/*
+!results/kraken2
+!results/ECMSD
 results/ECMSD/mapping/*
 !results/ECMSD/mapping/*.txt
 !results/ECMSD/mapping/*.png
