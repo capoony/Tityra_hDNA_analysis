@@ -7,7 +7,7 @@
 ###############################################################################
 
 # Set working directory
-WD="/media/inter/mkapun/projects/Tityra"
+WD="/media/inter/mkapun/projects/Tityra_hDNA_analysis"
 
 ###############################################################################
 # 1. Copy Raw Data
