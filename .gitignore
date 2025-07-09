@@ -9,9 +9,8 @@ results/*
 results/mapDamage/*
 !results/mapDamage/Tityra_leucura
 results/mapDamage/Tityra_leucura/*
-!results/mapDamage/Tityra_leucura/*.pdf
+!results/mapDamage/Tityra_leucura/*.png
 results/ECMSD/mapping/*
 !results/ECMSD/mapping/*.txt
 !results/ECMSD/mapping/*.png
-!results/mapDamage/Tityra_leucura/*.pdf
 shell/GCA_013397135.1_ASM1339713v1_genomic.fna.gz
