@@ -1,4 +1,4 @@
-data/
+data/*
 !data/trimmed/
 data/trimmed/*
 !data/trimmed/Tityra_leucura.html
