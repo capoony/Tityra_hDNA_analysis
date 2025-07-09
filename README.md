@@ -42,7 +42,7 @@ bash Tityra/shell/main.sh
 2. **mapDamage Analysis**
    - Reads are aligned to the reference genome of the closest available relative [*Pachyramphus minor*](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&id=369605) using minimap2 and samtools, then analyzed with mapDamage to assess DNA damage patterns.
    - Outputs: BAM files, mapDamage plots (PDF/PNG).
-   - Interpretation: mapDamage plots visualize nucleotide misincorporation and fragmentation patterns typical of ancient or degraded DNA. The excess of G and A (purine bases) one basepair upstream of the read indicates Depurination and the elevated frequency of C->T misincorporation at the 5' end of the read indicates deamination, both typical for historical DNA. This suggests that the mapped reads are indeed historical and has undergone typical DNA damage processes.
+   - Interpretation: mapDamage plots visualize nucleotide misincorporation and fragmentation patterns typical of historical or degraded DNA. The excess of G and A (purine bases) one basepair upstream of the read indicates depurination and the elevated frequency of C->T misincorporation at the 5' end of the read indicates deamination, both typical for historical DNA. This suggests that the mapped reads are indeed historical and has undergone typical DNA damage processes.
 
    ![mapDamage Fragment Length Distribution](results/mapDamage/Tityra_leucura/Fragmisincorporation_plot.png)
 
