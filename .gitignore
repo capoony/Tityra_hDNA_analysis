@@ -1,4 +1,7 @@
 data/
+!data/trimmed/
+data/trimmed/*
+!data/trimmed/Tityra_leucura.html
 results/*
 !results/kraken2
 !results/ECMSD

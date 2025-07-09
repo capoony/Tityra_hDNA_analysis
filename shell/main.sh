@@ -80,6 +80,11 @@ kraken2 \
     "${WD}/data/trimmed/Tityra_leucura_merged.fastq.gz" \
     >/dev/null
 
+# summarize results
+python ${WD}/scripts/summarizeKraken.py \
+    --input ${WD}/results/kraken2/ \
+    --output ${WD}/results/kraken2/kraken_summary.csv
+
 ###############################################################################
 # 5. mapDamage Analysis
 ###############################################################################
@@ -136,5 +141,11 @@ mapDamage -i "${WD}/results/minimap2/Tityra_leucura.bam" \
     --rescale \
     --folder="${WD}/results/mapDamage/Tityra_leucura"
 conda deactivate
+
+## convert PDFs to PNGs (only works on Linux systems)
+for pdf in ${WD}/results/mapDamage/Tityra_leucura/*.pdf; do
+    png=${pdf%.pdf}.png
+    convert -density 300 $pdf -quality 90 $png
+done
 
 echo "Pipeline completed successfully."
