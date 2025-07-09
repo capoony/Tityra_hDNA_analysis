@@ -90,7 +90,7 @@ python ${WD}/scripts/summarizeKraken.py \
 ###############################################################################
 echo "Step 5: Running mapDamage analysis..."
 
-# Download reference genome if not present
+# Download reference genome of Pachyramphus minor
 REF_DIR="${WD}/data/ref"
 REF_FASTA="GCA_013397135.1_ASM1339713v1_genomic.fna.gz"
 REF_URL="ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/013/397/135/GCA_013397135.1_ASM1339713v1/${REF_FASTA}"
