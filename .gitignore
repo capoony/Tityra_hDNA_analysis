@@ -10,6 +10,10 @@ results/mapDamage/*
 !results/mapDamage/Tityra_leucura
 results/mapDamage/Tityra_leucura/*
 !results/mapDamage/Tityra_leucura/*.png
+!results/minimap2
+results/minimap2/*
+!results/minimap2/Tityra_leucura.coverage.txt
+!results/minimap2/Tityra_leucura.coverage_plot.png
 results/ECMSD/mapping/*
 !results/ECMSD/mapping/*.txt
 !results/ECMSD/mapping/*.png

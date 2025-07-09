@@ -128,6 +128,34 @@ samtools merge -f "${WD}/results/minimap2/Tityra_leucura.bam" \
     "${WD}/results/minimap2/Tityra_leucura_merged.bam"
 samtools index "${WD}/results/minimap2/Tityra_leucura.bam"
 
+samtools coverage --reference "${WD}/data/ref/GCA_013397135.1_ASM1339713v1_genomic.fna.gz" \
+    "${WD}/results/minimap2/Tityra_leucura.bam" \
+    >"${WD}/results/minimap2/Tityra_leucura.coverage.txt"
+
+## Plot read depth sorted  descending
+
+Rscript -e "
+library(tidyverse)
+## header starts With #
+coverage_data <- read.table('${WD}/results/minimap2/Tityra_leucura.coverage.txt', header=TRUE, comment.char='-')
+coverage_data <- coverage_data %>%
+    arrange(desc(meandepth)) 
+
+# plot without x-axis labels and add median depth as red vertical line and write median depth as text on top and restrict to first 1000 longest contigs based on covbases
+coverage_data<- coverage_data %>%
+    arrange(desc(covbases))
+
+coverage_data.new<- coverage_data[1:1000, ]
+ggplot(coverage_data.new, aes(x = reorder(rname, -meandepth), y = meandepth)) +
+    geom_bar(stat='identity', fill='steelblue') +
+    labs(x='Contig', y='Mean Depth', title='Median Read Depth for Tityra leucura for longest 1000 contigs') +
+    theme(axis.text.x=element_blank(), axis.ticks.x=element_blank(), plot.title = element_text(hjust = 0.5)) +
+    geom_hline(yintercept=median(coverage_data.new\$meandepth), color='red', linetype='dashed') +
+    geom_text(aes(x=100, y=median(coverage_data.new\$meandepth) + 0.5, label=paste('Median Depth:', round(median(coverage_data.new\$meandepth), 2))), color='red', size=4) +
+    theme_bw()
+ggsave('${WD}/results/minimap2/Tityra_leucura.coverage_plot.png', width=10, height=6)
+"
+
 # Run mapDamage
 
 gunzip ${WD}/data/ref/GCA_013397135.1_ASM1339713v1_genomic.fna.gz
