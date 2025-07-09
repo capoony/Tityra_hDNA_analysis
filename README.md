@@ -9,7 +9,7 @@ The complete pipeline is implemented in: `shell/main.sh`
 To run the entire pipeline:
 
 ```bash
-bash Tityra/shell/main.sh
+bash Tityra_hDNA_analysis/shell/main.sh
 ```
 
 ## Pipeline Steps
