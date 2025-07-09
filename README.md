@@ -45,7 +45,7 @@ bash Tityra/shell/main.sh
    - Interpretation: The coverage plot shows the mean sequencing depth for the 1000 longest contigs, ranked by umber of covered bases. The red dashed line indicates the median depth across these contigs. This analysis shows that most of the contigs have low but relatively uniform coverage.
    ![Sequencing Depth Plot](results/minimap2/Tityra_leucura.coverage_plot.png)
 
-   See also the coverage statistics table `results/minimap2/Tityra_leucura.coverage.txt` for detailed coverage metrics per contig.
+   See also the coverage statistics table [`results/minimap2/Tityra_leucura.coverage.txt`](results/minimap2/Tityra_leucura.coverage.txt`) for detailed coverage metrics per contig.
 
 3. **mapDamage Analysis**
    - Reads are aligned to the reference genome of the closest available relative [*Pachyramphus minor*](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&id=369605) using minimap2 and samtools, then analyzed with mapDamage to assess DNA damage patterns.
