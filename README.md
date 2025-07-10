@@ -42,7 +42,7 @@ bash Tityra_hDNA_analysis/shell/main.sh
 2. **Sequencing Depth Analysis**
    - After reads are aligned to the reference genome of the closest available relative [*Pachyramphus minor*](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&id=369605), sequencing coverage is calculated across all contigs to assess the read depth and breadth of coverage.
    - Outputs: Coverage statistics table and depth visualization plot.
-   - Interpretation: The coverage plot shows the mean sequencing depth for the 1000 longest contigs, ranked by number of covered bases. The red dashed line indicates the median depth across these contigs. This analysis shows that most of the contigs have low but relatively uniform meadian read depths of app. 0.6x.
+   - Interpretation: The coverage plot shows the mean sequencing depth for the 1000 longest contigs, ranked by number of covered bases. The red dashed line indicates the median depth across these contigs. This analysis shows that most of the contigs have low but relatively uniform meadian read depths of app. 0.7x.
    ![Sequencing Depth Plot](results/minimap2/Tityra_leucura.coverage_plot.png)
 
    See also the coverage statistics table [`results/minimap2/Tityra_leucura.coverage.txt`](results/minimap2/Tityra_leucura.coverage.txt`) for detailed coverage metrics per contig.
