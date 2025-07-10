@@ -27,7 +27,7 @@ bash Tityra_hDNA_analysis/shell/main.sh
 3. **ECMSD Pipeline**
    - The ECMSD pipeline is run on the trimmed and merged reads and maps reads against a mitochondrial reference database to identify the identity of mitochondiral reads and the corresponding read length to distinguish endogenous DNA and potential contaminant eukaryotic DNA. This pipeline is still under development and may change in the future.
    - Outputs: summary statistics.
-   - Interpretation: The below figure shows that the majority of mitochondrial reads are not endogenous but rather of Penicilium origin, indicating contamination. The read length distribution shows that the majority of reads are short, which is typical for hDNA samples. only the ninth-most abundant taxon *Pachyramphus* is closely related to *Tityra leucura* and may thus represent traces of endogenous DNA. The read length distribution shows that the majority of reads are short, which is typical for hDNA samples. Conversely, the read length distirbution of human DNA is much longer, indicating that this contamination happend during the DNA extraction or sequencing process rather than during sample collection.
+   - Interpretation: The below figure shows that the majority of mitochondrial reads are not endogenous but rather of Penicilium origin, indicating contamination. The read length distribution shows that the majority of reads are short, which is typical for hDNA samples. only the ninth-most abundant taxon *Pachyramphus* is closely related to *Tityra leucura* and may thus represent traces of endogenous DNA. Conversely, the read length distirbution of human DNA is much longer, indicating that this contamination happend during the DNA extraction or sequencing process rather than during sample collection.
    -
 
 ![ECMSD Summary](results/ECMSD/mapping/Mito_summary_genus_ReadLengths.png)
@@ -35,14 +35,14 @@ bash Tityra_hDNA_analysis/shell/main.sh
 1. **Kraken2 Taxonomic Classification**
    - Both paired and merged reads are classified using Kraken2 against a comprehensive database.
    - Outputs: Classification reports for paired and merged reads, and a summary CSV.
-   - Interpretation: The summary CSV provides an overview of the taxonomic composition of the sample. We find that only 23% of the reads were classified in the Kraken database. Out of those app. 8% were classified as human, which is likely due to contamination during the DNA extraction or sequencing process and consistent with the previous result. Only a small fraction of the remaining reads were classified as bacterial.
+   - Interpretation: The summary CSV provides an overview of the taxonomic composition of the sample focusing on plants, prokaryotes or human contaminants. We find that only 23% of the reads were classified in the Kraken database. Out of those app. 8% were classified as human, which is likely due to contamination during the DNA extraction or sequencing process and consistent with the previous result. Only a small fraction of the remaining reads were classified as bacterial.
 
    ![Kraken2 Summary](results/kraken2/kraken_summary.csv)
 
 2. **Sequencing Depth Analysis**
    - After reads are aligned to the reference genome of the closest available relative [*Pachyramphus minor*](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&id=369605), sequencing coverage is calculated across all contigs to assess the read depth and breadth of coverage.
    - Outputs: Coverage statistics table and depth visualization plot.
-   - Interpretation: The coverage plot shows the mean sequencing depth for the 1000 longest contigs, ranked by umber of covered bases. The red dashed line indicates the median depth across these contigs. This analysis shows that most of the contigs have low but relatively uniform coverage.
+   - Interpretation: The coverage plot shows the mean sequencing depth for the 1000 longest contigs, ranked by number of covered bases. The red dashed line indicates the median depth across these contigs. This analysis shows that most of the contigs have low but relatively uniform meadian read depths of app. 0.6x.
    ![Sequencing Depth Plot](results/minimap2/Tityra_leucura.coverage_plot.png)
 
    See also the coverage statistics table [`results/minimap2/Tityra_leucura.coverage.txt`](results/minimap2/Tityra_leucura.coverage.txt`) for detailed coverage metrics per contig.
