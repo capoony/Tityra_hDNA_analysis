@@ -1,0 +1,14 @@
+GenomeScope version 2.0
+input file = /media/inter/mkapun/projects/Tityra/results/denovo/results/GenomeSize/Tityra_reads.histo
+output directory = /media/inter/mkapun/projects/Tityra/results/denovo/results/GenomeSize/Tityra
+p = 2
+k = 31
+
+property                      min               max               
+Homozygous (aa)               96.746%           97.5823%          
+Heterozygous (ab)             2.41773%          3.254%            
+Genome Haploid Length         24,049,667 bp     25,102,722 bp     
+Genome Repeat Length          19,162,633 bp     20,001,702 bp     
+Genome Unique Length          4,887,034 bp      5,101,021 bp      
+Model Fit                     38.1477%          65.8366%          
+Read Error Rate               3.56628%          3.56628%          

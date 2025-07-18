@@ -1,6 +1,6 @@
 # *Tityra leucura* Sequencing Data Analysis Pipeline
 
-This pipeline provides an end-to-end workflow for analysing the hDNA properties of the *Tityra leucura* sequencing data, from raw data to taxonomic classification and DNA damage analysis. Below is a summary of each step and guidance on interpreting the results.
+This pipeline provides an end-to-end workflow for analysing the hDNA properties of the *Tityra leucura* sequencing data, from raw data to taxonomic classification and DNA damage analysis. In addition the pipeinle now produces a mitogenome of *Tityra* from the consenus of mapped reads aagins the *Pachyrhampus minor* mitogenome. Furthermore, after removal of contaminant reads, de-novo assembly with Spades followed by BUSCO analyses results in hundreds of BUSCO gene sequences. Below is a summary of each step and guidance on interpreting the results.
 
 ## Running the Pipeline
 
@@ -54,13 +54,43 @@ bash Tityra_hDNA_analysis/shell/main.sh
 
    ![mapDamage Fragment Length Distribution](results/mapDamage/Tityra_leucura/Fragmisincorporation_plot.png)
 
+4. **Mitochondrial Genome Assembly**
+   - Downloads the closest available mitochondrial reference genome (*Pachyramphus minor*) and maps reads to it for mitochondrial genome reconstruction.
+   - Outputs: BLAST results, mitochondrial BAM files, coverage statistics, and consensus sequence.
+   - Interpretation: This analysis specifically targets mitochondrial DNA recovery. The coverage statistics show how well the mitochondrial genome is represented in the sample. The consensus sequence represents the reconstructed mitochondrial genome for *Tityra leucura*. It can be found in the file [`results/mitogenome/Tityra_leucura_mito_consensus.fasta.gz`](results/mitogenome/Tityra_leucura_mito_consensus.fasta.gz). The mitochondrial genome is reconstructed from the reads that map to the *Pachyramphus minor* reference genome, which is closely related to *Tityra leucura*. The coverage statistics indicate the sequencing depth and uniformity across the mitochondrial genome, which is essential for assessing the quality of the assembly.
+
+   ![Mitochondrial Coverage](results/mitogenome/Tityra_leucura_mito.coverage.txt)
+
+5. **Contaminant Removal**
+   - Maps reads to known contaminant reference genomes (including human, fungal species like *Penicillium*, *Vanrija*, *Malassezia*, and *Aspergillus*) and retains only unmapped reads for downstream analysis.
+   - Outputs: Cleaned reads free from major contaminants.
+   - Interpretation: This step removes reads that map to known contaminant genomes identified in previous steps. The resulting unmapped reads are more likely to represent endogenous *Tityra leucura* DNA and are used for de novo genome assembly.
+
+   Contaminant references used:
+   - *Vanrija pseudolonga*
+   - *Penicillium coprophilum*  
+   - *Homo sapiens*
+   - *Malassezia restricta*
+   - *Aspergillus cristatus*
+
+6. **De Novo Genome Assembly (AutDeNovo)**
+   - Performs de novo genome assembly using our in-house AutDeNovo pipeline on contaminant-free reads. see the shell scripts in the folder [`results/denovo/shell`](results/denovo/shell)
+   - Outputs: Assembled contigs, assembly statistics, BUSCO completeness assessment, and taxonomic classification of assembled sequences.
+   - Interpretation: This final step attempts to reconstruct the *Tityra leucura* genome from the cleaned reads. The Blobplots  below show that there is still ample contamination in the assembled 48k contigs (of length >=500b) with a total yield of 97Mbp length. The full assembly can be found [here](results/denovo/output/Tityra_ILL.fa.gz).
+  
+  ![BUSCO_full](results/denovo/output/Blob_full.png)
+
+  However, note that hundreds of BUSCO genes from the vertrebrate and the aves databases were recovered, which can be found in the folders [`results/denovo/results/denovo/output/busco_sequences`](results/denovo/results/denovo/output/busco_sequences) and [`results/denovo/results/denovo/output/busco_sequences`](results/denovo/results/denovo/output/busco_sequences) (see below). While these need to be carefully evaluated given the high levels of contamination, they may still provide useful for phylogenetic analyses.
+
+![BUSCO_full_busco](results/denovo/output/Blob_full_busco.png)
+  
+   Assembly results: `results/denovo/`
+
 ## Final Notes
 
-- In summary, the analysis indicates that endogenous DNA from *Tityra leucura* is present, but the majority of reads are likely contaminated with DNA from other sources, particularly from the genus *Penicillium*. The read length distribution and DNA damage patterns are consistent with historical DNA. The read deppth analysis shows that the sequencing depth is relatively low but uniform across the contigs, which is typical for hDNA samples.
+- In summary, the analysis indicates that endogenous DNA from *Tityra leucura* is present, but the majority of reads are initially contaminated with DNA from other sources, particularly from the genus *Penicillium*. The pipeline includes comprehensive contaminant removal and attempts de novo genome assembly of the cleaned endogenous reads. The read length distribution and DNA damage patterns are consistent with historical DNA. The read depth analysis shows that the sequencing depth is relatively low but uniform across the contigs, which is typical for hDNA samples. The consesus mitochondrial genome of *Tityra leucura* was successfully reconstructed from the mapped reads against the *Pachyramphus minor* reference genome, and together with the BUSCO genes from the de novo assembly, may provide a solid foundation for further phylogenetic analyses.
 - All intermediate and final results are organized in the `results/` directory by analysis type.
 - Review quality and summary reports at each step to ensure data integrity and successful processing.
 - For troubleshooting or further analysis, refer to the log files and HTML/JSON reports generated by each tool.
 
 ---
-
-*Pipeline maintained by [Your Name]. For questions or issues, please contact the maintainer.*

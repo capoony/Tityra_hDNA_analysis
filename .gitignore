@@ -17,4 +17,13 @@ results/minimap2/*
 results/ECMSD/mapping/*
 !results/ECMSD/mapping/*.txt
 !results/ECMSD/mapping/*.png
+!results/denovo
+results/denovo/*
+!results/denovo/shell
+!results/denovo/output
+!results/mitogenome
+results/mitogenome/*
+!results/mitogenome/Tityra_leucura_mito_consensus.fasta.gz
+!results/mitogenome/Pachyramphus_minor_mito.fasta.gz
+!results/mitogenome/Tityra_leucura_mito.coverage.txt
 shell/GCA_013397135.1_ASM1339713v1_genomic.fna.gz
