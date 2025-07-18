@@ -2,7 +2,7 @@
 
 ###############################################################################
 # Tityra Analysis Pipeline
-# Author: [Your Name]
+# Author: Martin Kapun
 # Description: End-to-end pipeline for processing Tityra sequencing data.
 ###############################################################################
 
