@@ -57,9 +57,9 @@ bash Tityra_hDNA_analysis/shell/main.sh
 4. **Mitochondrial Genome Assembly**
    - Downloads the closest available mitochondrial reference genome (*Pachyramphus minor*) and maps reads to it for mitochondrial genome reconstruction.
    - Outputs: BLAST results, mitochondrial BAM files, coverage statistics, and consensus sequence.
-   - Interpretation: This analysis specifically targets mitochondrial DNA recovery. The coverage statistics show how well the mitochondrial genome is represented in the sample. The consensus sequence represents the reconstructed mitochondrial genome for *Tityra leucura*. It can be found in the file [`results/mitogenome/Tityra_leucura_mito_consensus.fasta.gz`](results/mitogenome/Tityra_leucura_mito_consensus.fasta.gz). The mitochondrial genome is reconstructed from the reads that map to the *Pachyramphus minor* reference genome, which is closely related to *Tityra leucura*. The coverage statistics indicate the sequencing depth and uniformity across the mitochondrial genome, which is essential for assessing the quality of the assembly.
+   - Interpretation: This analysis specifically targets mitochondrial DNA recovery. The coverage statistics show how well the mitochondrial genome is represented in the sample. The consensus sequence represents the reconstructed mitochondrial genome for *Tityra leucura*. It can be found in the file [`results/mitogenome/Tityra_leucura_mito_consensus.fasta.gz`](results/mitogenome/Tityra_leucura_mito_consensus.fasta.gz). The mitochondrial genome is reconstructed from the reads that map to the *Pachyramphus minor* reference genome, which is closely related to *Tityra leucura*. The coverage statistics, which can be found [here](results/mitogenome/Tityra_leucura_mito.coverage.txt) indicate the sequencing depth is on average 28-fold but that only 38% of the mitochondrial reference is covered.
 
-   ![Mitochondrial Coverage](results/mitogenome/Tityra_leucura_mito.coverage.txt)
+   !
 
 5. **Contaminant Removal**
    - Maps reads to known contaminant reference genomes (including human, fungal species like *Penicillium*, *Vanrija*, *Malassezia*, and *Aspergillus*) and retains only unmapped reads for downstream analysis.
