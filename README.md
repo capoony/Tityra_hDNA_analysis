@@ -153,7 +153,7 @@ bash Tityra_hDNA_analysis/shell/main.sh
   
    **Results Interpretation:**
 
-   The resulting tree based on concatenating all BUSCO genes does not place *Tityra leucura* correctly as a sister group to *Pachyramphus minor* but rather next to the outgroup and is characterized by very long branches. This is likely due to the high levels of contamination in the de novo assembly and the resulting BUSCO genes and makes this analysis very unreliable.
+   The resulting tree based on concatenating all BUSCO genes does not place *Tityra leucura* correctly as a sister group to *Pachyramphus minor* but rather next to the outgroup and is characterized by a very long branch. This is likely due to the high levels of contamination in the de novo assembly resulting in errornenous nuclear sequences of the investigated BUSCO genes and makes this analysis very unreliable.
 
    ![Phylogenetic Tree](results/phylogeny/phylogeny/Tityra_BUSCO.png)
 
@@ -165,7 +165,7 @@ bash Tityra_hDNA_analysis/shell/main.sh
 
    **Comparative Results:**
 
-   While the tree based on reads mapped to the *Pachyramphus minor* BUSCO gene set correctly places *Tityra leucura* as sister group to *Pachyramphus minor*, the trees based on the other two BUSCO gene sets do not but rather next to the reference. This indicates a strong reference bias in the BUSCO gene sets of *Ochrospiza cristatus* and *Tachyphonus surinamus* and further renders the phylogenetic analysis based on the BUSCO genes from the de novo assembly unreliable.
+   While the tree based on reads mapped to the *Pachyramphus minor* BUSCO gene set correctly places *Tityra leucura* as sister group to *Pachyramphus minor*, the trees based on the other two BUSCO gene sets do not, but rather place *Tityra* next to the corresponding references. This indicates a strong reference bias in the BUSCO gene sets of *Ochrospiza cristatus* and *Tachyphonus surinamus* and further renders the phylogenetic analysis based on the BUSCO genes from the de novo assembly unreliable.
   
    **Results for *Ochrospiza cristatus*:**
    ![Phylogenetic Tree Ocrist](results/phylogeny_DNA_Ocrist/phylogeny/Tityra_BUSCO.png)
@@ -175,8 +175,6 @@ bash Tityra_hDNA_analysis/shell/main.sh
 
    **Additional Analyses:**
 
-- Mapping reads to *Pachyramphus minor* BUSCO genes
-- Mapping reads to other reference BUSCO gene sets (*Ochrospiza cristatus*, *Tachyphonus surinamus*)
 - Individual gene phylogenies for detailed evolutionary analysis
 
 ## Final Notes
