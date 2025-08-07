@@ -14,11 +14,11 @@ bash Tityra_hDNA_analysis/shell/main.sh
 
 ## Pipeline Steps
 
-1. **Copy Raw Data**
+### 1. **Copy Raw Data**
 
    Raw sequencing files are copied from the central data repository to the project directory for processing.
 
-2. **Read Trimming (fastp)**
+### 2. **Read Trimming (fastp)**
 
    **Process:** Reads are quality- and adapter-trimmed using `fastp`.
 
@@ -28,7 +28,7 @@ bash Tityra_hDNA_analysis/shell/main.sh
 
    ![fastp Quality Report](data/trimmed/Tityra_leucura.html)
 
-3. **ECMSD Pipeline**
+### 3. **ECMSD Pipeline**
 
    **Process:** The ECMSD pipeline is run on the trimmed and merged reads and maps reads against a mitochondrial reference database to identify the identity of mitochondiral reads and the corresponding read length to distinguish endogenous DNA and potential contaminant eukaryotic DNA. This pipeline is still under development and may change in the future.
 
@@ -38,7 +38,7 @@ bash Tityra_hDNA_analysis/shell/main.sh
 
 ![ECMSD Summary](results/ECMSD/mapping/Mito_summary_genus_ReadLengths.png)
 
-4. **Kraken2 Taxonomic Classification**
+### 4. **Kraken2 Taxonomic Classification**
 
    **Process:** Both paired and merged reads are classified using Kraken2 against a comprehensive database.
 
@@ -48,7 +48,7 @@ bash Tityra_hDNA_analysis/shell/main.sh
 
    ![Kraken2 Summary](results/kraken2/kraken_summary.csv)
 
-5. **Sequencing Depth Analysis**
+### 5. **Sequencing Depth Analysis**
 
    **Process:** After mapping reads against the reference genome of the closest available relative [*Pachyramphus minor*](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&id=369605), sequencing depth and coverage is calculated across all contigs to assess the read depth and breadth of coverage.
 
@@ -70,7 +70,7 @@ bash Tityra_hDNA_analysis/shell/main.sh
 
    ![mapDamage Fragment Length Distribution](results/mapDamage/Tityra_leucura/Fragmisincorporation_plot.png)
 
-7. **Mitochondrial Genome Assembly**
+### 7. **Mitochondrial Genome Assembly**
 
    **Process:** After downloading the closest available mitochondrial reference genome (*Pachyramphus minor*) reads are mapped to this reference for mitochondrial genome reconstruction by generating a consensus sequence across all mapped reads using `samtools`.
 
@@ -78,7 +78,7 @@ bash Tityra_hDNA_analysis/shell/main.sh
 
    **Interpretation:** This analysis specifically targets mitochondrial DNA recovery. The consensus sequence representing the reconstructed mitochondrial genome for *Tityra leucura* can be found at [`results/mitogenome/Tityra_leucura_mito_consensus.fasta.gz`](results/mitogenome/Tityra_leucura_mito_consensus.fasta.gz). This mitochondrial genome is reconstructed from the reads that map to the *Pachyramphus minor* reference genome, which is closely related to *Tityra leucura*. The coverage statistics, which can be found [here](results/mitogenome/Tityra_leucura_mito.coverage.txt) indicate the sequencing depth is on average 28-fold but that only 38% of the mitochondrial reference is covered.
 
-8. **Contaminant Removal**
+### 8. **Contaminant Removal**
 
    **Process:** To further reduce the amount of exogenous contaminant DNA, reads are mapped to known contaminant reference genomes (including human, fungal species like *Penicillium*, *Vanrija*, *Malassezia*, and *Aspergillus*). Only unmapped (merged) reads are retained for downstream analysis.
 
@@ -87,13 +87,14 @@ bash Tityra_hDNA_analysis/shell/main.sh
    **Interpretation:** This step removes reads that map to known contaminant genomes identified in previous steps. The resulting unmapped reads are more likely to represent endogenous *Tityra leucura* DNA and are used for de novo genome assembly described below.
 
    **Contaminant references used:**
-   - *Vanrija pseudolonga*
-   - *Penicillium coprophilum*  
-   - *Homo sapiens*
-   - *Malassezia restricta*
-   - *Aspergillus cristatus*
 
-9. **De Novo Genome Assembly (AutDeNovo)**
+- *Vanrija pseudolonga*
+- *Penicillium coprophilum*  
+- *Homo sapiens*
+- *Malassezia restricta*
+- *Aspergillus cristatus*
+
+### 9. **De Novo Genome Assembly (AutDeNovo)**
 
    **Process:** This analysis step performs de novo genome assembly using our in-house AutDeNovo pipeline (see here: <https://github.com/nhmvienna/AutDeNovo>) on contaminant-free merged reads. see the shell scripts in the folder [`results/denovo/shell`](results/denovo/shell)
 
@@ -109,7 +110,7 @@ bash Tityra_hDNA_analysis/shell/main.sh
   
    **Assembly results:** `results/denovo/`
 
-10. **Phylogenetic Analysis with BUSCO Genes**
+### 10. **Phylogenetic Analysis with BUSCO Genes**
 
    **Overview:** This comprehensive phylogenetic analysis uses BUSCO genes identified from the de novo assembly and reference genomes to construct evolutionary relationships using multiple complementary approaches.
 
@@ -117,7 +118,7 @@ bash Tityra_hDNA_analysis/shell/main.sh
 
    **Methodology:** The analysis employs several methodological approaches:
 
-### Approach 1: De novo assembly-based phylogeny
+#### Approach 1: De novo assembly-based phylogeny
 
 - BUSCO v5.4.3 is run on 14 avian genomes using the aves_odb10 database to identify single-copy orthologs
 - Complete BUSCO genes present in all 14 genomes are identified and filtered
@@ -135,14 +136,14 @@ bash Tityra_hDNA_analysis/shell/main.sh
 - Bootstrap support values are mapped onto the best ML tree
 - Tree visualization using R with ggtree, ape, and phytools packages
 
-### Approach 2: Reference-based consensus sequence phylogeny
+#### Approach 2: Reference-based consensus sequence phylogeny
 
 - *Tityra leucura* reads are mapped to BUSCO gene sets from three reference species (*Pachyramphus minor*, *Ochrospiza cristatus*, *Tachyphonus surinamus*) using minimap2
 - Only genes with ≥2-fold average coverage and ≥60% breadth of coverage are retained
 - Consensus sequences are generated using samtools consensus calling
 - Phylogenetic reconstruction follows the same RAxML protocol as above
 
-### Key Outputs
+#### Key Outputs
 
 - Complete BUSCO gene list: [`results/phylogeny/concatenated/final_busco_ids.txt`](results/phylogeny/concatenated/final_busco_ids.txt)
 - Individual gene alignments: `results/phylogeny/mafft/`
