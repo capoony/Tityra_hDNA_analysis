@@ -13,6 +13,7 @@ Museum specimen DNA from *Tityra leucura* was sequenced using Illumina paired-en
 Raw sequencing reads were processed using fastp v0.23.4 (Chen et al., 2018) with default parameters optimized for paired-end Illumina data. Two separate trimming approaches were implemented:
 
 **Standard Trimming Protocol:**
+
 ```bash
 fastp -i [R1] -I [R2] -o [R1_trimmed] -O [R2_trimmed] \
     --merge \
@@ -24,6 +25,7 @@ fastp -i [R1] -I [R2] -o [R1_trimmed] -O [R2_trimmed] \
 ```
 
 Parameters included:
+
 - Minimum read length: 25 bp
 - Automatic adapter detection and removal for paired-end reads
 - Poly-G tail trimming (Illumina NextSeq/NovaSeq artifact)
@@ -33,6 +35,7 @@ Parameters included:
 **Enhanced Trimming Protocol:**
 
 A second, more stringent trimming was performed with additional 5' end quality trimming to remove potential DNA damage artifacts:
+
 ```bash
 fastp --cut_front --cut_front_window_size 3 --cut_front_mean_quality 20 [additional parameters as above]
 ```
@@ -40,6 +43,7 @@ fastp --cut_front --cut_front_window_size 3 --cut_front_mean_quality 20 [additio
 This protocol removes the first 3 nucleotides from the 5' end of each read if mean quality falls below Q20, a common practice for ancient/historical DNA analysis where cytosine deamination is concentrated at read termini.
 
 Quality control reports in HTML and JSON formats were generated for both trimming protocols, including:
+
 - Read count statistics (before/after filtering)
 - Quality score distributions
 - GC content analysis
@@ -51,6 +55,7 @@ Quality control reports in HTML and JSON formats were generated for both trimmin
 #### Kraken2 Classification
 
 Taxonomic classification of sequencing reads was performed using Kraken2 v2.1.2 (Wood et al., 2019) with the PlusPFP database (version 20240904), which includes bacteria, archaea, viruses, fungi, plants, protists, and vertebrates. Classification was performed independently on:
+
 1. Paired-end reads (unmerged)
 2. Merged overlapping reads
 
@@ -81,6 +86,7 @@ bash ECMSD.sh --fwd [R1] --rev [R2] --merged [merged] \
 ```
 
 Parameters:
+
 - Bin size: 1,000 bp genomic windows
 - RMUS threshold: 0.15 (relative mapping unit score)
 - Minimum mapping quality: 20
@@ -100,12 +106,14 @@ minimap2 -ax sr --secondary=no -t 200 \
 ```
 
 Parameters:
+
 - `-ax sr`: Short-read alignment mode
 - `--secondary=no`: Report only primary alignments
 - `-F 4`: Filter unmapped reads
 - Threads: 200
 
 Separate alignments were performed for:
+
 1. Paired-end reads (unmerged)
 2. Merged reads
 3. Combined alignment (merged BAM files)
@@ -119,6 +127,7 @@ samtools coverage --reference [ref.fna.gz] [alignment.bam]
 ```
 
 Coverage metrics extracted include:
+
 - Number of mapped reads per contig
 - Coverage breadth (percentage of bases covered)
 - Mean sequencing depth
@@ -143,6 +152,7 @@ mapDamage -i [alignment.bam] \
 The `--rescale` option applies Bayesian rescaling to downweight damaged bases, improving downstream variant calling if needed.
 
 mapDamage2 generates:
+
 1. **Misincorporation patterns**: C→T and G→A substitution frequencies at 5' and 3' read termini
 2. **Fragment length distribution**: Size distribution of DNA fragments
 3. **Bayesian damage parameter estimates**: Statistical model of deamination rates
@@ -194,6 +204,7 @@ singularity exec mitofinder_v1.4.1.sif mitofinder \
 ```
 
 Parameters:
+
 - `-s`: Input sequencing reads (single-end/merged)
 - `-r`: Reference mitochondrial genome (GenBank format) from closely related species
 - `-o 2`: Assembler option (2 = MEGAHIT for short reads)
@@ -201,12 +212,14 @@ Parameters:
 - `-m 150`: Minimum contig length (150 bp)
 
 MitoFinder workflow:
+
 1. **Assembly**: MEGAHIT assembles reads into contigs
 2. **Identification**: BLAST search identifies mitochondrial contigs using reference
 3. **Annotation**: MITGARD annotates protein-coding genes, rRNAs, and tRNAs
 4. **Validation**: Checks gene completeness and order
 
 Output includes:
+
 - Assembled mitochondrial contigs (FASTA)
 - Annotated genes (nucleotide and amino acid FASTA)
 - GenBank-formatted annotation
@@ -226,6 +239,7 @@ singularity exec mitofinder_v1.4.1.sif mitofinder \
 ```
 
 Parameters:
+
 - `-a`: Input genome assembly (FASTA, supports gzipped files)
 - `-o 5`: Assembly option (5 = search existing assembly)
 - Other parameters as above
@@ -248,6 +262,7 @@ python EfetchThePython.py \
 ```
 
 Targeted taxa (family Tityridae and outgroup):
+
 - *Acanthisitta chloris* (outgroup, Acanthisittidae)
 - *Tityra* spp.
 - *Schiffornis* spp.
@@ -258,6 +273,7 @@ Targeted taxa (family Tityridae and outgroup):
 - *Pachyramphus* spp.
 
 Targeted genes (12 mitochondrial protein-coding genes):
+
 - Cytochrome oxidase subunits: COI (COX1), CO2 (COX2), CO3 (COX3)
 - Cytochrome b: CYTB
 - NADH dehydrogenase subunits: ND1, ND2, ND3, ND4, ND4L, ND5, ND6
@@ -273,16 +289,19 @@ Query syntax uses NCBI's Entrez query language to retrieve species-specific gene
 Downloaded GenBank sequences were combined with MitoFinder-extracted sequences using custom bash scripts:
 
 **For raw reads assembly:**
+
 ```bash
 bash combine_mito_genes_mitofinder_rawreads.sh
 ```
 
 **For genome assembly extraction:**
+
 ```bash
 bash combine_mito_genes_assembly.sh
 ```
 
 These scripts:
+
 1. **Parse MitoFinder output**: Extract annotated genes from MitoFinder results directories
 2. **Match gene synonyms**: Handle nomenclature variations (COX1→COI, COX2→CO2, COX3→CO3)
 3. **Combine sequences**: Merge downloaded GenBank sequences with newly extracted *T. leucura* sequences
@@ -302,11 +321,13 @@ mafft --auto --adjustdirection --thread 4 --quiet [input.fasta] > [aligned.fasta
 ```
 
 Parameters:
+
 - `--auto`: Automatically selects appropriate alignment algorithm (L-INS-i, FFT-NS-i, etc.) based on dataset size
 - `--adjustdirection`: Automatically reverse-complement sequences if needed (handles mixed orientations from GenBank)
 - `--thread 4`: Parallel threads for acceleration
 
 **Post-processing step**: Remove `_R_` prefixes added by MAFFT to reverse-complemented sequences:
+
 ```bash
 sed 's/>_R_/>/g' [aligned.fasta]
 ```
@@ -320,6 +341,7 @@ Gblocks [aligned.fasta] -t=d -b4=5 -b5=h
 ```
 
 Parameters:
+
 - `-t=d`: DNA sequence type
 - `-b4=5`: Minimum length of a block (5 bp)
 - `-b5=h`: Allow gap positions within final blocks (half)
@@ -339,6 +361,7 @@ iqtree2 -s [aligned_gblocks.fasta] \
 ```
 
 Parameters:
+
 - `-s`: Input alignment
 - `-m MFP`: ModelFinder Plus - automatically selects best-fit substitution model using BIC
 - `-bb 1000`: Ultrafast bootstrap approximation with 1,000 replicates (Hoang et al., 2018)
@@ -346,6 +369,7 @@ Parameters:
 - `-nt AUTO`: Automatically determine optimal thread count
 
 Output files per gene:
+
 - `.treefile`: Best-scoring ML tree (Newick format)
 - `.contree`: Consensus tree with bootstrap support values
 - `.iqtree`: Detailed analysis report including model selection, likelihood scores, and tree statistics
@@ -372,6 +396,7 @@ ggsave("[gene]_tree_rectangular.pdf", width=14, height=12)
 ```
 
 Features:
+
 - Bootstrap support values displayed at nodes (all values shown, not just ≥70)
 - *Tityra* species highlighted in bold with red triangular tip markers
 - Colored by genus for visual grouping
@@ -385,6 +410,7 @@ Features:
 To maximize species representation while maintaining data quality, a flexible concatenation approach was implemented that allows different voucher specimens for each gene within a species:
 
 **Criteria:**
+
 1. **Gene selection**: 4 mitochondrial genes (COI, CYTB, ND2, CO2) chosen based on:
    - High taxonomic coverage (present in most taxa)
    - Moderate evolutionary rate (informative for family-level phylogeny)
@@ -406,6 +432,7 @@ To maximize species representation while maintaining data quality, a flexible co
    - Record voucher accession for reproducibility
 
 **Output format** (FASTA header):
+
 ```
 >Species_name genes=X/4 COI:voucher|accession CYTB:voucher|accession ND2:missing CO2:voucher|accession
 ```
@@ -426,6 +453,7 @@ iqtree2 -s concatenated_all_genes.fasta \
 ```
 
 **Partition file format:**
+
 ```
 DNA, COI = 1-651
 DNA, CYTB = 652-1673
@@ -434,6 +462,7 @@ DNA, CO2 = 2715-3398
 ```
 
 This approach:
+
 - Allows each gene partition to have independent substitution model
 - Accounts for rate heterogeneity across genes
 - Provides gene-specific parameter estimates
@@ -459,6 +488,7 @@ ggtree(tree, layout="roundrect", ladderize=TRUE, right=TRUE) +
 ```
 
 Features:
+
 - Rounded rectangle layout (`roundrect`) for aesthetically pleasing tree display
 - Ladderized topology (tips ordered by clade size)
 - Node markers with rounded edges
@@ -479,6 +509,7 @@ Illumina sequencing of the *Tityra leucura* museum specimen yielded **123,940,03
 - **Successfully merged read pairs**: 45,312,688 (36.56% of total reads)
 
 **Quality metrics**:
+
 - Mean quality score: Q36.8 (99.98% base call accuracy)
 - GC content: 47.3%
 - Adapter content: 12.4% of reads contained adapters (successfully trimmed)
@@ -545,17 +576,20 @@ After contaminant removal via reference-based filtering, **107,039,168 reads (86
 Alignment to the *Tityra cayana* reference genome (GCA_013397135.1; 24,588 contigs, 1.25 Gb total) revealed:
 
 **Overall mapping statistics**:
+
 - **Total reads mapped**: 18,524,883 (17.32% of clean reads)
 - **Average genome coverage**: 17.29% (breadth)
 - **Average sequencing depth**: 0.91× (mean across covered regions)
 - **Median sequencing depth**: 0.52× (across 1,000 longest contigs)
 
 **Mapping quality metrics**:
+
 - Mean base quality (mapped reads): Q39.5
 - Mean mapping quality: Q17.5-25.5 (varies by contig)
 - Properly paired reads: 16,891,442 (91.19% of mapped reads)
 
 **Top covered contigs** (>30% breadth coverage):
+
 | Contig | Length | Coverage (%) | Depth (×) |
 |--------|--------|-------------|-----------|
 | VYXB01000017.1 | 42,819 bp | 35.64% | 0.81× |
@@ -570,17 +604,20 @@ The relatively low genome-wide coverage (0.91×) reflects the challenges of sequ
 mapDamage2 analysis revealed DNA damage patterns consistent with historical museum specimens:
 
 **Misincorporation patterns**:
+
 - **5' C→T transitions**: Elevated at read termini (0.08-0.12 frequency at positions 1-3)
 - **3' G→A transitions**: Elevated at read termini (0.06-0.10 frequency at positions -3 to -1)
 - **Damage signature**: Characteristic of cytosine deamination in ancient/historical DNA
 
 **Fragment length distribution**:
+
 - Mean fragment length: 156 bp
 - Fragment length range: 35-450 bp
 - Distribution shows typical exponential decay of degraded DNA
 - Short fragments (<100 bp): 28.3% of total, consistent with moderate DNA degradation
 
 **Bayesian damage estimates**:
+
 - δS (single-strand overhang damage): 0.014 (95% CI: 0.011-0.017)
 - δD (double-strand damage): 0.003 (95% CI: 0.002-0.004)
 - λ (DNA fragmentation rate): 0.019 (95% CI: 0.016-0.022)
@@ -594,11 +631,13 @@ These moderate damage levels indicate the specimen is suitable for phylogenetic 
 MitoFinder successfully assembled mitochondrial DNA from raw reads in **5 hours, 3 minutes** of computation time.
 
 **Assembly statistics**:
+
 - **Total contigs identified**: 3 mitochondrial contigs
 - **Total mitochondrial DNA recovered**: ~35 kb
 - **Genes annotated**: 15 genes on contig 1, 12 genes on contig 2, 0 genes on contig 3
 
 **Contig details**:
+
 | Contig | Length | Genes | Coverage |
 |--------|--------|-------|----------|
 | mtDNA_contig_1 | 17,142 bp | 15 | Complete set of protein-coding genes |
@@ -606,11 +645,13 @@ MitoFinder successfully assembled mitochondrial DNA from raw reads in **5 hours,
 | mtDNA_contig_3 | 1,125 bp | 0 | Possibly NUMT (nuclear mitochondrial DNA) |
 
 **Gene completeness**:
+
 - All 13 mitochondrial protein-coding genes identified: ATP6, ATP8, COI (COX1), CO2 (COX2), CO3 (COX3), CYTB, ND1, ND2, ND3, ND4, ND4L, ND5, ND6
 - 2 ribosomal RNA genes: rrnL (16S), rrnS (12S)
 - Transfer RNAs: Multiple tRNAs annotated
 
 **Warnings**: 12 genes found on multiple contigs, suggesting either:
+
 - Circular mitochondrial genome assembled as linear contigs with overlap
 - Presence of nuclear mitochondrial DNA segments (NUMTs) in assembly
 
@@ -619,11 +660,13 @@ MitoFinder successfully assembled mitochondrial DNA from raw reads in **5 hours,
 Extraction from the pre-assembled *Tityra* genome completed in **6 minutes, 1 second** (50× faster than raw reads assembly).
 
 **Assembly statistics**:
+
 - **Total contigs identified**: 3 mitochondrial contigs
 - **Total mitochondrial DNA recovered**: ~31.5 kb
 - **Genes annotated**: 15 genes on contig 1, 2 genes on contig 2, 0 genes on contig 3
 
 **Contig details**:
+
 | Contig | Length | Genes | Coverage |
 |--------|--------|-------|----------|
 | mtDNA_contig_1 | 16,982 bp | 15 | Nearly complete mitogenome |
@@ -631,6 +674,7 @@ Extraction from the pre-assembled *Tityra* genome completed in **6 minutes, 1 se
 | mtDNA_contig_3 | 1,543 bp | 0 | Possibly NUMT |
 
 **Gene completeness**:
+
 - All 13 mitochondrial protein-coding genes successfully extracted
 - Both assembly approaches yielded complete gene sets
 - Assembly-based approach had fewer duplicate gene warnings (2 vs. 12), suggesting cleaner assembly
@@ -642,6 +686,7 @@ Extraction from the pre-assembled *Tityra* genome completed in **6 minutes, 1 se
 EfetchThePython successfully downloaded mitochondrial gene sequences from NCBI GenBank for phylogenetic comparison:
 
 **Retrieval statistics**:
+
 - **Taxa queried**: 8 genera (72 genus-gene combinations)
 - **Genes per taxon**: 18 target genes (12 protein-coding + 2 rRNA + 4 synonyms)
 - **Total sequences downloaded**: 1,247 sequences
@@ -661,6 +706,7 @@ EfetchThePython successfully downloaded mitochondrial gene sequences from NCBI G
 | *Acanthisitta* (outgroup) | 1 | 249 | All 13 protein-coding genes |
 
 **Gene availability** (across all taxa):
+
 - **Highly sampled genes**: COI (24 species), CYTB (23 species), ND2 (22 species)
 - **Moderately sampled genes**: CO2 (15 species), ND4 (8 species), ND5 (7 species)
 - **Poorly sampled genes**: ATP6 (6 species), ATP8 (4 species), ND1 (5 species), ND3 (4 species), ND6 (2 species)
@@ -682,6 +728,7 @@ Maximum likelihood phylogenetic analysis was successfully completed for **5 mito
 | **ND3** | 18 | 348 bp | 128 (36.8%) | 189 (54.3%) | TIM2+F+G4 |
 
 **Tree inference metrics**:
+
 - Log-likelihood range: -3,589.2 (COI) to -7,824.3 (ND2)
 - Mean bootstrap support (UFBoot): 87.3% (range: 62-100%)
 - Mean SH-aLRT support: 84.1% (range: 58-100%)
@@ -698,6 +745,7 @@ All five gene trees consistently placed *Tityra leucura* within a monophyletic *
 **ND2 tree** (*T. leucura* + *T. semifasciata*): 100% UFBoot, 100% SH-aLRT
 
 Sister group relationships varied by gene:
+
 - COI, ND2: *Pachyramphus* as sister to *Tityra* (78-84% support)
 - CYTB, CO2: *Schiffornis* as sister to *Tityra* (72-81% support)
 - ND3: Polytomy with *Pachyramphus* and *Schiffornis* (insufficient resolution)
@@ -713,6 +761,7 @@ This gene tree discordance is typical of rapid radiations and suggests incomplet
 #### Dataset Characteristics
 
 The concatenated alignment comprised:
+
 - **Total taxa**: 24 species across 8 genera
 - **Total alignment length**: 3,398 bp
 - **Number of genes**: 4 (COI, CYTB, ND2, CO2)
@@ -721,12 +770,14 @@ The concatenated alignment comprised:
 - **Missing data**: 28.84% (average across all taxa)
 
 **Gene partitions and lengths**:
+
 1. **COI** (Cytochrome oxidase I): positions 1-651 (651 bp)
 2. **CYTB** (Cytochrome b): positions 652-1,673 (1,022 bp)
 3. **ND2** (NADH dehydrogenase 2): positions 1,674-2,714 (1,041 bp)
 4. **CO2** (Cytochrome oxidase II): positions 2,715-3,398 (684 bp)
 
 **Taxon completeness**:
+
 - **4/4 genes (100%)**: 14 species including *T. leucura*, *T. semifasciata*, *Acanthisitta chloris*, 8 *Pachyramphus* species
 - **3/4 genes (75%)**: 7 species including *T. cayana*, *T. inquisitor*
 - **2/4 genes (50%)**: 3 species (*Laniocera hypopyrra*, *Xenopsaris albinucha*, *Schiffornis major*)
@@ -743,11 +794,13 @@ ModelFinder selected best-fit evolutionary models for each partition independent
 | CO2 | TPM2u+F+I+G4 | Empirical (+F) | Invariant sites (I) + Gamma (G4) |
 
 All partitions required:
+
 - Empirical base frequency estimates (+F)
 - Proportion of invariant sites (I parameter)
 - Gamma-distributed rate heterogeneity across sites (G4 with 4 rate categories)
 
 **Substitution rate variation**:
+
 - COI: Transition/transversion ratio κ₁ = 3.24, κ₂ = 4.18
 - ND2: Highest rate heterogeneity (α = 0.82)
 - CO2: Fastest evolutionary rate (branch length multiplier 1.34×)
@@ -777,6 +830,7 @@ The concatenated phylogeny resolved relationships within Tityridae with high sup
 5. ***Iodopleura* clade**: Monophyletic (92% UFBoot, 94% SH-aLRT)
 
 **Backbone relationships**:
+
 ```
 (Acanthisitta, ((Tityra, (Pachyramphus_A, (Iodopleura, (Laniisoma, (Schiffornis, 
 (Laniocera, (Xenopsaris, Pachyramphus_B))))))))
@@ -789,12 +843,14 @@ Moderate support (72-85% UFBoot) for some backbone nodes suggests rapid radiatio
 **Total tree length**: 1.847 substitutions/site (sum of all branch lengths)
 
 **Key divergence depths** (substitutions/site):
+
 - *Acanthisitta* - Tityridae split: 0.342 (deepest divergence)
 - *Tityra* crown age: 0.0387 (recent diversification)
 - *T. leucura* - *T. semifasciata* split: 0.0124 (very recent)
 - *Pachyramphus* crown age: 0.0891
 
 **Within-*Tityra* genetic distances**:
+
 - *T. leucura* vs. *T. semifasciata*: 1.24% sequence divergence
 - *T. leucura* vs. *T. cayana*: 3.18% sequence divergence
 - *T. leucura* vs. *T. inquisitor*: 3.42% sequence divergence
@@ -812,6 +868,7 @@ These shallow divergences (<3.5% within genus) are consistent with Pleistocene d
 **Bootstrap convergence**: Achieved after 156 replicates (1,000 performed for thoroughness)
 
 **Partition-specific tree likelihoods**:
+
 | Partition | Log-likelihood | Contribution to Signal |
 |-----------|----------------|----------------------|
 | COI | -3,589.2 | 20.1% |
@@ -826,12 +883,14 @@ ND2 provided the strongest phylogenetic signal (highest informative site count a
 All sequences in the concatenated analysis include complete provenance information in FASTA headers:
 
 **Example header format**:
+
 ```
 >Tityra_leucura genes=4/4 COI:Tityra_leucura_THIS_STUDY|NA CYTB:Tityra_leucura_THIS_STUDY|NA 
 ND2:Tityra_leucura_THIS_STUDY|NA CO2:Tityra_leucura_THIS_STUDY|NA
 ```
 
 For GenBank-sourced sequences:
+
 ```
 >Pachyramphus_polychopterus genes=3/4 COI:Pachyramphus_polychopterus_KU7825|KU927825 
 CYTB:Pachyramphus_polychopterus_KX9023|KX902341 ND2:missing 
@@ -839,6 +898,7 @@ CO2:Pachyramphus_polychopterus_KX9024|KX902342
 ```
 
 This format ensures:
+
 - Complete traceability of sequences to original voucher specimens
 - GenBank accession numbers preserved for independent verification
 - Explicit documentation of missing data (genes marked as "missing")

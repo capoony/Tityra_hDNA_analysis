@@ -116,7 +116,7 @@ Methodologically, this study demonstrates the value of museum specimens for phyl
 
 # Data Availability
 
-Raw sequencing reads have been deposited in the NCBI Sequence Read Archive under BioProject accession [PRJNA######]. Mitochondrial genome assemblies, alignments, phylogenetic trees, and analysis scripts are available in the project GitHub repository: https://github.com/[repository]. GenBank accession numbers for all downloaded sequences are provided in Supplementary Table S1.
+Raw sequencing reads have been deposited in the NCBI Sequence Read Archive under BioProject accession [PRJNA######]. Mitochondrial genome assemblies, alignments, phylogenetic trees, and analysis scripts are available in the project GitHub repository: <https://github.com/[repository>]. GenBank accession numbers for all downloaded sequences are provided in Supplementary Table S1.
 
 # References
 
