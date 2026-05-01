@@ -1,0 +1,30 @@
+===================================================================
+STEP 2: BWA Mapping to Identify Top 500 Genes
+===================================================================
+Extracting Pachyramphus reference sequences...
+Extracted 7967 genes
+Indexing with minimap2...
+[M::mm_idx_gen::0.356*1.00] collected minimizers
+[M::mm_idx_gen::0.431*2.37] sorted minimizers
+[M::main::0.582*2.01] loaded/built the index for 7967 target sequence(s)
+[M::mm_idx_stat] kmer size: 15; skip: 10; is_hpc: 0; #seq: 7967
+[M::mm_idx_stat::0.615*1.96] distinct minimizers: 2522018 (96.50% are singletons); average occurrences: 1.039; average spacing: 5.800; total length: 15198635
+[M::main] Version: 2.29-r1283
+[M::main] CMD: /media/inter/mkapun/projects/MuseomicsWorkshop2025/scripts/programs/bin/minimap2 -t 50 -d results/graph_alignment/stage1_bwa/pachyramphus_all.mmi results/graph_alignment/stage1_bwa/pachyramphus_all.fasta
+[M::main] Real time: 0.628 sec; CPU: 1.217 sec; Peak RSS: 0.135 GB
+Mapping paired-end reads with minimap2...
+[bam_sort_core] merging from 0 files and 50 in-memory blocks...
+Mapping merged reads with minimap2...
+[bam_sort_core] merging from 0 files and 50 in-memory blocks...
+Merging BAM files...
+Calculating coverage per gene...
+Coverage calculated for 1 genes
+Selecting top 500 genes by coverage...
+
+Top 10 genes by coverage:
+  ref1_Pachyramphus_minor: 2.71x coverage (6401031 bp)
+
+===================================================================
+STEP 2 Complete
+Top 500 genes saved to: results/graph_alignment/stage1_bwa/top_genes.txt
+===================================================================

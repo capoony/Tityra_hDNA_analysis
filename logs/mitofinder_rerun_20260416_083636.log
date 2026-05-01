@@ -1,0 +1,2241 @@
+===================================================================
+MitoFinder Pipeline for Mitochondrial Genome Extraction
+Started: Do Apr 16 08:36:36 CEST 2026
+===================================================================
+
+===================================================================
+Step 1: Extracting mitochondrial genomes from reference genomes
+===================================================================
+Processing Acanthisitta_chloris...
+Found reference: /media/inter/mkapun/projects/Tityra/results/phylogeny/data/Acanthisitta_chloris.fna.gz
+Decompressing genome...
+Running MitoFinder for Acanthisitta_chloris...
+
+Command line: /opt/MitoFinder/mitofinder -a /media/inter/mkapun/projects/Tityra/results/mitofinder_phylogeny/Acanthisitta_chloris/Acanthisitta_chloris_genome.fna -j Acanthisitta_chloris -o 2 -r /work/results/mitofinder_phylogeny/reference_mitogenome.gb -p 10 --override
+
+Now running MitoFinder ...
+
+Start time : 2026-04-16 08:36:44
+
+Job name = Acanthisitta_chloris
+
+Creating Output directory : /media/inter/mkapun/projects/Tityra/results/mitofinder_phylogeny/Acanthisitta_chloris/Acanthisitta_chloris
+All results will be written here
+
+Program folders:
+MEGAHIT = /opt/MitoFinder/megahit/
+MetaSPAdes folder = /opt/MitoFinder/metaspades/bin/
+IDBA-UD folder = /opt/MitoFinder/idba/bin/
+Blast folder = /opt/MitoFinder/blast/bin/
+ARWEN folder = /opt/MitoFinder/arwen/
+MiTFi folder = /opt/MitoFinder/mitfi/
+tRNAscan-SE folder = /opt/MitoFinder/trnascanSE/tRNAscan-SE-2.0/
+
+
+Formatting database for mitochondrial contigs identification...
+Running mitochondrial contigs identification step...
+
+MitoFinder found 2 contigs matching provided mitochondrial reference(s)
+Did not check for circularization
+
+
+Creating summary statistics for mtDNA contig 1
+
+Annotating mtDNA contig 1
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 2
+
+Annotating mtDNA contig 2
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+Creating GFF and fasta files.
+
+Note: 
+1 gene was found in mtDNA_contig_1
+1 gene was found in mtDNA_contig_2
+
+WARNING: rrnS has been found more than once (2) in the different mitochondrial contigs.
+MitoFinder selected the longest sequence as the final sequence.
+
+## Final sequence saved to /media/inter/mkapun/projects/Tityra/results/mitofinder_phylogeny/Acanthisitta_chloris/Acanthisitta_chloris/Acanthisitta_chloris_MitoFinder_mitfi_Final_Results/
+
+/!\ WARNING /!\ 1 gene was found more than once suggesting either fragmentation, NUMT annotations, or potential contamination of your sequencing data.
+Different contigs may be part of different organisms thus "Acanthisitta_chloris_final_genes_NT.fasta" and "Acanthisitta_chloris_final_genes_AA.fasta" could be erroneous.
+We recommend to check contigs and associated genes separately.
+
+Total wall-clock time used by MitoFinder = 0:01:04.387660
+Completed Acanthisitta_chloris
+-------------------------------------------------------------------
+Processing Cephalopterus_ornatus...
+Found reference: /media/inter/mkapun/projects/Tityra/results/phylogeny/data/Cephalopterus_ornatus.fna.gz
+Decompressing genome...
+Running MitoFinder for Cephalopterus_ornatus...
+
+Command line: /opt/MitoFinder/mitofinder -a /media/inter/mkapun/projects/Tityra/results/mitofinder_phylogeny/Cephalopterus_ornatus/Cephalopterus_ornatus_genome.fna -j Cephalopterus_ornatus -o 2 -r /work/results/mitofinder_phylogeny/reference_mitogenome.gb -p 10 --override
+
+Now running MitoFinder ...
+
+Start time : 2026-04-16 08:37:57
+
+Job name = Cephalopterus_ornatus
+
+Creating Output directory : /media/inter/mkapun/projects/Tityra/results/mitofinder_phylogeny/Cephalopterus_ornatus/Cephalopterus_ornatus
+All results will be written here
+
+Program folders:
+MEGAHIT = /opt/MitoFinder/megahit/
+MetaSPAdes folder = /opt/MitoFinder/metaspades/bin/
+IDBA-UD folder = /opt/MitoFinder/idba/bin/
+Blast folder = /opt/MitoFinder/blast/bin/
+ARWEN folder = /opt/MitoFinder/arwen/
+MiTFi folder = /opt/MitoFinder/mitfi/
+tRNAscan-SE folder = /opt/MitoFinder/trnascanSE/tRNAscan-SE-2.0/
+
+
+Formatting database for mitochondrial contigs identification...
+Running mitochondrial contigs identification step...
+MitoFinder dit not found any mitochondrial contig with a size lower than 25000 bp.
+
+Total wall-clock time used by MitoFinder = 0:00:20.375422
+Completed Cephalopterus_ornatus
+-------------------------------------------------------------------
+Processing Grallaria_varia...
+Found reference: /media/inter/mkapun/projects/Tityra/results/phylogeny/data/Grallaria_varia.fna.gz
+Decompressing genome...
+Running MitoFinder for Grallaria_varia...
+
+Command line: /opt/MitoFinder/mitofinder -a /media/inter/mkapun/projects/Tityra/results/mitofinder_phylogeny/Grallaria_varia/Grallaria_varia_genome.fna -j Grallaria_varia -o 2 -r /work/results/mitofinder_phylogeny/reference_mitogenome.gb -p 10 --override
+
+Now running MitoFinder ...
+
+Start time : 2026-04-16 08:38:25
+
+Job name = Grallaria_varia
+
+Creating Output directory : /media/inter/mkapun/projects/Tityra/results/mitofinder_phylogeny/Grallaria_varia/Grallaria_varia
+All results will be written here
+
+Program folders:
+MEGAHIT = /opt/MitoFinder/megahit/
+MetaSPAdes folder = /opt/MitoFinder/metaspades/bin/
+IDBA-UD folder = /opt/MitoFinder/idba/bin/
+Blast folder = /opt/MitoFinder/blast/bin/
+ARWEN folder = /opt/MitoFinder/arwen/
+MiTFi folder = /opt/MitoFinder/mitfi/
+tRNAscan-SE folder = /opt/MitoFinder/trnascanSE/tRNAscan-SE-2.0/
+
+
+Formatting database for mitochondrial contigs identification...
+Running mitochondrial contigs identification step...
+
+MitoFinder found 2 contigs matching provided mitochondrial reference(s)
+Did not check for circularization
+
+
+Creating summary statistics for mtDNA contig 1
+
+Annotating mtDNA contig 1
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 2
+
+Annotating mtDNA contig 2
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+Creating GFF and fasta files.
+
+Note: 
+1 gene was found in mtDNA_contig_1
+0 gene was found in mtDNA_contig_2
+
+## Final sequence saved to /media/inter/mkapun/projects/Tityra/results/mitofinder_phylogeny/Grallaria_varia/Grallaria_varia/Grallaria_varia_MitoFinder_mitfi_Final_Results/
+Total wall-clock time used by MitoFinder = 0:01:04.724754
+Completed Grallaria_varia
+-------------------------------------------------------------------
+Processing Manacus_vitellinus...
+Found reference: /media/inter/mkapun/projects/Tityra/results/phylogeny/data/Manacus_vitellinus.fna.gz
+Decompressing genome...
+Running MitoFinder for Manacus_vitellinus...
+
+Command line: /opt/MitoFinder/mitofinder -a /media/inter/mkapun/projects/Tityra/results/mitofinder_phylogeny/Manacus_vitellinus/Manacus_vitellinus_genome.fna -j Manacus_vitellinus -o 2 -r /work/results/mitofinder_phylogeny/reference_mitogenome.gb -p 10 --override
+
+Now running MitoFinder ...
+
+Start time : 2026-04-16 08:39:38
+
+Job name = Manacus_vitellinus
+
+Creating Output directory : /media/inter/mkapun/projects/Tityra/results/mitofinder_phylogeny/Manacus_vitellinus/Manacus_vitellinus
+All results will be written here
+
+Program folders:
+MEGAHIT = /opt/MitoFinder/megahit/
+MetaSPAdes folder = /opt/MitoFinder/metaspades/bin/
+IDBA-UD folder = /opt/MitoFinder/idba/bin/
+Blast folder = /opt/MitoFinder/blast/bin/
+ARWEN folder = /opt/MitoFinder/arwen/
+MiTFi folder = /opt/MitoFinder/mitfi/
+tRNAscan-SE folder = /opt/MitoFinder/trnascanSE/tRNAscan-SE-2.0/
+
+
+Formatting database for mitochondrial contigs identification...
+Running mitochondrial contigs identification step...
+
+MitoFinder found 80 contigs matching provided mitochondrial reference(s)
+Did not check for circularization
+
+
+Creating summary statistics for mtDNA contig 1
+
+Annotating mtDNA contig 1
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 2
+
+Annotating mtDNA contig 2
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 3
+
+Annotating mtDNA contig 3
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 4
+
+Annotating mtDNA contig 4
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 5
+
+Annotating mtDNA contig 5
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 6
+
+Annotating mtDNA contig 6
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 7
+
+Annotating mtDNA contig 7
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 8
+
+Annotating mtDNA contig 8
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 9
+
+Annotating mtDNA contig 9
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 10
+
+Annotating mtDNA contig 10
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 11
+
+Annotating mtDNA contig 11
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 12
+
+Annotating mtDNA contig 12
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 13
+
+Annotating mtDNA contig 13
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 14
+
+Annotating mtDNA contig 14
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 15
+
+Annotating mtDNA contig 15
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 16
+
+Annotating mtDNA contig 16
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 17
+
+Annotating mtDNA contig 17
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 18
+
+Annotating mtDNA contig 18
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 19
+
+Annotating mtDNA contig 19
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 20
+
+Annotating mtDNA contig 20
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 21
+
+Annotating mtDNA contig 21
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 22
+
+Annotating mtDNA contig 22
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 23
+
+Annotating mtDNA contig 23
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 24
+
+Annotating mtDNA contig 24
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 25
+
+Annotating mtDNA contig 25
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 26
+
+Annotating mtDNA contig 26
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 27
+
+Annotating mtDNA contig 27
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 28
+
+Annotating mtDNA contig 28
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 29
+
+Annotating mtDNA contig 29
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 30
+
+Annotating mtDNA contig 30
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 31
+
+Annotating mtDNA contig 31
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 32
+
+Annotating mtDNA contig 32
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 33
+
+Annotating mtDNA contig 33
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 34
+
+Annotating mtDNA contig 34
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 35
+
+Annotating mtDNA contig 35
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 36
+
+Annotating mtDNA contig 36
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 37
+
+Annotating mtDNA contig 37
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 38
+
+Annotating mtDNA contig 38
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 39
+
+Annotating mtDNA contig 39
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 40
+
+Annotating mtDNA contig 40
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 41
+
+Annotating mtDNA contig 41
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 42
+
+Annotating mtDNA contig 42
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 43
+
+Annotating mtDNA contig 43
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 44
+
+Annotating mtDNA contig 44
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 45
+
+Annotating mtDNA contig 45
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 46
+
+Annotating mtDNA contig 46
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 47
+
+Annotating mtDNA contig 47
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 48
+
+Annotating mtDNA contig 48
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 49
+
+Annotating mtDNA contig 49
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 50
+
+Annotating mtDNA contig 50
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 51
+
+Annotating mtDNA contig 51
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 52
+
+Annotating mtDNA contig 52
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 53
+
+Annotating mtDNA contig 53
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 54
+
+Annotating mtDNA contig 54
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 55
+
+Annotating mtDNA contig 55
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 56
+
+Annotating mtDNA contig 56
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 57
+
+Annotating mtDNA contig 57
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 58
+
+Annotating mtDNA contig 58
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 59
+
+Annotating mtDNA contig 59
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 60
+
+Annotating mtDNA contig 60
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 61
+
+Annotating mtDNA contig 61
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 62
+
+Annotating mtDNA contig 62
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 63
+
+Annotating mtDNA contig 63
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 64
+
+Annotating mtDNA contig 64
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 65
+
+Annotating mtDNA contig 65
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 66
+
+Annotating mtDNA contig 66
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 67
+
+Annotating mtDNA contig 67
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 68
+
+Annotating mtDNA contig 68
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 69
+
+Annotating mtDNA contig 69
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 70
+
+Annotating mtDNA contig 70
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 71
+
+Annotating mtDNA contig 71
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 72
+
+Annotating mtDNA contig 72
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 73
+
+Annotating mtDNA contig 73
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 74
+
+Annotating mtDNA contig 74
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 75
+
+Annotating mtDNA contig 75
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 76
+
+Annotating mtDNA contig 76
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 77
+
+Annotating mtDNA contig 77
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 78
+
+Annotating mtDNA contig 78
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 79
+
+Annotating mtDNA contig 79
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 80
+
+Annotating mtDNA contig 80
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+Creating GFF and fasta files.
+
+Note: 
+4 genes were found in mtDNA_contig_1
+14 genes were found in mtDNA_contig_2
+4 genes were found in mtDNA_contig_3
+14 genes were found in mtDNA_contig_4
+5 genes were found in mtDNA_contig_5
+14 genes were found in mtDNA_contig_6
+6 genes were found in mtDNA_contig_7
+5 genes were found in mtDNA_contig_8
+14 genes were found in mtDNA_contig_9
+4 genes were found in mtDNA_contig_10
+4 genes were found in mtDNA_contig_11
+3 genes were found in mtDNA_contig_12
+9 genes were found in mtDNA_contig_13
+3 genes were found in mtDNA_contig_14
+12 genes were found in mtDNA_contig_15
+4 genes were found in mtDNA_contig_16
+9 genes were found in mtDNA_contig_17
+3 genes were found in mtDNA_contig_18
+15 genes were found in mtDNA_contig_19
+4 genes were found in mtDNA_contig_20
+6 genes were found in mtDNA_contig_21
+4 genes were found in mtDNA_contig_22
+10 genes were found in mtDNA_contig_23
+3 genes were found in mtDNA_contig_24
+2 genes were found in mtDNA_contig_25
+4 genes were found in mtDNA_contig_26
+4 genes were found in mtDNA_contig_27
+4 genes were found in mtDNA_contig_28
+4 genes were found in mtDNA_contig_29
+4 genes were found in mtDNA_contig_30
+4 genes were found in mtDNA_contig_31
+7 genes were found in mtDNA_contig_32
+7 genes were found in mtDNA_contig_33
+12 genes were found in mtDNA_contig_34
+2 genes were found in mtDNA_contig_35
+3 genes were found in mtDNA_contig_36
+2 genes were found in mtDNA_contig_37
+6 genes were found in mtDNA_contig_38
+4 genes were found in mtDNA_contig_39
+12 genes were found in mtDNA_contig_40
+4 genes were found in mtDNA_contig_41
+5 genes were found in mtDNA_contig_42
+4 genes were found in mtDNA_contig_43
+4 genes were found in mtDNA_contig_44
+6 genes were found in mtDNA_contig_45
+3 genes were found in mtDNA_contig_46
+4 genes were found in mtDNA_contig_47
+4 genes were found in mtDNA_contig_48
+10 genes were found in mtDNA_contig_49
+15 genes were found in mtDNA_contig_50
+4 genes were found in mtDNA_contig_51
+11 genes were found in mtDNA_contig_52
+7 genes were found in mtDNA_contig_53
+7 genes were found in mtDNA_contig_54
+11 genes were found in mtDNA_contig_55
+10 genes were found in mtDNA_contig_56
+5 genes were found in mtDNA_contig_57
+9 genes were found in mtDNA_contig_58
+5 genes were found in mtDNA_contig_59
+5 genes were found in mtDNA_contig_60
+7 genes were found in mtDNA_contig_61
+10 genes were found in mtDNA_contig_62
+11 genes were found in mtDNA_contig_63
+4 genes were found in mtDNA_contig_64
+9 genes were found in mtDNA_contig_65
+10 genes were found in mtDNA_contig_66
+9 genes were found in mtDNA_contig_67
+2 genes were found in mtDNA_contig_68
+9 genes were found in mtDNA_contig_69
+2 genes were found in mtDNA_contig_70
+4 genes were found in mtDNA_contig_71
+2 genes were found in mtDNA_contig_72
+14 genes were found in mtDNA_contig_73
+2 genes were found in mtDNA_contig_74
+12 genes were found in mtDNA_contig_75
+2 genes were found in mtDNA_contig_76
+3 genes were found in mtDNA_contig_77
+2 genes were found in mtDNA_contig_78
+2 genes were found in mtDNA_contig_79
+0 gene was found in mtDNA_contig_80
+
+WARNING: ATP8 has been found more than once (25) in the different mitochondrial contigs.
+MitoFinder selected the longest sequence as the final sequence.
+
+WARNING: COX2 has been found more than once (21) in the different mitochondrial contigs.
+MitoFinder selected the longest sequence as the final sequence.
+
+WARNING: COX3 has been found more than once (25) in the different mitochondrial contigs.
+MitoFinder selected the longest sequence as the final sequence.
+
+WARNING: CYTB has been found more than once (32) in the different mitochondrial contigs.
+MitoFinder selected the longest sequence as the final sequence.
+
+WARNING: COX1 has been found more than once (23) in the different mitochondrial contigs.
+MitoFinder selected the longest sequence as the final sequence.
+
+WARNING: ATP6 has been found more than once (25) in the different mitochondrial contigs.
+MitoFinder selected the longest sequence as the final sequence.
+
+WARNING: rrnL has been found more than once (63) in the different mitochondrial contigs.
+MitoFinder selected the longest sequence as the final sequence.
+
+WARNING: rrnS has been found more than once (52) in the different mitochondrial contigs.
+MitoFinder selected the longest sequence as the final sequence.
+
+WARNING: ND4L has been found more than once (26) in the different mitochondrial contigs.
+MitoFinder selected the longest sequence as the final sequence.
+
+WARNING: ND1 has been found more than once (64) in the different mitochondrial contigs.
+MitoFinder selected the longest sequence as the final sequence.
+
+WARNING: ND3 has been found more than once (26) in the different mitochondrial contigs.
+MitoFinder selected the longest sequence as the final sequence.
+
+WARNING: ND2 has been found more than once (16) in the different mitochondrial contigs.
+MitoFinder selected the longest sequence as the final sequence.
+
+WARNING: ND5 has been found more than once (31) in the different mitochondrial contigs.
+MitoFinder selected the longest sequence as the final sequence.
+
+WARNING: ND4 has been found more than once (28) in the different mitochondrial contigs.
+MitoFinder selected the longest sequence as the final sequence.
+
+WARNING: ND6 has been found more than once (46) in the different mitochondrial contigs.
+MitoFinder selected the longest sequence as the final sequence.
+
+## Final sequence saved to /media/inter/mkapun/projects/Tityra/results/mitofinder_phylogeny/Manacus_vitellinus/Manacus_vitellinus/Manacus_vitellinus_MitoFinder_mitfi_Final_Results/
+
+/!\ WARNING /!\ 15 genes were found more than once suggesting either fragmentation, NUMT annotations, or potential contamination of your sequencing data.
+Different contigs may be part of different organisms thus "Manacus_vitellinus_final_genes_NT.fasta" and "Manacus_vitellinus_final_genes_AA.fasta" could be erroneous.
+We recommend to check contigs and associated genes separately.
+
+Total wall-clock time used by MitoFinder = 3:27:56.670644
+Completed Manacus_vitellinus
+-------------------------------------------------------------------
+Processing Mionectes_macconnelli...
+Found reference: /media/inter/mkapun/projects/Tityra/results/phylogeny/data/Mionectes_macconnelli.fna.gz
+Decompressing genome...
+Running MitoFinder for Mionectes_macconnelli...
+
+Command line: /opt/MitoFinder/mitofinder -a /media/inter/mkapun/projects/Tityra/results/mitofinder_phylogeny/Mionectes_macconnelli/Mionectes_macconnelli_genome.fna -j Mionectes_macconnelli -o 2 -r /work/results/mitofinder_phylogeny/reference_mitogenome.gb -p 10 --override
+
+Now running MitoFinder ...
+
+Start time : 2026-04-16 12:07:43
+
+Job name = Mionectes_macconnelli
+
+Creating Output directory : /media/inter/mkapun/projects/Tityra/results/mitofinder_phylogeny/Mionectes_macconnelli/Mionectes_macconnelli
+All results will be written here
+
+Program folders:
+MEGAHIT = /opt/MitoFinder/megahit/
+MetaSPAdes folder = /opt/MitoFinder/metaspades/bin/
+IDBA-UD folder = /opt/MitoFinder/idba/bin/
+Blast folder = /opt/MitoFinder/blast/bin/
+ARWEN folder = /opt/MitoFinder/arwen/
+MiTFi folder = /opt/MitoFinder/mitfi/
+tRNAscan-SE folder = /opt/MitoFinder/trnascanSE/tRNAscan-SE-2.0/
+
+
+Formatting database for mitochondrial contigs identification...
+Running mitochondrial contigs identification step...
+
+MitoFinder found 6 contigs matching provided mitochondrial reference(s)
+Did not check for circularization
+
+
+Creating summary statistics for mtDNA contig 1
+
+Annotating mtDNA contig 1
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 2
+
+Annotating mtDNA contig 2
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 3
+
+Annotating mtDNA contig 3
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 4
+
+Annotating mtDNA contig 4
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 5
+
+Annotating mtDNA contig 5
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 6
+
+Annotating mtDNA contig 6
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+Creating GFF and fasta files.
+
+Note: 
+15 genes were found in mtDNA_contig_1
+12 genes were found in mtDNA_contig_2
+2 genes were found in mtDNA_contig_3
+2 genes were found in mtDNA_contig_4
+3 genes were found in mtDNA_contig_5
+8 genes were found in mtDNA_contig_6
+
+WARNING: ATP8 has been found more than once (3) in the different mitochondrial contigs.
+MitoFinder selected the longest sequence as the final sequence.
+
+WARNING: COX2 has been found more than once (3) in the different mitochondrial contigs.
+MitoFinder selected the longest sequence as the final sequence.
+
+WARNING: COX3 has been found more than once (3) in the different mitochondrial contigs.
+MitoFinder selected the longest sequence as the final sequence.
+
+WARNING: CYTB has been found more than once (3) in the different mitochondrial contigs.
+MitoFinder selected the longest sequence as the final sequence.
+
+WARNING: COX1 has been found more than once (3) in the different mitochondrial contigs.
+MitoFinder selected the longest sequence as the final sequence.
+
+WARNING: ATP6 has been found more than once (3) in the different mitochondrial contigs.
+MitoFinder selected the longest sequence as the final sequence.
+
+WARNING: rrnL has been found more than once (3) in the different mitochondrial contigs.
+MitoFinder selected the longest sequence as the final sequence.
+
+WARNING: rrnS has been found more than once (3) in the different mitochondrial contigs.
+MitoFinder selected the longest sequence as the final sequence.
+
+WARNING: ND4L has been found more than once (2) in the different mitochondrial contigs.
+MitoFinder selected the longest sequence as the final sequence.
+
+WARNING: ND1 has been found more than once (3) in the different mitochondrial contigs.
+MitoFinder selected the longest sequence as the final sequence.
+
+WARNING: ND3 has been found more than once (3) in the different mitochondrial contigs.
+MitoFinder selected the longest sequence as the final sequence.
+
+WARNING: ND2 has been found more than once (3) in the different mitochondrial contigs.
+MitoFinder selected the longest sequence as the final sequence.
+
+WARNING: ND5 has been found more than once (3) in the different mitochondrial contigs.
+MitoFinder selected the longest sequence as the final sequence.
+
+WARNING: ND4 has been found more than once (2) in the different mitochondrial contigs.
+MitoFinder selected the longest sequence as the final sequence.
+
+WARNING: ND6 has been found more than once (2) in the different mitochondrial contigs.
+MitoFinder selected the longest sequence as the final sequence.
+
+## Final sequence saved to /media/inter/mkapun/projects/Tityra/results/mitofinder_phylogeny/Mionectes_macconnelli/Mionectes_macconnelli/Mionectes_macconnelli_MitoFinder_mitfi_Final_Results/
+
+/!\ WARNING /!\ 15 genes were found more than once suggesting either fragmentation, NUMT annotations, or potential contamination of your sequencing data.
+Different contigs may be part of different organisms thus "Mionectes_macconnelli_final_genes_NT.fasta" and "Mionectes_macconnelli_final_genes_AA.fasta" could be erroneous.
+We recommend to check contigs and associated genes separately.
+
+Total wall-clock time used by MitoFinder = 0:09:24.905031
+Completed Mionectes_macconnelli
+-------------------------------------------------------------------
+Processing Neopipo_cinnamomea...
+Found reference: /media/inter/mkapun/projects/Tityra/results/phylogeny/data/Neopipo_cinnamomea.fna.gz
+Decompressing genome...
+Running MitoFinder for Neopipo_cinnamomea...
+
+Command line: /opt/MitoFinder/mitofinder -a /media/inter/mkapun/projects/Tityra/results/mitofinder_phylogeny/Neopipo_cinnamomea/Neopipo_cinnamomea_genome.fna -j Neopipo_cinnamomea -o 2 -r /work/results/mitofinder_phylogeny/reference_mitogenome.gb -p 10 --override
+
+Now running MitoFinder ...
+
+Start time : 2026-04-16 12:17:16
+
+Job name = Neopipo_cinnamomea
+
+Creating Output directory : /media/inter/mkapun/projects/Tityra/results/mitofinder_phylogeny/Neopipo_cinnamomea/Neopipo_cinnamomea
+All results will be written here
+
+Program folders:
+MEGAHIT = /opt/MitoFinder/megahit/
+MetaSPAdes folder = /opt/MitoFinder/metaspades/bin/
+IDBA-UD folder = /opt/MitoFinder/idba/bin/
+Blast folder = /opt/MitoFinder/blast/bin/
+ARWEN folder = /opt/MitoFinder/arwen/
+MiTFi folder = /opt/MitoFinder/mitfi/
+tRNAscan-SE folder = /opt/MitoFinder/trnascanSE/tRNAscan-SE-2.0/
+
+
+Formatting database for mitochondrial contigs identification...
+Running mitochondrial contigs identification step...
+
+MitoFinder found 2 contigs matching provided mitochondrial reference(s)
+Did not check for circularization
+
+
+Creating summary statistics for mtDNA contig 1
+
+Annotating mtDNA contig 1
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 2
+
+Annotating mtDNA contig 2
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+Creating GFF and fasta files.
+
+Note: 
+7 genes were found in mtDNA_contig_1
+3 genes were found in mtDNA_contig_2
+
+WARNING: COX2 has been found more than once (2) in the different mitochondrial contigs.
+MitoFinder selected the longest sequence as the final sequence.
+
+## Final sequence saved to /media/inter/mkapun/projects/Tityra/results/mitofinder_phylogeny/Neopipo_cinnamomea/Neopipo_cinnamomea/Neopipo_cinnamomea_MitoFinder_mitfi_Final_Results/
+
+/!\ WARNING /!\ 1 gene was found more than once suggesting either fragmentation, NUMT annotations, or potential contamination of your sequencing data.
+Different contigs may be part of different organisms thus "Neopipo_cinnamomea_final_genes_NT.fasta" and "Neopipo_cinnamomea_final_genes_AA.fasta" could be erroneous.
+We recommend to check contigs and associated genes separately.
+
+Total wall-clock time used by MitoFinder = 0:06:13.860902
+Completed Neopipo_cinnamomea
+-------------------------------------------------------------------
+Processing Onychorhynchus_coronatus...
+Found reference: /media/inter/mkapun/projects/Tityra/results/phylogeny/data/Onychorhynchus_coronatus.fna.gz
+Decompressing genome...
+Running MitoFinder for Onychorhynchus_coronatus...
+
+Command line: /opt/MitoFinder/mitofinder -a /media/inter/mkapun/projects/Tityra/results/mitofinder_phylogeny/Onychorhynchus_coronatus/Onychorhynchus_coronatus_genome.fna -j Onychorhynchus_coronatus -o 2 -r /work/results/mitofinder_phylogeny/reference_mitogenome.gb -p 10 --override
+
+Now running MitoFinder ...
+
+Start time : 2026-04-16 12:23:39
+
+Job name = Onychorhynchus_coronatus
+
+Creating Output directory : /media/inter/mkapun/projects/Tityra/results/mitofinder_phylogeny/Onychorhynchus_coronatus/Onychorhynchus_coronatus
+All results will be written here
+
+Program folders:
+MEGAHIT = /opt/MitoFinder/megahit/
+MetaSPAdes folder = /opt/MitoFinder/metaspades/bin/
+IDBA-UD folder = /opt/MitoFinder/idba/bin/
+Blast folder = /opt/MitoFinder/blast/bin/
+ARWEN folder = /opt/MitoFinder/arwen/
+MiTFi folder = /opt/MitoFinder/mitfi/
+tRNAscan-SE folder = /opt/MitoFinder/trnascanSE/tRNAscan-SE-2.0/
+
+
+Formatting database for mitochondrial contigs identification...
+Running mitochondrial contigs identification step...
+
+MitoFinder found a single mitochondrial contig
+Checking resulting contig for circularization...
+
+Evidences of circularization could not be found, but everyother step was successful
+
+
+
+Creating summary statistics for the mtDNA contig
+
+Annotating mitochondrial contig
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+Creating GFF and fasta files.
+
+Note: 
+1 gene was found in mtDNA_contig
+
+## Final sequence saved to /media/inter/mkapun/projects/Tityra/results/mitofinder_phylogeny/Onychorhynchus_coronatus/Onychorhynchus_coronatus/Onychorhynchus_coronatus_MitoFinder_mitfi_Final_Results/
+Total wall-clock time used by MitoFinder = 0:00:42.541397
+Completed Onychorhynchus_coronatus
+-------------------------------------------------------------------
+Processing Oxyruncus_cristatus...
+Found reference: /media/inter/mkapun/projects/Tityra/results/phylogeny/data/Oxyruncus_cristatus.fna.gz
+Decompressing genome...
+Running MitoFinder for Oxyruncus_cristatus...
+
+Command line: /opt/MitoFinder/mitofinder -a /media/inter/mkapun/projects/Tityra/results/mitofinder_phylogeny/Oxyruncus_cristatus/Oxyruncus_cristatus_genome.fna -j Oxyruncus_cristatus -o 2 -r /work/results/mitofinder_phylogeny/reference_mitogenome.gb -p 10 --override
+
+Now running MitoFinder ...
+
+Start time : 2026-04-16 12:24:30
+
+Job name = Oxyruncus_cristatus
+
+Creating Output directory : /media/inter/mkapun/projects/Tityra/results/mitofinder_phylogeny/Oxyruncus_cristatus/Oxyruncus_cristatus
+All results will be written here
+
+Program folders:
+MEGAHIT = /opt/MitoFinder/megahit/
+MetaSPAdes folder = /opt/MitoFinder/metaspades/bin/
+IDBA-UD folder = /opt/MitoFinder/idba/bin/
+Blast folder = /opt/MitoFinder/blast/bin/
+ARWEN folder = /opt/MitoFinder/arwen/
+MiTFi folder = /opt/MitoFinder/mitfi/
+tRNAscan-SE folder = /opt/MitoFinder/trnascanSE/tRNAscan-SE-2.0/
+
+
+Formatting database for mitochondrial contigs identification...
+Running mitochondrial contigs identification step...
+
+MitoFinder found a single mitochondrial contig
+Checking resulting contig for circularization...
+
+Evidences of circularization could not be found, but everyother step was successful
+
+
+
+Creating summary statistics for the mtDNA contig
+
+Annotating mitochondrial contig
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+Creating GFF and fasta files.
+
+Note: 
+3 genes were found in mtDNA_contig
+
+## Final sequence saved to /media/inter/mkapun/projects/Tityra/results/mitofinder_phylogeny/Oxyruncus_cristatus/Oxyruncus_cristatus/Oxyruncus_cristatus_MitoFinder_mitfi_Final_Results/
+Total wall-clock time used by MitoFinder = 0:01:12.281179
+Completed Oxyruncus_cristatus
+-------------------------------------------------------------------
+Processing Pachyramphus_minor...
+Warning: Could not find reference genome for Pachyramphus_minor at /media/inter/mkapun/projects/Tityra/results/phylogeny/data/Pachyramphus_minor.fna.gz
+Skipping Pachyramphus_minor...
+Processing Piprites_chloris...
+Found reference: /media/inter/mkapun/projects/Tityra/results/phylogeny/data/Piprites_chloris.fna.gz
+Decompressing genome...
+Running MitoFinder for Piprites_chloris...
+
+Command line: /opt/MitoFinder/mitofinder -a /media/inter/mkapun/projects/Tityra/results/mitofinder_phylogeny/Piprites_chloris/Piprites_chloris_genome.fna -j Piprites_chloris -o 2 -r /work/results/mitofinder_phylogeny/reference_mitogenome.gb -p 10 --override
+
+Now running MitoFinder ...
+
+Start time : 2026-04-16 12:25:51
+
+Job name = Piprites_chloris
+
+Creating Output directory : /media/inter/mkapun/projects/Tityra/results/mitofinder_phylogeny/Piprites_chloris/Piprites_chloris
+All results will be written here
+
+Program folders:
+MEGAHIT = /opt/MitoFinder/megahit/
+MetaSPAdes folder = /opt/MitoFinder/metaspades/bin/
+IDBA-UD folder = /opt/MitoFinder/idba/bin/
+Blast folder = /opt/MitoFinder/blast/bin/
+ARWEN folder = /opt/MitoFinder/arwen/
+MiTFi folder = /opt/MitoFinder/mitfi/
+tRNAscan-SE folder = /opt/MitoFinder/trnascanSE/tRNAscan-SE-2.0/
+
+
+Formatting database for mitochondrial contigs identification...
+Running mitochondrial contigs identification step...
+MitoFinder dit not found any mitochondrial contig with a size lower than 25000 bp.
+
+Total wall-clock time used by MitoFinder = 0:00:19.863242
+Completed Piprites_chloris
+-------------------------------------------------------------------
+Processing Pitta_sordida...
+Found reference: /media/inter/mkapun/projects/Tityra/results/phylogeny/data/Pitta_sordida.fna.gz
+Decompressing genome...
+Running MitoFinder for Pitta_sordida...
+
+Command line: /opt/MitoFinder/mitofinder -a /media/inter/mkapun/projects/Tityra/results/mitofinder_phylogeny/Pitta_sordida/Pitta_sordida_genome.fna -j Pitta_sordida -o 2 -r /work/results/mitofinder_phylogeny/reference_mitogenome.gb -p 10 --override
+
+Now running MitoFinder ...
+
+Start time : 2026-04-16 12:26:19
+
+Job name = Pitta_sordida
+
+Creating Output directory : /media/inter/mkapun/projects/Tityra/results/mitofinder_phylogeny/Pitta_sordida/Pitta_sordida
+All results will be written here
+
+Program folders:
+MEGAHIT = /opt/MitoFinder/megahit/
+MetaSPAdes folder = /opt/MitoFinder/metaspades/bin/
+IDBA-UD folder = /opt/MitoFinder/idba/bin/
+Blast folder = /opt/MitoFinder/blast/bin/
+ARWEN folder = /opt/MitoFinder/arwen/
+MiTFi folder = /opt/MitoFinder/mitfi/
+tRNAscan-SE folder = /opt/MitoFinder/trnascanSE/tRNAscan-SE-2.0/
+
+
+Formatting database for mitochondrial contigs identification...
+Running mitochondrial contigs identification step...
+
+MitoFinder found 7 contigs matching provided mitochondrial reference(s)
+Did not check for circularization
+
+
+Creating summary statistics for mtDNA contig 1
+
+Annotating mtDNA contig 1
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 2
+
+Annotating mtDNA contig 2
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 3
+
+Annotating mtDNA contig 3
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 4
+
+Annotating mtDNA contig 4
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 5
+
+Annotating mtDNA contig 5
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 6
+
+Annotating mtDNA contig 6
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 7
+
+Annotating mtDNA contig 7
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+Creating GFF and fasta files.
+
+Note: 
+3 genes were found in mtDNA_contig_1
+8 genes were found in mtDNA_contig_2
+3 genes were found in mtDNA_contig_3
+5 genes were found in mtDNA_contig_4
+5 genes were found in mtDNA_contig_5
+1 gene was found in mtDNA_contig_6
+3 genes were found in mtDNA_contig_7
+
+WARNING: ATP8 has been found more than once (3) in the different mitochondrial contigs.
+MitoFinder selected the longest sequence as the final sequence.
+
+WARNING: COX2 has been found more than once (3) in the different mitochondrial contigs.
+MitoFinder selected the longest sequence as the final sequence.
+
+WARNING: COX3 has been found more than once (2) in the different mitochondrial contigs.
+MitoFinder selected the longest sequence as the final sequence.
+
+WARNING: COX1 has been found more than once (3) in the different mitochondrial contigs.
+MitoFinder selected the longest sequence as the final sequence.
+
+WARNING: ATP6 has been found more than once (2) in the different mitochondrial contigs.
+MitoFinder selected the longest sequence as the final sequence.
+
+WARNING: rrnL has been found more than once (2) in the different mitochondrial contigs.
+MitoFinder selected the longest sequence as the final sequence.
+
+WARNING: rrnS has been found more than once (2) in the different mitochondrial contigs.
+MitoFinder selected the longest sequence as the final sequence.
+
+WARNING: ND4L has been found more than once (2) in the different mitochondrial contigs.
+MitoFinder selected the longest sequence as the final sequence.
+
+WARNING: ND5 has been found more than once (3) in the different mitochondrial contigs.
+MitoFinder selected the longest sequence as the final sequence.
+
+WARNING: ND4 has been found more than once (2) in the different mitochondrial contigs.
+MitoFinder selected the longest sequence as the final sequence.
+
+## Final sequence saved to /media/inter/mkapun/projects/Tityra/results/mitofinder_phylogeny/Pitta_sordida/Pitta_sordida/Pitta_sordida_MitoFinder_mitfi_Final_Results/
+
+/!\ WARNING /!\ 10 genes were found more than once suggesting either fragmentation, NUMT annotations, or potential contamination of your sequencing data.
+Different contigs may be part of different organisms thus "Pitta_sordida_final_genes_NT.fasta" and "Pitta_sordida_final_genes_AA.fasta" could be erroneous.
+We recommend to check contigs and associated genes separately.
+
+Total wall-clock time used by MitoFinder = 0:11:31.270020
+Completed Pitta_sordida
+-------------------------------------------------------------------
+Processing Tachuris_rubrigastra...
+Found reference: /media/inter/mkapun/projects/Tityra/results/phylogeny/data/Tachuris_rubrigastra.fna.gz
+Decompressing genome...
+Running MitoFinder for Tachuris_rubrigastra...
+
+Command line: /opt/MitoFinder/mitofinder -a /media/inter/mkapun/projects/Tityra/results/mitofinder_phylogeny/Tachuris_rubrigastra/Tachuris_rubrigastra_genome.fna -j Tachuris_rubrigastra -o 2 -r /work/results/mitofinder_phylogeny/reference_mitogenome.gb -p 10 --override
+
+Now running MitoFinder ...
+
+Start time : 2026-04-16 12:37:59
+
+Job name = Tachuris_rubrigastra
+
+Creating Output directory : /media/inter/mkapun/projects/Tityra/results/mitofinder_phylogeny/Tachuris_rubrigastra/Tachuris_rubrigastra
+All results will be written here
+
+Program folders:
+MEGAHIT = /opt/MitoFinder/megahit/
+MetaSPAdes folder = /opt/MitoFinder/metaspades/bin/
+IDBA-UD folder = /opt/MitoFinder/idba/bin/
+Blast folder = /opt/MitoFinder/blast/bin/
+ARWEN folder = /opt/MitoFinder/arwen/
+MiTFi folder = /opt/MitoFinder/mitfi/
+tRNAscan-SE folder = /opt/MitoFinder/trnascanSE/tRNAscan-SE-2.0/
+
+
+Formatting database for mitochondrial contigs identification...
+Running mitochondrial contigs identification step...
+
+MitoFinder found 26 contigs matching provided mitochondrial reference(s)
+Did not check for circularization
+
+
+Creating summary statistics for mtDNA contig 1
+
+Annotating mtDNA contig 1
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 2
+
+Annotating mtDNA contig 2
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 3
+
+Annotating mtDNA contig 3
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 4
+
+Annotating mtDNA contig 4
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 5
+
+Annotating mtDNA contig 5
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 6
+
+Annotating mtDNA contig 6
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 7
+
+Annotating mtDNA contig 7
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 8
+
+Annotating mtDNA contig 8
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 9
+
+Annotating mtDNA contig 9
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 10
+
+Annotating mtDNA contig 10
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 11
+
+Annotating mtDNA contig 11
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 12
+
+Annotating mtDNA contig 12
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 13
+
+Annotating mtDNA contig 13
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 14
+
+Annotating mtDNA contig 14
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 15
+
+Annotating mtDNA contig 15
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 16
+
+Annotating mtDNA contig 16
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 17
+
+Annotating mtDNA contig 17
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 18
+
+Annotating mtDNA contig 18
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 19
+
+Annotating mtDNA contig 19
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 20
+
+Annotating mtDNA contig 20
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 21
+
+Annotating mtDNA contig 21
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 22
+
+Annotating mtDNA contig 22
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 23
+
+Annotating mtDNA contig 23
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 24
+
+Annotating mtDNA contig 24
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 25
+
+Annotating mtDNA contig 25
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 26
+
+Annotating mtDNA contig 26
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+Creating GFF and fasta files.
+
+Note: 
+7 genes were found in mtDNA_contig_1
+11 genes were found in mtDNA_contig_2
+3 genes were found in mtDNA_contig_3
+4 genes were found in mtDNA_contig_4
+15 genes were found in mtDNA_contig_5
+15 genes were found in mtDNA_contig_6
+4 genes were found in mtDNA_contig_7
+14 genes were found in mtDNA_contig_8
+1 gene was found in mtDNA_contig_9
+2 genes were found in mtDNA_contig_10
+1 gene was found in mtDNA_contig_11
+3 genes were found in mtDNA_contig_12
+2 genes were found in mtDNA_contig_13
+5 genes were found in mtDNA_contig_14
+2 genes were found in mtDNA_contig_15
+2 genes were found in mtDNA_contig_16
+4 genes were found in mtDNA_contig_17
+5 genes were found in mtDNA_contig_18
+6 genes were found in mtDNA_contig_19
+3 genes were found in mtDNA_contig_20
+8 genes were found in mtDNA_contig_21
+9 genes were found in mtDNA_contig_22
+2 genes were found in mtDNA_contig_23
+2 genes were found in mtDNA_contig_24
+1 gene was found in mtDNA_contig_25
+2 genes were found in mtDNA_contig_26
+
+WARNING: ATP8 has been found more than once (7) in the different mitochondrial contigs.
+MitoFinder selected the longest sequence as the final sequence.
+
+WARNING: COX2 has been found more than once (7) in the different mitochondrial contigs.
+MitoFinder selected the longest sequence as the final sequence.
+
+WARNING: COX3 has been found more than once (7) in the different mitochondrial contigs.
+MitoFinder selected the longest sequence as the final sequence.
+
+WARNING: CYTB has been found more than once (9) in the different mitochondrial contigs.
+MitoFinder selected the longest sequence as the final sequence.
+
+WARNING: COX1 has been found more than once (12) in the different mitochondrial contigs.
+MitoFinder selected the longest sequence as the final sequence.
+
+WARNING: ATP6 has been found more than once (7) in the different mitochondrial contigs.
+MitoFinder selected the longest sequence as the final sequence.
+
+WARNING: rrnL has been found more than once (11) in the different mitochondrial contigs.
+MitoFinder selected the longest sequence as the final sequence.
+
+WARNING: rrnS has been found more than once (10) in the different mitochondrial contigs.
+MitoFinder selected the longest sequence as the final sequence.
+
+WARNING: ND4L has been found more than once (8) in the different mitochondrial contigs.
+MitoFinder selected the longest sequence as the final sequence.
+
+WARNING: ND1 has been found more than once (14) in the different mitochondrial contigs.
+MitoFinder selected the longest sequence as the final sequence.
+
+WARNING: ND3 has been found more than once (7) in the different mitochondrial contigs.
+MitoFinder selected the longest sequence as the final sequence.
+
+WARNING: ND2 has been found more than once (13) in the different mitochondrial contigs.
+MitoFinder selected the longest sequence as the final sequence.
+
+WARNING: ND5 has been found more than once (7) in the different mitochondrial contigs.
+MitoFinder selected the longest sequence as the final sequence.
+
+WARNING: ND4 has been found more than once (7) in the different mitochondrial contigs.
+MitoFinder selected the longest sequence as the final sequence.
+
+WARNING: ND6 has been found more than once (7) in the different mitochondrial contigs.
+MitoFinder selected the longest sequence as the final sequence.
+
+## Final sequence saved to /media/inter/mkapun/projects/Tityra/results/mitofinder_phylogeny/Tachuris_rubrigastra/Tachuris_rubrigastra/Tachuris_rubrigastra_MitoFinder_mitfi_Final_Results/
+
+/!\ WARNING /!\ 15 genes were found more than once suggesting either fragmentation, NUMT annotations, or potential contamination of your sequencing data.
+Different contigs may be part of different organisms thus "Tachuris_rubrigastra_final_genes_NT.fasta" and "Tachuris_rubrigastra_final_genes_AA.fasta" could be erroneous.
+We recommend to check contigs and associated genes separately.
+
+Total wall-clock time used by MitoFinder = 0:41:43.847377
+Completed Tachuris_rubrigastra
+-------------------------------------------------------------------
+Processing Tyrannus_savana...
+Found reference: /media/inter/mkapun/projects/Tityra/results/phylogeny/data/Tyrannus_savana.fna.gz
+Decompressing genome...
+Running MitoFinder for Tyrannus_savana...
+
+Command line: /opt/MitoFinder/mitofinder -a /media/inter/mkapun/projects/Tityra/results/mitofinder_phylogeny/Tyrannus_savana/Tyrannus_savana_genome.fna -j Tyrannus_savana -o 2 -r /work/results/mitofinder_phylogeny/reference_mitogenome.gb -p 10 --override
+
+Now running MitoFinder ...
+
+Start time : 2026-04-16 13:19:51
+
+Job name = Tyrannus_savana
+
+Creating Output directory : /media/inter/mkapun/projects/Tityra/results/mitofinder_phylogeny/Tyrannus_savana/Tyrannus_savana
+All results will be written here
+
+Program folders:
+MEGAHIT = /opt/MitoFinder/megahit/
+MetaSPAdes folder = /opt/MitoFinder/metaspades/bin/
+IDBA-UD folder = /opt/MitoFinder/idba/bin/
+Blast folder = /opt/MitoFinder/blast/bin/
+ARWEN folder = /opt/MitoFinder/arwen/
+MiTFi folder = /opt/MitoFinder/mitfi/
+tRNAscan-SE folder = /opt/MitoFinder/trnascanSE/tRNAscan-SE-2.0/
+
+
+Formatting database for mitochondrial contigs identification...
+Running mitochondrial contigs identification step...
+
+MitoFinder found 4 contigs matching provided mitochondrial reference(s)
+Did not check for circularization
+
+
+Creating summary statistics for mtDNA contig 1
+
+Annotating mtDNA contig 1
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 2
+
+Annotating mtDNA contig 2
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 3
+
+Annotating mtDNA contig 3
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+
+Creating summary statistics for mtDNA contig 4
+
+Annotating mtDNA contig 4
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+Creating GFF and fasta files.
+
+Note: 
+6 genes were found in mtDNA_contig_1
+2 genes were found in mtDNA_contig_2
+11 genes were found in mtDNA_contig_3
+5 genes were found in mtDNA_contig_4
+
+WARNING: ATP8 has been found more than once (2) in the different mitochondrial contigs.
+MitoFinder selected the longest sequence as the final sequence.
+
+WARNING: COX2 has been found more than once (2) in the different mitochondrial contigs.
+MitoFinder selected the longest sequence as the final sequence.
+
+WARNING: CYTB has been found more than once (2) in the different mitochondrial contigs.
+MitoFinder selected the longest sequence as the final sequence.
+
+WARNING: ATP6 has been found more than once (2) in the different mitochondrial contigs.
+MitoFinder selected the longest sequence as the final sequence.
+
+WARNING: rrnL has been found more than once (2) in the different mitochondrial contigs.
+MitoFinder selected the longest sequence as the final sequence.
+
+WARNING: rrnS has been found more than once (3) in the different mitochondrial contigs.
+MitoFinder selected the longest sequence as the final sequence.
+
+WARNING: ND5 has been found more than once (2) in the different mitochondrial contigs.
+MitoFinder selected the longest sequence as the final sequence.
+
+WARNING: ND6 has been found more than once (2) in the different mitochondrial contigs.
+MitoFinder selected the longest sequence as the final sequence.
+
+## Final sequence saved to /media/inter/mkapun/projects/Tityra/results/mitofinder_phylogeny/Tyrannus_savana/Tyrannus_savana/Tyrannus_savana_MitoFinder_mitfi_Final_Results/
+
+/!\ WARNING /!\ 8 genes were found more than once suggesting either fragmentation, NUMT annotations, or potential contamination of your sequencing data.
+Different contigs may be part of different organisms thus "Tyrannus_savana_final_genes_NT.fasta" and "Tyrannus_savana_final_genes_AA.fasta" could be erroneous.
+We recommend to check contigs and associated genes separately.
+
+Total wall-clock time used by MitoFinder = 0:09:18.631542
+Completed Tyrannus_savana
+-------------------------------------------------------------------
+
+===================================================================
+Step 2: Extracting mitochondrial genome from Tityra de novo assembly
+===================================================================
+Processing Tityra_leucura de novo assembly...
+Running MitoFinder for Tityra_leucura...
+
+Command line: /opt/MitoFinder/mitofinder -a /media/inter/mkapun/projects/Tityra/results/mitofinder_phylogeny/Tityra_leucura/Tityra_leucura_assembly.fna -j Tityra_leucura -o 2 -r /work/results/mitofinder_phylogeny/reference_mitogenome.gb -p 10 --override
+
+Now running MitoFinder ...
+
+Start time : 2026-04-16 13:29:11
+
+Job name = Tityra_leucura
+
+Creating Output directory : /media/inter/mkapun/projects/Tityra/results/mitofinder_phylogeny/Tityra_leucura/Tityra_leucura
+All results will be written here
+
+Program folders:
+MEGAHIT = /opt/MitoFinder/megahit/
+MetaSPAdes folder = /opt/MitoFinder/metaspades/bin/
+IDBA-UD folder = /opt/MitoFinder/idba/bin/
+Blast folder = /opt/MitoFinder/blast/bin/
+ARWEN folder = /opt/MitoFinder/arwen/
+MiTFi folder = /opt/MitoFinder/mitfi/
+tRNAscan-SE folder = /opt/MitoFinder/trnascanSE/tRNAscan-SE-2.0/
+
+
+Formatting database for mitochondrial contigs identification...
+Running mitochondrial contigs identification step...
+
+MitoFinder found a single mitochondrial contig
+Checking resulting contig for circularization...
+
+Evidences of circularization could not be found, but everyother step was successful
+
+
+
+Creating summary statistics for the mtDNA contig
+
+Annotating mitochondrial contig
+
+tRNA annotation with MitFi run well.
+
+Annotation completed
+
+
+Creating GFF and fasta files.
+
+Note: 
+15 genes were found in mtDNA_contig
+
+## Final sequence saved to /media/inter/mkapun/projects/Tityra/results/mitofinder_phylogeny/Tityra_leucura/Tityra_leucura/Tityra_leucura_MitoFinder_mitfi_Final_Results/
+Total wall-clock time used by MitoFinder = 0:03:20.387008
+Completed Tityra_leucura
+
+===================================================================
+Step 3: Collecting mitochondrial genome results
+===================================================================
+✗ Acanthisitta_chloris: No mitochondrial genome found
+✗ all_mitogenomes: No mitochondrial genome found
+✓ Cephalopterus_ornatus: 6382 bp
+✗ Grallaria_varia: No mitochondrial genome found
+✗ Manacus_vitellinus: No mitochondrial genome found
+✗ Mionectes_macconnelli: No mitochondrial genome found
+✗ Neopipo_cinnamomea: No mitochondrial genome found
+✓ Onychorhynchus_coronatus: 6348 bp
+✓ Oxyruncus_cristatus: 3615 bp
+✗ Pachyramphus_minor: No mitochondrial genome found
+✗ Piprites_chloris: No mitochondrial genome found
+✗ Pitta_sordida: No mitochondrial genome found
+✗ Tachuris_rubrigastra: No mitochondrial genome found
+✓ Tityra_leucura: 17325 bp
+✗ Tyrannus_savana: No mitochondrial genome found
+
+===================================================================
+Pipeline completed: Do Apr 16 13:32:32 CEST 2026
+===================================================================
+
+Results summary:
+- Output directory: /media/inter/mkapun/projects/Tityra/results/mitofinder_phylogeny
+- Mitochondrial genomes: /media/inter/mkapun/projects/Tityra/results/mitofinder_phylogeny/all_mitogenomes
+- Summary file: /media/inter/mkapun/projects/Tityra/results/mitofinder_phylogeny/mitogenome_summary.txt
+- Log file: /media/inter/mkapun/projects/Tityra/logs/mitofinder_phylogeny.log
+
+Successfully extracted 4/14 mitochondrial genomes
+

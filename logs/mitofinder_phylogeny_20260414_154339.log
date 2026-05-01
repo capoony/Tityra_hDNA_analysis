@@ -1,0 +1,205 @@
+nohup: ignoriere Eingabe
+===================================================================
+MitoFinder Pipeline for Mitochondrial Genome Extraction
+Started: Di Apr 14 15:43:39 CEST 2026
+===================================================================
+
+===================================================================
+Step 1: Extracting mitochondrial genomes from reference genomes
+===================================================================
+Processing Acanthisitta_chloris...
+Found reference: /media/inter/mkapun/projects/Tityra/results/phylogeny/data/Acanthisitta_chloris.fna.gz
+Decompressing genome...
+Running MitoFinder for Acanthisitta_chloris...
+
+Command line: /opt/MitoFinder/mitofinder -a /media/inter/mkapun/projects/Tityra/results/mitofinder_phylogeny/Acanthisitta_chloris/Acanthisitta_chloris_genome.fna -j Acanthisitta_chloris -o 2 -p 10 --override
+
+Now running MitoFinder ...
+
+Start time : 2026-04-14 15:43:48
+
+Job name = Acanthisitta_chloris
+
+ERROR: Reference file is required (-r option)
+Completed Acanthisitta_chloris
+-------------------------------------------------------------------
+Processing Cephalopterus_ornatus...
+Found reference: /media/inter/mkapun/projects/Tityra/results/phylogeny/data/Cephalopterus_ornatus.fna.gz
+Decompressing genome...
+Running MitoFinder for Cephalopterus_ornatus...
+
+Command line: /opt/MitoFinder/mitofinder -a /media/inter/mkapun/projects/Tityra/results/mitofinder_phylogeny/Cephalopterus_ornatus/Cephalopterus_ornatus_genome.fna -j Cephalopterus_ornatus -o 2 -p 10 --override
+
+Now running MitoFinder ...
+
+Start time : 2026-04-14 15:44:08
+
+Job name = Cephalopterus_ornatus
+
+ERROR: Reference file is required (-r option)
+Completed Cephalopterus_ornatus
+-------------------------------------------------------------------
+Processing Grallaria_varia...
+Found reference: /media/inter/mkapun/projects/Tityra/results/phylogeny/data/Grallaria_varia.fna.gz
+Decompressing genome...
+Running MitoFinder for Grallaria_varia...
+
+Command line: /opt/MitoFinder/mitofinder -a /media/inter/mkapun/projects/Tityra/results/mitofinder_phylogeny/Grallaria_varia/Grallaria_varia_genome.fna -j Grallaria_varia -o 2 -p 10 --override
+
+Now running MitoFinder ...
+
+Start time : 2026-04-14 15:44:17
+
+Job name = Grallaria_varia
+
+ERROR: Reference file is required (-r option)
+Completed Grallaria_varia
+-------------------------------------------------------------------
+Processing Manacus_vitellinus...
+Found reference: /media/inter/mkapun/projects/Tityra/results/phylogeny/data/Manacus_vitellinus.fna.gz
+Decompressing genome...
+Running MitoFinder for Manacus_vitellinus...
+
+Command line: /opt/MitoFinder/mitofinder -a /media/inter/mkapun/projects/Tityra/results/mitofinder_phylogeny/Manacus_vitellinus/Manacus_vitellinus_genome.fna -j Manacus_vitellinus -o 2 -p 10 --override
+
+Now running MitoFinder ...
+
+Start time : 2026-04-14 15:44:26
+
+Job name = Manacus_vitellinus
+
+ERROR: Reference file is required (-r option)
+Completed Manacus_vitellinus
+-------------------------------------------------------------------
+Processing Mionectes_macconnelli...
+Found reference: /media/inter/mkapun/projects/Tityra/results/phylogeny/data/Mionectes_macconnelli.fna.gz
+Decompressing genome...
+Running MitoFinder for Mionectes_macconnelli...
+
+Command line: /opt/MitoFinder/mitofinder -a /media/inter/mkapun/projects/Tityra/results/mitofinder_phylogeny/Mionectes_macconnelli/Mionectes_macconnelli_genome.fna -j Mionectes_macconnelli -o 2 -p 10 --override
+
+Now running MitoFinder ...
+
+Start time : 2026-04-14 15:44:37
+
+Job name = Mionectes_macconnelli
+
+ERROR: Reference file is required (-r option)
+Completed Mionectes_macconnelli
+-------------------------------------------------------------------
+Processing Neopipo_cinnamomea...
+Found reference: /media/inter/mkapun/projects/Tityra/results/phylogeny/data/Neopipo_cinnamomea.fna.gz
+Decompressing genome...
+Running MitoFinder for Neopipo_cinnamomea...
+
+Command line: /opt/MitoFinder/mitofinder -a /media/inter/mkapun/projects/Tityra/results/mitofinder_phylogeny/Neopipo_cinnamomea/Neopipo_cinnamomea_genome.fna -j Neopipo_cinnamomea -o 2 -p 10 --override
+
+Now running MitoFinder ...
+
+Start time : 2026-04-14 15:44:45
+
+Job name = Neopipo_cinnamomea
+
+ERROR: Reference file is required (-r option)
+Completed Neopipo_cinnamomea
+-------------------------------------------------------------------
+Processing Onychorhynchus_coronatus...
+Found reference: /media/inter/mkapun/projects/Tityra/results/phylogeny/data/Onychorhynchus_coronatus.fna.gz
+Decompressing genome...
+Running MitoFinder for Onychorhynchus_coronatus...
+
+Command line: /opt/MitoFinder/mitofinder -a /media/inter/mkapun/projects/Tityra/results/mitofinder_phylogeny/Onychorhynchus_coronatus/Onychorhynchus_coronatus_genome.fna -j Onychorhynchus_coronatus -o 2 -p 10 --override
+
+Now running MitoFinder ...
+
+Start time : 2026-04-14 15:44:54
+
+Job name = Onychorhynchus_coronatus
+
+ERROR: Reference file is required (-r option)
+Completed Onychorhynchus_coronatus
+-------------------------------------------------------------------
+Processing Oxyruncus_cristatus...
+Found reference: /media/inter/mkapun/projects/Tityra/results/phylogeny/data/Oxyruncus_cristatus.fna.gz
+Decompressing genome...
+Running MitoFinder for Oxyruncus_cristatus...
+
+Command line: /opt/MitoFinder/mitofinder -a /media/inter/mkapun/projects/Tityra/results/mitofinder_phylogeny/Oxyruncus_cristatus/Oxyruncus_cristatus_genome.fna -j Oxyruncus_cristatus -o 2 -p 10 --override
+
+Now running MitoFinder ...
+
+Start time : 2026-04-14 15:45:03
+
+Job name = Oxyruncus_cristatus
+
+ERROR: Reference file is required (-r option)
+Completed Oxyruncus_cristatus
+-------------------------------------------------------------------
+Processing Pachyramphus_minor...
+Warning: Could not find reference genome for Pachyramphus_minor at /media/inter/mkapun/projects/Tityra/results/phylogeny/data/Pachyramphus_minor.fna.gz
+Skipping Pachyramphus_minor...
+Processing Piprites_chloris...
+Found reference: /media/inter/mkapun/projects/Tityra/results/phylogeny/data/Piprites_chloris.fna.gz
+Decompressing genome...
+Running MitoFinder for Piprites_chloris...
+
+Command line: /opt/MitoFinder/mitofinder -a /media/inter/mkapun/projects/Tityra/results/mitofinder_phylogeny/Piprites_chloris/Piprites_chloris_genome.fna -j Piprites_chloris -o 2 -p 10 --override
+
+Now running MitoFinder ...
+
+Start time : 2026-04-14 15:45:13
+
+Job name = Piprites_chloris
+
+ERROR: Reference file is required (-r option)
+Completed Piprites_chloris
+-------------------------------------------------------------------
+Processing Pitta_sordida...
+Found reference: /media/inter/mkapun/projects/Tityra/results/phylogeny/data/Pitta_sordida.fna.gz
+Decompressing genome...
+Running MitoFinder for Pitta_sordida...
+
+Command line: /opt/MitoFinder/mitofinder -a /media/inter/mkapun/projects/Tityra/results/mitofinder_phylogeny/Pitta_sordida/Pitta_sordida_genome.fna -j Pitta_sordida -o 2 -p 10 --override
+
+Now running MitoFinder ...
+
+Start time : 2026-04-14 15:45:22
+
+Job name = Pitta_sordida
+
+ERROR: Reference file is required (-r option)
+Completed Pitta_sordida
+-------------------------------------------------------------------
+Processing Tachuris_rubrigastra...
+Found reference: /media/inter/mkapun/projects/Tityra/results/phylogeny/data/Tachuris_rubrigastra.fna.gz
+Decompressing genome...
+Running MitoFinder for Tachuris_rubrigastra...
+
+Command line: /opt/MitoFinder/mitofinder -a /media/inter/mkapun/projects/Tityra/results/mitofinder_phylogeny/Tachuris_rubrigastra/Tachuris_rubrigastra_genome.fna -j Tachuris_rubrigastra -o 2 -p 10 --override
+
+Now running MitoFinder ...
+
+Start time : 2026-04-14 15:45:31
+
+Job name = Tachuris_rubrigastra
+
+ERROR: Reference file is required (-r option)
+Completed Tachuris_rubrigastra
+-------------------------------------------------------------------
+Processing Tyrannus_savana...
+Found reference: /media/inter/mkapun/projects/Tityra/results/phylogeny/data/Tyrannus_savana.fna.gz
+Decompressing genome...
+Running MitoFinder for Tyrannus_savana...
+
+Command line: /opt/MitoFinder/mitofinder -a /media/inter/mkapun/projects/Tityra/results/mitofinder_phylogeny/Tyrannus_savana/Tyrannus_savana_genome.fna -j Tyrannus_savana -o 2 -p 10 --override
+
+Now running MitoFinder ...
+
+Start time : 2026-04-14 15:45:40
+
+Job name = Tyrannus_savana
+
+ERROR: Reference file is required (-r option)
+Completed Tyrannus_savana
+-------------------------------------------------------------------
+shell/mitofinder_phylogeny.sh: Zeile 108: Finder: Kommando nicht gefunden.

@@ -1,0 +1,1063 @@
+===================================================================
+STEP 3: Iterative Mapping to Reduce Reference Bias
+===================================================================
+This approach:
+1. Calls variants from initial Pachyramphus mapping
+2. Creates Tityra pseudo-reference with variants incorporated
+3. Remaps reads to Tityra pseudo-reference
+4. Calls final high-confidence variants
+
+This reduces reference bias with 2x computational cost vs 1000x for graphs
+
+Processing top genes with iterative mapping (50 jobs)...
+Skipping 38612at8782: no variants with DP>5
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Skipping 34396at8782: no variants with DP>5
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Skipping 53388at8782: no variants with DP>5
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Skipping 34664at8782: no variants with DP>5
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Skipping 47432at8782: no variants with DP>5
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Skipping 19126at8782: no variants with DP>5
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Skipping 47737at8782: no variants with DP>5
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Skipping 50519at8782: no variants with DP>5
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Skipping 25697at8782: no variants with DP>5
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Skipping 23254at8782: no variants with DP>5
+[mpileup] 1 samples in 1 input files
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] maximum number of reads per input file set to -d 250
+Skipping 40716at8782: no variants with DP>5
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Skipping 20733at8782: no variants with DP>5
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 50826at8782 (Round1: 71 variants, Round2: 0 variants)
+[mpileup] 1 samples in 1 input files
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/50826at8782_round1.bam
+Applied 71 variants
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 33214at8782 (Round1: 23 variants, Round2: 0 variants)
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/33214at8782_round1.bam
+Applied 23 variants
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Skipping 43841at8782: no variants with DP>5
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 13958at8782 (Round1: 43 variants, Round2: 0 variants)
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/13958at8782_round1.bam
+Applied 43 variants
+[mpileup] 1 samples in 1 input files
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 38517at8782 (Round1: 79 variants, Round2: 0 variants)
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/38517at8782_round1.bam
+Applied 79 variants
+[mpileup] 1 samples in 1 input files
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 43344at8782 (Round1: 63 variants, Round2: 0 variants)
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/43344at8782_round1.bam
+Applied 63 variants
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 9815at8782 (Round1: 1 variants, Round2: 0 variants)
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/9815at8782_round1.bam
+Applied 1 variants
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Skipping 43867at8782: no variants with DP>5
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Skipping 39034at8782: no variants with DP>5
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Skipping 52333at8782: no variants with DP>5
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 38367at8782 (Round1: 121 variants, Round2: 0 variants)
+[mpileup] 1 samples in 1 input files
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/38367at8782_round1.bam
+Applied 121 variants
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 47391at8782 (Round1: 74 variants, Round2: 0 variants)
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/47391at8782_round1.bam
+Applied 74 variants
+[mpileup] 1 samples in 1 input files
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 35058at8782 (Round1: 156 variants, Round2: 0 variants)
+[mpileup] 1 samples in 1 input files
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/35058at8782_round1.bam
+Applied 156 variants
+[mpileup] 1 samples in 1 input files
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 53147at8782 (Round1: 76 variants, Round2: 0 variants)
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/53147at8782_round1.bam
+Applied 76 variants
+[mpileup] 1 samples in 1 input files
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 34221at8782 (Round1: 77 variants, Round2: 0 variants)
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/34221at8782_round1.bam
+Applied 77 variants
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 2773at8782 (Round1: 112 variants, Round2: 0 variants)
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/2773at8782_round1.bam
+Applied 112 variants
+[mpileup] 1 samples in 1 input files
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 723at8782 (Round1: 255 variants, Round2: 1 variants)
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/723at8782_round1.bam
+Applied 255 variants
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/723at8782_round2.bam
+Applied 1 variants
+Completed: 52245at8782 (Round1: 64 variants, Round2: 0 variants)
+[mpileup] 1 samples in 1 input files
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/52245at8782_round1.bam
+Applied 64 variants
+[mpileup] 1 samples in 1 input files
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 20993at8782 (Round1: 72 variants, Round2: 0 variants)
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/20993at8782_round1.bam
+Applied 72 variants
+[mpileup] 1 samples in 1 input files
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 43616at8782 (Round1: 23 variants, Round2: 0 variants)
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/43616at8782_round1.bam
+Applied 23 variants
+[mpileup] 1 samples in 1 input files
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 14918at8782 (Round1: 539 variants, Round2: 0 variants)
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/14918at8782_round1.bam
+Applied 539 variants
+[mpileup] 1 samples in 1 input files
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 47093at8782 (Round1: 114 variants, Round2: 0 variants)
+[mpileup] 1 samples in 1 input files
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/47093at8782_round1.bam
+Applied 114 variants
+[mpileup] 1 samples in 1 input files
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 17551at8782 (Round1: 40 variants, Round2: 0 variants)
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/17551at8782_round1.bam
+Applied 40 variants
+[mpileup] 1 samples in 1 input files
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 40968at8782 (Round1: 65 variants, Round2: 0 variants)
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/40968at8782_round1.bam
+Applied 65 variants
+[mpileup] 1 samples in 1 input files
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 5166at8782 (Round1: 33 variants, Round2: 0 variants)
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/5166at8782_round1.bam
+Applied 33 variants
+[mpileup] 1 samples in 1 input files
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] maximum number of reads per input file set to -d 250
+Skipping 7340at8782: no variants with DP>5
+[mpileup] 1 samples in 1 input files
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 44752at8782 (Round1: 21 variants, Round2: 0 variants)
+[mpileup] 1 samples in 1 input files
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/44752at8782_round1.bam
+Applied 21 variants
+[mpileup] 1 samples in 1 input files
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 51255at8782 (Round1: 77 variants, Round2: 0 variants)
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/51255at8782_round1.bam
+Applied 77 variants
+[mpileup] 1 samples in 1 input files
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 17068at8782 (Round1: 405 variants, Round2: 3 variants)
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/17068at8782_round1.bam
+Applied 405 variants
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/17068at8782_round2.bam
+Applied 3 variants
+Completed: 30582at8782 (Round1: 85 variants, Round2: 0 variants)
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/30582at8782_round1.bam
+Applied 85 variants
+[mpileup] 1 samples in 1 input files
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 32618at8782 (Round1: 141 variants, Round2: 0 variants)
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/32618at8782_round1.bam
+The site ref1_Pachyramphus_minor#32618at8782:2032 overlaps with another variant, skipping...
+Applied 140 variants
+[mpileup] 1 samples in 1 input files
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 48943at8782 (Round1: 21 variants, Round2: 0 variants)
+[mpileup] 1 samples in 1 input files
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/48943at8782_round1.bam
+Applied 21 variants
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 15722at8782 (Round1: 210 variants, Round2: 0 variants)
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/15722at8782_round1.bam
+Applied 210 variants
+[mpileup] 1 samples in 1 input files
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 43502at8782 (Round1: 88 variants, Round2: 0 variants)
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/43502at8782_round1.bam
+Applied 88 variants
+[mpileup] 1 samples in 1 input files
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 49825at8782 (Round1: 31 variants, Round2: 0 variants)
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/49825at8782_round1.bam
+Applied 31 variants
+[mpileup] 1 samples in 1 input files
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 3751at8782 (Round1: 8 variants, Round2: 0 variants)
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/3751at8782_round1.bam
+Applied 8 variants
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 38399at8782 (Round1: 14 variants, Round2: 0 variants)
+[mpileup] 1 samples in 1 input files
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/38399at8782_round1.bam
+Applied 14 variants
+[mpileup] 1 samples in 1 input files
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 7937at8782 (Round1: 57 variants, Round2: 0 variants)
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/7937at8782_round1.bam
+Applied 57 variants
+[mpileup] 1 samples in 1 input files
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 48714at8782 (Round1: 17 variants, Round2: 0 variants)
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/48714at8782_round1.bam
+Applied 17 variants
+[mpileup] 1 samples in 1 input files
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 4523at8782 (Round1: 5 variants, Round2: 1 variants)
+[mpileup] 1 samples in 1 input files
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/4523at8782_round1.bam
+Applied 5 variants
+[mpileup] 1 samples in 1 input files
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/4523at8782_round2.bam
+Applied 1 variants
+Completed: 22972at8782 (Round1: 33 variants, Round2: 0 variants)
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/22972at8782_round1.bam
+Applied 33 variants
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 41666at8782 (Round1: 44 variants, Round2: 2 variants)
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/41666at8782_round1.bam
+Applied 44 variants
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/41666at8782_round2.bam
+Applied 2 variants
+Skipping 41049at8782: no variants with DP>5
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Skipping 29744at8782: no variants with DP>5
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 8461at8782 (Round1: 176 variants, Round2: 0 variants)
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/8461at8782_round1.bam
+Applied 176 variants
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 25060at8782 (Round1: 15 variants, Round2: 0 variants)
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/25060at8782_round1.bam
+Applied 15 variants
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 54414at8782 (Round1: 102 variants, Round2: 0 variants)
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/54414at8782_round1.bam
+Applied 102 variants
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 11344at8782 (Round1: 39 variants, Round2: 0 variants)
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/11344at8782_round1.bam
+Applied 39 variants
+[mpileup] 1 samples in 1 input files
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 24793at8782 (Round1: 85 variants, Round2: 0 variants)
+[mpileup] 1 samples in 1 input files
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/24793at8782_round1.bam
+Applied 85 variants
+[mpileup] 1 samples in 1 input files
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 34590at8782 (Round1: 80 variants, Round2: 0 variants)
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/34590at8782_round1.bam
+Applied 80 variants
+[mpileup] 1 samples in 1 input files
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 47610at8782 (Round1: 23 variants, Round2: 0 variants)
+[mpileup] 1 samples in 1 input files
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/47610at8782_round1.bam
+Applied 23 variants
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 8538at8782 (Round1: 153 variants, Round2: 0 variants)
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/8538at8782_round1.bam
+Applied 153 variants
+[mpileup] 1 samples in 1 input files
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 1163at8782 (Round1: 155 variants, Round2: 3 variants)
+[mpileup] 1 samples in 1 input files
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/1163at8782_round1.bam
+Applied 155 variants
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/1163at8782_round2.bam
+Applied 3 variants
+Skipping 38453at8782: no variants with DP>5
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 25558at8782 (Round1: 40 variants, Round2: 0 variants)
+[mpileup] 1 samples in 1 input files
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/25558at8782_round1.bam
+Applied 40 variants
+[mpileup] 1 samples in 1 input files
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 24458at8782 (Round1: 77 variants, Round2: 4 variants)
+[mpileup] 1 samples in 1 input files
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/24458at8782_round1.bam
+Applied 77 variants
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/24458at8782_round2.bam
+Applied 4 variants
+Skipping 52298at8782: no variants with DP>5
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 30910at8782 (Round1: 99 variants, Round2: 0 variants)
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/30910at8782_round1.bam
+Applied 99 variants
+[mpileup] 1 samples in 1 input files
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] maximum number of reads per input file set to -d 250
+Skipping 45625at8782: no variants with DP>5
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 47922at8782 (Round1: 81 variants, Round2: 0 variants)
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/47922at8782_round1.bam
+Applied 81 variants
+[mpileup] 1 samples in 1 input files
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 43297at8782 (Round1: 36 variants, Round2: 0 variants)
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/43297at8782_round1.bam
+Applied 36 variants
+[mpileup] 1 samples in 1 input files
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 41072at8782 (Round1: 81 variants, Round2: 0 variants)
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/41072at8782_round1.bam
+Applied 81 variants
+[mpileup] 1 samples in 1 input files
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 51746at8782 (Round1: 60 variants, Round2: 0 variants)
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/51746at8782_round1.bam
+Applied 60 variants
+[mpileup] 1 samples in 1 input files
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 36335at8782 (Round1: 71 variants, Round2: 0 variants)
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/36335at8782_round1.bam
+Applied 71 variants
+[mpileup] 1 samples in 1 input files
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 51904at8782 (Round1: 40 variants, Round2: 0 variants)
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/51904at8782_round1.bam
+Applied 40 variants
+[mpileup] 1 samples in 1 input files
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 28903at8782 (Round1: 42 variants, Round2: 0 variants)
+[mpileup] 1 samples in 1 input files
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/28903at8782_round1.bam
+Applied 42 variants
+[mpileup] 1 samples in 1 input files
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 29521at8782 (Round1: 111 variants, Round2: 0 variants)
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/29521at8782_round1.bam
+Applied 111 variants
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 48976at8782 (Round1: 70 variants, Round2: 0 variants)
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/48976at8782_round1.bam
+Applied 70 variants
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 48796at8782 (Round1: 55 variants, Round2: 0 variants)
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/48796at8782_round1.bam
+Applied 55 variants
+[mpileup] 1 samples in 1 input files
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 35542at8782 (Round1: 13 variants, Round2: 0 variants)
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/35542at8782_round1.bam
+Applied 13 variants
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 49656at8782 (Round1: 81 variants, Round2: 0 variants)
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/49656at8782_round1.bam
+Applied 81 variants
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 34565at8782 (Round1: 60 variants, Round2: 0 variants)
+[mpileup] 1 samples in 1 input files
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/34565at8782_round1.bam
+Applied 60 variants
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Skipping 50489at8782: no variants with DP>5
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 48776at8782 (Round1: 62 variants, Round2: 0 variants)
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/48776at8782_round1.bam
+Applied 62 variants
+[mpileup] 1 samples in 1 input files
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 49746at8782 (Round1: 34 variants, Round2: 0 variants)
+[mpileup] 1 samples in 1 input files
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/49746at8782_round1.bam
+Applied 34 variants
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 53727at8782 (Round1: 18 variants, Round2: 0 variants)
+[mpileup] 1 samples in 1 input files
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/53727at8782_round1.bam
+Applied 18 variants
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 32604at8782 (Round1: 97 variants, Round2: 0 variants)
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/32604at8782_round1.bam
+Applied 97 variants
+[mpileup] 1 samples in 1 input files
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] maximum number of reads per input file set to -d 250
+Skipping 43436at8782: no variants with DP>5
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 46851at8782 (Round1: 33 variants, Round2: 0 variants)
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/46851at8782_round1.bam
+Applied 33 variants
+[mpileup] 1 samples in 1 input files
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] maximum number of reads per input file set to -d 250
+Skipping 45758at8782: no variants with DP>5
+[mpileup] 1 samples in 1 input files
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 21086at8782 (Round1: 72 variants, Round2: 0 variants)
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/21086at8782_round1.bam
+Applied 72 variants
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Skipping 28645at8782: no variants with DP>5
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Skipping 45465at8782: no variants with DP>5
+[mpileup] 1 samples in 1 input files
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 33005at8782 (Round1: 63 variants, Round2: 0 variants)
+[mpileup] 1 samples in 1 input files
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/33005at8782_round1.bam
+Applied 63 variants
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 46330at8782 (Round1: 51 variants, Round2: 0 variants)
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/46330at8782_round1.bam
+Applied 51 variants
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 7521at8782 (Round1: 86 variants, Round2: 2 variants)
+[mpileup] 1 samples in 1 input files
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/7521at8782_round1.bam
+Applied 86 variants
+[mpileup] 1 samples in 1 input files
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/7521at8782_round2.bam
+Applied 2 variants
+Completed: 15518at8782 (Round1: 25 variants, Round2: 2 variants)
+[mpileup] 1 samples in 1 input files
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/15518at8782_round1.bam
+Applied 25 variants
+[mpileup] 1 samples in 1 input files
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/15518at8782_round2.bam
+Applied 2 variants
+Skipping 53050at8782: no variants with DP>5
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 48161at8782 (Round1: 42 variants, Round2: 0 variants)
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/48161at8782_round1.bam
+Applied 42 variants
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 34843at8782 (Round1: 79 variants, Round2: 0 variants)
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/34843at8782_round1.bam
+Applied 79 variants
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 45210at8782 (Round1: 49 variants, Round2: 0 variants)
+[mpileup] 1 samples in 1 input files
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/45210at8782_round1.bam
+Applied 49 variants
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 51269at8782 (Round1: 5 variants, Round2: 0 variants)
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/51269at8782_round1.bam
+Applied 5 variants
+[mpileup] 1 samples in 1 input files
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 38504at8782 (Round1: 161 variants, Round2: 1 variants)
+[mpileup] 1 samples in 1 input files
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/38504at8782_round1.bam
+Applied 161 variants
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/38504at8782_round2.bam
+Applied 1 variants
+Completed: 53217at8782 (Round1: 45 variants, Round2: 0 variants)
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/53217at8782_round1.bam
+Applied 45 variants
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 25611at8782 (Round1: 124 variants, Round2: 0 variants)
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/25611at8782_round1.bam
+Applied 124 variants
+[mpileup] 1 samples in 1 input files
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 51309at8782 (Round1: 61 variants, Round2: 0 variants)
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/51309at8782_round1.bam
+Applied 61 variants
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 51601at8782 (Round1: 52 variants, Round2: 1 variants)
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/51601at8782_round1.bam
+Applied 52 variants
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/51601at8782_round2.bam
+Applied 1 variants
+Completed: 38921at8782 (Round1: 112 variants, Round2: 0 variants)
+[mpileup] 1 samples in 1 input files
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/38921at8782_round1.bam
+Applied 112 variants
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Skipping 24528at8782: no variants with DP>5
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 52068at8782 (Round1: 33 variants, Round2: 0 variants)
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/52068at8782_round1.bam
+Applied 33 variants
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 42617at8782 (Round1: 212 variants, Round2: 0 variants)
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/42617at8782_round1.bam
+Applied 212 variants
+[mpileup] 1 samples in 1 input files
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 30252at8782 (Round1: 140 variants, Round2: 0 variants)
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/30252at8782_round1.bam
+Applied 140 variants
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 47883at8782 (Round1: 48 variants, Round2: 0 variants)
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/47883at8782_round1.bam
+Applied 48 variants
+[mpileup] 1 samples in 1 input files
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 31991at8782 (Round1: 12 variants, Round2: 0 variants)
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/31991at8782_round1.bam
+Applied 12 variants
+[mpileup] 1 samples in 1 input files
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] maximum number of reads per input file set to -d 250
+Skipping 22192at8782: no variants with DP>5
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 30463at8782 (Round1: 64 variants, Round2: 0 variants)
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/30463at8782_round1.bam
+Applied 64 variants
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 50131at8782 (Round1: 138 variants, Round2: 0 variants)
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/50131at8782_round1.bam
+Applied 138 variants
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 39632at8782 (Round1: 50 variants, Round2: 0 variants)
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/39632at8782_round1.bam
+Applied 50 variants
+[mpileup] 1 samples in 1 input files
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 40358at8782 (Round1: 126 variants, Round2: 1 variants)
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/40358at8782_round1.bam
+Applied 126 variants
+[mpileup] 1 samples in 1 input files
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/40358at8782_round2.bam
+Applied 1 variants
+Completed: 46204at8782 (Round1: 81 variants, Round2: 0 variants)
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/46204at8782_round1.bam
+Applied 81 variants
+[mpileup] 1 samples in 1 input files
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 25101at8782 (Round1: 41 variants, Round2: 0 variants)
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/25101at8782_round1.bam
+Applied 41 variants
+[mpileup] 1 samples in 1 input files
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 21653at8782 (Round1: 89 variants, Round2: 0 variants)
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/21653at8782_round1.bam
+Applied 89 variants
+[mpileup] 1 samples in 1 input files
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 31207at8782 (Round1: 25 variants, Round2: 0 variants)
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/31207at8782_round1.bam
+Applied 25 variants
+[mpileup] 1 samples in 1 input files
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 49915at8782 (Round1: 76 variants, Round2: 0 variants)
+[mpileup] 1 samples in 1 input files
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/49915at8782_round1.bam
+Applied 76 variants
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 32347at8782 (Round1: 147 variants, Round2: 0 variants)
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/32347at8782_round1.bam
+Applied 147 variants
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Skipping 45577at8782: no variants with DP>5
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 32623at8782 (Round1: 89 variants, Round2: 0 variants)
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/32623at8782_round1.bam
+Applied 89 variants
+[mpileup] 1 samples in 1 input files
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 17725at8782 (Round1: 16 variants, Round2: 0 variants)
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/17725at8782_round1.bam
+Applied 16 variants
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Completed: 37615at8782 (Round1: 46 variants, Round2: 0 variants)
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Note: applying IUPAC codes based on FORMAT/GT in sample results/graph_alignment/stage3_iterative/37615at8782_round1.bam
+Applied 46 variants
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+Skipping 44847at8782: no variants with DP>5
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250

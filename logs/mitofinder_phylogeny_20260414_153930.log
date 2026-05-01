@@ -1,0 +1,28 @@
+nohup: ignoriere Eingabe
+===================================================================
+MitoFinder Pipeline for Mitochondrial Genome Extraction
+Started: Di Apr 14 15:39:30 CEST 2026
+===================================================================
+
+===================================================================
+Step 1: Extracting mitochondrial genomes from reference genomes
+===================================================================
+Processing Acanthisitta_chloris...
+Found reference: /media/inter/mkapun/projects/Tityra/results/phylogeny/data/Acanthisitta_chloris.fna.gz
+Decompressing genome...
+Running MitoFinder for Acanthisitta_chloris...
+usage: mitofinder [-h] [--megahit] [--idba] [--metaspades] [-t TRNAANNOTATION]
+                  [-j PROCESSNAME] [-1 PE1] [-2 PE2] [-s SE] [-c CONFIG]
+                  [-a ASSEMBLY] [-m MEM] [-l SHORTESTCONTIG]
+                  [-p PROCESSORSTOUSE] [-r REFSEQFILE] [-e BLASTEVAL]
+                  [-n NWALK] [--override] [--adjust-direction] [--ignore]
+                  [--new-genes] [--allow-intron] [--numt]
+                  [--intron-size INTRONSIZE] [--max-contig MAXCONTIG]
+                  [--cds-merge] [--out-gb] [--min-contig-size MINCONTIGSIZE]
+                  [--max-contig-size MAXCONTIGSIZE] [--rename-contig RENAME]
+                  [--blast-identity-nucl BLASTIDENTITYNUCL]
+                  [--blast-identity-prot BLASTIDENTITYPROT]
+                  [--blast-size ALIGNCUTOFF] [--circular-size CIRCULARSIZE]
+                  [--circular-offset CIRCULAROFFSET] [-o ORGANISMTYPE] [-v]
+                  [--example] [--citation]
+mitofinder: error: unrecognized arguments: --input /media/inter/mkapun/projects/Tityra/results/mitofinder_phylogeny/Acanthisitta_chloris/Acanthisitta_chloris_genome.fna --output mitofinder_output --genetic-code 2 --reference /opt/bioinformatics/containers/mitofinder_db/refseq89m --processes 10

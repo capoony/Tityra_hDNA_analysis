@@ -1,0 +1,289 @@
+nohup: ignoriere Eingabe
+===================================================================
+BUSCO-based Phylogenomic Analysis
+===================================================================
+Analysis Directory: /media/inter/mkapun/projects/Tityra/results/BUSCO_aves_phylogeny
+
+Step 1: Identifying species with BUSCO data...
+  ✓ Tityra_leucura (de novo assembly)
+  ✓ Acanthisitta_chloris
+  ✓ Cephalopterus_ornatus
+  ✓ Grallaria_varia
+  ✓ Manacus_vitellinus
+  ✓ Mionectes_macconnelli
+  ✓ Neopipo_cinnamomea
+  ✓ Onychorhynchus_coronatus
+  ✓ Oxyruncus_cristatus
+  ✓ Pachyramphus_minor
+  ✓ Piprites_chloris
+  ✓ Pitta_sordida
+  ✓ Tachuris_rubrigastra
+  ✓ Tityra_leucura
+  ✓ Tyrannus_savana
+
+Total species: 15
+
+===================================================================
+Step 2: Extracting BUSCO gene IDs
+===================================================================
+Genes present in all 15 species: 221
+
+===================================================================
+Step 3: Extracting gene sequences
+===================================================================
+Extracting 221 genes from 15 species...
+Sequence extraction complete
+
+===================================================================
+Step 4: Aligning genes with MAFFT
+===================================================================
+Aligned: 11330at8782 (13 species)
+Aligned: 10175at8782 (13 species)
+Aligned: 16300at8782 (13 species)
+Aligned: 1939at8782 (13 species)
+Aligned: 19432at8782 (9 species)
+Aligned: 14620at8782 (9 species)
+Aligned: 19134at8782 (13 species)
+Aligned: 16620at8782 (13 species)
+Aligned: 16990at8782 (11 species)
+Aligned: 18865at8782 (13 species)
+Aligned: 17862at8782 (13 species)
+Aligned: 16529at8782 (13 species)
+Aligned: 19258at8782 (13 species)
+Aligned: 17032at8782 (13 species)
+Aligned: 16287at8782 (13 species)
+Aligned: 19420at8782 (13 species)
+Aligned: 16007at8782 (13 species)
+Aligned: 16112at8782 (13 species)
+Aligned: 18798at8782 (13 species)
+Aligned: 17008at8782 (13 species)
+Aligned: 19068at8782 (13 species)
+Aligned: 15508at8782 (13 species)
+Aligned: 16902at8782 (13 species)
+Aligned: 19710at8782 (13 species)
+Aligned: 12076at8782 (11 species)
+Aligned: 17104at8782 (13 species)
+Aligned: 16659at8782 (13 species)
+Aligned: 19950at8782 (13 species)
+Aligned: 15386at8782 (13 species)
+Aligned: 16357at8782 (13 species)
+Aligned: 15935at8782 (13 species)
+Aligned: 20281at8782 (13 species)
+Aligned: 21587at8782 (11 species)
+Aligned: 14034at8782 (13 species)
+Aligned: 21406at8782 (13 species)
+Aligned: 15541at8782 (13 species)
+Aligned: 20116at8782 (13 species)
+Aligned: 19960at8782 (13 species)
+Aligned: 20396at8782 (13 species)
+Aligned: 23118at8782 (13 species)
+Aligned: 12474at8782 (13 species)
+Aligned: 21459at8782 (11 species)
+Aligned: 14872at8782 (13 species)
+Aligned: 21404at8782 (13 species)
+Aligned: 12588at8782 (13 species)
+Aligned: 12419at8782 (13 species)
+Aligned: 22136at8782 (13 species)
+Aligned: 23308at8782 (13 species)
+Aligned: 15575at8782 (13 species)
+Aligned: 20486at8782 (13 species)
+Aligned: 20884at8782 (13 species)
+Aligned: 23199at8782 (13 species)
+Aligned: 12851at8782 (13 species)
+Aligned: 21255at8782 (13 species)
+Aligned: 12530at8782 (13 species)
+Aligned: 18395at8782 (13 species)
+Aligned: 23044at8782 (13 species)
+Aligned: 11517at8782 (13 species)
+Aligned: 20738at8782 (13 species)
+Aligned: 21377at8782 (13 species)
+Aligned: 10167at8782 (13 species)
+Aligned: 22714at8782 (13 species)
+Aligned: 13997at8782 (13 species)
+Aligned: 23589at8782 (11 species)
+Aligned: 23337at8782 (13 species)
+Aligned: 21636at8782 (13 species)
+Aligned: 10983at8782 (13 species)
+Aligned: 25639at8782 (9 species)
+Aligned: 26797at8782 (11 species)
+Aligned: 10168at8782 (13 species)
+Aligned: 20464at8782 (13 species)
+Aligned: 24573at8782 (11 species)
+Aligned: 20992at8782 (13 species)
+Aligned: 10717at8782 (13 species)
+Aligned: 12194at8782 (13 species)
+Aligned: 2802at8782 (13 species)
+Aligned: 15531at8782 (13 species)
+Aligned: 24384at8782 (13 species)
+Aligned: 11456at8782 (13 species)
+Aligned: 10773at8782 (13 species)
+Aligned: 23824at8782 (13 species)
+Aligned: 10686at8782 (13 species)
+Aligned: 28195at8782 (11 species)
+Aligned: 2909at8782 (13 species)
+Aligned: 27561at8782 (13 species)
+Aligned: 11431at8782 (13 species)
+Aligned: 26030at8782 (13 species)
+Aligned: 25678at8782 (13 species)
+Aligned: 26966at8782 (13 species)
+Aligned: 28665at8782 (13 species)
+Aligned: 3154at8782 (13 species)
+Aligned: 26530at8782 (13 species)
+Aligned: 30785at8782 (13 species)
+Aligned: 27856at8782 (13 species)
+Aligned: 28061at8782 (13 species)
+Aligned: 26034at8782 (13 species)
+Aligned: 27700at8782 (13 species)
+Aligned: 30757at8782 (13 species)
+Aligned: 25101at8782 (13 species)
+Aligned: 27283at8782 (13 species)
+Aligned: 25583at8782 (13 species)
+Aligned: 27332at8782 (13 species)
+Aligned: 31662at8782 (13 species)
+Aligned: 31252at8782 (13 species)
+Aligned: 26907at8782 (13 species)
+Aligned: 31029at8782 (13 species)
+Aligned: 25421at8782 (13 species)
+Aligned: 3251at8782 (13 species)
+Aligned: 30023at8782 (13 species)
+Aligned: 29201at8782 (13 species)
+Aligned: 31809at8782 (11 species)
+Aligned: 36288at8782 (11 species)
+Aligned: 3637at8782 (13 species)
+Aligned: 25541at8782 (13 species)
+Aligned: 33131at8782 (13 species)
+Aligned: 31477at8782 (13 species)
+Aligned: 35168at8782 (13 species)
+Aligned: 27740at8782 (11 species)
+Aligned: 25824at8782 (13 species)
+Aligned: 36900at8782 (13 species)
+Aligned: 3205at8782 (13 species)
+Aligned: 38616at8782 (13 species)
+Aligned: 34982at8782 (13 species)
+Aligned: 31891at8782 (13 species)
+Aligned: 32051at8782 (13 species)
+Aligned: 38877at8782 (13 species)
+Aligned: 33582at8782 (11 species)
+Aligned: 38707at8782 (13 species)
+Aligned: 26546at8782 (13 species)
+Aligned: 38117at8782 (13 species)
+Aligned: 40905at8782 (13 species)
+Aligned: 37523at8782 (13 species)
+Aligned: 40430at8782 (13 species)
+Aligned: 33444at8782 (13 species)
+Aligned: 28994at8782 (13 species)
+Aligned: 36903at8782 (13 species)
+Aligned: 36324at8782 (13 species)
+Aligned: 24565at8782 (13 species)
+Aligned: 38200at8782 (13 species)
+Aligned: 41877at8782 (13 species)
+Aligned: 37978at8782 (13 species)
+Aligned: 35072at8782 (13 species)
+Aligned: 38631at8782 (13 species)
+Aligned: 34649at8782 (13 species)
+Aligned: 43428at8782 (13 species)
+Aligned: 42623at8782 (13 species)
+Aligned: 38770at8782 (13 species)
+Aligned: 41925at8782 (13 species)
+Aligned: 23817at8782 (13 species)
+Aligned: 36329at8782 (13 species)
+Aligned: 41775at8782 (13 species)
+Aligned: 3694at8782 (13 species)
+Aligned: 33188at8782 (13 species)
+Aligned: 46930at8782 (13 species)
+Aligned: 32161at8782 (13 species)
+Aligned: 47439at8782 (13 species)
+Aligned: 43779at8782 (13 species)
+Aligned: 47391at8782 (13 species)
+Aligned: 48114at8782 (13 species)
+Aligned: 41786at8782 (13 species)
+Aligned: 46480at8782 (13 species)
+Aligned: 43545at8782 (13 species)
+Aligned: 36110at8782 (13 species)
+Aligned: 4061at8782 (13 species)
+Aligned: 47484at8782 (13 species)
+Aligned: 43073at8782 (13 species)
+Aligned: 40950at8782 (13 species)
+Aligned: 24704at8782 (13 species)
+Aligned: 44188at8782 (13 species)
+Aligned: 4268at8782 (13 species)
+Aligned: 48448at8782 (13 species)
+Aligned: 47766at8782 (13 species)
+Aligned: 50667at8782 (13 species)
+Aligned: 44409at8782 (13 species)
+Aligned: 51375at8782 (13 species)
+Aligned: 52234at8782 (13 species)
+Aligned: 53335at8782 (12 species)
+Aligned: 48900at8782 (12 species)
+Aligned: 50767at8782 (13 species)
+Aligned: 44757at8782 (13 species)
+Aligned: 51329at8782 (13 species)
+Aligned: 50817at8782 (13 species)
+Aligned: 45384at8782 (13 species)
+Aligned: 47261at8782 (13 species)
+Aligned: 36134at8782 (13 species)
+Aligned: 43552at8782 (13 species)
+Aligned: 44884at8782 (13 species)
+Aligned: 49916at8782 (13 species)
+Aligned: 49366at8782 (13 species)
+Aligned: 48885at8782 (13 species)
+Aligned: 4954at8782 (13 species)
+Aligned: 5088at8782 (13 species)
+Aligned: 5855at8782 (13 species)
+Aligned: 6153at8782 (13 species)
+Aligned: 5798at8782 (13 species)
+Aligned: 5621at8782 (13 species)
+Aligned: 7302at8782 (13 species)
+Aligned: 5479at8782 (13 species)
+Aligned: 9054at8782 (13 species)
+Aligned: 38696at8782 (13 species)
+Aligned: 7160at8782 (13 species)
+Aligned: 9506at8782 (13 species)
+Aligned: 8665at8782 (13 species)
+Aligned: 541at8782 (13 species)
+Aligned: 29353at8782 (13 species)
+Aligned: 737at8782 (13 species)
+Aligned: 3730at8782 (13 species)
+Aligned: 9236at8782 (13 species)
+Aligned: 25024at8782 (13 species)
+Aligned: 9278at8782 (13 species)
+Aligned: 9273at8782 (13 species)
+Aligned: 7970at8782 (13 species)
+Aligned: 9087at8782 (13 species)
+Aligned: 9899at8782 (13 species)
+Aligned: 6107at8782 (13 species)
+Aligned: 7031at8782 (13 species)
+Aligned: 8413at8782 (13 species)
+Aligned: 7254at8782 (13 species)
+Aligned: 6767at8782 (13 species)
+Aligned: 5436at8782 (13 species)
+Aligned: 6414at8782 (13 species)
+Generated 221 alignments
+
+===================================================================
+Step 5: Building gene trees with IQ-TREE
+===================================================================
+Generated 0 gene trees
+
+===================================================================
+Step 6: Building species tree with ASTRAL
+===================================================================
+cat: '/media/inter/mkapun/projects/Tityra/results/BUSCO_aves_phylogeny/astral/*.tree': Datei oder Verzeichnis nicht gefunden
+Running ASTRAL on 0 gene trees...
+✗ ERROR: ASTRAL failed to build species tree
+Check astral.log for details
+
+===================================================================
+Summary Statistics
+===================================================================
+Species included: 15
+Universal BUSCO genes: 221
+Successful alignments: 221
+Gene trees built: 0
+
+Results directory: /media/inter/mkapun/projects/Tityra/results/BUSCO_aves_phylogeny
+  - Gene sequences: /media/inter/mkapun/projects/Tityra/results/BUSCO_aves_phylogeny/gene_sequences/
+  - Alignments: /media/inter/mkapun/projects/Tityra/results/BUSCO_aves_phylogeny/alignments/
+  - Gene trees: /media/inter/mkapun/projects/Tityra/results/BUSCO_aves_phylogeny/gene_trees/
+  - Species tree: /media/inter/mkapun/projects/Tityra/results/BUSCO_aves_phylogeny/astral/species_tree.tre
+===================================================================

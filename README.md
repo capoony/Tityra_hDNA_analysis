@@ -1,194 +1,590 @@
-# *Tityra leucura* Sequencing Data Analysis Pipeline
+# *Tityra leucura* Mitochondrial Phylogenomics Pipeline
 
-This pipeline provides an end-to-end workflow for analysing the hDNA properties of the *Tityra leucura* sequencing data, from raw data to taxonomic classification and DNA damage analysis. In addition the pipeline now produces a mitogenome of *Tityra* from the consensus of mapped reads against the *Pachyramphus minor* mitogenome. Furthermore, after removal of contaminant reads, de-novo assembly with Spades followed by BUSCO analyses results in hundreds of BUSCO gene sequences. Below is a summary of each step and guidance on interpreting the results.
+This pipeline provides an end-to-end workflow for analyzing historical DNA from *Tityra leucura* museum specimens, focusing on mitochondrial genome assembly and phylogenetic analysis. The pipeline processes raw sequencing data through quality control, contamination assessment, mitochondrial genome assembly, and multi-gene phylogenetic reconstruction.
 
-## Running the Pipeline
+## Overview
 
-The complete pipeline is implemented in: `shell/main.sh`
+The pipeline extracts and analyzes mitochondrial DNA from degraded historical specimens to:
+- Assess DNA quality and contamination levels
+- Reconstruct mitochondrial genes
+- Build phylogenetic trees using multiple mitochondrial markers
+- Compare *Tityra leucura* with related Tyrannidae species
 
-To run the entire pipeline:
+## Quick Start
+
+### Running the Complete Pipeline
 
 ```bash
-bash Tityra_hDNA_analysis/shell/main.sh
+WD=/media/inter/mkapun/projects/Tityra
+bash ${WD}/shell/main.sh
 ```
+
+### Pipeline Scripts
+
+- **Main pipeline**: [`shell/main.sh`](shell/main.sh) - Master orchestration script
+- **Mitochondrial assembly**: [`shell/mitofinder_assembly.sh`](shell/mitofinder_assembly.sh)
+- **Gene combination**: [`shell/combine_mito_genes_assembly.sh`](shell/combine_mito_genes_assembly.sh)
+- **Phylogenetic analysis**: [`shell/phylogenetic_analysis_assembly.sh`](shell/phylogenetic_analysis_assembly.sh)
+- **Gene concatenation**: [`shell/concatenate_genes_assembly.sh`](shell/concatenate_genes_assembly.sh)
+- **Concatenated tree**: [`shell/phylogenetic_analysis_concatenated_assembly.sh`](shell/phylogenetic_analysis_concatenated_assembly.sh)
+
+Archived scripts from previous analyses are in [`shell/old/`](shell/old/).
 
 ## Pipeline Steps
 
-### 1. **Copy Raw Data**
+### 1. Raw Data Preparation
 
-   Raw sequencing files are copied from the central data repository to the project directory for processing.
+Raw sequencing files (Illumina paired-end, 2×150 bp) are copied from the central repository to the working directory.
 
-### 2. **Read Trimming (fastp)**
-
-   **Process:** Reads are quality- and adapter-trimmed using `fastp`.
-
-   **Outputs:** Trimmed paired-end reads, merged reads, and quality reports (HTML/JSON).
-
-   **Interpretation:** High-quality, adapter-free reads are essential for accurate downstream analysis. Review the HTML report for quality metrics and adapter content.
-
-   ![fastp Quality Report](data/trimmed/Tityra_leucura.html)
-
-### 3. **ECMSD Pipeline**
-
-   **Process:** The ECMSD pipeline is run on the trimmed and merged reads and maps reads against a mitochondrial reference database to identify the identity of mitochondiral reads and the corresponding read length to distinguish endogenous DNA and potential contaminant eukaryotic DNA. This pipeline is still under development and may change in the future.
-
-   **Outputs:** Summary statistics.
-
-   **Interpretation:** The below figure shows that the majority of mitochondrial reads are not endogenous but rather of *Penicillium* origin, indicating contamination. The read length distribution shows that the majority of reads are short, which is typical for hDNA samples. Only the ninth-most abundant taxon *Pachyramphus* is closely related to *Tityra leucura* and may thus represent traces of endogenous DNA. Conversely, the read length distribution of human DNA is much longer, indicating that this contamination happened during the DNA extraction or sequencing process rather than during sample collection.
-
-![ECMSD Summary](results/ECMSD/mapping/Mito_summary_genus_ReadLengths.png)
-
-### 4. **Kraken2 Taxonomic Classification**
-
-   **Process:** Both paired and merged reads are classified using Kraken2 against a comprehensive database.
-
-   **Outputs:** Classification reports for paired and merged reads, and a summary CSV.
-
-   **Interpretation:** The summary CSV provides an overview of the taxonomic composition of the sample focusing on plants, prokaryotes or human contaminants. We find that only 23% of the reads were classified in the Kraken database. Out of those app. 8% were classified as human, which is likely due to contamination during the DNA extraction or sequencing process and consistent with the previous result. Only a small fraction of the remaining reads were classified as bacterial.
-
-   ![Kraken2 Summary](results/kraken2/kraken_summary.csv)
-
-### 5. **Sequencing Depth Analysis**
-
-   **Process:** After mapping reads against the reference genome of the closest available relative [*Pachyramphus minor*](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&id=369605), sequencing depth and coverage is calculated across all contigs to assess the read depth and breadth of coverage.
-
-   **Outputs:** Coverage statistics table and depth visualization plot.
-
-   **Interpretation:** The coverage plot shows the mean sequencing depth for the 1000 longest contigs, ranked by number of covered bases. The red dashed line indicates the median depth across these contigs. This analysis shows that most of the contigs have low but relatively uniform median read depths of app. 0.7x.
-
-   ![Sequencing Depth Plot](results/minimap2/Tityra_leucura.coverage_plot.png)
-
-   See also the coverage statistics table [`results/minimap2/Tityra_leucura.coverage.txt`](results/minimap2/Tityra_leucura.coverage.txt`) for detailed coverage metrics per contig.
-
-6. **mapDamage Analysis**
-
-   **Process:** After mapping using minimap2 and samtools (see above), we analyze the alignment with mapDamage to assess DNA damage patterns.
-
-   **Outputs:** BAM files, mapDamage plots (PDF/PNG).
-
-   **Interpretation:** mapDamage plots visualize nucleotide misincorporation and fragmentation patterns typical of historical or degraded DNA. The excess of G and A (purine bases) one basepair upstream of the read indicates depurination and the elevated frequency of C->T misincorporation at the 5' end of the read indicates deamination, both typical for historical DNA. This suggests that the mapped reads are indeed historical and has undergone typical DNA damage processes.
-
-   ![mapDamage Fragment Length Distribution](results/mapDamage/Tityra_leucura/Fragmisincorporation_plot.png)
-
-### 7. **Mitochondrial Genome Assembly**
-
-   **Process:** After downloading the closest available mitochondrial reference genome (*Pachyramphus minor*) reads are mapped to this reference for mitochondrial genome reconstruction by generating a consensus sequence across all mapped reads using `samtools`.
-
-   **Outputs:** BLAST results, mitochondrial BAM files, coverage statistics, and consensus sequence.
-
-   **Interpretation:** This analysis specifically targets mitochondrial DNA recovery. The consensus sequence representing the reconstructed mitochondrial genome for *Tityra leucura* can be found at [`results/mitogenome/Tityra_leucura_mito_consensus.fasta.gz`](results/mitogenome/Tityra_leucura_mito_consensus.fasta.gz). This mitochondrial genome is reconstructed from the reads that map to the *Pachyramphus minor* reference genome, which is closely related to *Tityra leucura*. The coverage statistics, which can be found [here](results/mitogenome/Tityra_leucura_mito.coverage.txt) indicate the sequencing depth is on average 28-fold but that only 38% of the mitochondrial reference is covered.
-
-### 8. **Contaminant Removal**
-
-   **Process:** To further reduce the amount of exogenous contaminant DNA, reads are mapped to known contaminant reference genomes (including human, fungal species like *Penicillium*, *Vanrija*, *Malassezia*, and *Aspergillus*). Only unmapped (merged) reads are retained for downstream analysis.
-
-   **Outputs:** Cleaned merged reads free from major contaminants.
-
-   **Interpretation:** This step removes reads that map to known contaminant genomes identified in previous steps. The resulting unmapped reads are more likely to represent endogenous *Tityra leucura* DNA and are used for de novo genome assembly described below.
-
-   **Contaminant references used:**
-
-- *Vanrija pseudolonga*
-- *Penicillium coprophilum*  
-- *Homo sapiens*
-- *Malassezia restricta*
-- *Aspergillus cristatus*
-
-### 9. **De Novo Genome Assembly (AutDeNovo)**
-
-   **Process:** This analysis step performs de novo genome assembly using our in-house AutDeNovo pipeline (see here: <https://github.com/nhmvienna/AutDeNovo>) on contaminant-free merged reads. see the shell scripts in the folder [`results/denovo/shell`](results/denovo/shell)
-
-   **Outputs:** Assembled contigs, assembly statistics, BUSCO completeness assessment, and taxonomic classification of assembled sequences.
-
-   **Interpretation:** This final step attempts to reconstruct the *Tityra leucura* genome from the cleaned reads. The Blobplots generated by blobtools below show that there is still ample contamination in the assembled 48k contigs (of length >=500b) with a total yield of 97Mbp length. The full assembly can be found [here](results/denovo/output/Tityra_ILL.fa.gz).
-  
-  ![BUSCO_full](results/denovo/output/Blob_full.png)
-
-  However, note that hundreds of BUSCO genes from the vertebrate and the aves databases were recovered as complete or fragmented copies, which can be found in the folders [`results/denovo/output/busco_sequences`](results/denovo/output/busco_sequences). While these need to be carefully evaluated given the high levels of contamination, they may still provide useful data for phylogenetic analyses.
-
-![BUSCO_full_busco](results/denovo/output/Blob_full_busco.png)
-  
-   **Assembly results:** `results/denovo/`
-
-### 10. **Phylogenetic Analysis with BUSCO Genes**
-
-   **Overview:** This comprehensive phylogenetic analysis uses BUSCO genes identified from the de novo assembly and reference genomes to construct evolutionary relationships using multiple complementary approaches.
-
-   **Outputs:** Multiple sequence alignments, phylogenetic trees, and bootstrap support values.
-
-   **Methodology:** The analysis employs several methodological approaches:
-
-#### Approach 1: De novo assembly-based phylogeny
-
-- BUSCO v5.4.3 is run on 14 avian genomes using the aves_odb10 database to identify single-copy orthologs
-- Complete BUSCO genes present in all 14 genomes are identified and filtered
-- Protein sequences are extracted, concatenated by gene, and aligned using MAFFT v7.487 with `--auto` algorithm selection
-- Sequence IDs are standardized post-alignment using custom Python scripts
-- Individual gene alignments are concatenated into a supermatrix using `proteins2genome.py`
-
-   **RAxML Parameters (v2.8.10):**
-
-- Model: PROTGAMMAWAG (protein evolution with gamma-distributed rate heterogeneity and WAG substitution matrix)
-- 20 ML search replicates (-N 20)
-- Automatic bootstrap stopping criterion (autoMRE)
-- Outgroup: *Acanthisitta chloris*
-- 200 CPU threads
-- Bootstrap support values are mapped onto the best ML tree
-- Tree visualization using R with ggtree, ape, and phytools packages
-
-#### Approach 2: Reference-based consensus sequence phylogeny
-
-- *Tityra leucura* reads are mapped to BUSCO gene sets from three reference species (*Pachyramphus minor*, *Ochrospiza cristatus*, *Tachyphonus surinamus*) using minimap2
-- Only genes with ≥2-fold average coverage and ≥60% breadth of coverage are retained
-- Consensus sequences are generated using samtools consensus calling
-- Phylogenetic reconstruction follows the same RAxML protocol as above
-
-#### Key Outputs
-
-- Complete BUSCO gene list: [`results/phylogeny/concatenated/final_busco_ids.txt`](results/phylogeny/concatenated/final_busco_ids.txt)
-- Individual gene alignments: `results/phylogeny/mafft/`
-- Concatenated alignment: [`results/phylogeny/phylogeny/alignment.fa`](results/phylogeny/phylogeny/alignment.fa)
-- Final phylogenetic tree: [`results/phylogeny/phylogeny/RAxML_bipartitions.FINAL`](results/phylogeny/phylogeny/RAxML_bipartitions.FINAL)
-- Tree visualization: [`results/phylogeny/phylogeny/Tityra_BUSCO.png`](results/phylogeny/phylogeny/Tityra_BUSCO.png)
-  
-   **Results Interpretation:**
-
-   The resulting tree based on concatenating all BUSCO genes does not place *Tityra leucura* correctly as a sister group to *Pachyramphus minor* but rather next to the outgroup and is characterized by a very long branch. This is likely due to the high levels of contamination in the de novo assembly resulting in errornenous nuclear sequences of the investigated BUSCO genes and makes this analysis very unreliable.
-
-   ![Phylogenetic Tree](results/phylogeny/phylogeny/Tityra_BUSCO.png)
-
-   **Alternative Strategy:**
-
-   We therefore employed an alternative strategy by mapping the *Tityra leucura* reads to the BUSCO gene sets of *Pachyramphus minor*, *Ochrospiza cristatus* and *Tachyphonus surinamus* and generating consensus sequences for each BUSCO gene, whenever the minimum read depth was 2-fold and the coverage >60%. We then used the consensus sequences to reconstruct phylogenies based on concatenated gene sequences.
-  
-   ![Phylogenetic Tree Pminor](results/phylogeny_DNA/phylogeny/Tityra_BUSCO.png)
-
-   **Comparative Results:**
-
-   While the tree based on reads mapped to the *Pachyramphus minor* BUSCO gene set correctly places *Tityra leucura* as sister group to *Pachyramphus minor*, the trees based on the other two BUSCO gene sets do not, but rather place *Tityra* next to the corresponding references. This indicates a strong reference bias in the BUSCO gene sets of *Ochrospiza cristatus* and *Tachyphonus surinamus* and further renders the phylogenetic analysis based on the BUSCO genes from the de novo assembly unreliable.
-  
-   **Results for *Ochrospiza cristatus*:**
-   ![Phylogenetic Tree Ocrist](results/phylogeny_DNA_Ocrist/phylogeny/Tityra_BUSCO.png)
-
-   **Results for *Tachyphonus surinamus*:**
-   ![Phylogenetic Tree Tsav](results/phylogeny_DNA_Tsav/phylogeny/Tityra_BUSCO.png)
-
-   **Additional Analyses:**
-
-- Individual gene phylogenies for detailed evolutionary analysis
-
-## Final Notes
-
-- In summary, the analysis indicates that endogenous DNA from *Tityra leucura* is present, but the majority of reads are initially contaminated with DNA from other sources, particularly from the genus *Penicillium*. The pipeline includes comprehensive contaminant removal and attempts de novo genome assembly of the cleaned endogenous reads. The read length distribution and DNA damage patterns are consistent with historical DNA. The read depth analysis shows that the sequencing depth is relatively low but uniform across the contigs, which is typical for hDNA samples.
-
-- The consensus mitochondrial genome of *Tityra leucura* was successfully reconstructed from reads mapped against the *Pachyramphus minor* reference genome, achieving 28-fold average coverage over 38% of the reference genome.
-
-- **Phylogenetic Analysis Limitations**: The phylogenetic analysis reveals significant challenges due to contamination. The tree based on BUSCO genes from the de novo assembly places *Tityra leucura* incorrectly next to the outgroup with very long branches, indicating unreliable results due to high contamination levels. Only the analysis using *Pachyramphus minor* BUSCO genes correctly places *Tityra leucura* as a sister group to *Pachyramphus minor*. The analyses using *Ochrospiza cristatus* and *Tachyphonus surinamus* BUSCO gene sets show strong reference bias, placing *Tityra leucura* next to the reference species rather than in the correct phylogenetic position.
-
-- **Conclusions**: While this study demonstrates the potential for recovering genomic data from historical *Tityra leucura* specimens, the high levels of contamination significantly limit the reliability of phylogenetic inferences. The mitochondrial genome reconstruction and the reference-bias-free analysis using *Pachyramphus minor* BUSCO genes provide the most reliable molecular data, confirming the close relationship between these two species. Future work should focus on improved decontamination methods and targeted enrichment approaches to increase the proportion of endogenous DNA.
-
-- All intermediate and final results are organized in the `results/` directory by analysis type.
-- Review quality and summary reports at each step to ensure data integrity and successful processing.
-- For troubleshooting or further analysis, refer to the log files and HTML/JSON reports generated by each tool.
+**Input**: Raw FASTQ files  
+**Output**: `data/Illumina/`
 
 ---
+
+### 2. Read Trimming and Quality Control
+
+**Tool**: fastp v0.23.4
+
+Quality trimming, adapter removal, and read merging are performed with two protocols:
+- **Standard trimming**: Basic quality filtering (Q20), adapter removal, deduplication
+- **Enhanced trimming**: Additional 5' end trimming to remove DNA damage artifacts
+
+**Command**:
+```bash
+fastp -i R1.fastq.gz -I R2.fastq.gz \
+    --merge --length_required 25 --dedup \
+    --trim_poly_g --detect_adapter_for_pe
+```
+
+**Outputs**:
+- Trimmed reads: `data/trimmed/Tityra_leucura_*_trimmed.fastq.gz`
+- Merged reads: `data/trimmed/Tityra_leucura_merged.fastq.gz`
+- QC report: [`data/trimmed/Tityra_leucura.html`](data/trimmed/Tityra_leucura.html)
+
+**Interpretation**: Review HTML report for adapter content, quality scores, and insert size distribution. Typical results: ~124M raw reads, 93.8% passing filters, 36.6% successfully merged.
+
+---
+
+### 3. Taxonomic Classification
+
+**Tool**: Kraken2 v2.1.2 (PlusPFP database)
+
+Reads are classified against a comprehensive taxonomic database to identify contamination sources.
+
+**Command**:
+```bash
+kraken2 --db pluspfp_20240904 --threads 150 \
+    --report report.txt --paired R1 R2
+```
+
+**Outputs**:
+- Classification reports: `results/kraken2/report_*.txt`
+- Summary CSV: [`results/kraken2/kraken_summary.csv`](results/kraken2/kraken_summary.csv)
+
+**Interpretation**: Typical contamination profile:
+- 26% of reads classified
+- Human: 2.1% (lab contamination)
+- Bacteria: 14.8% (environmental)
+- Fungi: 2.0% (*Penicillium*, *Aspergillus*)
+- Target organism: 73.99% unclassified (not in database)
+
+---
+
+### 4. ECMSD Metagenomic Analysis
+
+**Tool**: ECMSD pipeline
+
+Detailed metagenomic profiling targeting mitochondrial DNA to assess contamination and read length distributions.
+
+**Command**:
+```bash
+bash ECMSD.sh --fwd R1 --rev R2 --merged merged \
+    --threads 200 --Binsize 1000
+```
+
+**Outputs**:
+- Mapping statistics: `results/ECMSD/mapping/*.txt`
+- Read length plots: [`results/ECMSD/mapping/Mito_summary_genus_ReadLengths.png`](results/ECMSD/mapping/Mito_summary_genus_ReadLengths.png)
+
+**Interpretation**: Identifies *Pachyramphus* (Tyrannidae) as ninth-most abundant taxon, confirming endogenous DNA presence. Short read lengths typical for historical DNA.
+
+---
+
+### 5. Reference Genome Mapping
+
+**Tool**: minimap2 v2.24, SAMtools v1.15
+
+Reads are mapped to the closest available reference (*Tityra cayana*, NCBI: GCA_013397135.1) to assess genome coverage.
+
+**Command**:
+```bash
+minimap2 -ax sr --secondary=no -t 200 reference.fna.gz R1 R2 | \
+    samtools view -bS -F 4 - | \
+    samtools sort -o output.bam
+```
+
+**Outputs**:
+- BAM files: `results/minimap2/Tityra_leucura*.bam`
+- Coverage statistics: [`results/minimap2/Tityra_leucura.coverage.txt`](results/minimap2/Tityra_leucura.coverage.txt)
+- Coverage plot: [`results/minimap2/Tityra_leucura.coverage_plot.png`](results/minimap2/Tityra_leucura.coverage_plot.png)
+
+**Interpretation**: 
+- 18.5M reads mapped
+- Genome coverage: 17.29%
+- Mean depth: 0.91×
+- Base quality: Q39.5
+
+Low coverage typical for degraded historical specimens.
+
+---
+
+### 6. DNA Damage Assessment
+
+**Tool**: mapDamage2 v2.2.1
+
+Ancient DNA damage patterns (cytosine deamination, depurination) are quantified to confirm historical origin.
+
+**Command**:
+```bash
+mapDamage -i input.bam -r reference.fna.gz \
+    --merge-reference-sequences
+```
+
+**Outputs**:
+- Damage plots: [`results/mapDamage/Tityra_leucura/Fragmisincorporation_plot.png`](results/mapDamage/Tityra_leucura/Fragmisincorporation_plot.png)
+- Statistics: `results/mapDamage/Tityra_leucura/misincorporation.txt`
+
+**Interpretation**:
+- C→T transitions at 5' ends: DNA deamination
+- G→A transitions at 3' ends: complementary strand deamination
+- δS = 0.014 (damage signal)
+- Mean fragment length: 156 bp
+- Confirms historical DNA origin
+
+---
+
+### 7. Contaminant Removal
+
+**Process**: Reference-based filtering
+
+Reads are mapped against known contaminant genomes. Only unmapped reads are retained for downstream analysis.
+
+**Contaminant references**:
+- *Homo sapiens* (GCA_000001405.15)
+- *Penicillium coprophilum* (GCA_001890745.1)
+- *Vanrija pseudolonga* (GCA_024498055.1)
+- *Malassezia restricta* (GCA_000286055.1)
+- *Aspergillus cristatus* (GCA_003344705.1)
+
+**Command**:
+```bash
+minimap2 -ax sr --secondary=no -t 200 contaminants.fna.gz reads.fq.gz | \
+    awk '($5 < 20 || and($2,4)) || $1 ~ /^@/' | \
+    samtools view -bS - > filtered.bam
+```
+
+**Outputs**:
+- Cleaned reads: `data/trimmed2/Tityra_leucura_contaminants_merged_unmapped.fastq.gz`
+- Mapping statistics: `results/contaminants/mappings/*.bam`
+
+**Interpretation**: ~181K reads identified as contaminants and removed.
+
+---
+
+### 8. Mitochondrial Genome Assembly
+
+**Tool**: MitoFinder v1.4.1 (Singularity container)
+
+Mitochondrial genome is assembled from cleaned reads using a reference-guided approach.
+
+**Command**:
+```bash
+mitofinder -j Tityra_leucura -a assembly.fasta \
+    -r reference.gb -o aves --adjust-direction
+```
+
+**Outputs**:
+- Annotated mitochondrial genome: [`results/mitofinder_assembly/Tityra_leucura_mitogenome.fa`](results/mitofinder_assembly/)
+- GenBank format: `results/mitofinder_assembly/Tityra_leucura_mitogenome.gb`
+- Assembly statistics: `results/mitofinder_assembly/Tityra_leucura_mitofinder_output/`
+
+**Interpretation**:
+- Assembly time: ~6 minutes (from genome assembly)
+- Contigs: 3 (15+2+0 genes identified)
+- Total length: ~31.5 kb
+- 12 protein-coding genes extracted
+
+---
+
+### 9. Gene Sequence Retrieval
+
+**Tool**: EfetchThePython
+
+Additional mitochondrial gene sequences from related Tyrannidae species are downloaded from GenBank to provide phylogenetic context.
+
+**Taxa sampled** (8 genera):
+- *Onychorhynchus coronatus* (outgroup, royal flycatcher)
+- *Tityra* (3 species)
+- *Schiffornis*
+- *Laniocera*
+- *Iodopleura*
+- *Laniisoma*
+- *Xenopsaris*
+- *Pachyramphus*
+
+**Genes downloaded** (18 mitochondrial):
+COI, CO2, CO3, ND1, ND2, ND3, ND4, ND4L, ND5, ND6, CYTB, ATP6, ATP8, COX1, COX2, COX3, rrnL (16S), rrnS (12S)
+
+**Command**:
+```bash
+python EfetchThePython.py --email your@email.com \
+    --Term '"Tityra"[Organism], COI' \
+    --Output COI_Tityra --FASTA
+```
+
+**Outputs**:
+- Gene sequences: `data/Mito/*_*.fasta`
+- Total: 1,247 sequences retrieved
+
+---
+
+### 10. Gene Sequence Integration
+
+**Script**: `combine_mito_genes_assembly.sh`
+
+Downloaded GenBank sequences are combined with *Tityra leucura* mitochondrial genes extracted from MitoFinder assembly.
+
+**Process**:
+1. Parse MitoFinder output for gene sequences
+2. Combine with GenBank downloads
+3. Handle gene name synonyms (COI/COX1, CO2/COX2, CO3/COX3)
+4. Remove duplicate sequences
+
+**Outputs**:
+- Combined gene FASTA files: `results/combined_mito_genes_assembly/*.fasta`
+- 12 protein-coding genes prepared for alignment
+
+---
+
+### 11. Individual Gene Phylogenies
+
+**Tools**: MAFFT v7.487, Gblocks v0.91b, IQ-TREE v2.3.3
+
+**Process**:
+
+1. **Multiple sequence alignment** (MAFFT):
+```bash
+mafft --auto --adjustdirection input.fasta > aligned.fasta
+```
+   - Algorithm: Auto-selection (FFT-NS-2 for <200 seqs, L-INS-i for <50 seqs)
+   - Direction adjustment: Handles reverse complement sequences
+   - Conserved blocks extracted with Gblocks
+
+2. **Phylogenetic inference** (IQ-TREE):
+```bash
+iqtree2 -s aligned_gblocks.fasta -m MFP -bb 1000 -alrt 1000 -nt AUTO
+```
+   - Model selection: ModelFinder evaluates 286 DNA models
+   - Bootstrap: 1,000 ultrafast bootstrap replicates
+   - Branch support: SH-aLRT test with 1,000 replicates
+
+3. **Tree visualization** (R/ggtree):
+```R
+tree <- read.tree("gene.treefile")
+tree <- root(tree, outgroup="Onychorhynchus_coronatus")
+ggtree(tree, layout="roundrect") + geom_tiplab() + geom_nodelab()
+```
+
+**Outputs**:
+- Alignments: `results/phylogenetic_analysis_assembly/alignments/*_aligned_gblocks.fasta`
+- Trees: `results/phylogenetic_analysis_assembly/trees/*.treefile`
+- Plots: `results/phylogenetic_analysis_assembly/plots/*.pdf`
+
+**Genes analyzed** (12):
+ATP6, ATP8, CO2, CO3, COI, CYTB, ND1, ND2, ND3, ND4, ND4L, ND5
+
+**Interpretation**:
+- Individual gene trees show varying phylogenetic signal
+- Bootstrap support values indicate confidence in each node
+- *Tityra* species form well-supported clade
+- Gene trees useful for detecting recombination or horizontal transfer
+
+---
+
+### 12. Concatenated Multi-Gene Phylogeny
+
+**Script**: `concatenate_genes_assembly.sh`
+
+**Strategy**: Species-level concatenation with flexible voucher selection
+
+To maximize taxonomic sampling while maintaining data quality, different voucher specimens can contribute different genes for each species.
+
+**Concatenation criteria**:
+1. **Gene selection**: 4 mitochondrial protein-coding genes
+   - COI (cytochrome c oxidase I)
+   - CYTB (cytochrome b)
+   - ND2 (NADH dehydrogenase 2)
+   - CO2 (cytochrome c oxidase II)
+
+2. **Species inclusion filters**:
+   - Genus priority: ≥1 species per genus (ensures broad taxonomic coverage)
+   - Data completeness: ≥50% gene presence (≥2/4 genes per species)
+   - Sequence quality: Fewest gaps/ambiguities selected when multiple sequences available
+
+3. **Voucher provenance tracking**:
+   - Each gene tracks which GenBank accession was used
+   - FASTA headers include full provenance: `>Species genes=X/4 COI:voucher|accession CYTB:voucher|accession`
+   - Missing genes filled with gap characters
+
+**Process**:
+```python
+# For each species:
+for species in all_species:
+    for gene in [COI, CYTB, ND2, CO2]:
+        sequences = get_all_sequences(species, gene)
+        best_seq = select_best_quality(sequences)  # fewest gaps
+        accession = extract_accession(best_seq.description)
+        concat_parts.append((gene, best_seq, accession))
+```
+
+**Outputs**:
+- Concatenated alignment: [`results/concatenated_genes_assembly/concatenated_all_genes.fasta`](results/concatenated_genes_assembly/)
+- Species summary: Lists which genes present for each taxon
+
+**Example header**:
+```
+>Tityra_cayana genes=4/4 COI:ZMUC141678|MN356369.1 CYTB:ZMUC141678|MN356420.1 ND2:ZMUC141678|MN356495.1 CO2:ZMUC141678|MN356445.1
+```
+
+---
+
+### 13. Partitioned Phylogenetic Analysis
+
+**Script**: `phylogenetic_analysis_concatenated_assembly.sh`
+
+**Model**: Partitioned analysis with gene-specific substitution models
+
+**Partition file**:
+```
+DNA, COI = 1-651
+DNA, CYTB = 652-1673
+DNA, ND2 = 1674-2714
+DNA, CO2 = 2715-3398
+```
+
+**IQ-TREE command**:
+```bash
+iqtree2 -s concatenated_all_genes.fasta \
+    -p partitions.txt \
+    -m MFP \
+    -bb 1000 \
+    -alrt 1000 \
+    -nt AUTO
+```
+
+**Parameters**:
+- Partitioned model: Each gene gets independent substitution model
+- ModelFinder: Tests 286 models per partition (1,144 total)
+- Ultrafast bootstrap: 1,000 replicates
+- Branch support: SH-aLRT test
+
+**Tree rooting and visualization**:
+```R
+# Root with Onychorhynchus coronatus (Tyrannidae, royal flycatcher)
+tree <- root(tree, outgroup="Onychorhynchus_coronatus", resolve.root=TRUE)
+tree <- ladderize(tree)
+
+# Visualization with rounded edges
+ggtree(tree, layout="roundrect", ladderize=TRUE, right=TRUE) +
+    geom_nodepoint(color="darkblue", size=2, shape=21, fill="lightblue") +
+    geom_tippoint(aes(subset=is_tityra), color="red", size=3, shape=17) +
+    geom_tippoint(aes(subset=is_outgroup), color="darkgreen", size=3, shape=15)
+```
+
+**Outputs**:
+- Partitioned tree: [`results/phylogenetic_analysis_concatenated_assembly/trees/concatenated_all_genes.treefile`](results/phylogenetic_analysis_concatenated_assembly/trees/)
+- Model report: `concatenated_all_genes.iqtree`
+- Tree plots: 
+  - Rectangular layout: `plots/concatenated_tree_rectangular.pdf`
+  - Circular layout: `plots/concatenated_tree_circular.pdf`
+  - Bootstrap support: `plots/concatenated_tree_support.pdf`
+
+**Final dataset**:
+- Taxa: 24 species across 8 genera
+- Total alignment length: 3,398 bp
+- Missing data: 28.84% (due to incomplete gene coverage)
+- Parsimony-informative sites: Variable by partition
+
+**Interpretation**:
+- Concatenated analysis provides robust phylogenetic hypothesis
+- Partitioned models account for different evolutionary rates across genes
+- Bootstrap support values ≥70 indicate well-supported clades
+- Voucher provenance allows reproducibility and data validation
+
+---
+
+## Output Directory Structure
+
+```
+Tityra/
+├── data/
+│   ├── Illumina/              # Raw sequencing reads
+│   ├── trimmed/               # Quality-trimmed reads
+│   ├── trimmed2/              # Contaminant-filtered reads
+│   ├── ref/                   # Reference genomes
+│   ├── contaminants/          # Contaminant reference genomes
+│   └── Mito/                  # Downloaded mitochondrial genes
+├── results/
+│   ├── kraken2/               # Taxonomic classification
+│   ├── ECMSD/                 # Metagenomic profiling
+│   ├── minimap2/              # Reference mapping & coverage
+│   ├── mapDamage/             # DNA damage patterns
+│   ├── contaminants/          # Contaminant mapping
+│   ├── mitofinder_assembly/   # Mitochondrial genome assembly
+│   ├── combined_mito_genes_assembly/      # Combined gene sequences
+│   ├── phylogenetic_analysis_assembly/    # Individual gene trees
+│   ├── concatenated_genes_assembly/       # Concatenated alignment
+│   └── phylogenetic_analysis_concatenated_assembly/  # Final phylogeny
+├── shell/
+│   ├── main.sh                            # Master pipeline script
+│   ├── mitofinder_assembly.sh             # Mitochondrial assembly
+│   ├── combine_mito_genes_assembly.sh     # Gene combination
+│   ├── phylogenetic_analysis_assembly.sh  # Individual trees
+│   ├── concatenate_genes_assembly.sh      # Gene concatenation
+│   ├── phylogenetic_analysis_concatenated_assembly.sh  # Final tree
+│   └── old/                               # Archived scripts
+├── docs/
+│   └── Methods_and_Results.md             # Detailed documentation
+├── logs/                                  # Pipeline log files
+└── scripts/                               # Utility scripts
+```
+
+---
+
+## Key Results Summary
+
+### Data Quality
+- **Raw reads**: 123.9M reads (2×150 bp)
+- **Post-QC**: 116.2M reads (93.78%)
+- **Merged reads**: 45.3M (36.56%)
+- **Mean quality**: Q36.8
+
+### Contamination Assessment
+- **Classified reads**: 26.01%
+  - Human: 2.12%
+  - Bacteria: 14.79%
+  - Fungi: 2.0%
+- **Target DNA**: 73.99% (unclassified, presumably *Tityra*)
+
+### Reference Mapping
+- **Mapped reads**: 18.5M
+- **Genome coverage**: 17.29%
+- **Mean depth**: 0.91×
+- **Base quality**: Q39.5
+
+### DNA Damage
+- **C→T at 5' end**: 3.2% (deamination signal)
+- **Damage index (δS)**: 0.014
+- **Mean fragment**: 156 bp
+- **Conclusion**: Authentic historical DNA
+
+### Mitochondrial Assembly
+- **Assembly method**: MitoFinder (reference-guided)
+- **Contigs**: 3 contigs
+- **Genes identified**: 12 protein-coding genes
+- **Total length**: ~31.5 kb
+
+### Phylogenetic Results
+- **Individual gene trees**: 12 mitochondrial genes
+- **Concatenated dataset**: 4 genes, 24 taxa, 3,398 bp
+- **Outgroup**: *Onychorhynchus coronatus*
+- **Support**: Ultrafast bootstrap + SH-aLRT
+- **Topology**: *Tityra* forms well-supported clade within Tyrannidae
+
+---
+
+## Software Requirements
+
+### Core Tools
+- **fastp** v0.23.4 - Quality control
+- **Kraken2** v2.1.2 - Taxonomic classification
+- **minimap2** v2.24 - Read mapping
+- **SAMtools** v1.15 - BAM manipulation
+- **mapDamage2** v2.2.1 - DNA damage analysis
+- **MitoFinder** v1.4.1 - Mitochondrial assembly
+- **MAFFT** v7.487 - Multiple alignment
+- **Gblocks** v0.91b - Alignment refinement
+- **IQ-TREE** v2.3.3 - Phylogenetic inference
+
+### Scripting
+- **Python** 3.8+ (with BioPython)
+- **R** 4.0+ (ggtree, ape, ggplot2, dplyr)
+- **Bash** 4.0+
+
+### Databases
+- Kraken2 PlusPFP database (Sept 2024)
+- NCBI GenBank (nucleotide)
+
+---
+
+## Detailed Documentation
+
+For comprehensive methods, statistical analyses, and interpretation:
+- **Full documentation**: [`docs/Methods_and_Results.md`](docs/Methods_and_Results.md)
+- **Word format**: `docs/Methods_and_Results.docx` (for manuscripts)
+
+---
+
+## Citation
+
+If you use this pipeline, please cite:
+
+**Tools**:
+- Chen et al. (2018). fastp: an ultra-fast all-in-one FASTQ preprocessor. *Bioinformatics* 34(17):i884-i890.
+- Wood et al. (2019). Improved metagenomic analysis with Kraken 2. *Genome Biology* 20:257.
+- Li (2018). Minimap2: pairwise alignment for nucleotide sequences. *Bioinformatics* 34(18):3094-3100.
+- Jónsson et al. (2013). mapDamage2.0: fast approximate Bayesian estimates of ancient DNA damage parameters. *Bioinformatics* 29(13):1682-1684.
+- Allio et al. (2020). MitoFinder: Efficient automated large‐scale extraction of mitogenomic data in target enrichment phylogenomics. *Molecular Ecology Resources* 20(4):892-905.
+- Katoh & Standley (2013). MAFFT multiple sequence alignment software version 7. *Molecular Biology and Evolution* 30(4):772-780.
+- Nguyen et al. (2015). IQ-TREE: A fast and effective stochastic algorithm for estimating maximum-likelihood phylogenies. *Molecular Biology and Evolution* 32(1):268-274.
+- Yu et al. (2017). ggtree: an R package for visualization and annotation of phylogenetic trees. *Methods in Ecology and Evolution* 8(1):28-36.
+
+---
+
+## Troubleshooting
+
+**Low genome coverage?**
+- Expected for historical DNA (0.5-2× typical)
+- Focus on high-copy mitochondrial DNA
+- Consider target enrichment for nuclear loci
+
+**High contamination?**
+- Review ECMSD and Kraken2 reports
+- Adjust contaminant filtering thresholds
+- Check for cross-contamination during extraction
+
+**Poor tree resolution?**
+- Increase gene sampling (add more loci)
+- Use longer alignments or more taxa
+- Consider partitioned models or codon-based models
+
+**Missing sequences in concatenation?**
+- Adjust species inclusion threshold (default: ≥50% genes)
+- Check GenBank for additional sequences
+- Verify gene name synonyms (COI=COX1, etc.)
+
+---
+
+## License
+
+This pipeline is released under the MIT License.
+
+## Contact
+
+For questions or issues:
+- GitHub Issues: [Tityra_hDNA_analysis](https://github.com/capoony/Tityra_hDNA_analysis)
+- Email: capopony@gmail.com
+
+---
+
+**Last updated**: May 1, 2026

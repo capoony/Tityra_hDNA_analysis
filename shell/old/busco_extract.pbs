@@ -1,0 +1,15 @@
+#!/bin/bash
+#PBS -N busco_extract
+#PBS -l nodes=1:ppn=50
+#PBS -l mem=200gb
+#PBS -l walltime=24:00:00
+#PBS -j oe
+#PBS -o /media/inter/mkapun/projects/Tityra/logs/busco_extract.log
+
+WD=/media/inter/mkapun/projects/Tityra
+THREADS=50
+
+cd ${WD}
+
+# Only run BUSCO extraction and MAFFT alignment (skip variant calling)
+bash ${WD}/shell/graph_alignment_busco.sh ${WD} ${THREADS} extract_only

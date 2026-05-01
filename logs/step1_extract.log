@@ -1,0 +1,17 @@
+===================================================================
+STEP 1: Extract and Align BUSCO Genes
+===================================================================
+Linking BUSCO results...
+  Linked Pachyramphus_minor
+  Linked Oxyruncus_cristatus
+  Linked Tyrannus_savana
+Extracting BUSCO genes...
+Found 8100 genes in at least 2 references
+Extracted 8100 gene files
+
+Aligning genes with MAFFT...
+
+===================================================================
+STEP 1 Complete
+Aligned 8100 genes
+===================================================================

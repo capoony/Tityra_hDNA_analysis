@@ -1,0 +1,242 @@
+IQ-TREE 2.3.3 COVID-edition built Apr 25 2024
+
+Partition file name: /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/partitions.txt
+Input file name: /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/concatenated_all_genes.fasta
+Type of analysis: ModelFinder + tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 381674
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+Since you used partition models please also cite:
+
+Olga Chernomor, Arndt von Haeseler, and Bui Quang Minh (2016)
+Terrace aware data structure for phylogenomic inference from
+supermatrices. Syst. Biol., 65:997-1008.
+https://doi.org/10.1093/sysbio/syw037
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 24 taxa with 4 partitions and 3407 total sites (28.8866% missing data)
+
+  ID	Type	Seq	Site	Unique	Infor	Invar	Const	Name
+   1	DNA	23	651	244	208	412	412	COI
+   2	DNA	13	1031	394	291	623	623	CYTB
+   3	DNA	24	1041	592	460	473	473	ND2
+   4	DNA	7	684	150	127	468	468	CO2
+
+Column meanings:
+  Unique: Number of unique site patterns
+  Infor:  Number of parsimony-informative sites
+  Invar:  Number of invariant sites
+  Const:  Number of constant sites (can be subset of invariant sites)
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: TIM2+F+I+G4:COI,TIM2+F+I+G4:CYTB,TPM3u+F+I+G4:ND2,TIM2+F+G4:CO2
+
+List of best-fit models per partition:
+
+  ID  Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+   1  TIM2+F+I+G4       -4552.560    9123.120 + 2.12e-314    9123.401 + 6.92e-310    9163.427 +        0
+   2  TIM2+F+I+G4       -5369.444   10756.889 + 2.12e-314   10757.065 + 6.92e-310   10801.333 +        0
+   3  TPM3u+F+I+G4      -9527.084   19070.168 + 2.12e-314   19070.307 + 6.92e-310   19109.751 +        0
+   4  TIM2+F+G4         -2460.236    4936.472 + 2.12e-314    4936.685 + 6.92e-310    4972.695 +        0
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Edge-linked-proportional partition model with separate substitution models and separate rates across sites
+
+  ID  Model           Speed  Parameters
+   1  TIM2+F+I+G4    0.9179  TIM2{6.62363,26.2853,86.7903}+F{0.254742,0.305976,0.158922,0.280359}+I{0.595138}+G4{1.89152}
+   2  TIM2+F+I+G4    0.9520  TIM2{4.75995,17.4361,58.0326}+F{0.276755,0.308902,0.125229,0.289113}+I{0.501539}+G4{1.33654}
+   3  TPM3u+F+I+G4   1.1866  TPM3u{0.642272,10.9944}+F{0.306706,0.326961,0.0952302,0.271102}+I{0.400246}+G4{1.47501}
+   4  TIM2+F+G4      0.8666  TIM2{5.15635,16.1038,82.8485}+F{0.293623,0.291471,0.148278,0.266628}+G4{0.177239}
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -21886.2381 (s.e. 374.5989)
+Unconstrained log-likelihood (without tree): -14878.6143
+Number of free parameters (#branches + #model parameters): 78
+Akaike information criterion (AIC) score: 43928.4762
+Corrected Akaike information criterion (AICc) score: 43932.1793
+Bayesian information criterion (BIC) score: 44406.8960
+
+Total tree length (sum of branch lengths): 3.0191
+Sum of internal branch lengths: 0.9138 (30.2681% of tree length)
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Iodopleura_fusca' is drawn at root
+Numbers in parentheses are SH-aLRT support (%) / ultrafast bootstrap support (%)
+
++----Iodopleura_fusca
+|
+|                         +----------------------Laniisoma_elegans
+|                  +------| (100/100)
+|                  |      |  +------------------Laniocera_hypopyrra
+|                  |      +--| (45.2/68)
+|                  |         |       +----------------Schiffornis_major
+|                  |         +-------| (100/100)
+|                  |                 |      +-------Schiffornis_turdina
+|                  |                 +------| (99.8/100)
+|                  |                        +------Schiffornis_virescens
+|              +---| (98/99)
+|              |   +---------------------------------------Onychorhynchus_coronatus
++--------------| (100/100)
+|              |                       +---Pachyramphus_aglaiae
+|              |                    +--| (96.5/97)
+|              |                    |  +--Pachyramphus_minor
+|              |             +------| (100/100)
+|              |             |      +-----Pachyramphus_validus
+|              |          +--| (96.5/98)
+|              |          |  |         +--Pachyramphus_rufus
+|              |          |  |      +--| (99.7/100)
+|              |          |  |      |  |  +--Pachyramphus_viridis
+|              |          |  |      |  +--| (95.6/98)
+|              |          |  |      |     +--Pachyramphus_xanthogenys
+|              |          |  +------| (100/100)
+|              |          |         +-----Pachyramphus_versicolor
+|              |       +--| (93.9/96)
+|              |       |  |         +-------Pachyramphus_cinnamomeus
+|              |       |  |  +------| (100/100)
+|              |       |  |  |      +------Pachyramphus_surinamus
+|              |       |  +--| (95.7/99)
+|              |       |     |     +------Pachyramphus_marginatus
+|              |       |     +-----| (99.9/100)
+|              |       |           +-----Pachyramphus_polychopterus
+|              |    +--| (69.1/66)
+|              |    |  +------------------------Xenopsaris_albinucha
+|              +----| (99.8/100)
+|                   |             +----Tityra_cayana
+|                   |     +-------| (100/100)
+|                   |     |       +---Tityra_semifasciata
+|                   |  +--| (82.7/84)
+|                   |  |  +--------------Tityra_inquisitor
+|                   +--| (99.1/95)
+|                      +------------------Tityra_leucura
+|
++---Iodopleura_isabellae
+
+Tree in newick format:
+
+(Iodopleura_fusca:0.0470653061,(((Laniisoma_elegans:0.1941945777,(Laniocera_hypopyrra:0.1652319467,(Schiffornis_major:0.1468662410,(Schiffornis_turdina:0.0737728227,Schiffornis_virescens:0.0594434904)99.8/100:0.0585285680)100/100:0.0712834372)45.2/68:0.0130280462)100/100:0.0630029206,Onychorhynchus_coronatus:0.3329198432)98/99:0.0403884229,((((((Pachyramphus_aglaiae:0.0401831980,Pachyramphus_minor:0.0233610688)96.5/97:0.0247411962,Pachyramphus_validus:0.0557467104)100/100:0.0649201107,((Pachyramphus_rufus:0.0175021800,(Pachyramphus_viridis:0.0044210962,Pachyramphus_xanthogenys:0.0104027755)95.6/98:0.0149182092)99.7/100:0.0328384862,Pachyramphus_versicolor:0.0522149101)100/100:0.0647927600)96.5/98:0.0310977788,((Pachyramphus_cinnamomeus:0.0708692653,Pachyramphus_surinamus:0.0661896777)100/100:0.0620099547,(Pachyramphus_marginatus:0.0635182543,Pachyramphus_polychopterus:0.0530361730)99.9/100:0.0499918170)95.7/99:0.0197344187)93.9/96:0.0204631443,Xenopsaris_albinucha:0.2090203877)69.1/66:0.0049058154,(((Tityra_cayana:0.0437896578,Tityra_semifasciata:0.0389666700)100/100:0.0723194264,Tityra_inquisitor:0.1296710334)82.7/84:0.0102219957,Tityra_leucura:0.1663365548)99.1/95:0.0254495906)99.8/100:0.0433492109)100/100:0.1258353673,Iodopleura_isabellae:0.0405402949);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -21886.238102
+Robinson-Foulds distance between ML tree and consensus tree: 0
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++----Iodopleura_fusca
+|
+|                         +----------------------Laniisoma_elegans
+|                  +------| (100)
+|                  |      |  +------------------Laniocera_hypopyrra
+|                  |      +--| (68)
+|                  |         |       +----------------Schiffornis_major
+|                  |         +-------| (100)
+|                  |                 |      +-------Schiffornis_turdina
+|                  |                 +------| (100)
+|                  |                        +------Schiffornis_virescens
+|              +---| (99)
+|              |   +---------------------------------------Onychorhynchus_coronatus
++--------------| (100)
+|              |                       +---Pachyramphus_aglaiae
+|              |                    +--| (97)
+|              |                    |  +--Pachyramphus_minor
+|              |             +------| (100)
+|              |             |      +-----Pachyramphus_validus
+|              |          +--| (98)
+|              |          |  |         +--Pachyramphus_rufus
+|              |          |  |      +--| (100)
+|              |          |  |      |  |  +--Pachyramphus_viridis
+|              |          |  |      |  +--| (98)
+|              |          |  |      |     +--Pachyramphus_xanthogenys
+|              |          |  +------| (100)
+|              |          |         +-----Pachyramphus_versicolor
+|              |       +--| (96)
+|              |       |  |         +-------Pachyramphus_cinnamomeus
+|              |       |  |  +------| (100)
+|              |       |  |  |      +------Pachyramphus_surinamus
+|              |       |  +--| (99)
+|              |       |     |     +------Pachyramphus_marginatus
+|              |       |     +-----| (100)
+|              |       |           +-----Pachyramphus_polychopterus
+|              |    +--| (66)
+|              |    |  +------------------------Xenopsaris_albinucha
+|              +----| (100)
+|                   |             +----Tityra_cayana
+|                   |     +-------| (100)
+|                   |     |       +---Tityra_semifasciata
+|                   |  +--| (84)
+|                   |  |  +--------------Tityra_inquisitor
+|                   +--| (95)
+|                      +------------------Tityra_leucura
+|
++---Iodopleura_isabellae
+
+
+Consensus tree in newick format: 
+
+(Iodopleura_fusca:0.0470736082,(((Laniisoma_elegans:0.1941884036,(Laniocera_hypopyrra:0.1652319463,(Schiffornis_major:0.1468655764,(Schiffornis_turdina:0.0737757939,Schiffornis_virescens:0.0594422842)100:0.0585295239)100:0.0712809200)68:0.0130279892)100:0.0630003480,Onychorhynchus_coronatus:0.3329175068)99:0.0403935225,((((((Pachyramphus_aglaiae:0.0401839142,Pachyramphus_minor:0.0233581375)97:0.0247388818,Pachyramphus_validus:0.0557446911)100:0.0649205898,((Pachyramphus_rufus:0.0174973765,(Pachyramphus_viridis:0.0044188932,Pachyramphus_xanthogenys:0.0103987653)98:0.0149268693)100:0.0328413227,Pachyramphus_versicolor:0.0522090951)100:0.0647940071)98:0.0310950454,((Pachyramphus_cinnamomeus:0.0708720541,Pachyramphus_surinamus:0.0661841950)100:0.0620072825,(Pachyramphus_marginatus:0.0635206881,Pachyramphus_polychopterus:0.0530305186)100:0.0499934742)99:0.0197336023)96:0.0204717085,Xenopsaris_albinucha:0.2090161189)66:0.0049043631,(((Tityra_cayana:0.0437982362,Tityra_semifasciata:0.0389631526)100:0.0723183143,Tityra_inquisitor:0.1296694058)84:0.0102304673,Tityra_leucura:0.1663289055)95:0.0254461239)100:0.0433452378)100:0.1258291009,Iodopleura_isabellae:0.0405361947);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t concatenated_all_genes.treefile -p /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/partitions.txt.best_model.nex
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/concatenated_all_genes.fasta --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/concatenated_all_genes.fasta --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Fri May  1 10:32:03 2026
+Total CPU time used: 1338.215506 seconds (0h:22m:18s)
+Total wall-clock time used: 718.8438802 seconds (0h:11m:58s)
+

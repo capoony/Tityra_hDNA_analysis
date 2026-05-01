@@ -1,0 +1,2600 @@
+===================================================================
+Phylogenetic Analysis of Concatenated Genes (Assembly-based)
+Started: Di Apr 28 14:50:59 CEST 2026
+===================================================================
+
+Input directory: /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly
+Output directory: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_concatenated_assembly
+
+Using concatenated alignment: /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/concatenated_all_genes.fasta
+Using partitions: /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/partitions.txt
+
+===================================================================
+Step 1: Phylogenetic Inference with IQ-TREE (Partitioned)
+===================================================================
+ERROR: Unable to locate a modulefile for 'Phylogeny/iqtree-2.3.6'
+===================================================================
+Phylogenetic Analysis of Concatenated Genes (Assembly-based)
+Started: Di Apr 28 14:52:42 CEST 2026
+===================================================================
+
+Input directory: /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly
+Output directory: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_concatenated_assembly
+
+Using concatenated alignment: /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/concatenated_all_genes.fasta
+Using partitions: /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/partitions.txt
+
+===================================================================
+Step 1: Phylogenetic Inference with IQ-TREE (Partitioned)
+===================================================================
+
+CommandNotFoundError: Your shell has not been properly configured to use 'conda activate'.
+To initialize your shell, run
+
+    $ conda init <SHELL_NAME>
+
+Currently supported shells are:
+  - bash
+  - fish
+  - tcsh
+  - xonsh
+  - zsh
+  - powershell
+
+See 'conda init --help' for more information and options.
+
+IMPORTANT: You may need to close and restart your shell after running 'conda init'.
+
+
+===================================================================
+Phylogenetic Analysis of Concatenated Genes (Assembly-based)
+Started: Di Apr 28 14:53:23 CEST 2026
+===================================================================
+
+Input directory: /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly
+Output directory: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_concatenated_assembly
+
+Using concatenated alignment: /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/concatenated_all_genes.fasta
+Using partitions: /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/partitions.txt
+
+===================================================================
+Step 1: Phylogenetic Inference with IQ-TREE (Partitioned)
+===================================================================
+
+Running IQ-TREE with partitioned analysis...
+This may take a while...
+
+IQ-TREE multicore version 2.3.3 COVID-edition for Linux x86 64-bit built Apr 25 2024
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams, Ly Trong Nhan, Thomas Wong
+
+Host:    nhm-phylo2 (AVX2, FMA3, 2003 GB RAM)
+Command: iqtree2 -s /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/concatenated_all_genes.fasta -p /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/partitions.txt -m MFP -bb 1000 -alrt 1000 -nt AUTO -pre concatenated_all_genes
+Seed:    342460 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Tue Apr 28 14:53:23 2026
+Kernel:  AVX+FMA - auto-detect threads (256 CPU cores detected)
+
+Reading partition model file /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/partitions.txt ...
+Reading alignment file /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/concatenated_all_genes.fasta ... Fasta format detected
+Reading fasta file: done in 0.00560858 secs using 83.39% CPU
+Alignment most likely contains DNA/RNA sequences
+Alignment has 29 sequences with 9799 columns, 1483 distinct patterns
+1177 parsimony-informative, 1803 singleton sites, 6819 constant sites
+                            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.0188531 secs using 2.194e+04% CPU
+   1  Acanthisitta_chloris          0.02%    failed      0.00%
+   2  Iodopleura_fusca             72.33%    passed      8.61%
+   3  Iodopleura_isabellae         78.82%    failed      2.60%
+   4  Laniisoma_elegans            73.19%    passed     15.59%
+   5  Laniocera_hypopyrra          63.60%    passed      7.34%
+   6  Pachyramphus_aglaiae         82.73%    passed     88.02%
+   7  Pachyramphus_albogriseus     89.39%    failed      0.14%
+   8  Pachyramphus_castaneus       89.39%    failed      0.01%
+   9  Pachyramphus_cinnamomeus     82.73%    passed     40.61%
+  10  Pachyramphus_homochrous      89.38%    failed      3.76%
+  11  Pachyramphus_major           89.38%    failed      0.65%
+  12  Pachyramphus_marginatus      72.17%    passed     36.92%
+  13  Pachyramphus_minor           85.70%    passed     83.46%
+  14  Pachyramphus_polychopterus   72.38%    passed     60.35%
+  15  Pachyramphus_rufus           82.76%    passed     75.01%
+  16  Pachyramphus_spodiurus       89.42%    failed      1.44%
+  17  Pachyramphus_surinamus       82.80%    passed     29.00%
+  18  Pachyramphus_validus         82.80%    passed     68.91%
+  19  Pachyramphus_versicolor      82.76%    passed     35.91%
+  20  Pachyramphus_viridis         85.60%    passed     88.46%
+  21  Pachyramphus_xanthogenys     81.44%    passed     91.30%
+  22  Schiffornis_major            75.05%    failed      0.14%
+  23  Schiffornis_turdina          61.85%    passed     19.86%
+  24  Schiffornis_virescens        72.41%    passed      7.63%
+  25  Tityra_cayana                72.32%    passed     22.35%
+  26  Tityra_inquisitor            72.30%    passed     63.30%
+  27  Tityra_leucura                0.00%    failed      0.07%
+  28  Tityra_semifasciata          61.74%    passed     42.73%
+  29  Xenopsaris_albinucha         82.73%    passed     75.73%
+WARNING: 27 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                        73.35%  9 sequences failed composition chi2 test (p-value<5%; df=3)
+
+Partition file is not in NEXUS format, assuming RAxML-style partition file...
+Subset	Type	Seqs	Sites	Infor	Invar	Model	Name
+1	DNA	3	684	0	519	GTR	ATP6
+WARNING: No parsimony-informative sites in partition ATP6
+2	DNA	3	168	0	121	GTR	ATP8
+WARNING: No parsimony-informative sites in partition ATP8
+3	DNA	7	684	130	471	GTR	CO2
+4	DNA	3	782	0	645	GTR	CO3
+WARNING: No parsimony-informative sites in partition CO3
+5	DNA	23	651	204	406	GTR	COI
+6	DNA	13	1022	293	606	GTR	CYTB
+7	DNA	3	942	0	728	GTR	ND1
+WARNING: No parsimony-informative sites in partition ND1
+8	DNA	29	1041	481	459	GTR	ND2
+9	DNA	7	351	69	210	GTR	ND3
+10	DNA	3	1368	0	1040	GTR	ND4
+WARNING: No parsimony-informative sites in partition ND4
+11	DNA	3	297	0	235	GTR	ND4L
+WARNING: No parsimony-informative sites in partition ND4L
+12	DNA	3	1809	0	1379	GTR	ND5
+WARNING: No parsimony-informative sites in partition ND5
+Degree of missing data: 0.705
+Info: multi-threading strategy over partitions
+
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.005 seconds
+Measuring multi-threading efficiency up to 256 CPU cores
+Increase to 10 rounds for branch lengths
+===================================================================
+Phylogenetic Analysis of Concatenated Genes (Assembly-based)
+Started: Di Apr 28 14:58:33 CEST 2026
+===================================================================
+
+Input directory: /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly
+Output directory: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_concatenated_assembly
+
+Using concatenated alignment: /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/concatenated_all_genes.fasta
+Using partitions: /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/partitions.txt
+
+===================================================================
+Step 1: Phylogenetic Inference with IQ-TREE (Partitioned)
+===================================================================
+
+Running IQ-TREE with partitioned analysis...
+This may take a while...
+
+IQ-TREE multicore version 2.3.3 COVID-edition for Linux x86 64-bit built Apr 25 2024
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams, Ly Trong Nhan, Thomas Wong
+
+Host:    nhm-phylo2 (AVX2, FMA3, 2003 GB RAM)
+Command: iqtree2 -s /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/concatenated_all_genes.fasta -p /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/partitions.txt -m MFP -bb 1000 -alrt 1000 -nt AUTO -pre concatenated_all_genes
+Seed:    233925 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Tue Apr 28 14:58:33 2026
+Kernel:  AVX+FMA - auto-detect threads (256 CPU cores detected)
+
+Reading partition model file /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/partitions.txt ...
+Reading alignment file /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/concatenated_all_genes.fasta ... Fasta format detected
+Reading fasta file: done in 0.00140523 secs using 67.75% CPU
+Alignment most likely contains DNA/RNA sequences
+Alignment has 13 sequences with 5891 columns, 1043 distinct patterns
+859 parsimony-informative, 1086 singleton sites, 3946 constant sites
+                            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.013155 secs using 2.126e+04% CPU
+   1  Acanthisitta_chloris          0.03%    failed      0.00%
+   2  Iodopleura_fusca             53.98%    passed     56.18%
+   3  Laniisoma_elegans            55.41%    passed     38.39%
+   4  Laniocera_hypopyrra          57.02%    passed     22.11%
+   5  Pachyramphus_polychopterus   54.07%    passed     94.80%
+   6  Pachyramphus_xanthogenys     69.12%    passed     57.48%
+   7  Schiffornis_major            58.50%    failed      2.51%
+   8  Schiffornis_turdina          54.12%    passed     57.82%
+   9  Schiffornis_virescens        54.10%    passed     21.66%
+  10  Tityra_cayana                53.96%    passed     80.11%
+  11  Tityra_inquisitor            53.93%    passed     97.00%
+  12  Tityra_leucura                0.00%    passed      5.36%
+  13  Tityra_semifasciata          53.93%    passed     69.56%
+WARNING: 11 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                        47.55%  2 sequences failed composition chi2 test (p-value<5%; df=3)
+
+Partition file is not in NEXUS format, assuming RAxML-style partition file...
+Subset	Type	Seqs	Sites	Infor	Invar	Model	Name
+1	DNA	13	651	179	418	GTR	COI
+2	DNA	13	1022	293	606	GTR	CYTB
+3	DNA	13	1041	387	503	GTR	ND2
+4	DNA	3	1368	0	1040	GTR	ND4
+WARNING: No parsimony-informative sites in partition ND4
+5	DNA	3	1809	0	1379	GTR	ND5
+WARNING: No parsimony-informative sites in partition ND5
+Degree of missing data: 0.415
+Info: multi-threading strategy over partitions
+
+
+NOTE: Restoring information from model checkpoint file concatenated_all_genes.model.gz
+ERROR: alignment.cpp:80: std::string& Alignment::getSeqName(int): Assertion `i >= 0 && i < (int)seq_names.size()' failed.
+ERROR: STACK TRACE FOR DEBUGGING:
+ERROR: 1   funcAbort()
+ERROR: 2   ()
+ERROR: 3   gsignal()
+ERROR: 4   abort()
+ERROR: 5   ()
+ERROR: 6   ()
+ERROR: 7   PhyloTree::assignLeafNames(Node*, Node*)
+ERROR: 8   PhyloTree::assignLeafNames(Node*, Node*)
+ERROR: 9   PhyloTree::assignLeafNames(Node*, Node*)
+ERROR: 10   PhyloTree::assignLeafNames(Node*, Node*)
+ERROR: 11   PhyloTree::assignLeafNames(Node*, Node*)
+ERROR: 12   PhyloTree::assignLeafNames(Node*, Node*)
+ERROR: 13   PhyloTree::assignLeafNames(Node*, Node*)
+ERROR: 14   PhyloTree::assignLeafNames(Node*, Node*)
+ERROR: 15   PhyloTree::readTreeString(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+ERROR: 16   PhyloTree::restoreCheckpoint()
+ERROR: 17   IQTree::restoreCheckpoint()
+ERROR: 18   runModelFinder(Params&, IQTree&, ModelCheckpoint&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&)
+ERROR: 19   startTreeReconstruction(Params&, IQTree*&, ModelCheckpoint&)
+ERROR: 20   runPhyloAnalysis(Params&, Checkpoint*, IQTree*&, Alignment*&)
+ERROR: 21   runPhyloAnalysis(Params&, Checkpoint*)
+ERROR: 22   main()
+ERROR: 23   __libc_start_main()
+ERROR: 24   ()
+ERROR: 
+ERROR: *** IQ-TREE CRASHES WITH SIGNAL ABORTED
+ERROR: *** For bug report please send to developers:
+ERROR: ***    Log file: concatenated_all_genes.log
+ERROR: ***    Alignment files (if possible)
+/media/inter/mkapun/projects/Tityra/shell/phylogenetic_analysis_concatenated_assembly.sh: Zeile 92: 416211 Abgebrochen             (Speicherabzug geschrieben) iqtree2 -s "${CONCATENATED_FILE}" -p "${PARTITION_FILE}" -m MFP -bb 1000 -alrt 1000 -nt AUTO -pre concatenated_all_genes
+===================================================================
+Phylogenetic Analysis of Concatenated Genes (Assembly-based)
+Started: Di Apr 28 15:00:29 CEST 2026
+===================================================================
+
+Input directory: /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly
+Output directory: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_concatenated_assembly
+
+Using concatenated alignment: /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/concatenated_all_genes.fasta
+Using partitions: /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/partitions.txt
+
+===================================================================
+Step 1: Phylogenetic Inference with IQ-TREE (Partitioned)
+===================================================================
+
+Running IQ-TREE with partitioned analysis...
+This may take a while...
+
+IQ-TREE multicore version 2.3.3 COVID-edition for Linux x86 64-bit built Apr 25 2024
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams, Ly Trong Nhan, Thomas Wong
+
+Host:    nhm-phylo2 (AVX2, FMA3, 2003 GB RAM)
+Command: iqtree2 -s /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/concatenated_all_genes.fasta -p /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/partitions.txt -m MFP -bb 1000 -alrt 1000 -nt AUTO -pre concatenated_all_genes
+Seed:    373246 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Tue Apr 28 15:00:29 2026
+Kernel:  AVX+FMA - auto-detect threads (256 CPU cores detected)
+
+Reading partition model file /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/partitions.txt ...
+Reading alignment file /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/concatenated_all_genes.fasta ... Fasta format detected
+Reading fasta file: done in 0.00109469 secs using 87.7% CPU
+Alignment most likely contains DNA/RNA sequences
+Alignment has 14 sequences with 4082 columns, 1235 distinct patterns
+995 parsimony-informative, 563 singleton sites, 2524 constant sites
+                            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.00658768 secs using 2.127e+04% CPU
+   1  Acanthisitta_chloris          0.05%    failed      0.00%
+   2  Iodopleura_fusca             33.59%    passed     56.28%
+   3  Laniisoma_elegans            35.64%    passed     64.26%
+   4  Laniocera_hypopyrra          21.22%    passed     42.45%
+   5  Pachyramphus_marginatus      41.79%    passed     64.07%
+   6  Pachyramphus_polychopterus   33.71%    passed     93.49%
+   7  Pachyramphus_xanthogenys     55.44%    passed     83.33%
+   8  Schiffornis_major            40.10%    failed      4.50%
+   9  Schiffornis_turdina          17.03%    passed     79.53%
+  10  Schiffornis_virescens        33.76%    passed     36.48%
+  11  Tityra_cayana                33.56%    passed     85.58%
+  12  Tityra_inquisitor            33.51%    passed     97.85%
+  13  Tityra_leucura                0.00%    passed     63.48%
+  14  Tityra_semifasciata          16.76%    passed     83.03%
+WARNING: 1 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                        28.30%  2 sequences failed composition chi2 test (p-value<5%; df=3)
+
+Partition file is not in NEXUS format, assuming RAxML-style partition file...
+Subset	Type	Seqs	Sites	Infor	Invar	Model	Name
+1	DNA	14	651	183	418	GTR	COI
+2	DNA	13	1022	293	606	GTR	CYTB
+3	DNA	14	1041	401	501	GTR	ND2
+4	DNA	3	684	0	519	GTR	ATP6
+WARNING: No parsimony-informative sites in partition ATP6
+5	DNA	6	684	118	480	GTR	CO2
+Degree of missing data: 0.245
+Info: multi-threading strategy over partitions
+
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.001 seconds
+Measuring multi-threading efficiency up to 256 CPU cores
+Increase to 10 rounds for branch lengths
+11115 trees examined
+Threads: 1 / Time: 256.007 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -22478
+Threads: 2 / Time: 224.729 sec / Speedup: 1.139 / Efficiency: 57% / LogL: -22478
+Threads: 3 / Time: 217.194 sec / Speedup: 1.179 / Efficiency: 39% / LogL: -22478
+BEST NUMBER OF THREADS: 2
+
+Perform fast likelihood tree search using GTR+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Initial log-likelihood: -21613.963
+Current log-likelihood at step 1: -20146.053
+Current log-likelihood at step 2: -19997.304
+Current log-likelihood at step 3: -19965.743
+Current log-likelihood at step 4: -19938.012
+Current log-likelihood at step 5: -19910.412
+Current log-likelihood at step 6: -19882.256
+Current log-likelihood at step 7: -19739.390
+Current log-likelihood at step 8: -19701.783
+Current log-likelihood at step 9: -19701.006
+Parameters optimization took 8 rounds (0.191 sec)
+
+
+WARNING: Estimated model parameters are at boundary that can cause numerical instability!
+
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+Initial log-likelihood: -19701.006
+Current log-likelihood at step 1: -19700.493
+Partition-specific rates:  0.921 1.083 1.226 0.556 1.051
+Parameters optimization took 0 rounds (0.016 sec)
+
+
+WARNING: Estimated model parameters are at boundary that can cause numerical instability!
+
+Time for fast ML tree search: 0.220 seconds
+
+NOTE: ModelFinder requires 7 MB RAM!
+Selecting individual models for 5 charsets using BIC...
+Full partition model BIC score: 39872.269 (LnL: -19661.761  df:66)
+Partition information was printed to concatenated_all_genes.best_scheme.nex
+Partition information in Raxml format was printed to concatenated_all_genes.best_scheme
+
+All model information printed to concatenated_all_genes.model.gz
+CPU time for ModelFinder: 1322.110 seconds (0h:22m:2s)
+Wall-clock time for ModelFinder: 704.105 seconds (0h:11m:44s)
+Generating 1000 samples for ultrafast bootstrap (seed: 373246)...
+
+NOTE: 6 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -19724.357
+Current log-likelihood at step 1: -19671.374
+Current log-likelihood at step 2: -19669.663
+Current log-likelihood at step 3: -19669.189
+Current log-likelihood at step 4: -19668.995
+Current log-likelihood at step 5: -19668.890
+Current log-likelihood at step 6: -19668.836
+Partition-specific rates:  1.011 1.101 1.324 0.404 0.942
+Parameters optimization took 5 rounds (0.053 sec)
+
+Wrote distance file to... 
+Computing ML distances based on estimated model parameters...
+Calculating distance matrix: done in 5.59259e-05 secs using 661.6% CPU
+Computing ML distances took 0.000088 sec (of wall-clock time) 0.000404 sec (of CPU time)
+WARNING: Some pairwise ML distances are too long (saturated)
+Setting up auxiliary I and S matrices: done in 0.000293252 secs using 11.94% CPU
+Computing RapidNJ tree took 0.003756 sec (of wall-clock time) 0.005520 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -20694.018
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.179 second
+Computing log-likelihood of 97 initial trees ... 0.267 seconds
+Current best score: -19668.836
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -19668.836
+Current log-likelihood at step 1: -19668.805
+Parameters optimization took 0 rounds (0.008 sec)
+
+BETTER TREE FOUND at iteration 1: -19668.805
+Iteration 10 / LogL: -19668.881 / Time: 0h:11m:45s
+Iteration 20 / LogL: -19668.811 / Time: 0h:11m:45s
+Finish initializing candidate tree set (1)
+Current best tree score: -19668.805 / CPU time: 1.214
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -19668.903 / Time: 0h:11m:45s (0h:0m:4s left)
+Iteration 40 / LogL: -19668.814 / Time: 0h:11m:46s (0h:0m:3s left)
+Iteration 50 / LogL: -19668.828 / Time: 0h:11m:46s (0h:0m:2s left)
+Log-likelihood cutoff on original alignment: -19701.788
+Iteration 60 / LogL: -19668.816 / Time: 0h:11m:47s (0h:0m:2s left)
+Iteration 70 / LogL: -19668.843 / Time: 0h:11m:47s (0h:0m:1s left)
+Iteration 80 / LogL: -19668.816 / Time: 0h:11m:48s (0h:0m:1s left)
+Iteration 90 / LogL: -19668.810 / Time: 0h:11m:48s (0h:0m:0s left)
+Iteration 100 / LogL: -19668.900 / Time: 0h:11m:49s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -19701.788
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 1.000
+TREE SEARCH COMPLETED AFTER 102 ITERATIONS / Time: 0h:11m:49s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+Initial log-likelihood: -19668.805
+Current log-likelihood at step 1: -19668.785
+Current log-likelihood at step 2: -19668.772
+Current log-likelihood at step 3: -19668.763
+Partition-specific rates:  1.005 1.095 1.317 0.401 0.970
+Parameters optimization took 2 rounds (0.023 sec)
+
+Partition information was printed to concatenated_all_genes.best_model.nex
+BEST SCORE FOUND : -19668.763
+
+Testing tree branches by SH-like aLRT with 1000 replicates...
+0.328 sec.
+Creating bootstrap support values...
+Split supports printed to NEXUS file concatenated_all_genes.splits.nex
+Total tree length: 2.250
+
+Total number of iterations: 102
+CPU time used for tree search: 9.036 sec (0h:0m:9s)
+Wall-clock time used for tree search: 4.975 sec (0h:0m:4s)
+Total CPU time used: 1332.093 sec (0h:22m:12s)
+Total wall-clock time used: 709.600 sec (0h:11m:49s)
+
+Computing bootstrap consensus tree...
+Reading input file concatenated_all_genes.splits.nex...
+14 taxa and 61 splits.
+Consensus tree written to concatenated_all_genes.contree
+Reading input trees file concatenated_all_genes.contree
+Log-likelihood of consensus tree: -19668.763
+
+Analysis results written to: 
+  IQ-TREE report:                concatenated_all_genes.iqtree
+  Maximum-likelihood tree:       concatenated_all_genes.treefile
+  Likelihood distances:          concatenated_all_genes.mldist
+  Best partitioning scheme:      concatenated_all_genes.best_scheme.nex
+           in RAxML format:      concatenated_all_genes.best_scheme
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          concatenated_all_genes.splits.nex
+  Consensus tree:                concatenated_all_genes.contree
+  Screen log file:               concatenated_all_genes.log
+
+Date and Time: Tue Apr 28 15:12:19 2026
+  ✓ IQ-TREE analysis completed successfully
+
+Tree files generated:
+-rw-rw-r-- 1 mkapun phylo 705 28. Apr 15:12 concatenated_all_genes.treefile
+
+===================================================================
+Step 2: Plotting Phylogenetic Trees
+===================================================================
+file name is missing
+===================================================================
+Phylogenetic Analysis of Concatenated Genes (Assembly-based)
+Started: Di Apr 28 15:14:07 CEST 2026
+===================================================================
+
+Input directory: /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly
+Output directory: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_concatenated_assembly
+
+Using concatenated alignment: /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/concatenated_all_genes.fasta
+Using partitions: /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/partitions.txt
+
+===================================================================
+Step 1: Phylogenetic Inference with IQ-TREE (Partitioned)
+===================================================================
+
+Running IQ-TREE with partitioned analysis...
+This may take a while...
+
+Checkpoint (concatenated_all_genes.ckp.gz) indicates that a previous run successfully finished
+Use `-redo` option if you really want to redo the analysis and overwrite all output files.
+Use `--redo-tree` option if you want to restore ModelFinder and only redo tree search.
+Use `--undo` option if you want to continue previous run when changing/adding options.
+===================================================================
+Phylogenetic Analysis of Concatenated Genes (Assembly-based)
+Started: Di Apr 28 15:26:24 CEST 2026
+===================================================================
+
+Input directory: /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly
+Output directory: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_concatenated_assembly
+
+Using concatenated alignment: /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/concatenated_all_genes.fasta
+Using partitions: /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/partitions.txt
+
+===================================================================
+Step 1: Phylogenetic Inference with IQ-TREE (Partitioned)
+===================================================================
+
+Running IQ-TREE with partitioned analysis...
+This may take a while...
+
+Checkpoint (concatenated_all_genes.ckp.gz) indicates that a previous run successfully finished
+Use `-redo` option if you really want to redo the analysis and overwrite all output files.
+Use `--redo-tree` option if you want to restore ModelFinder and only redo tree search.
+Use `--undo` option if you want to continue previous run when changing/adding options.
+===================================================================
+Phylogenetic Analysis of Concatenated Genes (Assembly-based)
+Started: Di Apr 28 15:26:39 CEST 2026
+===================================================================
+
+Input directory: /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly
+Output directory: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_concatenated_assembly
+
+Using concatenated alignment: /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/concatenated_all_genes.fasta
+Using partitions: /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/partitions.txt
+
+===================================================================
+Step 1: Phylogenetic Inference with IQ-TREE (Partitioned)
+===================================================================
+
+Running IQ-TREE with partitioned analysis...
+This may take a while...
+
+IQ-TREE multicore version 2.3.3 COVID-edition for Linux x86 64-bit built Apr 25 2024
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams, Ly Trong Nhan, Thomas Wong
+
+Host:    nhm-phylo2 (AVX2, FMA3, 2003 GB RAM)
+Command: iqtree2 -s /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/concatenated_all_genes.fasta -p /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/partitions.txt -m MFP -bb 1000 -alrt 1000 -nt AUTO -pre concatenated_all_genes
+Seed:    492663 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Tue Apr 28 15:26:39 2026
+Kernel:  AVX+FMA - auto-detect threads (256 CPU cores detected)
+
+Reading partition model file /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/partitions.txt ...
+Reading alignment file /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/concatenated_all_genes.fasta ... Fasta format detected
+Reading fasta file: done in 0.00159188 secs using 51.32% CPU
+Alignment most likely contains DNA/RNA sequences
+Alignment has 24 sequences with 3398 columns, 1398 distinct patterns
+1093 parsimony-informative, 357 singleton sites, 1948 constant sites
+                            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.0126263 secs using 2.065e+04% CPU
+   1  Acanthisitta_chloris          0.06%    failed      0.00%
+   2  Iodopleura_fusca             20.22%    passed     56.61%
+   3  Iodopleura_isabellae         49.26%    passed     15.58%
+   4  Laniisoma_elegans            22.69%    passed     59.30%
+   5  Laniocera_hypopyrra           5.36%    passed     40.84%
+   6  Pachyramphus_aglaiae         50.21%    passed     78.60%
+   7  Pachyramphus_cinnamomeus     50.21%    passed     77.59%
+   8  Pachyramphus_marginatus      30.08%    passed     68.45%
+   9  Pachyramphus_minor           58.77%    passed     50.85%
+  10  Pachyramphus_polychopterus   20.36%    passed     95.31%
+  11  Pachyramphus_rufus           50.29%    passed     91.63%
+  12  Pachyramphus_surinamus       50.41%    passed     81.23%
+  13  Pachyramphus_validus         50.41%    passed     90.20%
+  14  Pachyramphus_versicolor      50.29%    passed     89.04%
+  15  Pachyramphus_viridis         58.48%    passed     99.88%
+  16  Pachyramphus_xanthogenys     46.47%    passed     83.41%
+  17  Schiffornis_major            28.05%    failed      4.07%
+  18  Schiffornis_turdina           0.32%    passed     76.10%
+  19  Schiffornis_virescens        20.42%    passed     31.88%
+  20  Tityra_cayana                20.19%    passed     85.50%
+  21  Tityra_inquisitor            20.13%    passed     97.84%
+  22  Tityra_leucura                0.00%    passed     42.18%
+  23  Tityra_semifasciata           0.00%    passed     86.47%
+  24  Xenopsaris_albinucha         50.21%    passed     79.25%
+WARNING: 9 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                        31.37%  2 sequences failed composition chi2 test (p-value<5%; df=3)
+
+Partition file is not in NEXUS format, assuming RAxML-style partition file...
+Subset	Type	Seqs	Sites	Infor	Invar	Model	Name
+1	DNA	23	651	204	406	GTR	COI
+2	DNA	13	1022	293	606	GTR	CYTB
+3	DNA	24	1041	466	465	GTR	ND2
+4	DNA	7	684	130	471	GTR	CO2
+Degree of missing data: 0.288
+Info: multi-threading strategy over partitions
+
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.003 seconds
+Measuring multi-threading efficiency up to 256 CPU cores
+Increase to 10 rounds for branch lengths
+5622 trees examined
+Threads: 1 / Time: 256.005 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -27005
+===================================================================
+Phylogenetic Analysis of Concatenated Genes (Assembly-based)
+Started: Di Apr 28 15:32:54 CEST 2026
+===================================================================
+
+Input directory: /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly
+Output directory: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_concatenated_assembly
+
+Using concatenated alignment: /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/concatenated_all_genes.fasta
+Using partitions: /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/partitions.txt
+
+===================================================================
+Step 1: Phylogenetic Inference with IQ-TREE (Partitioned)
+===================================================================
+
+Running IQ-TREE with partitioned analysis...
+This may take a while...
+
+IQ-TREE multicore version 2.3.3 COVID-edition for Linux x86 64-bit built Apr 25 2024
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams, Ly Trong Nhan, Thomas Wong
+
+Host:    nhm-phylo2 (AVX2, FMA3, 2003 GB RAM)
+Command: iqtree2 -s /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/concatenated_all_genes.fasta -p /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/partitions.txt -m MFP -bb 1000 -alrt 1000 -nt AUTO -pre concatenated_all_genes
+Seed:    38726 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Tue Apr 28 15:32:55 2026
+Kernel:  AVX+FMA - auto-detect threads (256 CPU cores detected)
+
+Reading partition model file /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/partitions.txt ...
+Reading alignment file /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/concatenated_all_genes.fasta ... Fasta format detected
+Reading fasta file: done in 0.00159361 secs using 28.43% CPU
+Alignment most likely contains DNA/RNA sequences
+Alignment has 24 sequences with 3398 columns, 1398 distinct patterns
+1093 parsimony-informative, 357 singleton sites, 1948 constant sites
+                            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.0185035 secs using 2.282e+04% CPU
+   1  Acanthisitta_chloris          0.06%    failed      0.00%
+   2  Iodopleura_fusca             20.22%    passed     56.61%
+   3  Iodopleura_isabellae         49.26%    passed     15.58%
+   4  Laniisoma_elegans            22.69%    passed     59.30%
+   5  Laniocera_hypopyrra           5.36%    passed     40.84%
+   6  Pachyramphus_aglaiae         50.21%    passed     78.60%
+   7  Pachyramphus_cinnamomeus     50.21%    passed     77.59%
+   8  Pachyramphus_marginatus      30.08%    passed     68.45%
+   9  Pachyramphus_minor           58.77%    passed     50.85%
+  10  Pachyramphus_polychopterus   20.36%    passed     95.31%
+  11  Pachyramphus_rufus           50.29%    passed     91.63%
+  12  Pachyramphus_surinamus       50.41%    passed     81.23%
+  13  Pachyramphus_validus         50.41%    passed     90.20%
+  14  Pachyramphus_versicolor      50.29%    passed     89.04%
+  15  Pachyramphus_viridis         58.48%    passed     99.88%
+  16  Pachyramphus_xanthogenys     46.47%    passed     83.41%
+  17  Schiffornis_major            28.05%    failed      4.07%
+  18  Schiffornis_turdina           0.32%    passed     76.10%
+  19  Schiffornis_virescens        20.42%    passed     31.88%
+  20  Tityra_cayana                20.19%    passed     85.50%
+  21  Tityra_inquisitor            20.13%    passed     97.84%
+  22  Tityra_leucura                0.00%    passed     42.18%
+  23  Tityra_semifasciata           0.00%    passed     86.47%
+  24  Xenopsaris_albinucha         50.21%    passed     79.25%
+WARNING: 9 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                        31.37%  2 sequences failed composition chi2 test (p-value<5%; df=3)
+
+Partition file is not in NEXUS format, assuming RAxML-style partition file...
+Subset	Type	Seqs	Sites	Infor	Invar	Model	Name
+1	DNA	23	651	204	406	GTR	COI
+2	DNA	13	1022	293	606	GTR	CYTB
+3	DNA	24	1041	466	465	GTR	ND2
+4	DNA	7	684	130	471	GTR	CO2
+Degree of missing data: 0.288
+Info: multi-threading strategy over partitions
+
+
+NOTE: Restoring information from model checkpoint file concatenated_all_genes.model.gz
+
+CHECKPOINT: Initial tree restored
+Measuring multi-threading efficiency up to 256 CPU cores
+Increase to 10 rounds for branch lengths
+5608 trees examined
+Threads: 1 / Time: 256.008 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -27010
+Threads: 2 / Time: 235.129 sec / Speedup: 1.089 / Efficiency: 54% / LogL: -27010
+Threads: 3 / Time: 236.989 sec / Speedup: 1.080 / Efficiency: 36% / LogL: -27010
+BEST NUMBER OF THREADS: 2
+
+Perform fast likelihood tree search using GTR+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Initial log-likelihood: -24756.110
+Current log-likelihood at step 1: -22782.599
+Current log-likelihood at step 2: -22601.315
+Current log-likelihood at step 3: -22520.844
+Current log-likelihood at step 4: -22268.515
+Current log-likelihood at step 5: -22263.573
+Parameters optimization took 4 rounds (0.254 sec)
+
+
+WARNING: Estimated model parameters are at boundary that can cause numerical instability!
+
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+Initial log-likelihood: -22242.043
+Current log-likelihood at step 1: -22239.663
+Current log-likelihood at step 2: -22237.809
+Current log-likelihood at step 3: -22235.699
+Current log-likelihood at step 4: -22233.199
+Current log-likelihood at step 5: -22230.228
+Current log-likelihood at step 6: -22226.768
+Current log-likelihood at step 7: -22222.637
+Current log-likelihood at step 8: -22217.598
+Current log-likelihood at step 9: -22211.110
+Current log-likelihood at step 10: -22204.717
+Current log-likelihood at step 11: -22201.109
+Current log-likelihood at step 12: -22198.303
+Current log-likelihood at step 13: -22196.151
+Current log-likelihood at step 14: -22194.916
+Current log-likelihood at step 15: -22194.373
+Partition-specific rates:  0.848 0.990 1.094 1.017
+Parameters optimization took 14 rounds (0.392 sec)
+
+
+WARNING: Estimated model parameters are at boundary that can cause numerical instability!
+
+Time for fast ML tree search: 0.708 seconds
+
+NOTE: ModelFinder requires 10 MB RAM!
+Selecting individual models for 4 charsets using BIC...
+Full partition model BIC score: 45021.730 (LnL: -22193.758  df:78)
+Partition information was printed to concatenated_all_genes.best_scheme.nex
+Partition information in Raxml format was printed to concatenated_all_genes.best_scheme
+
+All model information printed to concatenated_all_genes.model.gz
+CPU time for ModelFinder: 1411.448 seconds (0h:23m:31s)
+Wall-clock time for ModelFinder: 738.217 seconds (0h:12m:18s)
+Generating 1000 samples for ultrafast bootstrap (seed: 38726)...
+
+NOTE: 8 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -22219.944
+Current log-likelihood at step 1: -22199.332
+Current log-likelihood at step 2: -22195.360
+Current log-likelihood at step 3: -22194.483
+Current log-likelihood at step 4: -22194.204
+Current log-likelihood at step 5: -22194.091
+Current log-likelihood at step 6: -22194.035
+Partition-specific rates:  0.914 1.008 1.176 0.802
+Parameters optimization took 5 rounds (0.099 sec)
+
+Wrote distance file to... 
+Computing ML distances based on estimated model parameters...
+Calculating distance matrix: done in 0.000146586 secs using 817.3% CPU
+Computing ML distances took 0.000180 sec (of wall-clock time) 0.001235 sec (of CPU time)
+WARNING: Some pairwise ML distances are too long (saturated)
+Setting up auxiliary I and S matrices: done in 0.000325062 secs using 141.5% CPU
+Computing RapidNJ tree took 0.006867 sec (of wall-clock time) 0.007851 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -24176.421
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.403 second
+Computing log-likelihood of 98 initial trees ... 0.647 seconds
+Current best score: -22194.035
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -22193.697
+Current log-likelihood at step 1: -22193.615
+Parameters optimization took 0 rounds (0.015 sec)
+
+
+WARNING: Estimated model parameters are at boundary that can cause numerical instability!
+
+BETTER TREE FOUND at iteration 1: -22193.615
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -22193.227
+Current log-likelihood at step 1: -22193.181
+Parameters optimization took 0 rounds (0.012 sec)
+
+
+WARNING: Estimated model parameters are at boundary that can cause numerical instability!
+
+BETTER TREE FOUND at iteration 2: -22193.181
+Iteration 10 / LogL: -22193.364 / Time: 0h:12m:20s
+Iteration 20 / LogL: -22193.203 / Time: 0h:12m:21s
+Finish initializing candidate tree set (3)
+Current best tree score: -22193.181 / CPU time: 3.088
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -22193.622 / Time: 0h:12m:22s (0h:0m:10s left)
+Iteration 40 / LogL: -22193.680 / Time: 0h:12m:23s (0h:0m:8s left)
+Iteration 50 / LogL: -22193.223 / Time: 0h:12m:24s (0h:0m:6s left)
+Log-likelihood cutoff on original alignment: -22233.039
+Iteration 60 / LogL: -22193.617 / Time: 0h:12m:25s (0h:0m:5s left)
+Iteration 70 / LogL: -22193.611 / Time: 0h:12m:26s (0h:0m:3s left)
+Iteration 80 / LogL: -22193.257 / Time: 0h:12m:27s (0h:0m:2s left)
+Iteration 90 / LogL: -22193.417 / Time: 0h:12m:28s (0h:0m:1s left)
+Iteration 100 / LogL: -22193.663 / Time: 0h:12m:29s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -22229.966
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 1.000
+TREE SEARCH COMPLETED AFTER 103 ITERATIONS / Time: 0h:12m:30s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+Initial log-likelihood: -22193.181
+Current log-likelihood at step 1: -22193.167
+Current log-likelihood at step 2: -22193.156
+Current log-likelihood at step 3: -22193.153
+Partition-specific rates:  0.910 0.997 1.173 0.827
+Parameters optimization took 2 rounds (0.037 sec)
+
+
+WARNING: Estimated model parameters are at boundary that can cause numerical instability!
+
+Partition information was printed to concatenated_all_genes.best_model.nex
+BEST SCORE FOUND : -22193.153
+
+Testing tree branches by SH-like aLRT with 1000 replicates...
+0.595 sec.
+Creating bootstrap support values...
+Split supports printed to NEXUS file concatenated_all_genes.splits.nex
+Total tree length: 3.321
+
+Total number of iterations: 103
+CPU time used for tree search: 21.396 sec (0h:0m:21s)
+Wall-clock time used for tree search: 11.598 sec (0h:0m:11s)
+Total CPU time used: 1434.526 sec (0h:23m:54s)
+Total wall-clock time used: 750.725 sec (0h:12m:30s)
+
+Computing bootstrap consensus tree...
+Reading input file concatenated_all_genes.splits.nex...
+24 taxa and 100 splits.
+Consensus tree written to concatenated_all_genes.contree
+Reading input trees file concatenated_all_genes.contree
+Log-likelihood of consensus tree: -22193.153
+
+Analysis results written to: 
+  IQ-TREE report:                concatenated_all_genes.iqtree
+  Maximum-likelihood tree:       concatenated_all_genes.treefile
+  Likelihood distances:          concatenated_all_genes.mldist
+  Best partitioning scheme:      concatenated_all_genes.best_scheme.nex
+           in RAxML format:      concatenated_all_genes.best_scheme
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          concatenated_all_genes.splits.nex
+  Consensus tree:                concatenated_all_genes.contree
+  Screen log file:               concatenated_all_genes.log
+
+Date and Time: Tue Apr 28 15:45:25 2026
+  ✓ IQ-TREE analysis completed successfully
+
+Tree files generated:
+-rw-rw-r-- 1 mkapun phylo 1,3K 28. Apr 15:45 concatenated_all_genes.treefile
+
+===================================================================
+Step 2: Plotting Phylogenetic Trees
+===================================================================
+Reading tree file: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_concatenated_assembly/trees/concatenated_all_genes.treefile 
+Tree successfully loaded
+Number of tips: 24 
+Tips: Acanthisitta_chloris, Iodopleura_fusca, Iodopleura_isabellae, Laniisoma_elegans, Laniocera_hypopyrra, Schiffornis_major, Schiffornis_turdina, Schiffornis_virescens, Pachyramphus_aglaiae, Pachyramphus_minor, Pachyramphus_validus, Pachyramphus_rufus, Pachyramphus_viridis, Pachyramphus_xanthogenys, Pachyramphus_versicolor, Pachyramphus_cinnamomeus, Pachyramphus_surinamus, Pachyramphus_marginatus, Pachyramphus_polychopterus, Xenopsaris_albinucha, Tityra_cayana, Tityra_semifasciata, Tityra_inquisitor, Tityra_leucura 
+
+Rooted with 1 Acanthisitta tip(s)
+
+Creating rectangular tree plot...
+Warnmeldungen:
+1: `aes_()` was deprecated in ggplot2 3.0.0.
+ℹ Please use tidy evaluation idioms with `aes()`
+ℹ The deprecated feature was likely used in the ggtree package.
+  Please report the issue at <https://github.com/YuLab-SMU/ggtree/issues>. 
+2: In fortify(data, ...) : Arguments in `...` must be used.
+✖ Problematic arguments:
+• as.Date = as.Date
+• yscale_mapping = yscale_mapping
+• hang = hang
+ℹ Did you misspell an argument name?
+3: `aes_string()` was deprecated in ggplot2 3.0.0.
+ℹ Please use tidy evaluation idioms with `aes()`.
+ℹ See also `vignette("ggplot2-in-packages")` for more information.
+ℹ The deprecated feature was likely used in the ggtree package.
+  Please report the issue at <https://github.com/YuLab-SMU/ggtree/issues>. 
+Saved rectangular tree: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_concatenated_assembly/plots/concatenated_tree_rectangular.pdf 
+
+Creating circular tree plot...
+Warnmeldung:
+In fortify(data, ...) : Arguments in `...` must be used.
+✖ Problematic arguments:
+• as.Date = as.Date
+• yscale_mapping = yscale_mapping
+• hang = hang
+ℹ Did you misspell an argument name?
+Saved circular tree: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_concatenated_assembly/plots/concatenated_tree_circular.pdf 
+
+Creating bootstrap support plot...
+Warnmeldung:
+NAs durch Umwandlung erzeugt 
+Warnmeldung:
+In fortify(data, ...) : Arguments in `...` must be used.
+✖ Problematic arguments:
+• as.Date = as.Date
+• yscale_mapping = yscale_mapping
+• hang = hang
+ℹ Did you misspell an argument name?
+Error in `geom_point2()`:
+! Problem while computing aesthetics.
+ℹ Error occurred in the 4th layer.
+Caused by error:
+! Objekt 'tip.label' nicht gefunden
+Backtrace:
+     ▆
+  1. ├─ggplot2::ggsave(output_file, p_support, width = 14, height = 12)
+  2. │ └─base::lapply(plot, grid.draw)
+  3. │   ├─grid (local) FUN(X[[i]], ...)
+  4. │   └─ggplot2 (local) `grid.draw.ggplot2::ggplot`(X[[i]], ...)
+  5. │     ├─base::print(x)
+  6. │     └─ggplot2 (local) `print.ggplot2::ggplot`(x)
+  7. │       ├─ggplot2::ggplot_build(x)
+  8. │       └─ggplot2 (local) `ggplot_build.ggplot2::ggplot`(x)
+  9. │         └─ggplot2:::by_layer(...)
+ 10. │           ├─rlang::try_fetch(...)
+ 11. │           │ ├─base::tryCatch(...)
+ 12. │           │ │ └─base (local) tryCatchList(expr, classes, parentenv, handlers)
+ 13. │           │ │   └─base (local) tryCatchOne(expr, names, parentenv, handlers[[1L]])
+ 14. │           │ │     └─base (local) doTryCatch(return(expr), name, parentenv, handler)
+ 15. │           │ └─base::withCallingHandlers(...)
+ 16. │           └─ggplot2 (local) f(l = layers[[i]], d = data[[i]])
+ 17. │             └─l$compute_aesthetics(d, plot)
+ 18. │               └─ggplot2 (local) compute_aesthetics(..., self = self)
+ 19. │                 └─ggplot2:::eval_aesthetics(aesthetics, data)
+ 20. │                   └─base::lapply(aesthetics, eval_tidy, data = data, env = env)
+ 21. │                     └─rlang (local) FUN(X[[i]], ...)
+ 22. └─base::.handleSimpleError(...)
+ 23.   └─rlang (local) h(simpleError(msg, call))
+ 24.     └─handlers[[1L]](cnd)
+ 25.       └─cli::cli_abort(...)
+ 26.         └─rlang::abort(...)
+Warnmeldung:
+In FUN(X[[i]], ...) : NAs durch Umwandlung erzeugt
+Ausführung angehalten
+===================================================================
+Phylogenetic Analysis of Concatenated Genes (Assembly-based)
+Started: Di Apr 28 16:05:06 CEST 2026
+===================================================================
+
+Input directory: /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly
+Output directory: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_concatenated_assembly
+
+Using concatenated alignment: /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/concatenated_all_genes.fasta
+Using partitions: /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/partitions.txt
+
+===================================================================
+Step 1: Phylogenetic Inference with IQ-TREE (Partitioned)
+===================================================================
+
+Running IQ-TREE with partitioned analysis...
+This may take a while...
+
+Checkpoint (concatenated_all_genes.ckp.gz) indicates that a previous run successfully finished
+Use `-redo` option if you really want to redo the analysis and overwrite all output files.
+Use `--redo-tree` option if you want to restore ModelFinder and only redo tree search.
+Use `--undo` option if you want to continue previous run when changing/adding options.
+===================================================================
+Phylogenetic Analysis of Concatenated Genes (Assembly-based)
+Started: Di Apr 28 16:05:30 CEST 2026
+===================================================================
+
+Input directory: /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly
+Output directory: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_concatenated_assembly
+
+Using concatenated alignment: /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/concatenated_all_genes.fasta
+Using partitions: /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/partitions.txt
+
+===================================================================
+Step 1: Phylogenetic Inference with IQ-TREE (Partitioned)
+===================================================================
+
+Running IQ-TREE with partitioned analysis...
+This may take a while...
+
+IQ-TREE multicore version 2.3.3 COVID-edition for Linux x86 64-bit built Apr 25 2024
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams, Ly Trong Nhan, Thomas Wong
+
+Host:    nhm-phylo2 (AVX2, FMA3, 2003 GB RAM)
+Command: iqtree2 -s /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/concatenated_all_genes.fasta -p /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/partitions.txt -m MFP -bb 1000 -alrt 1000 -nt AUTO -pre concatenated_all_genes
+Seed:    417097 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Tue Apr 28 16:05:30 2026
+Kernel:  AVX+FMA - auto-detect threads (256 CPU cores detected)
+
+Reading partition model file /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/partitions.txt ...
+Reading alignment file /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/concatenated_all_genes.fasta ... Fasta format detected
+Reading fasta file: done in 0.00281994 secs using 89.68% CPU
+Alignment most likely contains DNA/RNA sequences
+Alignment has 20 sequences with 7414 columns, 1671 distinct patterns
+1177 parsimony-informative, 1223 singleton sites, 5014 constant sites
+                            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.0121613 secs using 2.217e+04% CPU
+   1  Acanthisitta_chloris          0.16%    failed      0.06%
+   2  Iodopleura_fusca             63.43%    failed      0.00%
+   3  Iodopleura_isabellae         22.66%    failed      0.00%
+   4  Laniisoma_elegans            10.51%    failed      1.13%
+   5  Laniocera_hypopyrra           2.51%    failed      3.44%
+   6  Pachyramphus_aglaiae         23.04%    failed      0.00%
+   7  Pachyramphus_marginatus      67.95%    failed      0.00%
+   8  Pachyramphus_minor           81.10%    failed      0.00%
+   9  Pachyramphus_polychopterus    9.36%    failed      0.93%
+  10  Pachyramphus_viridis         26.84%    failed      0.00%
+  11  Pachyramphus_xanthogenys     75.47%    failed      0.00%
+  12  Schiffornis_major            67.02%    failed      0.00%
+  13  Schiffornis_turdina           0.22%    passed     24.67%
+  14  Schiffornis_virescens        51.09%    failed      0.00%
+  15  Tityra_cayana                51.03%    failed      0.00%
+  16  Tityra_inquisitor            63.39%    failed      0.00%
+  17  Tityra_leucura               54.17%    failed      0.00%
+  18  Tityra_semifasciata           0.15%    passed     18.35%
+  19  Xenopsaris_albinucha         23.01%    failed      0.00%
+  20  _R                           87.00%    failed      0.00%
+WARNING: 10 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                        39.01%  18 sequences failed composition chi2 test (p-value<5%; df=3)
+
+Partition file is not in NEXUS format, assuming RAxML-style partition file...
+Subset	Type	Seqs	Sites	Infor	Invar	Model	Name
+1	DNA	18	651	198	413	GTR	COI
+2	DNA	13	1022	293	606	GTR	CYTB
+3	DNA	19	1041	448	479	GTR	ND2
+4	DNA	7	684	130	471	GTR	CO2
+5	DNA	13	2864	81	2043	GTR	RAG1
+6	DNA	10	1152	27	1002	GTR	RAG2
+Degree of missing data: 0.337
+Info: multi-threading strategy over partitions
+
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.004 seconds
+Measuring multi-threading efficiency up to 256 CPU cores
+Increase to 10 rounds for branch lengths
+6692 trees examined
+Threads: 1 / Time: 256.002 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -36045
+Threads: 2 / Time: 226.863 sec / Speedup: 1.128 / Efficiency: 56% / LogL: -36045
+Threads: 3 / Time: 177.970 sec / Speedup: 1.438 / Efficiency: 48% / LogL: -36045
+BEST NUMBER OF THREADS: 2
+
+Perform fast likelihood tree search using GTR+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Initial log-likelihood: -34539.247
+Current log-likelihood at step 1: -31103.934
+Current log-likelihood at step 2: -30716.559
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 3: -30613.542
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 4: -30413.964
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 5: -30402.756
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 6: -30396.574
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 7: -30392.085
+Parameters optimization took 6 rounds (0.289 sec)
+
+
+WARNING: Estimated model parameters are at boundary that can cause numerical instability!
+
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+Initial log-likelihood: -30386.866
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 1: -30382.738
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 2: -30379.769
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 3: -30377.362
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 4: -30375.366
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 5: -30373.685
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 6: -30372.244
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 7: -30370.997
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 8: -30369.902
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 9: -30368.931
+Partition-specific rates:  1.331 2.094 2.179 2.317 0.127 0.166
+Parameters optimization took 8 rounds (0.174 sec)
+
+
+WARNING: Estimated model parameters are at boundary that can cause numerical instability!
+
+Time for fast ML tree search: 0.513 seconds
+
+NOTE: ModelFinder requires 8 MB RAM!
+Selecting individual models for 6 charsets using BIC...
+Full partition model BIC score: 61409.827 (LnL: -30317.280  df:87)
+Partition information was printed to concatenated_all_genes.best_scheme.nex
+Partition information in Raxml format was printed to concatenated_all_genes.best_scheme
+
+All model information printed to concatenated_all_genes.model.gz
+CPU time for ModelFinder: 1226.363 seconds (0h:20m:26s)
+Wall-clock time for ModelFinder: 667.554 seconds (0h:11m:7s)
+Generating 1000 samples for ultrafast bootstrap (seed: 417097)...
+
+NOTE: 8 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -35022.780
+Current log-likelihood at step 1: -31102.775
+Current log-likelihood at step 2: -30426.727
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 3: -30355.725
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 4: -30338.143
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 5: -30331.708
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 6: -30328.528
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 7: -30326.590
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 8: -30325.203
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 9: -30324.163
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 10: -30323.397
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 11: -30322.841
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 12: -30322.454
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 13: -30322.198
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 14: -30322.036
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 15: -30321.925
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 16: -30321.860
+Partition-specific rates:  1.732 2.000 2.366 1.758 0.132 0.173
+Parameters optimization took 15 rounds (0.271 sec)
+
+
+WARNING: Estimated model parameters are at boundary that can cause numerical instability!
+
+Wrote distance file to... 
+Computing ML distances based on estimated model parameters...
+Calculating distance matrix: done in 5.30994e-05 secs using 442.6% CPU
+Computing ML distances took 0.000084 sec (of wall-clock time) 0.000268 sec (of CPU time)
+WARNING: Some pairwise ML distances are too long (saturated)
+Setting up auxiliary I and S matrices: done in 0.000277814 secs using 127.4% CPU
+Computing RapidNJ tree took 0.005240 sec (of wall-clock time) 0.006431 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -32332.656
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.433 second
+Computing log-likelihood of 98 initial trees ... 0.510 seconds
+Current best score: -30321.860
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -30320.689
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 1: -30320.266
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 2: -30320.154
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 3: -30320.113
+Parameters optimization took 2 rounds (0.039 sec)
+
+
+WARNING: Estimated model parameters are at boundary that can cause numerical instability!
+
+BETTER TREE FOUND at iteration 1: -30320.113
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -30319.420
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 1: -30319.237
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 2: -30319.025
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 3: -30318.955
+Parameters optimization took 2 rounds (0.039 sec)
+
+
+WARNING: Estimated model parameters are at boundary that can cause numerical instability!
+
+BETTER TREE FOUND at iteration 2: -30318.955
+Iteration 10 / LogL: -30320.530 / Time: 0h:11m:9s
+Iteration 20 / LogL: -30320.540 / Time: 0h:11m:10s
+Finish initializing candidate tree set (8)
+Current best tree score: -30318.955 / CPU time: 2.591
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -30320.330 / Time: 0h:11m:11s (0h:0m:9s left)
+Iteration 40 / LogL: -30320.665 / Time: 0h:11m:12s (0h:0m:7s left)
+Iteration 50 / LogL: -30320.805 / Time: 0h:11m:13s (0h:0m:5s left)
+Log-likelihood cutoff on original alignment: -30354.850
+Iteration 60 / LogL: -30320.546 / Time: 0h:11m:14s (0h:0m:4s left)
+Iteration 70 / LogL: -30320.626 / Time: 0h:11m:14s (0h:0m:3s left)
+Iteration 80 / LogL: -30320.543 / Time: 0h:11m:15s (0h:0m:2s left)
+Iteration 90 / LogL: -30320.432 / Time: 0h:11m:16s (0h:0m:1s left)
+Iteration 100 / LogL: -30320.519 / Time: 0h:11m:17s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -30354.411
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.999
+TREE SEARCH COMPLETED AFTER 103 ITERATIONS / Time: 0h:11m:18s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+Initial log-likelihood: -30318.955
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 1: -30318.932
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 2: -30318.917
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 3: -30318.888
+WARNING: Too high (saturated) partition rates for proportional partition model!
+Current log-likelihood at step 4: -30318.880
+Partition-specific rates:  1.734 2.027 2.368 1.730 0.129 0.169
+Parameters optimization took 3 rounds (0.050 sec)
+
+
+WARNING: Estimated model parameters are at boundary that can cause numerical instability!
+
+Partition information was printed to concatenated_all_genes.best_model.nex
+BEST SCORE FOUND : -30318.880
+
+Testing tree branches by SH-like aLRT with 1000 replicates...
+0.704 sec.
+Creating bootstrap support values...
+Split supports printed to NEXUS file concatenated_all_genes.splits.nex
+Total tree length: 11.648
+
+Total number of iterations: 103
+CPU time used for tree search: 18.273 sec (0h:0m:18s)
+Wall-clock time used for tree search: 10.122 sec (0h:0m:10s)
+Total CPU time used: 1246.851 sec (0h:20m:46s)
+Total wall-clock time used: 678.860 sec (0h:11m:18s)
+
+Computing bootstrap consensus tree...
+Reading input file concatenated_all_genes.splits.nex...
+20 taxa and 109 splits.
+Consensus tree written to concatenated_all_genes.contree
+Reading input trees file concatenated_all_genes.contree
+Log-likelihood of consensus tree: -30319.090
+
+Analysis results written to: 
+  IQ-TREE report:                concatenated_all_genes.iqtree
+  Maximum-likelihood tree:       concatenated_all_genes.treefile
+  Likelihood distances:          concatenated_all_genes.mldist
+  Best partitioning scheme:      concatenated_all_genes.best_scheme.nex
+           in RAxML format:      concatenated_all_genes.best_scheme
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          concatenated_all_genes.splits.nex
+  Consensus tree:                concatenated_all_genes.contree
+  Screen log file:               concatenated_all_genes.log
+
+Date and Time: Tue Apr 28 16:16:49 2026
+  ✓ IQ-TREE analysis completed successfully
+
+Tree files generated:
+-rw-rw-r-- 1 mkapun phylo 1019 28. Apr 16:16 concatenated_all_genes.treefile
+
+===================================================================
+Step 2: Plotting Phylogenetic Trees
+===================================================================
+Reading tree file: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_concatenated_assembly/trees/concatenated_all_genes.treefile 
+Tree successfully loaded
+Number of tips: 20 
+Tips: Acanthisitta_chloris, Iodopleura_fusca, Iodopleura_isabellae, Laniisoma_elegans, Laniocera_hypopyrra, Schiffornis_major, Schiffornis_turdina, Schiffornis_virescens, Pachyramphus_aglaiae, Pachyramphus_minor, Pachyramphus_viridis, Pachyramphus_xanthogenys, Pachyramphus_marginatus, Pachyramphus_polychopterus, Xenopsaris_albinucha, _R, Tityra_cayana, Tityra_semifasciata, Tityra_inquisitor, Tityra_leucura 
+
+Rooted with 1 Acanthisitta tip(s)
+
+Creating rectangular tree plot...
+Warnmeldungen:
+1: `aes_()` was deprecated in ggplot2 3.0.0.
+ℹ Please use tidy evaluation idioms with `aes()`
+ℹ The deprecated feature was likely used in the ggtree package.
+  Please report the issue at <https://github.com/YuLab-SMU/ggtree/issues>. 
+2: In fortify(data, ...) : Arguments in `...` must be used.
+✖ Problematic arguments:
+• as.Date = as.Date
+• yscale_mapping = yscale_mapping
+• hang = hang
+ℹ Did you misspell an argument name?
+3: `aes_string()` was deprecated in ggplot2 3.0.0.
+ℹ Please use tidy evaluation idioms with `aes()`.
+ℹ See also `vignette("ggplot2-in-packages")` for more information.
+ℹ The deprecated feature was likely used in the ggtree package.
+  Please report the issue at <https://github.com/YuLab-SMU/ggtree/issues>. 
+Saved rectangular tree: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_concatenated_assembly/plots/concatenated_tree_rectangular.pdf 
+
+Creating circular tree plot...
+Warnmeldung:
+In fortify(data, ...) : Arguments in `...` must be used.
+✖ Problematic arguments:
+• as.Date = as.Date
+• yscale_mapping = yscale_mapping
+• hang = hang
+ℹ Did you misspell an argument name?
+Saved circular tree: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_concatenated_assembly/plots/concatenated_tree_circular.pdf 
+
+Creating bootstrap support plot...
+Warnmeldung:
+NAs durch Umwandlung erzeugt 
+Warnmeldung:
+In fortify(data, ...) : Arguments in `...` must be used.
+✖ Problematic arguments:
+• as.Date = as.Date
+• yscale_mapping = yscale_mapping
+• hang = hang
+ℹ Did you misspell an argument name?
+Error in `geom_point2()`:
+! Problem while computing aesthetics.
+ℹ Error occurred in the 4th layer.
+Caused by error:
+! Objekt 'tip.label' nicht gefunden
+Backtrace:
+     ▆
+  1. ├─ggplot2::ggsave(output_file, p_support, width = 14, height = 12)
+  2. │ └─base::lapply(plot, grid.draw)
+  3. │   ├─grid (local) FUN(X[[i]], ...)
+  4. │   └─ggplot2 (local) `grid.draw.ggplot2::ggplot`(X[[i]], ...)
+  5. │     ├─base::print(x)
+  6. │     └─ggplot2 (local) `print.ggplot2::ggplot`(x)
+  7. │       ├─ggplot2::ggplot_build(x)
+  8. │       └─ggplot2 (local) `ggplot_build.ggplot2::ggplot`(x)
+  9. │         └─ggplot2:::by_layer(...)
+ 10. │           ├─rlang::try_fetch(...)
+ 11. │           │ ├─base::tryCatch(...)
+ 12. │           │ │ └─base (local) tryCatchList(expr, classes, parentenv, handlers)
+ 13. │           │ │   └─base (local) tryCatchOne(expr, names, parentenv, handlers[[1L]])
+ 14. │           │ │     └─base (local) doTryCatch(return(expr), name, parentenv, handler)
+ 15. │           │ └─base::withCallingHandlers(...)
+ 16. │           └─ggplot2 (local) f(l = layers[[i]], d = data[[i]])
+ 17. │             └─l$compute_aesthetics(d, plot)
+ 18. │               └─ggplot2 (local) compute_aesthetics(..., self = self)
+ 19. │                 └─ggplot2:::eval_aesthetics(aesthetics, data)
+ 20. │                   └─base::lapply(aesthetics, eval_tidy, data = data, env = env)
+ 21. │                     └─rlang (local) FUN(X[[i]], ...)
+ 22. └─base::.handleSimpleError(...)
+ 23.   └─rlang (local) h(simpleError(msg, call))
+ 24.     └─handlers[[1L]](cnd)
+ 25.       └─cli::cli_abort(...)
+ 26.         └─rlang::abort(...)
+Warnmeldung:
+In FUN(X[[i]], ...) : NAs durch Umwandlung erzeugt
+Ausführung angehalten
+===================================================================
+Phylogenetic Analysis of Concatenated Genes (Assembly-based)
+Started: Di Apr 28 16:27:55 CEST 2026
+===================================================================
+
+Input directory: /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly
+Output directory: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_concatenated_assembly
+
+Using concatenated alignment: /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/concatenated_all_genes.fasta
+Using partitions: /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/partitions.txt
+
+===================================================================
+Step 1: Phylogenetic Inference with IQ-TREE (Partitioned)
+===================================================================
+
+Running IQ-TREE with partitioned analysis...
+This may take a while...
+
+IQ-TREE multicore version 2.3.3 COVID-edition for Linux x86 64-bit built Apr 25 2024
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams, Ly Trong Nhan, Thomas Wong
+
+Host:    nhm-phylo2 (AVX2, FMA3, 2003 GB RAM)
+Command: iqtree2 -s /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/concatenated_all_genes.fasta -p /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/partitions.txt -m MFP -bb 1000 -alrt 1000 -nt AUTO -pre concatenated_all_genes
+Seed:    480337 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Tue Apr 28 16:27:55 2026
+Kernel:  AVX+FMA - auto-detect threads (256 CPU cores detected)
+
+Reading partition model file /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/partitions.txt ...
+Reading alignment file /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/concatenated_all_genes.fasta ... Fasta format detected
+Reading fasta file: done in 0.00155897 secs using 93.91% CPU
+Alignment most likely contains DNA/RNA sequences
+Alignment has 24 sequences with 3398 columns, 1398 distinct patterns
+1093 parsimony-informative, 357 singleton sites, 1948 constant sites
+                            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.00647028 secs using 2.143e+04% CPU
+   1  Acanthisitta_chloris          0.06%    failed      0.00%
+   2  Iodopleura_fusca             20.22%    passed     56.61%
+   3  Iodopleura_isabellae         49.26%    passed     15.58%
+   4  Laniisoma_elegans            22.69%    passed     59.30%
+   5  Laniocera_hypopyrra           5.36%    passed     40.84%
+   6  Pachyramphus_aglaiae         50.21%    passed     78.60%
+   7  Pachyramphus_cinnamomeus     50.21%    passed     77.59%
+   8  Pachyramphus_marginatus      30.08%    passed     68.45%
+   9  Pachyramphus_minor           58.77%    passed     50.85%
+  10  Pachyramphus_polychopterus   20.36%    passed     95.31%
+  11  Pachyramphus_rufus           50.29%    passed     91.63%
+  12  Pachyramphus_surinamus       50.41%    passed     81.23%
+  13  Pachyramphus_validus         50.41%    passed     90.20%
+  14  Pachyramphus_versicolor      50.29%    passed     89.04%
+  15  Pachyramphus_viridis         58.48%    passed     99.88%
+  16  Pachyramphus_xanthogenys     46.47%    passed     83.41%
+  17  Schiffornis_major            28.05%    failed      4.07%
+  18  Schiffornis_turdina           0.32%    passed     76.10%
+  19  Schiffornis_virescens        20.42%    passed     31.88%
+  20  Tityra_cayana                20.19%    passed     85.50%
+  21  Tityra_inquisitor            20.13%    passed     97.84%
+  22  Tityra_leucura                0.00%    passed     42.18%
+  23  Tityra_semifasciata           0.00%    passed     86.47%
+  24  Xenopsaris_albinucha         50.21%    passed     79.25%
+WARNING: 9 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                        31.37%  2 sequences failed composition chi2 test (p-value<5%; df=3)
+
+Partition file is not in NEXUS format, assuming RAxML-style partition file...
+Subset	Type	Seqs	Sites	Infor	Invar	Model	Name
+1	DNA	23	651	204	406	GTR	COI
+2	DNA	13	1022	293	606	GTR	CYTB
+3	DNA	24	1041	466	465	GTR	ND2
+4	DNA	7	684	130	471	GTR	CO2
+Degree of missing data: 0.288
+Info: multi-threading strategy over partitions
+
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.003 seconds
+Measuring multi-threading efficiency up to 256 CPU cores
+Increase to 10 rounds for branch lengths
+5594 trees examined
+Threads: 1 / Time: 256.011 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -26880
+Threads: 2 / Time: 255.018 sec / Speedup: 1.004 / Efficiency: 50% / LogL: -26880
+Threads: 3 / Time: 292.184 sec / Speedup: 0.876 / Efficiency: 29% / LogL: -26880
+BEST NUMBER OF THREADS: 1
+
+Perform fast likelihood tree search using GTR+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Initial log-likelihood: -24756.110
+Current log-likelihood at step 1: -22782.599
+Current log-likelihood at step 2: -22601.314
+Current log-likelihood at step 3: -22520.844
+Current log-likelihood at step 4: -22268.512
+Current log-likelihood at step 5: -22263.573
+Parameters optimization took 4 rounds (0.398 sec)
+
+
+WARNING: Estimated model parameters are at boundary that can cause numerical instability!
+
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+Initial log-likelihood: -22242.043
+Current log-likelihood at step 1: -22239.663
+Current log-likelihood at step 2: -22237.809
+Current log-likelihood at step 3: -22235.699
+Current log-likelihood at step 4: -22233.199
+Current log-likelihood at step 5: -22230.228
+Current log-likelihood at step 6: -22226.768
+Current log-likelihood at step 7: -22222.636
+Current log-likelihood at step 8: -22217.599
+Current log-likelihood at step 9: -22211.111
+Current log-likelihood at step 10: -22204.719
+Current log-likelihood at step 11: -22201.112
+Current log-likelihood at step 12: -22198.309
+Current log-likelihood at step 13: -22196.156
+Current log-likelihood at step 14: -22194.920
+Current log-likelihood at step 15: -22194.374
+Partition-specific rates:  0.848 0.990 1.094 1.017
+Parameters optimization took 14 rounds (0.675 sec)
+
+
+WARNING: Estimated model parameters are at boundary that can cause numerical instability!
+
+Time for fast ML tree search: 1.153 seconds
+
+NOTE: ModelFinder requires 6 MB RAM!
+Selecting individual models for 4 charsets using BIC...
+Full partition model BIC score: 45021.731 (LnL: -22193.759  df:78)
+Partition information was printed to concatenated_all_genes.best_scheme.nex
+Partition information in Raxml format was printed to concatenated_all_genes.best_scheme
+
+All model information printed to concatenated_all_genes.model.gz
+CPU time for ModelFinder: 1616.560 seconds (0h:26m:56s)
+Wall-clock time for ModelFinder: 821.255 seconds (0h:13m:41s)
+Generating 1000 samples for ultrafast bootstrap (seed: 480337)...
+
+NOTE: 8 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -22219.941
+Current log-likelihood at step 1: -22199.330
+Current log-likelihood at step 2: -22195.359
+Current log-likelihood at step 3: -22194.483
+Current log-likelihood at step 4: -22194.204
+Current log-likelihood at step 5: -22194.091
+Current log-likelihood at step 6: -22194.035
+Partition-specific rates:  0.914 1.008 1.176 0.802
+Parameters optimization took 5 rounds (0.155 sec)
+
+Wrote distance file to... 
+Computing ML distances based on estimated model parameters...
+Calculating distance matrix: done in 0.000136097 secs using 96.25% CPU
+Computing ML distances took 0.000167 sec (of wall-clock time) 0.000165 sec (of CPU time)
+WARNING: Some pairwise ML distances are too long (saturated)
+Setting up auxiliary I and S matrices: done in 7.52024e-05 secs using 109% CPU
+Computing RapidNJ tree took 0.000266 sec (of wall-clock time) 0.000246 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -24115.317
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.406 second
+Computing log-likelihood of 98 initial trees ... 0.685 seconds
+Current best score: -22194.035
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -22193.697
+Current log-likelihood at step 1: -22193.614
+Parameters optimization took 0 rounds (0.024 sec)
+
+
+WARNING: Estimated model parameters are at boundary that can cause numerical instability!
+
+BETTER TREE FOUND at iteration 1: -22193.614
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -22193.242
+Current log-likelihood at step 1: -22193.181
+Parameters optimization took 0 rounds (0.022 sec)
+
+
+WARNING: Estimated model parameters are at boundary that can cause numerical instability!
+
+BETTER TREE FOUND at iteration 2: -22193.181
+Iteration 10 / LogL: -22193.599 / Time: 0h:13m:43s
+Iteration 20 / LogL: -22193.193 / Time: 0h:13m:45s
+Finish initializing candidate tree set (3)
+Current best tree score: -22193.181 / CPU time: 3.717
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -22193.600 / Time: 0h:13m:46s (0h:0m:13s left)
+Iteration 40 / LogL: -22193.217 / Time: 0h:13m:47s (0h:0m:10s left)
+Iteration 50 / LogL: -22193.182 / Time: 0h:13m:49s (0h:0m:8s left)
+Log-likelihood cutoff on original alignment: -22231.995
+Iteration 60 / LogL: -22217.637 / Time: 0h:13m:50s (0h:0m:6s left)
+Iteration 70 / LogL: -22194.066 / Time: 0h:13m:51s (0h:0m:4s left)
+Iteration 80 / LogL: -22193.205 / Time: 0h:13m:53s (0h:0m:3s left)
+Iteration 90 / LogL: -22193.602 / Time: 0h:13m:54s (0h:0m:1s left)
+Iteration 100 / LogL: -22193.213 / Time: 0h:13m:56s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -22231.995
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.999
+TREE SEARCH COMPLETED AFTER 103 ITERATIONS / Time: 0h:13m:56s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+Initial log-likelihood: -22193.181
+Current log-likelihood at step 1: -22193.165
+Current log-likelihood at step 2: -22193.157
+Partition-specific rates:  0.909 0.998 1.174 0.824
+Parameters optimization took 1 rounds (0.041 sec)
+
+
+WARNING: Estimated model parameters are at boundary that can cause numerical instability!
+
+Partition information was printed to concatenated_all_genes.best_model.nex
+BEST SCORE FOUND : -22193.157
+
+Testing tree branches by SH-like aLRT with 1000 replicates...
+1.170 sec.
+Creating bootstrap support values...
+Split supports printed to NEXUS file concatenated_all_genes.splits.nex
+Total tree length: 3.320
+
+Total number of iterations: 103
+CPU time used for tree search: 13.841 sec (0h:0m:13s)
+Wall-clock time used for tree search: 14.904 sec (0h:0m:14s)
+Total CPU time used: 1631.913 sec (0h:27m:11s)
+Total wall-clock time used: 837.692 sec (0h:13m:57s)
+
+Computing bootstrap consensus tree...
+Reading input file concatenated_all_genes.splits.nex...
+24 taxa and 92 splits.
+Consensus tree written to concatenated_all_genes.contree
+Reading input trees file concatenated_all_genes.contree
+Log-likelihood of consensus tree: -22193.157
+
+Analysis results written to: 
+  IQ-TREE report:                concatenated_all_genes.iqtree
+  Maximum-likelihood tree:       concatenated_all_genes.treefile
+  Likelihood distances:          concatenated_all_genes.mldist
+  Best partitioning scheme:      concatenated_all_genes.best_scheme.nex
+           in RAxML format:      concatenated_all_genes.best_scheme
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          concatenated_all_genes.splits.nex
+  Consensus tree:                concatenated_all_genes.contree
+  Screen log file:               concatenated_all_genes.log
+
+Date and Time: Tue Apr 28 16:41:53 2026
+  ✓ IQ-TREE analysis completed successfully
+
+Tree files generated:
+-rw-rw-r-- 1 mkapun phylo 1,3K 28. Apr 16:41 concatenated_all_genes.treefile
+
+===================================================================
+Step 2: Plotting Phylogenetic Trees
+===================================================================
+Reading tree file: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_concatenated_assembly/trees/concatenated_all_genes.treefile 
+Tree successfully loaded
+Number of tips: 24 
+Tips: Acanthisitta_chloris, Iodopleura_fusca, Iodopleura_isabellae, Laniisoma_elegans, Laniocera_hypopyrra, Schiffornis_major, Schiffornis_turdina, Schiffornis_virescens, Pachyramphus_aglaiae, Pachyramphus_minor, Pachyramphus_validus, Pachyramphus_rufus, Pachyramphus_viridis, Pachyramphus_xanthogenys, Pachyramphus_versicolor, Pachyramphus_cinnamomeus, Pachyramphus_surinamus, Pachyramphus_marginatus, Pachyramphus_polychopterus, Xenopsaris_albinucha, Tityra_cayana, Tityra_semifasciata, Tityra_inquisitor, Tityra_leucura 
+
+Rooted with 1 Acanthisitta tip(s)
+
+Creating rectangular tree plot...
+Warnmeldungen:
+1: `aes_()` was deprecated in ggplot2 3.0.0.
+ℹ Please use tidy evaluation idioms with `aes()`
+ℹ The deprecated feature was likely used in the ggtree package.
+  Please report the issue at <https://github.com/YuLab-SMU/ggtree/issues>. 
+2: In fortify(data, ...) : Arguments in `...` must be used.
+✖ Problematic arguments:
+• as.Date = as.Date
+• yscale_mapping = yscale_mapping
+• hang = hang
+ℹ Did you misspell an argument name?
+3: `aes_string()` was deprecated in ggplot2 3.0.0.
+ℹ Please use tidy evaluation idioms with `aes()`.
+ℹ See also `vignette("ggplot2-in-packages")` for more information.
+ℹ The deprecated feature was likely used in the ggtree package.
+  Please report the issue at <https://github.com/YuLab-SMU/ggtree/issues>. 
+Saved rectangular tree: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_concatenated_assembly/plots/concatenated_tree_rectangular.pdf 
+
+Creating circular tree plot...
+Warnmeldung:
+In fortify(data, ...) : Arguments in `...` must be used.
+✖ Problematic arguments:
+• as.Date = as.Date
+• yscale_mapping = yscale_mapping
+• hang = hang
+ℹ Did you misspell an argument name?
+Saved circular tree: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_concatenated_assembly/plots/concatenated_tree_circular.pdf 
+
+Creating bootstrap support plot...
+Warnmeldung:
+NAs durch Umwandlung erzeugt 
+Warnmeldung:
+In fortify(data, ...) : Arguments in `...` must be used.
+✖ Problematic arguments:
+• as.Date = as.Date
+• yscale_mapping = yscale_mapping
+• hang = hang
+ℹ Did you misspell an argument name?
+Error in `geom_point2()`:
+! Problem while computing aesthetics.
+ℹ Error occurred in the 4th layer.
+Caused by error:
+! Objekt 'tip.label' nicht gefunden
+Backtrace:
+     ▆
+  1. ├─ggplot2::ggsave(output_file, p_support, width = 14, height = 12)
+  2. │ └─base::lapply(plot, grid.draw)
+  3. │   ├─grid (local) FUN(X[[i]], ...)
+  4. │   └─ggplot2 (local) `grid.draw.ggplot2::ggplot`(X[[i]], ...)
+  5. │     ├─base::print(x)
+  6. │     └─ggplot2 (local) `print.ggplot2::ggplot`(x)
+  7. │       ├─ggplot2::ggplot_build(x)
+  8. │       └─ggplot2 (local) `ggplot_build.ggplot2::ggplot`(x)
+  9. │         └─ggplot2:::by_layer(...)
+ 10. │           ├─rlang::try_fetch(...)
+ 11. │           │ ├─base::tryCatch(...)
+ 12. │           │ │ └─base (local) tryCatchList(expr, classes, parentenv, handlers)
+ 13. │           │ │   └─base (local) tryCatchOne(expr, names, parentenv, handlers[[1L]])
+ 14. │           │ │     └─base (local) doTryCatch(return(expr), name, parentenv, handler)
+ 15. │           │ └─base::withCallingHandlers(...)
+ 16. │           └─ggplot2 (local) f(l = layers[[i]], d = data[[i]])
+ 17. │             └─l$compute_aesthetics(d, plot)
+ 18. │               └─ggplot2 (local) compute_aesthetics(..., self = self)
+ 19. │                 └─ggplot2:::eval_aesthetics(aesthetics, data)
+ 20. │                   └─base::lapply(aesthetics, eval_tidy, data = data, env = env)
+ 21. │                     └─rlang (local) FUN(X[[i]], ...)
+ 22. └─base::.handleSimpleError(...)
+ 23.   └─rlang (local) h(simpleError(msg, call))
+ 24.     └─handlers[[1L]](cnd)
+ 25.       └─cli::cli_abort(...)
+ 26.         └─rlang::abort(...)
+Warnmeldung:
+In FUN(X[[i]], ...) : NAs durch Umwandlung erzeugt
+Ausführung angehalten
+===================================================================
+Phylogenetic Analysis of Concatenated Genes (Assembly-based)
+Started: Di Apr 28 16:43:53 CEST 2026
+===================================================================
+
+Input directory: /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly
+Output directory: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_concatenated_assembly
+
+Using concatenated alignment: /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/concatenated_all_genes.fasta
+Using partitions: /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/partitions.txt
+
+===================================================================
+Step 1: Phylogenetic Inference with IQ-TREE (Partitioned)
+===================================================================
+
+Running IQ-TREE with partitioned analysis...
+This may take a while...
+
+Checkpoint (concatenated_all_genes.ckp.gz) indicates that a previous run successfully finished
+Use `-redo` option if you really want to redo the analysis and overwrite all output files.
+Use `--redo-tree` option if you want to restore ModelFinder and only redo tree search.
+Use `--undo` option if you want to continue previous run when changing/adding options.
+===================================================================
+Phylogenetic Analysis of Concatenated Genes (Assembly-based)
+Started: Di Apr 28 16:46:20 CEST 2026
+===================================================================
+
+Input directory: /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly
+Output directory: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_concatenated_assembly
+
+Using concatenated alignment: /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/concatenated_all_genes.fasta
+Using partitions: /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/partitions.txt
+
+===================================================================
+Step 1: Phylogenetic Inference with IQ-TREE (Partitioned)
+===================================================================
+Tree file already exists, skipping IQ-TREE analysis...
+  Using existing tree: concatenated_all_genes.treefile
+  (Delete this file if you want to rerun the analysis)
+
+
+Tree files generated:
+-rw-rw-r-- 1 mkapun phylo 1,3K 28. Apr 16:41 concatenated_all_genes.treefile
+
+===================================================================
+Step 2: Plotting Phylogenetic Trees
+===================================================================
+Reading tree file: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_concatenated_assembly/trees/concatenated_all_genes.treefile 
+Tree successfully loaded
+Number of tips: 24 
+Tips: Acanthisitta_chloris, Iodopleura_fusca, Iodopleura_isabellae, Laniisoma_elegans, Laniocera_hypopyrra, Schiffornis_major, Schiffornis_turdina, Schiffornis_virescens, Pachyramphus_aglaiae, Pachyramphus_minor, Pachyramphus_validus, Pachyramphus_rufus, Pachyramphus_viridis, Pachyramphus_xanthogenys, Pachyramphus_versicolor, Pachyramphus_cinnamomeus, Pachyramphus_surinamus, Pachyramphus_marginatus, Pachyramphus_polychopterus, Xenopsaris_albinucha, Tityra_cayana, Tityra_semifasciata, Tityra_inquisitor, Tityra_leucura 
+
+Rooted with 1 Acanthisitta tip(s)
+
+Creating rectangular tree plot...
+Warnmeldungen:
+1: `aes_()` was deprecated in ggplot2 3.0.0.
+ℹ Please use tidy evaluation idioms with `aes()`
+ℹ The deprecated feature was likely used in the ggtree package.
+  Please report the issue at <https://github.com/YuLab-SMU/ggtree/issues>. 
+2: In fortify(data, ...) : Arguments in `...` must be used.
+✖ Problematic arguments:
+• as.Date = as.Date
+• yscale_mapping = yscale_mapping
+• hang = hang
+ℹ Did you misspell an argument name?
+3: `aes_string()` was deprecated in ggplot2 3.0.0.
+ℹ Please use tidy evaluation idioms with `aes()`.
+ℹ See also `vignette("ggplot2-in-packages")` for more information.
+ℹ The deprecated feature was likely used in the ggtree package.
+  Please report the issue at <https://github.com/YuLab-SMU/ggtree/issues>. 
+Saved rectangular tree: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_concatenated_assembly/plots/concatenated_tree_rectangular.pdf 
+
+Creating circular tree plot...
+Warnmeldung:
+In fortify(data, ...) : Arguments in `...` must be used.
+✖ Problematic arguments:
+• as.Date = as.Date
+• yscale_mapping = yscale_mapping
+• hang = hang
+ℹ Did you misspell an argument name?
+Saved circular tree: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_concatenated_assembly/plots/concatenated_tree_circular.pdf 
+
+Creating bootstrap support plot...
+Warnmeldung:
+NAs durch Umwandlung erzeugt 
+Warnmeldung:
+In fortify(data, ...) : Arguments in `...` must be used.
+✖ Problematic arguments:
+• as.Date = as.Date
+• yscale_mapping = yscale_mapping
+• hang = hang
+ℹ Did you misspell an argument name?
+Warnmeldung:
+In FUN(X[[i]], ...) : NAs durch Umwandlung erzeugt
+Saved bootstrap support tree: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_concatenated_assembly/plots/concatenated_tree_support.pdf 
+
+Tree plotting completed!
+
+===================================================================
+Analysis completed successfully!
+Completed: Di Apr 28 16:46:23 CEST 2026
+===================================================================
+
+Output files:
+  Tree: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_concatenated_assembly/trees/concatenated_all_genes.treefile
+  Plots: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_concatenated_assembly/plots/concatenated_tree_*.pdf
+
+===================================================================
+Phylogenetic Analysis of Concatenated Genes (Assembly-based)
+Started: Di Apr 28 16:48:11 CEST 2026
+===================================================================
+
+Input directory: /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly
+Output directory: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_concatenated_assembly
+
+Using concatenated alignment: /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/concatenated_all_genes.fasta
+Using partitions: /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/partitions.txt
+
+===================================================================
+Step 1: Phylogenetic Inference with IQ-TREE (Partitioned)
+===================================================================
+Tree file already exists, skipping IQ-TREE analysis...
+  Using existing tree: concatenated_all_genes.treefile
+  (Delete this file if you want to rerun the analysis)
+
+
+Tree files generated:
+-rw-rw-r-- 1 mkapun phylo 1,3K 28. Apr 16:41 concatenated_all_genes.treefile
+
+===================================================================
+Step 2: Plotting Phylogenetic Trees
+===================================================================
+Reading tree file: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_concatenated_assembly/trees/concatenated_all_genes.treefile 
+Tree successfully loaded
+Number of tips: 24 
+Tips: Acanthisitta_chloris, Iodopleura_fusca, Iodopleura_isabellae, Laniisoma_elegans, Laniocera_hypopyrra, Schiffornis_major, Schiffornis_turdina, Schiffornis_virescens, Pachyramphus_aglaiae, Pachyramphus_minor, Pachyramphus_validus, Pachyramphus_rufus, Pachyramphus_viridis, Pachyramphus_xanthogenys, Pachyramphus_versicolor, Pachyramphus_cinnamomeus, Pachyramphus_surinamus, Pachyramphus_marginatus, Pachyramphus_polychopterus, Xenopsaris_albinucha, Tityra_cayana, Tityra_semifasciata, Tityra_inquisitor, Tityra_leucura 
+
+Rooted with 1 Acanthisitta tip(s)
+
+Creating rectangular tree plot...
+Warnmeldungen:
+1: `aes_()` was deprecated in ggplot2 3.0.0.
+ℹ Please use tidy evaluation idioms with `aes()`
+ℹ The deprecated feature was likely used in the ggtree package.
+  Please report the issue at <https://github.com/YuLab-SMU/ggtree/issues>. 
+2: In fortify(data, ...) : Arguments in `...` must be used.
+✖ Problematic arguments:
+• as.Date = as.Date
+• yscale_mapping = yscale_mapping
+• hang = hang
+ℹ Did you misspell an argument name?
+3: `aes_string()` was deprecated in ggplot2 3.0.0.
+ℹ Please use tidy evaluation idioms with `aes()`.
+ℹ See also `vignette("ggplot2-in-packages")` for more information.
+ℹ The deprecated feature was likely used in the ggtree package.
+  Please report the issue at <https://github.com/YuLab-SMU/ggtree/issues>. 
+Saved rectangular tree: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_concatenated_assembly/plots/concatenated_tree_rectangular.pdf 
+
+Creating circular tree plot...
+Warnmeldung:
+In fortify(data, ...) : Arguments in `...` must be used.
+✖ Problematic arguments:
+• as.Date = as.Date
+• yscale_mapping = yscale_mapping
+• hang = hang
+ℹ Did you misspell an argument name?
+Saved circular tree: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_concatenated_assembly/plots/concatenated_tree_circular.pdf 
+
+Creating bootstrap support plot...
+Warnmeldung:
+NAs durch Umwandlung erzeugt 
+Warnmeldung:
+In fortify(data, ...) : Arguments in `...` must be used.
+✖ Problematic arguments:
+• as.Date = as.Date
+• yscale_mapping = yscale_mapping
+• hang = hang
+ℹ Did you misspell an argument name?
+Saved bootstrap support tree: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_concatenated_assembly/plots/concatenated_tree_support.pdf 
+
+Tree plotting completed!
+
+===================================================================
+Analysis completed successfully!
+Completed: Di Apr 28 16:48:15 CEST 2026
+===================================================================
+
+Output files:
+  Tree: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_concatenated_assembly/trees/concatenated_all_genes.treefile
+  Plots: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_concatenated_assembly/plots/concatenated_tree_*.pdf
+
+===================================================================
+Phylogenetic Analysis of Concatenated Genes (Assembly-based)
+Started: Di Apr 28 16:50:44 CEST 2026
+===================================================================
+
+Input directory: /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly
+Output directory: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_concatenated_assembly
+
+Using concatenated alignment: /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/concatenated_all_genes.fasta
+Using partitions: /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/partitions.txt
+
+===================================================================
+Step 1: Phylogenetic Inference with IQ-TREE (Partitioned)
+===================================================================
+Tree file already exists, skipping IQ-TREE analysis...
+  Using existing tree: concatenated_all_genes.treefile
+  (Delete this file if you want to rerun the analysis)
+
+
+Tree files generated:
+-rw-rw-r-- 1 mkapun phylo 1,3K 28. Apr 16:41 concatenated_all_genes.treefile
+
+===================================================================
+Step 2: Plotting Phylogenetic Trees
+===================================================================
+Reading tree file: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_concatenated_assembly/trees/concatenated_all_genes.treefile 
+Tree successfully loaded
+Number of tips: 24 
+Tips: Acanthisitta_chloris, Iodopleura_fusca, Iodopleura_isabellae, Laniisoma_elegans, Laniocera_hypopyrra, Schiffornis_major, Schiffornis_turdina, Schiffornis_virescens, Pachyramphus_aglaiae, Pachyramphus_minor, Pachyramphus_validus, Pachyramphus_rufus, Pachyramphus_viridis, Pachyramphus_xanthogenys, Pachyramphus_versicolor, Pachyramphus_cinnamomeus, Pachyramphus_surinamus, Pachyramphus_marginatus, Pachyramphus_polychopterus, Xenopsaris_albinucha, Tityra_cayana, Tityra_semifasciata, Tityra_inquisitor, Tityra_leucura 
+
+Rooted with 1 Acanthisitta tip(s)
+
+Creating rectangular tree plot...
+Warnmeldungen:
+1: `aes_()` was deprecated in ggplot2 3.0.0.
+ℹ Please use tidy evaluation idioms with `aes()`
+ℹ The deprecated feature was likely used in the ggtree package.
+  Please report the issue at <https://github.com/YuLab-SMU/ggtree/issues>. 
+2: In fortify(data, ...) : Arguments in `...` must be used.
+✖ Problematic arguments:
+• as.Date = as.Date
+• yscale_mapping = yscale_mapping
+• hang = hang
+ℹ Did you misspell an argument name?
+3: `aes_string()` was deprecated in ggplot2 3.0.0.
+ℹ Please use tidy evaluation idioms with `aes()`.
+ℹ See also `vignette("ggplot2-in-packages")` for more information.
+ℹ The deprecated feature was likely used in the ggtree package.
+  Please report the issue at <https://github.com/YuLab-SMU/ggtree/issues>. 
+Saved rectangular tree: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_concatenated_assembly/plots/concatenated_tree_rectangular.pdf 
+
+Creating circular tree plot...
+Warnmeldung:
+In fortify(data, ...) : Arguments in `...` must be used.
+✖ Problematic arguments:
+• as.Date = as.Date
+• yscale_mapping = yscale_mapping
+• hang = hang
+ℹ Did you misspell an argument name?
+Saved circular tree: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_concatenated_assembly/plots/concatenated_tree_circular.pdf 
+
+Creating bootstrap support plot...
+Warnmeldung:
+NAs durch Umwandlung erzeugt 
+Warnmeldung:
+In fortify(data, ...) : Arguments in `...` must be used.
+✖ Problematic arguments:
+• as.Date = as.Date
+• yscale_mapping = yscale_mapping
+• hang = hang
+ℹ Did you misspell an argument name?
+Saved bootstrap support tree: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_concatenated_assembly/plots/concatenated_tree_support.pdf 
+
+Tree plotting completed!
+
+===================================================================
+Analysis completed successfully!
+Completed: Di Apr 28 16:50:48 CEST 2026
+===================================================================
+
+Output files:
+  Tree: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_concatenated_assembly/trees/concatenated_all_genes.treefile
+  Plots: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_concatenated_assembly/plots/concatenated_tree_*.pdf
+
+===================================================================
+Phylogenetic Analysis of Concatenated Genes (Assembly-based)
+Started: Di Apr 28 16:52:10 CEST 2026
+===================================================================
+
+Input directory: /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly
+Output directory: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_concatenated_assembly
+
+Using concatenated alignment: /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/concatenated_all_genes.fasta
+Using partitions: /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/partitions.txt
+
+===================================================================
+Step 1: Phylogenetic Inference with IQ-TREE (Partitioned)
+===================================================================
+Tree file already exists, skipping IQ-TREE analysis...
+  Using existing tree: concatenated_all_genes.treefile
+  (Delete this file if you want to rerun the analysis)
+
+
+Tree files generated:
+-rw-rw-r-- 1 mkapun phylo 1,3K 28. Apr 16:41 concatenated_all_genes.treefile
+
+===================================================================
+Step 2: Plotting Phylogenetic Trees
+===================================================================
+Reading tree file: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_concatenated_assembly/trees/concatenated_all_genes.treefile 
+Tree successfully loaded
+Number of tips: 24 
+Tips: Acanthisitta_chloris, Iodopleura_fusca, Iodopleura_isabellae, Laniisoma_elegans, Laniocera_hypopyrra, Schiffornis_major, Schiffornis_turdina, Schiffornis_virescens, Pachyramphus_aglaiae, Pachyramphus_minor, Pachyramphus_validus, Pachyramphus_rufus, Pachyramphus_viridis, Pachyramphus_xanthogenys, Pachyramphus_versicolor, Pachyramphus_cinnamomeus, Pachyramphus_surinamus, Pachyramphus_marginatus, Pachyramphus_polychopterus, Xenopsaris_albinucha, Tityra_cayana, Tityra_semifasciata, Tityra_inquisitor, Tityra_leucura 
+
+Rooted with 1 Acanthisitta tip(s) as outgroup
+Tree ladderized for better visualization
+
+Creating rectangular tree plot...
+Warnmeldungen:
+1: `aes_()` was deprecated in ggplot2 3.0.0.
+ℹ Please use tidy evaluation idioms with `aes()`
+ℹ The deprecated feature was likely used in the ggtree package.
+  Please report the issue at <https://github.com/YuLab-SMU/ggtree/issues>. 
+2: In fortify(data, ...) : Arguments in `...` must be used.
+✖ Problematic arguments:
+• as.Date = as.Date
+• yscale_mapping = yscale_mapping
+• hang = hang
+ℹ Did you misspell an argument name?
+3: `aes_string()` was deprecated in ggplot2 3.0.0.
+ℹ Please use tidy evaluation idioms with `aes()`.
+ℹ See also `vignette("ggplot2-in-packages")` for more information.
+ℹ The deprecated feature was likely used in the ggtree package.
+  Please report the issue at <https://github.com/YuLab-SMU/ggtree/issues>. 
+Saved rectangular tree: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_concatenated_assembly/plots/concatenated_tree_rectangular.pdf 
+
+Creating circular tree plot...
+Warnmeldung:
+In fortify(data, ...) : Arguments in `...` must be used.
+✖ Problematic arguments:
+• as.Date = as.Date
+• yscale_mapping = yscale_mapping
+• hang = hang
+ℹ Did you misspell an argument name?
+Saved circular tree: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_concatenated_assembly/plots/concatenated_tree_circular.pdf 
+
+Creating bootstrap support plot...
+Warnmeldung:
+NAs durch Umwandlung erzeugt 
+Warnmeldung:
+In fortify(data, ...) : Arguments in `...` must be used.
+✖ Problematic arguments:
+• as.Date = as.Date
+• yscale_mapping = yscale_mapping
+• hang = hang
+ℹ Did you misspell an argument name?
+Saved bootstrap support tree: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_concatenated_assembly/plots/concatenated_tree_support.pdf 
+
+Tree plotting completed!
+
+===================================================================
+Analysis completed successfully!
+Completed: Di Apr 28 16:52:14 CEST 2026
+===================================================================
+
+Output files:
+  Tree: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_concatenated_assembly/trees/concatenated_all_genes.treefile
+  Plots: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_concatenated_assembly/plots/concatenated_tree_*.pdf
+
+===================================================================
+Phylogenetic Analysis of Concatenated Genes (Assembly-based)
+Started: Di Apr 28 16:53:26 CEST 2026
+===================================================================
+
+Input directory: /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly
+Output directory: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_concatenated_assembly
+
+Using concatenated alignment: /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/concatenated_all_genes.fasta
+Using partitions: /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/partitions.txt
+
+===================================================================
+Step 1: Phylogenetic Inference with IQ-TREE (Partitioned)
+===================================================================
+Tree file already exists, skipping IQ-TREE analysis...
+  Using existing tree: concatenated_all_genes.treefile
+  (Delete this file if you want to rerun the analysis)
+
+
+Tree files generated:
+-rw-rw-r-- 1 mkapun phylo 1,3K 28. Apr 16:41 concatenated_all_genes.treefile
+
+===================================================================
+Step 2: Plotting Phylogenetic Trees
+===================================================================
+Reading tree file: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_concatenated_assembly/trees/concatenated_all_genes.treefile 
+Tree successfully loaded
+Number of tips: 24 
+Tips: Acanthisitta_chloris, Iodopleura_fusca, Iodopleura_isabellae, Laniisoma_elegans, Laniocera_hypopyrra, Schiffornis_major, Schiffornis_turdina, Schiffornis_virescens, Pachyramphus_aglaiae, Pachyramphus_minor, Pachyramphus_validus, Pachyramphus_rufus, Pachyramphus_viridis, Pachyramphus_xanthogenys, Pachyramphus_versicolor, Pachyramphus_cinnamomeus, Pachyramphus_surinamus, Pachyramphus_marginatus, Pachyramphus_polychopterus, Xenopsaris_albinucha, Tityra_cayana, Tityra_semifasciata, Tityra_inquisitor, Tityra_leucura 
+
+Rooted with 1 Acanthisitta tip(s) as outgroup
+Tree ladderized for better visualization
+
+Creating rectangular tree plot...
+Warnmeldungen:
+1: `aes_()` was deprecated in ggplot2 3.0.0.
+ℹ Please use tidy evaluation idioms with `aes()`
+ℹ The deprecated feature was likely used in the ggtree package.
+  Please report the issue at <https://github.com/YuLab-SMU/ggtree/issues>. 
+2: In fortify(data, ...) : Arguments in `...` must be used.
+✖ Problematic arguments:
+• as.Date = as.Date
+• yscale_mapping = yscale_mapping
+• hang = hang
+ℹ Did you misspell an argument name?
+3: `aes_string()` was deprecated in ggplot2 3.0.0.
+ℹ Please use tidy evaluation idioms with `aes()`.
+ℹ See also `vignette("ggplot2-in-packages")` for more information.
+ℹ The deprecated feature was likely used in the ggtree package.
+  Please report the issue at <https://github.com/YuLab-SMU/ggtree/issues>. 
+Saved rectangular tree: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_concatenated_assembly/plots/concatenated_tree_rectangular.pdf 
+
+Creating circular tree plot...
+Warnmeldung:
+In fortify(data, ...) : Arguments in `...` must be used.
+✖ Problematic arguments:
+• as.Date = as.Date
+• yscale_mapping = yscale_mapping
+• hang = hang
+ℹ Did you misspell an argument name?
+Saved circular tree: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_concatenated_assembly/plots/concatenated_tree_circular.pdf 
+
+Creating bootstrap support plot...
+Warnmeldung:
+NAs durch Umwandlung erzeugt 
+Warnmeldung:
+In fortify(data, ...) : Arguments in `...` must be used.
+✖ Problematic arguments:
+• as.Date = as.Date
+• yscale_mapping = yscale_mapping
+• hang = hang
+ℹ Did you misspell an argument name?
+Saved bootstrap support tree: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_concatenated_assembly/plots/concatenated_tree_support.pdf 
+
+Tree plotting completed!
+
+===================================================================
+Analysis completed successfully!
+Completed: Di Apr 28 16:53:29 CEST 2026
+===================================================================
+
+Output files:
+  Tree: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_concatenated_assembly/trees/concatenated_all_genes.treefile
+  Plots: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_concatenated_assembly/plots/concatenated_tree_*.pdf
+
+===================================================================
+Phylogenetic Analysis of Concatenated Genes (Assembly-based)
+Started: Fr Mai  1 10:19:38 CEST 2026
+===================================================================
+
+Input directory: /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly
+Output directory: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_concatenated_assembly
+
+Using concatenated alignment: /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/concatenated_all_genes.fasta
+Using partitions: /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/partitions.txt
+
+===================================================================
+Step 1: Phylogenetic Inference with IQ-TREE (Partitioned)
+===================================================================
+Tree file already exists, skipping IQ-TREE analysis...
+  Using existing tree: concatenated_all_genes.treefile
+  (Delete this file if you want to rerun the analysis)
+
+
+Tree files generated:
+-rw-rw-r-- 1 mkapun phylo 1,3K 28. Apr 16:41 concatenated_all_genes.treefile
+
+===================================================================
+Step 2: Plotting Phylogenetic Trees
+===================================================================
+Reading tree file: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_concatenated_assembly/trees/concatenated_all_genes.treefile 
+Tree successfully loaded
+Number of tips: 24 
+Tips: Acanthisitta_chloris, Iodopleura_fusca, Iodopleura_isabellae, Laniisoma_elegans, Laniocera_hypopyrra, Schiffornis_major, Schiffornis_turdina, Schiffornis_virescens, Pachyramphus_aglaiae, Pachyramphus_minor, Pachyramphus_validus, Pachyramphus_rufus, Pachyramphus_viridis, Pachyramphus_xanthogenys, Pachyramphus_versicolor, Pachyramphus_cinnamomeus, Pachyramphus_surinamus, Pachyramphus_marginatus, Pachyramphus_polychopterus, Xenopsaris_albinucha, Tityra_cayana, Tityra_semifasciata, Tityra_inquisitor, Tityra_leucura 
+
+Warning: No Onychorhynchus tips found, tree not rooted
+
+Creating rectangular tree plot...
+Warnmeldungen:
+1: `aes_()` was deprecated in ggplot2 3.0.0.
+ℹ Please use tidy evaluation idioms with `aes()`
+ℹ The deprecated feature was likely used in the ggtree package.
+  Please report the issue at <https://github.com/YuLab-SMU/ggtree/issues>. 
+2: In fortify(data, ...) : Arguments in `...` must be used.
+✖ Problematic arguments:
+• as.Date = as.Date
+• yscale_mapping = yscale_mapping
+• hang = hang
+ℹ Did you misspell an argument name?
+3: `aes_string()` was deprecated in ggplot2 3.0.0.
+ℹ Please use tidy evaluation idioms with `aes()`.
+ℹ See also `vignette("ggplot2-in-packages")` for more information.
+ℹ The deprecated feature was likely used in the ggtree package.
+  Please report the issue at <https://github.com/YuLab-SMU/ggtree/issues>. 
+Saved rectangular tree: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_concatenated_assembly/plots/concatenated_tree_rectangular.pdf 
+
+Creating circular tree plot...
+Warnmeldung:
+In fortify(data, ...) : Arguments in `...` must be used.
+✖ Problematic arguments:
+• as.Date = as.Date
+• yscale_mapping = yscale_mapping
+• hang = hang
+ℹ Did you misspell an argument name?
+Saved circular tree: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_concatenated_assembly/plots/concatenated_tree_circular.pdf 
+
+Creating bootstrap support plot...
+Warnmeldung:
+NAs durch Umwandlung erzeugt 
+Warnmeldung:
+In fortify(data, ...) : Arguments in `...` must be used.
+✖ Problematic arguments:
+• as.Date = as.Date
+• yscale_mapping = yscale_mapping
+• hang = hang
+ℹ Did you misspell an argument name?
+Saved bootstrap support tree: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_concatenated_assembly/plots/concatenated_tree_support.pdf 
+
+Tree plotting completed!
+
+===================================================================
+Analysis completed successfully!
+Completed: Fr Mai  1 10:19:41 CEST 2026
+===================================================================
+
+Output files:
+  Tree: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_concatenated_assembly/trees/concatenated_all_genes.treefile
+  Plots: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_concatenated_assembly/plots/concatenated_tree_*.pdf
+
+===================================================================
+Phylogenetic Analysis of Concatenated Genes (Assembly-based)
+Started: Fr Mai  1 10:19:41 CEST 2026
+===================================================================
+
+Input directory: /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly
+Output directory: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_concatenated_assembly
+
+Using concatenated alignment: /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/concatenated_all_genes.fasta
+Using partitions: /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/partitions.txt
+
+===================================================================
+Step 1: Phylogenetic Inference with IQ-TREE (Partitioned)
+===================================================================
+Tree file already exists, skipping IQ-TREE analysis...
+  Using existing tree: concatenated_all_genes.treefile
+  (Delete this file if you want to rerun the analysis)
+
+
+Tree files generated:
+-rw-rw-r-- 1 mkapun phylo 1,3K 28. Apr 16:41 concatenated_all_genes.treefile
+
+===================================================================
+Step 2: Plotting Phylogenetic Trees
+===================================================================
+Reading tree file: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_concatenated_assembly/trees/concatenated_all_genes.treefile 
+Tree successfully loaded
+Number of tips: 24 
+Tips: Acanthisitta_chloris, Iodopleura_fusca, Iodopleura_isabellae, Laniisoma_elegans, Laniocera_hypopyrra, Schiffornis_major, Schiffornis_turdina, Schiffornis_virescens, Pachyramphus_aglaiae, Pachyramphus_minor, Pachyramphus_validus, Pachyramphus_rufus, Pachyramphus_viridis, Pachyramphus_xanthogenys, Pachyramphus_versicolor, Pachyramphus_cinnamomeus, Pachyramphus_surinamus, Pachyramphus_marginatus, Pachyramphus_polychopterus, Xenopsaris_albinucha, Tityra_cayana, Tityra_semifasciata, Tityra_inquisitor, Tityra_leucura 
+
+Warning: No Onychorhynchus tips found, tree not rooted
+
+Creating rectangular tree plot...
+Warnmeldungen:
+1: `aes_()` was deprecated in ggplot2 3.0.0.
+ℹ Please use tidy evaluation idioms with `aes()`
+ℹ The deprecated feature was likely used in the ggtree package.
+  Please report the issue at <https://github.com/YuLab-SMU/ggtree/issues>. 
+2: In fortify(data, ...) : Arguments in `...` must be used.
+✖ Problematic arguments:
+• as.Date = as.Date
+• yscale_mapping = yscale_mapping
+• hang = hang
+ℹ Did you misspell an argument name?
+3: `aes_string()` was deprecated in ggplot2 3.0.0.
+ℹ Please use tidy evaluation idioms with `aes()`.
+ℹ See also `vignette("ggplot2-in-packages")` for more information.
+ℹ The deprecated feature was likely used in the ggtree package.
+  Please report the issue at <https://github.com/YuLab-SMU/ggtree/issues>. 
+Saved rectangular tree: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_concatenated_assembly/plots/concatenated_tree_rectangular.pdf 
+
+Creating circular tree plot...
+Warnmeldung:
+In fortify(data, ...) : Arguments in `...` must be used.
+✖ Problematic arguments:
+• as.Date = as.Date
+• yscale_mapping = yscale_mapping
+• hang = hang
+ℹ Did you misspell an argument name?
+Saved circular tree: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_concatenated_assembly/plots/concatenated_tree_circular.pdf 
+
+Creating bootstrap support plot...
+Warnmeldung:
+NAs durch Umwandlung erzeugt 
+Warnmeldung:
+In fortify(data, ...) : Arguments in `...` must be used.
+✖ Problematic arguments:
+• as.Date = as.Date
+• yscale_mapping = yscale_mapping
+• hang = hang
+ℹ Did you misspell an argument name?
+Saved bootstrap support tree: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_concatenated_assembly/plots/concatenated_tree_support.pdf 
+
+Tree plotting completed!
+
+===================================================================
+Analysis completed successfully!
+Completed: Fr Mai  1 10:19:45 CEST 2026
+===================================================================
+
+Output files:
+  Tree: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_concatenated_assembly/trees/concatenated_all_genes.treefile
+  Plots: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_concatenated_assembly/plots/concatenated_tree_*.pdf
+
+===================================================================
+Phylogenetic Analysis of Concatenated Genes (Assembly-based)
+Started: Fr Mai  1 10:20:04 CEST 2026
+===================================================================
+
+Input directory: /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly
+Output directory: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_concatenated_assembly
+
+Using concatenated alignment: /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/concatenated_all_genes.fasta
+Using partitions: /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/partitions.txt
+
+===================================================================
+Step 1: Phylogenetic Inference with IQ-TREE (Partitioned)
+===================================================================
+Running IQ-TREE with partitioned analysis...
+This may take a while...
+
+IQ-TREE multicore version 2.3.3 COVID-edition for Linux x86 64-bit built Apr 25 2024
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams, Ly Trong Nhan, Thomas Wong
+
+Host:    nhm-phylo2 (AVX2, FMA3, 2003 GB RAM)
+Command: iqtree2 -s /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/concatenated_all_genes.fasta -p /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/partitions.txt -m MFP -bb 1000 -alrt 1000 -nt AUTO -pre concatenated_all_genes
+Seed:    381674 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Fri May  1 10:20:04 2026
+Kernel:  AVX+FMA - auto-detect threads (256 CPU cores detected)
+
+Reading partition model file /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/partitions.txt ...
+Reading alignment file /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/concatenated_all_genes.fasta ... Fasta format detected
+Reading fasta file: done in 0.00162782 secs using 90% CPU
+Alignment most likely contains DNA/RNA sequences
+Alignment has 24 sequences with 3407 columns, 1380 distinct patterns
+1086 parsimony-informative, 345 singleton sites, 1976 constant sites
+                            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.0124288 secs using 2.257e+04% CPU
+   1  Iodopleura_fusca             20.16%    passed     65.51%
+   2  Iodopleura_isabellae         49.37%    passed     16.92%
+   3  Laniisoma_elegans            22.63%    passed     64.66%
+   4  Laniocera_hypopyrra           5.61%    passed     56.12%
+   5  Onychorhynchus_coronatus      0.03%    passed     37.92%
+   6  Pachyramphus_aglaiae         50.34%    passed     67.65%
+   7  Pachyramphus_cinnamomeus     50.34%    passed     71.60%
+   8  Pachyramphus_marginatus      30.26%    passed     65.85%
+   9  Pachyramphus_minor           58.88%    passed     46.67%
+  10  Pachyramphus_polychopterus   20.14%    passed     89.59%
+  11  Pachyramphus_rufus           50.43%    passed     83.64%
+  12  Pachyramphus_surinamus       50.54%    passed     87.09%
+  13  Pachyramphus_validus         50.34%    passed     81.65%
+  14  Pachyramphus_versicolor      50.43%    passed     90.32%
+  15  Pachyramphus_viridis         58.64%    passed     98.86%
+  16  Pachyramphus_xanthogenys     46.35%    passed     78.53%
+  17  Schiffornis_major            28.24%    passed      7.35%
+  18  Schiffornis_turdina           3.17%    passed     51.36%
+  19  Schiffornis_virescens        20.22%    passed     33.94%
+  20  Tityra_cayana                20.14%    passed     88.55%
+  21  Tityra_inquisitor            20.08%    passed     95.08%
+  22  Tityra_leucura                0.00%    passed     37.87%
+  23  Tityra_semifasciata           0.06%    passed     90.77%
+  24  Xenopsaris_albinucha         50.34%    passed     68.09%
+WARNING: 9 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                        31.53%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+
+Partition file is not in NEXUS format, assuming RAxML-style partition file...
+Subset	Type	Seqs	Sites	Infor	Invar	Model	Name
+1	DNA	23	651	208	412	GTR	COI
+2	DNA	13	1031	291	623	GTR	CYTB
+3	DNA	24	1041	460	473	GTR	ND2
+4	DNA	7	684	127	468	GTR	CO2
+Degree of missing data: 0.289
+Info: multi-threading strategy over partitions
+
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.004 seconds
+Measuring multi-threading efficiency up to 256 CPU cores
+Increase to 10 rounds for branch lengths
+5822 trees examined
+Threads: 1 / Time: 256.025 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -26495
+Threads: 2 / Time: 241.892 sec / Speedup: 1.058 / Efficiency: 53% / LogL: -26495
+Threads: 3 / Time: 202.084 sec / Speedup: 1.267 / Efficiency: 42% / LogL: -26495
+BEST NUMBER OF THREADS: 2
+
+Perform fast likelihood tree search using GTR+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Initial log-likelihood: -24502.658
+Current log-likelihood at step 1: -22382.425
+Current log-likelihood at step 2: -22260.505
+Current log-likelihood at step 3: -22176.176
+Current log-likelihood at step 4: -21955.209
+Current log-likelihood at step 5: -21950.394
+Parameters optimization took 4 rounds (0.267 sec)
+
+
+WARNING: Estimated model parameters are at boundary that can cause numerical instability!
+
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+Initial log-likelihood: -21950.394
+Current log-likelihood at step 1: -21947.700
+Current log-likelihood at step 2: -21944.894
+Current log-likelihood at step 3: -21941.688
+Current log-likelihood at step 4: -21938.059
+Current log-likelihood at step 5: -21934.100
+Current log-likelihood at step 6: -21929.475
+Current log-likelihood at step 7: -21923.580
+Current log-likelihood at step 8: -21919.930
+Current log-likelihood at step 9: -21917.354
+Current log-likelihood at step 10: -21914.784
+Current log-likelihood at step 11: -21912.097
+Current log-likelihood at step 12: -21909.654
+Current log-likelihood at step 13: -21907.860
+Current log-likelihood at step 14: -21906.836
+Current log-likelihood at step 15: -21906.269
+Partition-specific rates:  0.865 0.981 1.113 0.984
+Parameters optimization took 14 rounds (0.366 sec)
+
+
+WARNING: Estimated model parameters are at boundary that can cause numerical instability!
+
+Time for fast ML tree search: 0.658 seconds
+
+NOTE: ModelFinder requires 10 MB RAM!
+Selecting individual models for 4 charsets using BIC...
+Full partition model BIC score: 44453.068 (LnL: -21909.324  df:78)
+Partition information was printed to concatenated_all_genes.best_scheme.nex
+Partition information in Raxml format was printed to concatenated_all_genes.best_scheme
+
+All model information printed to concatenated_all_genes.model.gz
+CPU time for ModelFinder: 1316.324 seconds (0h:21m:56s)
+Wall-clock time for ModelFinder: 707.019 seconds (0h:11m:47s)
+Generating 1000 samples for ultrafast bootstrap (seed: 381674)...
+
+NOTE: 8 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -21945.527
+Current log-likelihood at step 1: -21916.754
+Current log-likelihood at step 2: -21911.016
+Current log-likelihood at step 3: -21910.001
+Current log-likelihood at step 4: -21909.697
+Current log-likelihood at step 5: -21909.553
+Current log-likelihood at step 6: -21909.485
+Partition-specific rates:  0.921 0.952 1.198 0.846
+Parameters optimization took 5 rounds (0.098 sec)
+
+Wrote distance file to... 
+Computing ML distances based on estimated model parameters...
+Calculating distance matrix: done in 9.38857e-05 secs using 638% CPU
+Computing ML distances took 0.000125 sec (of wall-clock time) 0.000633 sec (of CPU time)
+WARNING: Some pairwise ML distances are too long (saturated)
+Setting up auxiliary I and S matrices: done in 0.000398842 secs using 167.7% CPU
+Computing RapidNJ tree took 0.007041 sec (of wall-clock time) 0.008537 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -23896.569
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.390 second
+Computing log-likelihood of 98 initial trees ... 0.558 seconds
+Current best score: -21909.485
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -21886.526
+Current log-likelihood at step 1: -21886.268
+Current log-likelihood at step 2: -21886.247
+Parameters optimization took 1 rounds (0.030 sec)
+
+BETTER TREE FOUND at iteration 1: -21886.247
+Iteration 10 / LogL: -21886.257 / Time: 0h:11m:49s
+Iteration 20 / LogL: -21886.252 / Time: 0h:11m:50s
+Finish initializing candidate tree set (1)
+Current best tree score: -21886.247 / CPU time: 3.150
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -21886.254 / Time: 0h:11m:51s (0h:0m:10s left)
+Iteration 40 / LogL: -21886.297 / Time: 0h:11m:52s (0h:0m:8s left)
+Iteration 50 / LogL: -21886.380 / Time: 0h:11m:53s (0h:0m:6s left)
+Log-likelihood cutoff on original alignment: -21924.075
+Iteration 60 / LogL: -21886.275 / Time: 0h:11m:54s (0h:0m:4s left)
+Iteration 70 / LogL: -21886.287 / Time: 0h:11m:55s (0h:0m:3s left)
+Iteration 80 / LogL: -21886.262 / Time: 0h:11m:56s (0h:0m:2s left)
+Iteration 90 / LogL: -21886.328 / Time: 0h:11m:56s (0h:0m:1s left)
+UPDATE BEST LOG-LIKELIHOOD: -21886.247
+Iteration 100 / LogL: -21886.320 / Time: 0h:11m:57s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -21925.064
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 1.000
+TREE SEARCH COMPLETED AFTER 102 ITERATIONS / Time: 0h:11m:58s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+Initial log-likelihood: -21886.247
+Current log-likelihood at step 1: -21886.238
+Partition-specific rates:  0.918 0.952 1.187 0.867
+Parameters optimization took 0 rounds (0.012 sec)
+
+Partition information was printed to concatenated_all_genes.best_model.nex
+BEST SCORE FOUND : -21886.238
+
+Testing tree branches by SH-like aLRT with 1000 replicates...
+0.603 sec.
+Creating bootstrap support values...
+Split supports printed to NEXUS file concatenated_all_genes.splits.nex
+Total tree length: 3.019
+
+Total number of iterations: 102
+CPU time used for tree search: 20.254 sec (0h:0m:20s)
+Wall-clock time used for tree search: 10.913 sec (0h:0m:10s)
+Total CPU time used: 1338.216 sec (0h:22m:18s)
+Total wall-clock time used: 718.811 sec (0h:11m:58s)
+
+Computing bootstrap consensus tree...
+Reading input file concatenated_all_genes.splits.nex...
+24 taxa and 82 splits.
+Consensus tree written to concatenated_all_genes.contree
+Reading input trees file concatenated_all_genes.contree
+Log-likelihood of consensus tree: -21886.238
+
+Analysis results written to: 
+  IQ-TREE report:                concatenated_all_genes.iqtree
+  Maximum-likelihood tree:       concatenated_all_genes.treefile
+  Likelihood distances:          concatenated_all_genes.mldist
+  Best partitioning scheme:      concatenated_all_genes.best_scheme.nex
+           in RAxML format:      concatenated_all_genes.best_scheme
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          concatenated_all_genes.splits.nex
+  Consensus tree:                concatenated_all_genes.contree
+  Screen log file:               concatenated_all_genes.log
+
+Date and Time: Fri May  1 10:32:03 2026
+  ✓ IQ-TREE analysis completed successfully
+
+Tree files generated:
+-rw-rw-r-- 1 mkapun phylo 1,3K  1. Mai 10:32 concatenated_all_genes.treefile
+
+===================================================================
+Step 2: Plotting Phylogenetic Trees
+===================================================================
+Reading tree file: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_concatenated_assembly/trees/concatenated_all_genes.treefile 
+Tree successfully loaded
+Number of tips: 24 
+Tips: Iodopleura_fusca, Laniisoma_elegans, Laniocera_hypopyrra, Schiffornis_major, Schiffornis_turdina, Schiffornis_virescens, Onychorhynchus_coronatus, Pachyramphus_aglaiae, Pachyramphus_minor, Pachyramphus_validus, Pachyramphus_rufus, Pachyramphus_viridis, Pachyramphus_xanthogenys, Pachyramphus_versicolor, Pachyramphus_cinnamomeus, Pachyramphus_surinamus, Pachyramphus_marginatus, Pachyramphus_polychopterus, Xenopsaris_albinucha, Tityra_cayana, Tityra_semifasciata, Tityra_inquisitor, Tityra_leucura, Iodopleura_isabellae 
+
+Rooted with 1 Onychorhynchus tip(s) as outgroup
+Tree ladderized for better visualization
+
+Creating rectangular tree plot...
+Warnmeldungen:
+1: `aes_()` was deprecated in ggplot2 3.0.0.
+ℹ Please use tidy evaluation idioms with `aes()`
+ℹ The deprecated feature was likely used in the ggtree package.
+  Please report the issue at <https://github.com/YuLab-SMU/ggtree/issues>. 
+2: In fortify(data, ...) : Arguments in `...` must be used.
+✖ Problematic arguments:
+• as.Date = as.Date
+• yscale_mapping = yscale_mapping
+• hang = hang
+ℹ Did you misspell an argument name?
+3: `aes_string()` was deprecated in ggplot2 3.0.0.
+ℹ Please use tidy evaluation idioms with `aes()`.
+ℹ See also `vignette("ggplot2-in-packages")` for more information.
+ℹ The deprecated feature was likely used in the ggtree package.
+  Please report the issue at <https://github.com/YuLab-SMU/ggtree/issues>. 
+Saved rectangular tree: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_concatenated_assembly/plots/concatenated_tree_rectangular.pdf 
+
+Creating circular tree plot...
+Warnmeldung:
+In fortify(data, ...) : Arguments in `...` must be used.
+✖ Problematic arguments:
+• as.Date = as.Date
+• yscale_mapping = yscale_mapping
+• hang = hang
+ℹ Did you misspell an argument name?
+Saved circular tree: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_concatenated_assembly/plots/concatenated_tree_circular.pdf 
+
+Creating bootstrap support plot...
+Warnmeldung:
+NAs durch Umwandlung erzeugt 
+Warnmeldung:
+In fortify(data, ...) : Arguments in `...` must be used.
+✖ Problematic arguments:
+• as.Date = as.Date
+• yscale_mapping = yscale_mapping
+• hang = hang
+ℹ Did you misspell an argument name?
+Saved bootstrap support tree: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_concatenated_assembly/plots/concatenated_tree_support.pdf 
+
+Tree plotting completed!
+
+===================================================================
+Analysis completed successfully!
+Completed: Fr Mai  1 10:32:06 CEST 2026
+===================================================================
+
+Output files:
+  Tree: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_concatenated_assembly/trees/concatenated_all_genes.treefile
+  Plots: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_concatenated_assembly/plots/concatenated_tree_*.pdf
+

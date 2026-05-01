@@ -1,0 +1,63 @@
+>Iodopleura_isabellae AY489523.1
+attaacataa tcctctttat atttaccatt tcattgctac taagctccat cctaattaca
+ttgaacctct gactagccca aacaaaccca gactcagaaa aactctctcc atatgaatgc
+ggctttgatc ccctaggatc tgcccgcctc ccattctcca tccgattctt cctagtcgca
+attctattcc tcctattcga cctagaaatc gctctcctac tacccctccc atgagctacc
+cagctccaat ccccactaac cactctaacc tgaacattca caattattct tctcctcaca
+ctcggactga tctatgaatg aacccaagga ggcctagaat gagcagaata a
+>Laniocera_hypopyrra AY489522.1
+atcaacataa tcttcttcat actaactacc tccatagcac tatgtgtaat cctaaccaca
+ctaaatctct gattggccca aaccaaccca gactttgaaa aactatctcc gtatgaatgc
+ggtttcgacc ccttaggatc tgcccgcctc ccattttcaa tccgtttctt cctagttgca
+atcctattcc tcttattcga cctagaaatt gctctactcc tacccctccc atgagcaacc
+caactccaat tccctcttaa aaccttaacc tggacctcca ttattattct actccttact
+ataggcctaa tctatgaatg aattcaagga ggtctcgagt gagcagaata a
+>Onychorhynchus_coronatus DQ294428.1
+atcaacataa tcttctttat actcctccta tcatcatccc tcagcattgc cctaactaca
+ctaaatctct ggctcgccca aacatatcca gattcagaaa aactatcccc ctacgaatgt
+ggcttcgacc ctctaggttc cgcccgccta cccttctcaa ttcgattctt tttagtcgca
+attctattcc tcctgtttga cctagaaatt gccctcctcc tcccactccc atgagcaacc
+caactccaat ccccccttac cacccttgcc tgaacctcta ccattatcct cctcctcacc
+ctagggttag tttacgaatg agctcagggg ggcttagaat gggctgaata a
+>Onychorhynchus_coronatus DQ294429.1
+attaacataa tcttctttat actccttcta tcatcatccc tcagcattgc tctaaccaca
+ctaaatctat gactcgccca aacaaatcca gactcagaaa aactatcccc ctacgaatgt
+ggcttcgacc ccctgggctc cgcccgcctg cccttctcaa ttcgattttt tttagtcgca
+atcctcttcc tcttgtttga tctggaaatc gccctcctac tccccctccc ctgagcaacc
+caactccaat cccccctcac cactctcacc tgaacctcca ccattattct cctcctcacc
+ttaggcctag tctacgagtg agcccaaggg ggcctagaat gagcagaata a
+>Onychorhynchus_coronatus MN356341.1
+atcaacataa tcttctttat actcctccta tcatcatccc tcagtattgc tctaaccaca
+ctaaatctct gactcgctca aacaaatcca gactcagaaa aactatcccc ctacgaatgt
+ggcttcgacc ccctaggttc cgcccgccta cccttctcga ttcgattctt cctagtcgca
+atcctcttcc tcttgtttga tctagaaatc gccctcctac tccccctccc atgagcaacc
+caactccaat cccccctcat cactctcacc tgaacctcta ccattattct cctcctcacc
+ctaggcctaa tctatgagtg agcccaaggg ggcttagaat gagcggaata a
+>Pachyramphus_marginatus AY489525.1
+atcaacataa tcctctttat actcctcatc tccctatccc taagcatagc cctaaccaca
+ctaaacctct gaattgccca atccaaccca gactccgaaa aactatcccc atatgaatgc
+ggattcgacc ccctaggctc agctcgcctc cccttctcaa tccgattctt cctagtggca
+atcttattcc tcttattcga tctagaaatc gccctactcc taccccttcc atgagcaacc
+caacttcaat tccccctcac caccctaacc tgaacattca ttattattct tcttctcaca
+ctgggactaa tttacgaatg aacccagggg ggcttagaat gagcagaata a
+>Schiffornis_turdina AY489526.1
+atcaacataa tccttttcat actcatgatc tccatagcac taagtgttac cctaactacc
+ctaaacatct gattggccca aaccaaccca gattctgaaa aactatcacc atacgaatgt
+ggttttgacc ccctaggatc tgcccgtctt ccattttcaa tccgattctt cctagtcgca
+atcctattcc ttttattcga cctagaaatc gcacttctcc tacccctccc atgagccact
+caactccaat tcccactcaa aactctagcc tgaacttcca ttatcattct cctcctcaca
+ttaggactaa tttacgaatg agcccaagga ggcttggaat gagcagaata a
+>Tityra_semifasciata AY489524.1
+attaacataa tcctcttcat gcttattctt tccctatcct taagtaccat cctaaccaca
+ctaaaccttt gagtagccca aaccaaccca gactccgaaa aactatctcc atacgaatgt
+gggtttgacc ctttaggatc tgctcgcctc ccattctcaa tccggttctt cttagtagca
+atcctatttc ttctattcga cttagaaatc gctctgctct tacccctccc atgagctatc
+caacttcagt ccccccttac caccctaacc tgaacatcta ttatcatcct cctcctcacg
+ctaggactag tctacgaatg aacccaagga ggcttagagt gagcagaata a
+>Tityra_leucura
+attaacataa tcctcttcat atttatcctt tccctatccc taagctccgc cctaaccata
+ctaaacctat gattagccta caccaaccca gactccgaaa aactatcccc atacgaatgt
+gggttcgacc ccctaggatc cgcccgtctc ccattctcaa tccgattttt cctggtagca
+atcctatttc tcctattcga cctagaaatc gcactcctct tacccctccc atgagccact
+caacttcaat cccccctcat caccataacc tgaacattca ctatcctcat tctccttaca
+ctaggattag catacgaatg agcccaaggg ggcttagaat gagcagagta a

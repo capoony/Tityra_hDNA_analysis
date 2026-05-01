@@ -1,0 +1,32 @@
+nohup: ignoriere Eingabe
+Using vg: /opt/bioinformatics/cactus-2.1.1/bin/vg
+===================================================================
+Graph-Based BUSCO Extraction Pipeline
+Working directory: /media/inter/mkapun/projects/Tityra
+Threads: 50
+===================================================================
+Step 1: Setting up references for graph construction...
+Reusing Pachyramphus_minor from data/ref...
+Reusing Oxyruncus_cristatus from phylogeny/data...
+Reusing Tyrannus_savana from phylogeny/data...
+Reusing Piprites_chloris from phylogeny/data...
+Step 2: Checking for existing BUSCO results or running BUSCO on reference genomes...
+
+CommandNotFoundError: Your shell has not been properly configured to use 'conda activate'.
+To initialize your shell, run
+
+    $ conda init <SHELL_NAME>
+
+Currently supported shells are:
+  - bash
+  - fish
+  - tcsh
+  - xonsh
+  - zsh
+  - powershell
+
+See 'conda init --help' for more information and options.
+
+IMPORTANT: You may need to close and restart your shell after running 'conda init'.
+
+

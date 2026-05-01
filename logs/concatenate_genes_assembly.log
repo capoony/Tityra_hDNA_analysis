@@ -1,0 +1,1319 @@
+===================================================================
+Concatenating Mitochondrial Genes by Species (Assembly-based)
+Started: Di Apr 28 14:46:27 CEST 2026
+===================================================================
+Checking for aligned gene files...
+  ✓ ATP6: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_assembly/alignments/ATP6_aligned_gblocks.fasta
+  ✓ ATP8: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_assembly/alignments/ATP8_aligned_gblocks.fasta
+  ✓ CO2: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_assembly/alignments/CO2_aligned_gblocks.fasta
+  ✓ CO3: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_assembly/alignments/CO3_aligned_gblocks.fasta
+  ✓ COI: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_assembly/alignments/COI_aligned_gblocks.fasta
+  ✓ CYTB: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_assembly/alignments/CYTB_aligned_gblocks.fasta
+  ✓ ND1: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_assembly/alignments/ND1_aligned_gblocks.fasta
+  ✓ ND2: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_assembly/alignments/ND2_aligned_gblocks.fasta
+  ✓ ND3: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_assembly/alignments/ND3_aligned_gblocks.fasta
+  ✓ ND4: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_assembly/alignments/ND4_aligned_gblocks.fasta
+  ✓ ND4L: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_assembly/alignments/ND4L_aligned_gblocks.fasta
+  ✓ ND5: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_assembly/alignments/ND5_aligned_gblocks.fasta
+
+Will concatenate 12 genes: ATP6 ATP8 CO2 CO3 COI CYTB ND1 ND2 ND3 ND4 ND4L ND5
+
+===================================================================
+Building species-level concatenated sequences
+===================================================================
+  File "<stdin>", line 63
+    print("==================================================================="
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+===================================================================
+Concatenating Mitochondrial Genes by Species (Assembly-based)
+Started: Di Apr 28 14:48:30 CEST 2026
+===================================================================
+Checking for aligned gene files...
+  ✓ ATP6: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_assembly/alignments/ATP6_aligned_gblocks.fasta
+  ✓ ATP8: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_assembly/alignments/ATP8_aligned_gblocks.fasta
+  ✓ CO2: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_assembly/alignments/CO2_aligned_gblocks.fasta
+  ✓ CO3: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_assembly/alignments/CO3_aligned_gblocks.fasta
+  ✓ COI: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_assembly/alignments/COI_aligned_gblocks.fasta
+  ✓ CYTB: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_assembly/alignments/CYTB_aligned_gblocks.fasta
+  ✓ ND1: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_assembly/alignments/ND1_aligned_gblocks.fasta
+  ✓ ND2: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_assembly/alignments/ND2_aligned_gblocks.fasta
+  ✓ ND3: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_assembly/alignments/ND3_aligned_gblocks.fasta
+  ✓ ND4: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_assembly/alignments/ND4_aligned_gblocks.fasta
+  ✓ ND4L: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_assembly/alignments/ND4L_aligned_gblocks.fasta
+  ✓ ND5: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_assembly/alignments/ND5_aligned_gblocks.fasta
+
+Will concatenate 12 genes: ATP6 ATP8 CO2 CO3 COI CYTB ND1 ND2 ND3 ND4 ND4L ND5
+
+===================================================================
+Building species-level concatenated sequences
+===================================================================
+Error: No genes specified
+===================================================================
+Concatenating Mitochondrial Genes by Species (Assembly-based)
+Started: Di Apr 28 14:49:19 CEST 2026
+===================================================================
+Checking for aligned gene files...
+  ✓ ATP6: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_assembly/alignments/ATP6_aligned_gblocks.fasta
+  ✓ ATP8: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_assembly/alignments/ATP8_aligned_gblocks.fasta
+  ✓ CO2: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_assembly/alignments/CO2_aligned_gblocks.fasta
+  ✓ CO3: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_assembly/alignments/CO3_aligned_gblocks.fasta
+  ✓ COI: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_assembly/alignments/COI_aligned_gblocks.fasta
+  ✓ CYTB: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_assembly/alignments/CYTB_aligned_gblocks.fasta
+  ✓ ND1: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_assembly/alignments/ND1_aligned_gblocks.fasta
+  ✓ ND2: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_assembly/alignments/ND2_aligned_gblocks.fasta
+  ✓ ND3: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_assembly/alignments/ND3_aligned_gblocks.fasta
+  ✓ ND4: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_assembly/alignments/ND4_aligned_gblocks.fasta
+  ✓ ND4L: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_assembly/alignments/ND4L_aligned_gblocks.fasta
+  ✓ ND5: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_assembly/alignments/ND5_aligned_gblocks.fasta
+
+Will concatenate 12 genes: ATP6 ATP8 CO2 CO3 COI CYTB ND1 ND2 ND3 ND4 ND4L ND5
+
+===================================================================
+Building species-level concatenated sequences
+===================================================================
+Processing 12 genes: ATP6, ATP8, CO2, CO3, COI, CYTB, ND1, ND2, ND3, ND4, ND4L, ND5
+
+Reading ATP6...
+  ATP6: 684 bp, 2 species
+Reading ATP8...
+  ATP8: 168 bp, 2 species
+Reading CO2...
+  CO2: 684 bp, 7 species
+Reading CO3...
+  CO3: 782 bp, 7 species
+Reading COI...
+  COI: 651 bp, 24 species
+Reading CYTB...
+  CYTB: 1022 bp, 24 species
+Reading ND1...
+  ND1: 942 bp, 24 species
+Reading ND2...
+  ND2: 1041 bp, 29 species
+Reading ND3...
+  ND3: 351 bp, 29 species
+Reading ND4...
+  ND4: 1368 bp, 29 species
+Reading ND4L...
+  ND4L: 297 bp, 29 species
+Reading ND5...
+  ND5: 1809 bp, 29 species
+
+===================================================================
+Species summary:
+===================================================================
+Acanthisitta_chloris          : 12/12 genes
+Iodopleura_fusca              :  3/12 genes
+Iodopleura_isabellae          :  3/12 genes
+Laniisoma_elegans             :  3/12 genes
+Laniocera_hypopyrra           :  5/12 genes
+Pachyramphus_aglaiae          :  2/12 genes
+Pachyramphus_albogriseus      :  1/12 genes
+Pachyramphus_castaneus        :  1/12 genes
+Pachyramphus_cinnamomeus      :  2/12 genes
+Pachyramphus_homochrous       :  1/12 genes
+Pachyramphus_major            :  1/12 genes
+Pachyramphus_marginatus       :  4/12 genes
+Pachyramphus_minor            :  2/12 genes
+Pachyramphus_polychopterus    :  3/12 genes
+Pachyramphus_rufus            :  2/12 genes
+Pachyramphus_spodiurus        :  1/12 genes
+Pachyramphus_surinamus        :  2/12 genes
+Pachyramphus_validus          :  2/12 genes
+Pachyramphus_versicolor       :  2/12 genes
+Pachyramphus_viridis          :  2/12 genes
+Pachyramphus_xanthogenys      :  3/12 genes
+Schiffornis_major             :  3/12 genes
+Schiffornis_turdina           :  5/12 genes
+Schiffornis_virescens         :  3/12 genes
+Tityra_cayana                 :  3/12 genes
+Tityra_inquisitor             :  3/12 genes
+Tityra_leucura                : 12/12 genes
+Tityra_semifasciata           :  5/12 genes
+Xenopsaris_albinucha          :  2/12 genes
+
+Total species: 29
+Species with all genes: 2
+Species with ≥50% genes: 2
+
+===================================================================
+Creating concatenated sequences
+===================================================================
+Acanthisitta_chloris          : 9799 bp (12/12 genes)
+Iodopleura_fusca              : 9799 bp (3/12 genes)
+Iodopleura_isabellae          : 9799 bp (3/12 genes)
+Laniisoma_elegans             : 9799 bp (3/12 genes)
+Laniocera_hypopyrra           : 9799 bp (5/12 genes)
+Pachyramphus_aglaiae          : 9799 bp (2/12 genes)
+Pachyramphus_albogriseus      : 9799 bp (1/12 genes)
+Pachyramphus_castaneus        : 9799 bp (1/12 genes)
+Pachyramphus_cinnamomeus      : 9799 bp (2/12 genes)
+Pachyramphus_homochrous       : 9799 bp (1/12 genes)
+Pachyramphus_major            : 9799 bp (1/12 genes)
+Pachyramphus_marginatus       : 9799 bp (4/12 genes)
+Pachyramphus_minor            : 9799 bp (2/12 genes)
+Pachyramphus_polychopterus    : 9799 bp (3/12 genes)
+Pachyramphus_rufus            : 9799 bp (2/12 genes)
+Pachyramphus_spodiurus        : 9799 bp (1/12 genes)
+Pachyramphus_surinamus        : 9799 bp (2/12 genes)
+Pachyramphus_validus          : 9799 bp (2/12 genes)
+Pachyramphus_versicolor       : 9799 bp (2/12 genes)
+Pachyramphus_viridis          : 9799 bp (2/12 genes)
+Pachyramphus_xanthogenys      : 9799 bp (3/12 genes)
+Schiffornis_major             : 9799 bp (3/12 genes)
+Schiffornis_turdina           : 9799 bp (5/12 genes)
+Schiffornis_virescens         : 9799 bp (3/12 genes)
+Tityra_cayana                 : 9799 bp (3/12 genes)
+Tityra_inquisitor             : 9799 bp (3/12 genes)
+Tityra_leucura                : 9799 bp (12/12 genes)
+Tityra_semifasciata           : 9799 bp (5/12 genes)
+Xenopsaris_albinucha          : 9799 bp (2/12 genes)
+
+Concatenated sequences written to: /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/concatenated_all_genes.fasta
+Total sequences: 29
+Concatenated length: 9799 bp
+Partition file written to: /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/partitions.txt
+
+===================================================================
+Concatenation completed
+Completed: Di Apr 28 14:49:19 CEST 2026
+===================================================================
+===================================================================
+Concatenating Mitochondrial Genes by Species (Assembly-based)
+Started: Di Apr 28 14:58:15 CEST 2026
+===================================================================
+Using maximum of 5 genes: COI CYTB ND2 ND4 ND5
+Will filter out species with >50% missing data
+
+Checking for aligned gene files...
+  ✓ COI: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_assembly/alignments/COI_aligned_gblocks.fasta
+  ✓ CYTB: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_assembly/alignments/CYTB_aligned_gblocks.fasta
+  ✓ ND2: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_assembly/alignments/ND2_aligned_gblocks.fasta
+  ✓ ND4: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_assembly/alignments/ND4_aligned_gblocks.fasta
+  ✓ ND5: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_assembly/alignments/ND5_aligned_gblocks.fasta
+
+Will concatenate 5 genes: COI CYTB ND2 ND4 ND5
+
+===================================================================
+Building species-level concatenated sequences
+===================================================================
+Processing 5 genes: COI, CYTB, ND2, ND4, ND5
+
+Reading COI...
+  COI: 651 bp, 23 species
+Reading CYTB...
+  CYTB: 1022 bp, 23 species
+Reading ND2...
+  ND2: 1041 bp, 29 species
+Reading ND4...
+  ND4: 1368 bp, 29 species
+Reading ND5...
+  ND5: 1809 bp, 29 species
+
+===================================================================
+Species summary:
+===================================================================
+Acanthisitta_chloris          :  5/5 genes
+Iodopleura_fusca              :  3/5 genes
+Iodopleura_isabellae          :  1/5 genes
+Laniisoma_elegans             :  3/5 genes
+Laniocera_hypopyrra           :  3/5 genes
+Pachyramphus_aglaiae          :  2/5 genes
+Pachyramphus_albogriseus      :  1/5 genes
+Pachyramphus_castaneus        :  1/5 genes
+Pachyramphus_cinnamomeus      :  2/5 genes
+Pachyramphus_homochrous       :  1/5 genes
+Pachyramphus_major            :  1/5 genes
+Pachyramphus_marginatus       :  2/5 genes
+Pachyramphus_minor            :  2/5 genes
+Pachyramphus_polychopterus    :  3/5 genes
+Pachyramphus_rufus            :  2/5 genes
+Pachyramphus_spodiurus        :  1/5 genes
+Pachyramphus_surinamus        :  2/5 genes
+Pachyramphus_validus          :  2/5 genes
+Pachyramphus_versicolor       :  2/5 genes
+Pachyramphus_viridis          :  2/5 genes
+Pachyramphus_xanthogenys      :  3/5 genes
+Schiffornis_major             :  3/5 genes
+Schiffornis_turdina           :  3/5 genes
+Schiffornis_virescens         :  3/5 genes
+Tityra_cayana                 :  3/5 genes
+Tityra_inquisitor             :  3/5 genes
+Tityra_leucura                :  5/5 genes
+Tityra_semifasciata           :  3/5 genes
+Xenopsaris_albinucha          :  2/5 genes
+
+Total species: 29
+Species with all genes: 2
+Species with ≥50% genes: 13
+
+Filtering: Keeping species with ≥2.5 genes (2/5)
+Species before filtering: 29
+Species after filtering: 13
+Excluded 16 species with >50% missing data
+
+===================================================================
+Creating concatenated sequences
+===================================================================
+Acanthisitta_chloris          : 5891 bp (5/5 genes)
+Iodopleura_fusca              : 5891 bp (3/5 genes)
+Laniisoma_elegans             : 5891 bp (3/5 genes)
+Laniocera_hypopyrra           : 5891 bp (3/5 genes)
+Pachyramphus_polychopterus    : 5891 bp (3/5 genes)
+Pachyramphus_xanthogenys      : 5891 bp (3/5 genes)
+Schiffornis_major             : 5891 bp (3/5 genes)
+Schiffornis_turdina           : 5891 bp (3/5 genes)
+Schiffornis_virescens         : 5891 bp (3/5 genes)
+Tityra_cayana                 : 5891 bp (3/5 genes)
+Tityra_inquisitor             : 5891 bp (3/5 genes)
+Tityra_leucura                : 5891 bp (5/5 genes)
+Tityra_semifasciata           : 5891 bp (3/5 genes)
+
+Concatenated sequences written to: /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/concatenated_all_genes.fasta
+Total sequences: 13
+Concatenated length: 5891 bp
+Partition file written to: /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/partitions.txt
+
+===================================================================
+Concatenation completed
+Completed: Di Apr 28 14:58:15 CEST 2026
+===================================================================
+===================================================================
+Concatenating Mitochondrial Genes by Species (Assembly-based)
+Started: Di Apr 28 15:00:15 CEST 2026
+===================================================================
+Using maximum of 5 genes: COI CYTB ND2 ATP6 CO2
+Will filter out species with >50% missing data
+
+Checking for aligned gene files...
+  ✓ COI: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_assembly/alignments/COI_aligned_gblocks.fasta
+  ✓ CYTB: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_assembly/alignments/CYTB_aligned_gblocks.fasta
+  ✓ ND2: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_assembly/alignments/ND2_aligned_gblocks.fasta
+  ✓ ATP6: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_assembly/alignments/ATP6_aligned_gblocks.fasta
+  ✓ CO2: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_assembly/alignments/CO2_aligned_gblocks.fasta
+
+Will concatenate 5 genes: COI CYTB ND2 ATP6 CO2
+
+===================================================================
+Building species-level concatenated sequences
+===================================================================
+Processing 5 genes: COI, CYTB, ND2, ATP6, CO2
+
+Reading COI...
+  COI: 651 bp, 23 species
+Reading CYTB...
+  CYTB: 1022 bp, 23 species
+Reading ND2...
+  ND2: 1041 bp, 29 species
+Reading ATP6...
+  ATP6: 684 bp, 29 species
+Reading CO2...
+  CO2: 684 bp, 29 species
+
+===================================================================
+Species summary:
+===================================================================
+Acanthisitta_chloris          :  5/5 genes
+Iodopleura_fusca              :  3/5 genes
+Iodopleura_isabellae          :  2/5 genes
+Laniisoma_elegans             :  3/5 genes
+Laniocera_hypopyrra           :  4/5 genes
+Pachyramphus_aglaiae          :  2/5 genes
+Pachyramphus_albogriseus      :  1/5 genes
+Pachyramphus_castaneus        :  1/5 genes
+Pachyramphus_cinnamomeus      :  2/5 genes
+Pachyramphus_homochrous       :  1/5 genes
+Pachyramphus_major            :  1/5 genes
+Pachyramphus_marginatus       :  3/5 genes
+Pachyramphus_minor            :  2/5 genes
+Pachyramphus_polychopterus    :  3/5 genes
+Pachyramphus_rufus            :  2/5 genes
+Pachyramphus_spodiurus        :  1/5 genes
+Pachyramphus_surinamus        :  2/5 genes
+Pachyramphus_validus          :  2/5 genes
+Pachyramphus_versicolor       :  2/5 genes
+Pachyramphus_viridis          :  2/5 genes
+Pachyramphus_xanthogenys      :  3/5 genes
+Schiffornis_major             :  3/5 genes
+Schiffornis_turdina           :  4/5 genes
+Schiffornis_virescens         :  3/5 genes
+Tityra_cayana                 :  3/5 genes
+Tityra_inquisitor             :  3/5 genes
+Tityra_leucura                :  5/5 genes
+Tityra_semifasciata           :  4/5 genes
+Xenopsaris_albinucha          :  2/5 genes
+
+Total species: 29
+Species with all genes: 2
+Species with ≥50% genes: 14
+
+Filtering: Keeping species with ≥2.5 genes (2/5)
+Species before filtering: 29
+Species after filtering: 14
+Excluded 15 species with >50% missing data
+
+===================================================================
+Creating concatenated sequences
+===================================================================
+Acanthisitta_chloris          : 4082 bp (5/5 genes)
+Iodopleura_fusca              : 4082 bp (3/5 genes)
+Laniisoma_elegans             : 4082 bp (3/5 genes)
+Laniocera_hypopyrra           : 4082 bp (4/5 genes)
+Pachyramphus_marginatus       : 4082 bp (3/5 genes)
+Pachyramphus_polychopterus    : 4082 bp (3/5 genes)
+Pachyramphus_xanthogenys      : 4082 bp (3/5 genes)
+Schiffornis_major             : 4082 bp (3/5 genes)
+Schiffornis_turdina           : 4082 bp (4/5 genes)
+Schiffornis_virescens         : 4082 bp (3/5 genes)
+Tityra_cayana                 : 4082 bp (3/5 genes)
+Tityra_inquisitor             : 4082 bp (3/5 genes)
+Tityra_leucura                : 4082 bp (5/5 genes)
+Tityra_semifasciata           : 4082 bp (4/5 genes)
+
+Concatenated sequences written to: /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/concatenated_all_genes.fasta
+Total sequences: 14
+Concatenated length: 4082 bp
+Partition file written to: /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/partitions.txt
+
+===================================================================
+Concatenation completed
+Completed: Di Apr 28 15:00:15 CEST 2026
+===================================================================
+===================================================================
+Concatenating Mitochondrial Genes by Species (Assembly-based)
+Started: Di Apr 28 15:25:54 CEST 2026
+===================================================================
+Using maximum of 4 genes: COI CYTB ND2 CO2
+Will ensure at least one species per genus
+Will filter out species with >50% missing data (within genus priority)
+
+Checking for aligned gene files...
+  ✓ COI: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_assembly/alignments/COI_aligned_gblocks.fasta
+  ✓ CYTB: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_assembly/alignments/CYTB_aligned_gblocks.fasta
+  ✓ ND2: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_assembly/alignments/ND2_aligned_gblocks.fasta
+  ✓ CO2: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_assembly/alignments/CO2_aligned_gblocks.fasta
+
+Will concatenate 4 genes: COI CYTB ND2 CO2
+
+===================================================================
+Building species-level concatenated sequences
+===================================================================
+Processing 4 genes: COI, CYTB, ND2, CO2
+
+Reading COI...
+  COI: 651 bp, 23 species
+Reading CYTB...
+  CYTB: 1022 bp, 23 species
+Reading ND2...
+  ND2: 1041 bp, 29 species
+Reading CO2...
+  CO2: 684 bp, 29 species
+
+===================================================================
+Species summary:
+===================================================================
+Acanthisitta_chloris          :  4/4 genes
+Iodopleura_fusca              :  3/4 genes
+Iodopleura_isabellae          :  2/4 genes
+Laniisoma_elegans             :  3/4 genes
+Laniocera_hypopyrra           :  4/4 genes
+Pachyramphus_aglaiae          :  2/4 genes
+Pachyramphus_albogriseus      :  1/4 genes
+Pachyramphus_castaneus        :  1/4 genes
+Pachyramphus_cinnamomeus      :  2/4 genes
+Pachyramphus_homochrous       :  1/4 genes
+Pachyramphus_major            :  1/4 genes
+Pachyramphus_marginatus       :  3/4 genes
+Pachyramphus_minor            :  2/4 genes
+Pachyramphus_polychopterus    :  3/4 genes
+Pachyramphus_rufus            :  2/4 genes
+Pachyramphus_spodiurus        :  1/4 genes
+Pachyramphus_surinamus        :  2/4 genes
+Pachyramphus_validus          :  2/4 genes
+Pachyramphus_versicolor       :  2/4 genes
+Pachyramphus_viridis          :  2/4 genes
+Pachyramphus_xanthogenys      :  3/4 genes
+Schiffornis_major             :  3/4 genes
+Schiffornis_turdina           :  4/4 genes
+Schiffornis_virescens         :  3/4 genes
+Tityra_cayana                 :  3/4 genes
+Tityra_inquisitor             :  3/4 genes
+Tityra_leucura                :  4/4 genes
+Tityra_semifasciata           :  4/4 genes
+Xenopsaris_albinucha          :  2/4 genes
+
+Total species: 29
+Species with all genes: 5
+Species with ≥50% genes: 24
+
+Filtering strategy: At least one species per genus + species with ≥2.0 genes
+Number of genera: 8
+Species before filtering: 29
+Species after filtering: 24
+Excluded 5 species
+
+===================================================================
+Creating concatenated sequences
+===================================================================
+Acanthisitta_chloris          : 3398 bp (4/4 genes)
+Iodopleura_fusca              : 3398 bp (3/4 genes)
+Iodopleura_isabellae          : 3398 bp (2/4 genes)
+Laniisoma_elegans             : 3398 bp (3/4 genes)
+Laniocera_hypopyrra           : 3398 bp (4/4 genes)
+Pachyramphus_aglaiae          : 3398 bp (2/4 genes)
+Pachyramphus_cinnamomeus      : 3398 bp (2/4 genes)
+Pachyramphus_marginatus       : 3398 bp (3/4 genes)
+Pachyramphus_minor            : 3398 bp (2/4 genes)
+Pachyramphus_polychopterus    : 3398 bp (3/4 genes)
+Pachyramphus_rufus            : 3398 bp (2/4 genes)
+Pachyramphus_surinamus        : 3398 bp (2/4 genes)
+Pachyramphus_validus          : 3398 bp (2/4 genes)
+Pachyramphus_versicolor       : 3398 bp (2/4 genes)
+Pachyramphus_viridis          : 3398 bp (2/4 genes)
+Pachyramphus_xanthogenys      : 3398 bp (3/4 genes)
+Schiffornis_major             : 3398 bp (3/4 genes)
+Schiffornis_turdina           : 3398 bp (4/4 genes)
+Schiffornis_virescens         : 3398 bp (3/4 genes)
+Tityra_cayana                 : 3398 bp (3/4 genes)
+Tityra_inquisitor             : 3398 bp (3/4 genes)
+Tityra_leucura                : 3398 bp (4/4 genes)
+Tityra_semifasciata           : 3398 bp (4/4 genes)
+Xenopsaris_albinucha          : 3398 bp (2/4 genes)
+
+Concatenated sequences written to: /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/concatenated_all_genes.fasta
+Total sequences: 24
+Concatenated length: 3398 bp
+Partition file written to: /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/partitions.txt
+
+===================================================================
+Concatenation completed
+Completed: Di Apr 28 15:25:54 CEST 2026
+===================================================================
+===================================================================
+Concatenating Mitochondrial Genes by Species (Assembly-based)
+Started: Di Apr 28 16:01:31 CEST 2026
+===================================================================
+Using maximum of 6 genes: COI CYTB ND2 CO2 RAG1 RAG2
+Will ensure at least one species per genus
+Will filter out species with >50% missing data (within genus priority)
+
+Checking for aligned gene files...
+  ✓ COI: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_assembly/alignments/COI_aligned_gblocks.fasta
+  ✓ CYTB: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_assembly/alignments/CYTB_aligned_gblocks.fasta
+  ✓ ND2: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_assembly/alignments/ND2_aligned_gblocks.fasta
+  ✓ CO2: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_assembly/alignments/CO2_aligned_gblocks.fasta
+  ✗ RAG1: Not found
+  ✗ RAG2: Not found
+
+Will concatenate 4 genes: COI CYTB ND2 CO2
+
+===================================================================
+Building species-level concatenated sequences
+===================================================================
+Processing 4 genes: COI, CYTB, ND2, CO2
+
+Reading COI...
+  COI: 651 bp, 23 species
+Reading CYTB...
+  CYTB: 1022 bp, 23 species
+Reading ND2...
+  ND2: 1041 bp, 29 species
+Reading CO2...
+  CO2: 684 bp, 29 species
+
+===================================================================
+Species summary:
+===================================================================
+Acanthisitta_chloris          :  4/4 genes
+Iodopleura_fusca              :  3/4 genes
+Iodopleura_isabellae          :  2/4 genes
+Laniisoma_elegans             :  3/4 genes
+Laniocera_hypopyrra           :  4/4 genes
+Pachyramphus_aglaiae          :  2/4 genes
+Pachyramphus_albogriseus      :  1/4 genes
+Pachyramphus_castaneus        :  1/4 genes
+Pachyramphus_cinnamomeus      :  2/4 genes
+Pachyramphus_homochrous       :  1/4 genes
+Pachyramphus_major            :  1/4 genes
+Pachyramphus_marginatus       :  3/4 genes
+Pachyramphus_minor            :  2/4 genes
+Pachyramphus_polychopterus    :  3/4 genes
+Pachyramphus_rufus            :  2/4 genes
+Pachyramphus_spodiurus        :  1/4 genes
+Pachyramphus_surinamus        :  2/4 genes
+Pachyramphus_validus          :  2/4 genes
+Pachyramphus_versicolor       :  2/4 genes
+Pachyramphus_viridis          :  2/4 genes
+Pachyramphus_xanthogenys      :  3/4 genes
+Schiffornis_major             :  3/4 genes
+Schiffornis_turdina           :  4/4 genes
+Schiffornis_virescens         :  3/4 genes
+Tityra_cayana                 :  3/4 genes
+Tityra_inquisitor             :  3/4 genes
+Tityra_leucura                :  4/4 genes
+Tityra_semifasciata           :  4/4 genes
+Xenopsaris_albinucha          :  2/4 genes
+
+Total species: 29
+Species with all genes: 5
+Species with ≥50% genes: 24
+
+Filtering strategy: At least one species per genus + species with ≥2.0 genes
+Number of genera: 8
+Species before filtering: 29
+Species after filtering: 24
+Excluded 5 species
+
+===================================================================
+Creating concatenated sequences
+===================================================================
+Acanthisitta_chloris          : 3398 bp (4/4 genes)
+Iodopleura_fusca              : 3398 bp (3/4 genes)
+Iodopleura_isabellae          : 3398 bp (2/4 genes)
+Laniisoma_elegans             : 3398 bp (3/4 genes)
+Laniocera_hypopyrra           : 3398 bp (4/4 genes)
+Pachyramphus_aglaiae          : 3398 bp (2/4 genes)
+Pachyramphus_cinnamomeus      : 3398 bp (2/4 genes)
+Pachyramphus_marginatus       : 3398 bp (3/4 genes)
+Pachyramphus_minor            : 3398 bp (2/4 genes)
+Pachyramphus_polychopterus    : 3398 bp (3/4 genes)
+Pachyramphus_rufus            : 3398 bp (2/4 genes)
+Pachyramphus_surinamus        : 3398 bp (2/4 genes)
+Pachyramphus_validus          : 3398 bp (2/4 genes)
+Pachyramphus_versicolor       : 3398 bp (2/4 genes)
+Pachyramphus_viridis          : 3398 bp (2/4 genes)
+Pachyramphus_xanthogenys      : 3398 bp (3/4 genes)
+Schiffornis_major             : 3398 bp (3/4 genes)
+Schiffornis_turdina           : 3398 bp (4/4 genes)
+Schiffornis_virescens         : 3398 bp (3/4 genes)
+Tityra_cayana                 : 3398 bp (3/4 genes)
+Tityra_inquisitor             : 3398 bp (3/4 genes)
+Tityra_leucura                : 3398 bp (4/4 genes)
+Tityra_semifasciata           : 3398 bp (4/4 genes)
+Xenopsaris_albinucha          : 3398 bp (2/4 genes)
+
+Concatenated sequences written to: /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/concatenated_all_genes.fasta
+Total sequences: 24
+Concatenated length: 3398 bp
+Partition file written to: /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/partitions.txt
+
+===================================================================
+Concatenation completed
+Completed: Di Apr 28 16:01:31 CEST 2026
+===================================================================
+===================================================================
+Concatenating Mitochondrial Genes by Species (Assembly-based)
+Started: Di Apr 28 16:01:57 CEST 2026
+===================================================================
+Using maximum of 6 genes: COI CYTB ND2 CO2 RAG1 RAG2
+Will ensure at least one species per genus
+Will filter out species with >50% missing data (within genus priority)
+
+Checking for aligned gene files...
+  ✓ COI: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_assembly/alignments/COI_aligned_gblocks.fasta
+  ✓ CYTB: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_assembly/alignments/CYTB_aligned_gblocks.fasta
+  ✓ ND2: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_assembly/alignments/ND2_aligned_gblocks.fasta
+  ✓ CO2: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_assembly/alignments/CO2_aligned_gblocks.fasta
+  ✗ RAG1: Not found
+  ✗ RAG2: Not found
+
+Will concatenate 4 genes: COI CYTB ND2 CO2
+
+===================================================================
+Building species-level concatenated sequences
+===================================================================
+Processing 4 genes: COI, CYTB, ND2, CO2
+
+Reading COI...
+  COI: 651 bp, 23 species
+Reading CYTB...
+  CYTB: 1022 bp, 23 species
+Reading ND2...
+  ND2: 1041 bp, 29 species
+Reading CO2...
+  CO2: 684 bp, 29 species
+
+===================================================================
+Species summary:
+===================================================================
+Acanthisitta_chloris          :  4/4 genes
+Iodopleura_fusca              :  3/4 genes
+Iodopleura_isabellae          :  2/4 genes
+Laniisoma_elegans             :  3/4 genes
+Laniocera_hypopyrra           :  4/4 genes
+Pachyramphus_aglaiae          :  2/4 genes
+Pachyramphus_albogriseus      :  1/4 genes
+Pachyramphus_castaneus        :  1/4 genes
+Pachyramphus_cinnamomeus      :  2/4 genes
+Pachyramphus_homochrous       :  1/4 genes
+Pachyramphus_major            :  1/4 genes
+Pachyramphus_marginatus       :  3/4 genes
+Pachyramphus_minor            :  2/4 genes
+Pachyramphus_polychopterus    :  3/4 genes
+Pachyramphus_rufus            :  2/4 genes
+Pachyramphus_spodiurus        :  1/4 genes
+Pachyramphus_surinamus        :  2/4 genes
+Pachyramphus_validus          :  2/4 genes
+Pachyramphus_versicolor       :  2/4 genes
+Pachyramphus_viridis          :  2/4 genes
+Pachyramphus_xanthogenys      :  3/4 genes
+Schiffornis_major             :  3/4 genes
+Schiffornis_turdina           :  4/4 genes
+Schiffornis_virescens         :  3/4 genes
+Tityra_cayana                 :  3/4 genes
+Tityra_inquisitor             :  3/4 genes
+Tityra_leucura                :  4/4 genes
+Tityra_semifasciata           :  4/4 genes
+Xenopsaris_albinucha          :  2/4 genes
+
+Total species: 29
+Species with all genes: 5
+Species with ≥50% genes: 24
+
+Filtering strategy: At least one species per genus + species with ≥2.0 genes
+Number of genera: 8
+Species before filtering: 29
+Species after filtering: 24
+Excluded 5 species
+
+===================================================================
+Creating concatenated sequences
+===================================================================
+Acanthisitta_chloris          : 3398 bp (4/4 genes)
+Iodopleura_fusca              : 3398 bp (3/4 genes)
+Iodopleura_isabellae          : 3398 bp (2/4 genes)
+Laniisoma_elegans             : 3398 bp (3/4 genes)
+Laniocera_hypopyrra           : 3398 bp (4/4 genes)
+Pachyramphus_aglaiae          : 3398 bp (2/4 genes)
+Pachyramphus_cinnamomeus      : 3398 bp (2/4 genes)
+Pachyramphus_marginatus       : 3398 bp (3/4 genes)
+Pachyramphus_minor            : 3398 bp (2/4 genes)
+Pachyramphus_polychopterus    : 3398 bp (3/4 genes)
+Pachyramphus_rufus            : 3398 bp (2/4 genes)
+Pachyramphus_surinamus        : 3398 bp (2/4 genes)
+Pachyramphus_validus          : 3398 bp (2/4 genes)
+Pachyramphus_versicolor       : 3398 bp (2/4 genes)
+Pachyramphus_viridis          : 3398 bp (2/4 genes)
+Pachyramphus_xanthogenys      : 3398 bp (3/4 genes)
+Schiffornis_major             : 3398 bp (3/4 genes)
+Schiffornis_turdina           : 3398 bp (4/4 genes)
+Schiffornis_virescens         : 3398 bp (3/4 genes)
+Tityra_cayana                 : 3398 bp (3/4 genes)
+Tityra_inquisitor             : 3398 bp (3/4 genes)
+Tityra_leucura                : 3398 bp (4/4 genes)
+Tityra_semifasciata           : 3398 bp (4/4 genes)
+Xenopsaris_albinucha          : 3398 bp (2/4 genes)
+
+Concatenated sequences written to: /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/concatenated_all_genes.fasta
+Total sequences: 24
+Concatenated length: 3398 bp
+Partition file written to: /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/partitions.txt
+
+===================================================================
+Concatenation completed
+Completed: Di Apr 28 16:01:58 CEST 2026
+===================================================================
+===================================================================
+Concatenating Mitochondrial Genes by Species (Assembly-based)
+Started: Di Apr 28 16:04:41 CEST 2026
+===================================================================
+Using maximum of 6 genes: COI CYTB ND2 CO2 RAG1 RAG2
+Will ensure at least one species per genus
+Will filter out species with >50% missing data (within genus priority)
+
+Checking for aligned gene files...
+  ✓ COI: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_assembly/alignments/COI_aligned_gblocks.fasta
+  ✓ CYTB: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_assembly/alignments/CYTB_aligned_gblocks.fasta
+  ✓ ND2: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_assembly/alignments/ND2_aligned_gblocks.fasta
+  ✓ CO2: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_assembly/alignments/CO2_aligned_gblocks.fasta
+  ✓ RAG1: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_assembly/alignments/RAG1_aligned_gblocks.fasta
+  ✓ RAG2: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_assembly/alignments/RAG2_aligned_gblocks.fasta
+
+Will concatenate 6 genes: COI CYTB ND2 CO2 RAG1 RAG2
+
+===================================================================
+Building species-level concatenated sequences
+===================================================================
+Processing 6 genes: COI, CYTB, ND2, CO2, RAG1, RAG2
+
+Reading COI...
+  COI: 651 bp, 23 species
+Reading CYTB...
+  CYTB: 1022 bp, 23 species
+Reading ND2...
+  ND2: 1041 bp, 29 species
+Reading CO2...
+  CO2: 684 bp, 29 species
+Reading RAG1...
+  RAG1: 2864 bp, 30 species
+Reading RAG2...
+  RAG2: 1152 bp, 30 species
+
+===================================================================
+Species summary:
+===================================================================
+Acanthisitta_chloris          :  6/6 genes
+Iodopleura_fusca              :  3/6 genes
+Iodopleura_isabellae          :  4/6 genes
+Laniisoma_elegans             :  5/6 genes
+Laniocera_hypopyrra           :  6/6 genes
+Pachyramphus_aglaiae          :  4/6 genes
+Pachyramphus_albogriseus      :  1/6 genes
+Pachyramphus_castaneus        :  1/6 genes
+Pachyramphus_cinnamomeus      :  2/6 genes
+Pachyramphus_homochrous       :  1/6 genes
+Pachyramphus_major            :  1/6 genes
+Pachyramphus_marginatus       :  3/6 genes
+Pachyramphus_minor            :  3/6 genes
+Pachyramphus_polychopterus    :  5/6 genes
+Pachyramphus_rufus            :  2/6 genes
+Pachyramphus_spodiurus        :  1/6 genes
+Pachyramphus_surinamus        :  2/6 genes
+Pachyramphus_validus          :  2/6 genes
+Pachyramphus_versicolor       :  2/6 genes
+Pachyramphus_viridis          :  4/6 genes
+Pachyramphus_xanthogenys      :  3/6 genes
+Schiffornis_major             :  3/6 genes
+Schiffornis_turdina           :  6/6 genes
+Schiffornis_virescens         :  4/6 genes
+Tityra_cayana                 :  4/6 genes
+Tityra_inquisitor             :  3/6 genes
+Tityra_leucura                :  4/6 genes
+Tityra_semifasciata           :  6/6 genes
+Xenopsaris_albinucha          :  4/6 genes
+_R                            :  1/6 genes
+
+Total species: 30
+Species with all genes: 4
+Species with ≥50% genes: 19
+
+Filtering strategy: At least one species per genus + species with ≥3.0 genes
+Number of genera: 9
+Species before filtering: 30
+Species after filtering: 20
+Excluded 10 species
+
+===================================================================
+Creating concatenated sequences
+===================================================================
+Acanthisitta_chloris          : 7414 bp (6/6 genes)
+Iodopleura_fusca              : 7414 bp (3/6 genes)
+Iodopleura_isabellae          : 7414 bp (4/6 genes)
+Laniisoma_elegans             : 7414 bp (5/6 genes)
+Laniocera_hypopyrra           : 7414 bp (6/6 genes)
+Pachyramphus_aglaiae          : 7414 bp (4/6 genes)
+Pachyramphus_marginatus       : 7414 bp (3/6 genes)
+Pachyramphus_minor            : 7414 bp (3/6 genes)
+Pachyramphus_polychopterus    : 7414 bp (5/6 genes)
+Pachyramphus_viridis          : 7414 bp (4/6 genes)
+Pachyramphus_xanthogenys      : 7414 bp (3/6 genes)
+Schiffornis_major             : 7414 bp (3/6 genes)
+Schiffornis_turdina           : 7414 bp (6/6 genes)
+Schiffornis_virescens         : 7414 bp (4/6 genes)
+Tityra_cayana                 : 7414 bp (4/6 genes)
+Tityra_inquisitor             : 7414 bp (3/6 genes)
+Tityra_leucura                : 7414 bp (4/6 genes)
+Tityra_semifasciata           : 7414 bp (6/6 genes)
+Xenopsaris_albinucha          : 7414 bp (4/6 genes)
+_R                            : 7414 bp (1/6 genes)
+
+Concatenated sequences written to: /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/concatenated_all_genes.fasta
+Total sequences: 20
+Concatenated length: 7414 bp
+Partition file written to: /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/partitions.txt
+
+===================================================================
+Concatenation completed
+Completed: Di Apr 28 16:04:42 CEST 2026
+===================================================================
+===================================================================
+Concatenating Mitochondrial Genes by Species (Assembly-based)
+Started: Di Apr 28 16:21:18 CEST 2026
+===================================================================
+Using maximum of 6 genes: COI CYTB ND2 CO2 RAG1 RAG2
+Will ensure at least one species per genus
+Will filter out species with >50% missing data (within genus priority)
+
+Checking for aligned gene files...
+  ✓ COI: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_assembly/alignments/COI_aligned_gblocks.fasta
+  ✓ CYTB: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_assembly/alignments/CYTB_aligned_gblocks.fasta
+  ✓ ND2: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_assembly/alignments/ND2_aligned_gblocks.fasta
+  ✓ CO2: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_assembly/alignments/CO2_aligned_gblocks.fasta
+  ✓ RAG1: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_assembly/alignments/RAG1_aligned_gblocks.fasta
+  ✓ RAG2: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_assembly/alignments/RAG2_aligned_gblocks.fasta
+
+Will concatenate 6 genes: COI CYTB ND2 CO2 RAG1 RAG2
+
+===================================================================
+Building species-level concatenated sequences
+===================================================================
+Processing 6 genes: COI, CYTB, ND2, CO2, RAG1, RAG2
+
+Reading COI...
+  COI: 651 bp, 23 species
+Reading CYTB...
+  CYTB: 1022 bp, 23 species
+Reading ND2...
+  ND2: 1041 bp, 29 species
+Reading CO2...
+  CO2: 684 bp, 29 species
+Reading RAG1...
+  RAG1: 2864 bp, 30 species
+Reading RAG2...
+  RAG2: 1152 bp, 30 species
+
+===================================================================
+Species summary:
+===================================================================
+Acanthisitta_chloris          :  6/6 genes
+Iodopleura_fusca              :  3/6 genes
+Iodopleura_isabellae          :  4/6 genes
+Laniisoma_elegans             :  5/6 genes
+Laniocera_hypopyrra           :  6/6 genes
+Pachyramphus_aglaiae          :  4/6 genes
+Pachyramphus_albogriseus      :  1/6 genes
+Pachyramphus_castaneus        :  1/6 genes
+Pachyramphus_cinnamomeus      :  2/6 genes
+Pachyramphus_homochrous       :  1/6 genes
+Pachyramphus_major            :  1/6 genes
+Pachyramphus_marginatus       :  3/6 genes
+Pachyramphus_minor            :  3/6 genes
+Pachyramphus_polychopterus    :  5/6 genes
+Pachyramphus_rufus            :  2/6 genes
+Pachyramphus_spodiurus        :  1/6 genes
+Pachyramphus_surinamus        :  2/6 genes
+Pachyramphus_validus          :  2/6 genes
+Pachyramphus_versicolor       :  2/6 genes
+Pachyramphus_viridis          :  4/6 genes
+Pachyramphus_xanthogenys      :  3/6 genes
+Schiffornis_major             :  3/6 genes
+Schiffornis_turdina           :  6/6 genes
+Schiffornis_virescens         :  4/6 genes
+Tityra_cayana                 :  4/6 genes
+Tityra_inquisitor             :  3/6 genes
+Tityra_leucura                :  4/6 genes
+Tityra_semifasciata           :  6/6 genes
+Xenopsaris_albinucha          :  4/6 genes
+_R                            :  1/6 genes
+
+Total species: 30
+Species with all genes: 4
+Species with ≥50% genes: 19
+
+Filtering strategy: At least one species per genus + species with ≥3.0 genes
+Number of genera: 9
+Species before filtering: 30
+Species after filtering: 20
+Excluded 10 species
+
+===================================================================
+Creating concatenated sequences
+===================================================================
+Acanthisitta_chloris          : 7414 bp (6/6 genes)
+Iodopleura_fusca              : 7414 bp (3/6 genes)
+Iodopleura_isabellae          : 7414 bp (4/6 genes)
+Laniisoma_elegans             : 7414 bp (5/6 genes)
+Laniocera_hypopyrra           : 7414 bp (6/6 genes)
+Pachyramphus_aglaiae          : 7414 bp (4/6 genes)
+Pachyramphus_marginatus       : 7414 bp (3/6 genes)
+Pachyramphus_minor            : 7414 bp (3/6 genes)
+Pachyramphus_polychopterus    : 7414 bp (5/6 genes)
+Pachyramphus_viridis          : 7414 bp (4/6 genes)
+Pachyramphus_xanthogenys      : 7414 bp (3/6 genes)
+Schiffornis_major             : 7414 bp (3/6 genes)
+Schiffornis_turdina           : 7414 bp (6/6 genes)
+Schiffornis_virescens         : 7414 bp (4/6 genes)
+Tityra_cayana                 : 7414 bp (4/6 genes)
+Tityra_inquisitor             : 7414 bp (3/6 genes)
+Tityra_leucura                : 7414 bp (4/6 genes)
+Tityra_semifasciata           : 7414 bp (6/6 genes)
+Xenopsaris_albinucha          : 7414 bp (4/6 genes)
+_R                            : 7414 bp (1/6 genes)
+
+Concatenated sequences written to: /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/concatenated_all_genes.fasta
+Total sequences: 20
+Concatenated length: 7414 bp
+Partition file written to: /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/partitions.txt
+
+===================================================================
+Concatenation completed
+Completed: Di Apr 28 16:21:18 CEST 2026
+===================================================================
+===================================================================
+Concatenating Mitochondrial Genes by Species (Assembly-based)
+Started: Di Apr 28 16:25:26 CEST 2026
+===================================================================
+Using maximum of 4 genes: COI CYTB ND2 CO2
+Will ensure at least one species per genus
+Will filter out species with >50% missing data (within genus priority)
+
+Checking for aligned gene files...
+  ✓ COI: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_assembly/alignments/COI_aligned_gblocks.fasta
+  ✓ CYTB: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_assembly/alignments/CYTB_aligned_gblocks.fasta
+  ✓ ND2: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_assembly/alignments/ND2_aligned_gblocks.fasta
+  ✓ CO2: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_assembly/alignments/CO2_aligned_gblocks.fasta
+
+Will concatenate 4 genes: COI CYTB ND2 CO2
+
+===================================================================
+Building species-level concatenated sequences
+===================================================================
+Processing 4 genes: COI, CYTB, ND2, CO2
+
+Reading COI...
+  COI: 651 bp, 23 species
+Reading CYTB...
+  CYTB: 1022 bp, 23 species
+Reading ND2...
+  ND2: 1041 bp, 29 species
+Reading CO2...
+  CO2: 684 bp, 29 species
+
+===================================================================
+Species summary:
+===================================================================
+Acanthisitta_chloris          :  4/4 genes
+Iodopleura_fusca              :  3/4 genes
+Iodopleura_isabellae          :  2/4 genes
+Laniisoma_elegans             :  3/4 genes
+Laniocera_hypopyrra           :  4/4 genes
+Pachyramphus_aglaiae          :  2/4 genes
+Pachyramphus_albogriseus      :  1/4 genes
+Pachyramphus_castaneus        :  1/4 genes
+Pachyramphus_cinnamomeus      :  2/4 genes
+Pachyramphus_homochrous       :  1/4 genes
+Pachyramphus_major            :  1/4 genes
+Pachyramphus_marginatus       :  3/4 genes
+Pachyramphus_minor            :  2/4 genes
+Pachyramphus_polychopterus    :  3/4 genes
+Pachyramphus_rufus            :  2/4 genes
+Pachyramphus_spodiurus        :  1/4 genes
+Pachyramphus_surinamus        :  2/4 genes
+Pachyramphus_validus          :  2/4 genes
+Pachyramphus_versicolor       :  2/4 genes
+Pachyramphus_viridis          :  2/4 genes
+Pachyramphus_xanthogenys      :  3/4 genes
+Schiffornis_major             :  3/4 genes
+Schiffornis_turdina           :  4/4 genes
+Schiffornis_virescens         :  3/4 genes
+Tityra_cayana                 :  3/4 genes
+Tityra_inquisitor             :  3/4 genes
+Tityra_leucura                :  4/4 genes
+Tityra_semifasciata           :  4/4 genes
+Xenopsaris_albinucha          :  2/4 genes
+
+Total species: 29
+Species with all genes: 5
+Species with ≥50% genes: 24
+
+Filtering strategy: At least one species per genus + species with ≥2.0 genes
+Number of genera: 8
+Species before filtering: 29
+Species after filtering: 24
+Excluded 5 species
+
+===================================================================
+Creating concatenated sequences
+===================================================================
+Acanthisitta_chloris          : 3398 bp (4/4 genes)
+Iodopleura_fusca              : 3398 bp (3/4 genes)
+Iodopleura_isabellae          : 3398 bp (2/4 genes)
+Laniisoma_elegans             : 3398 bp (3/4 genes)
+Laniocera_hypopyrra           : 3398 bp (4/4 genes)
+Pachyramphus_aglaiae          : 3398 bp (2/4 genes)
+Pachyramphus_cinnamomeus      : 3398 bp (2/4 genes)
+Pachyramphus_marginatus       : 3398 bp (3/4 genes)
+Pachyramphus_minor            : 3398 bp (2/4 genes)
+Pachyramphus_polychopterus    : 3398 bp (3/4 genes)
+Pachyramphus_rufus            : 3398 bp (2/4 genes)
+Pachyramphus_surinamus        : 3398 bp (2/4 genes)
+Pachyramphus_validus          : 3398 bp (2/4 genes)
+Pachyramphus_versicolor       : 3398 bp (2/4 genes)
+Pachyramphus_viridis          : 3398 bp (2/4 genes)
+Pachyramphus_xanthogenys      : 3398 bp (3/4 genes)
+Schiffornis_major             : 3398 bp (3/4 genes)
+Schiffornis_turdina           : 3398 bp (4/4 genes)
+Schiffornis_virescens         : 3398 bp (3/4 genes)
+Tityra_cayana                 : 3398 bp (3/4 genes)
+Tityra_inquisitor             : 3398 bp (3/4 genes)
+Tityra_leucura                : 3398 bp (4/4 genes)
+Tityra_semifasciata           : 3398 bp (4/4 genes)
+Xenopsaris_albinucha          : 3398 bp (2/4 genes)
+
+Concatenated sequences written to: /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/concatenated_all_genes.fasta
+Total sequences: 24
+Concatenated length: 3398 bp
+Partition file written to: /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/partitions.txt
+
+===================================================================
+Concatenation completed
+Completed: Di Apr 28 16:25:26 CEST 2026
+===================================================================
+===================================================================
+Concatenating Mitochondrial Genes by Species (Assembly-based)
+Started: Fr Mai  1 10:16:32 CEST 2026
+===================================================================
+Using maximum of 4 genes: COI CYTB ND2 CO2
+Will ensure at least one species per genus
+Will filter out species with >50% missing data (within genus priority)
+
+Checking for aligned gene files...
+  ✓ COI: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_rawreads/alignments/COI_aligned_gblocks.fasta
+  ✓ CYTB: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_rawreads/alignments/CYTB_aligned_gblocks.fasta
+  ✓ ND2: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_rawreads/alignments/ND2_aligned_gblocks.fasta
+  ✓ CO2: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_rawreads/alignments/CO2_aligned_gblocks.fasta
+
+Will concatenate 4 genes: COI CYTB ND2 CO2
+
+===================================================================
+Building species-level concatenated sequences
+===================================================================
+Processing 4 genes: COI, CYTB, ND2, CO2
+
+Reading COI...
+  COI: 651 bp, 23 species
+Reading CYTB...
+  CYTB: 1022 bp, 23 species
+Reading ND2...
+  ND2: 1041 bp, 29 species
+Reading CO2...
+  CO2: 684 bp, 29 species
+
+===================================================================
+Species summary:
+===================================================================
+Acanthisitta_chloris          :  4/4 genes
+Iodopleura_fusca              :  3/4 genes
+Iodopleura_isabellae          :  2/4 genes
+Laniisoma_elegans             :  3/4 genes
+Laniocera_hypopyrra           :  4/4 genes
+Pachyramphus_aglaiae          :  2/4 genes
+Pachyramphus_albogriseus      :  1/4 genes
+Pachyramphus_castaneus        :  1/4 genes
+Pachyramphus_cinnamomeus      :  2/4 genes
+Pachyramphus_homochrous       :  1/4 genes
+Pachyramphus_major            :  1/4 genes
+Pachyramphus_marginatus       :  3/4 genes
+Pachyramphus_minor            :  2/4 genes
+Pachyramphus_polychopterus    :  3/4 genes
+Pachyramphus_rufus            :  2/4 genes
+Pachyramphus_spodiurus        :  1/4 genes
+Pachyramphus_surinamus        :  2/4 genes
+Pachyramphus_validus          :  2/4 genes
+Pachyramphus_versicolor       :  2/4 genes
+Pachyramphus_viridis          :  2/4 genes
+Pachyramphus_xanthogenys      :  3/4 genes
+Schiffornis_major             :  3/4 genes
+Schiffornis_turdina           :  4/4 genes
+Schiffornis_virescens         :  3/4 genes
+Tityra_cayana                 :  3/4 genes
+Tityra_inquisitor             :  3/4 genes
+Tityra_leucura                :  4/4 genes
+Tityra_semifasciata           :  4/4 genes
+Xenopsaris_albinucha          :  2/4 genes
+
+Total species: 29
+Species with all genes: 5
+Species with ≥50% genes: 24
+
+Filtering strategy: At least one species per genus + species with ≥2.0 genes
+Number of genera: 8
+Species before filtering: 29
+Species after filtering: 24
+Excluded 5 species
+
+===================================================================
+Creating concatenated sequences
+===================================================================
+Acanthisitta_chloris          : 3398 bp (4/4 genes)
+  Accessions: COI:Acanthisitta_chloris|MK262501.1 CYTB:Acanthisitta_chloris|MN356114.1 ND2:Acanthisitta_chloris|MN356114.1 CO2:Acanthisitta_chloris|MN356114.1
+Iodopleura_fusca              : 3398 bp (3/4 genes)
+  Accessions: COI:Iodopleura_fusca|JQ175163.1 CYTB:Iodopleura_fusca|KJ810467.1 ND2:Iodopleura_fusca|JQ445533.1 CO2:missing
+Iodopleura_isabellae          : 3398 bp (2/4 genes)
+  Accessions: COI:missing CYTB:missing ND2:Iodopleura_isabellae|JQ445534.1 CO2:Iodopleura_isabellae|AY489475.1
+Laniisoma_elegans             : 3398 bp (3/4 genes)
+  Accessions: COI:Laniisoma_elegans|EF458614.1 CYTB:Laniisoma_elegans|KJ810468.1 ND2:Laniisoma_elegans|KJ810375.1 CO2:missing
+Laniocera_hypopyrra           : 3398 bp (4/4 genes)
+  Accessions: COI:Laniocera_hypopyrra|PV402887.1 CYTB:Laniocera_hypopyrra|EF458572.1 ND2:Laniocera_hypopyrra|DQ363976.1 CO2:Laniocera_hypopyrra|AY489474.1
+Pachyramphus_aglaiae          : 3398 bp (2/4 genes)
+  Accessions: COI:Pachyramphus_aglaiae|DQ433056.1 CYTB:missing ND2:Pachyramphus_aglaiae|DQ363934.1 CO2:missing
+Pachyramphus_cinnamomeus      : 3398 bp (2/4 genes)
+  Accessions: COI:Pachyramphus_cinnamomeus|JQ175651.2 CYTB:missing ND2:Pachyramphus_cinnamomeus|DQ363938.1 CO2:missing
+Pachyramphus_marginatus       : 3398 bp (3/4 genes)
+  Accessions: COI:Pachyramphus_marginatus|JQ175654.1 CYTB:missing ND2:Pachyramphus_marginatus|DQ363942.1 CO2:Pachyramphus_marginatus|AY489477.1
+Pachyramphus_minor            : 3398 bp (2/4 genes)
+  Accessions: COI:Pachyramphus_minor|JQ175655.1 CYTB:missing ND2:Pachyramphus_minor|DQ363944.1 CO2:missing
+Pachyramphus_polychopterus    : 3398 bp (3/4 genes)
+  Accessions: COI:Pachyramphus_polychopterus|JQ175659.1 CYTB:Pachyramphus_polychopterus|KJ810479.1 ND2:Pachyramphus_polychopterus|KF228512.1 CO2:missing
+Pachyramphus_rufus            : 3398 bp (2/4 genes)
+  Accessions: COI:Pachyramphus_rufus|JQ175662.1 CYTB:missing ND2:Pachyramphus_rufus|DQ363950.1 CO2:missing
+Pachyramphus_surinamus        : 3398 bp (2/4 genes)
+  Accessions: COI:Pachyramphus_surinamus|JQ175663.1 CYTB:missing ND2:Pachyramphus_surinamus|DQ363952.1 CO2:missing
+Pachyramphus_validus          : 3398 bp (2/4 genes)
+  Accessions: COI:Pachyramphus_validus|FJ027934.1 CYTB:missing ND2:Pachyramphus_validus|DQ363955.1 CO2:missing
+Pachyramphus_versicolor       : 3398 bp (2/4 genes)
+  Accessions: COI:Pachyramphus_versicolor|PV403248.1 CYTB:missing ND2:Pachyramphus_versicolor|DQ363957.1 CO2:missing
+Pachyramphus_viridis          : 3398 bp (2/4 genes)
+  Accessions: COI:Pachyramphus_viridis|FJ027938.1 CYTB:missing ND2:Pachyramphus_viridis_griseigularis|MH161179.1 CO2:missing
+Pachyramphus_xanthogenys      : 3398 bp (3/4 genes)
+  Accessions: COI:Pachyramphus_xanthogenys|PV402909.1 CYTB:Pachyramphus_xanthogenys|PV391388.1 ND2:Pachyramphus_xanthogenys|DQ363961.1 CO2:missing
+Schiffornis_major             : 3398 bp (3/4 genes)
+  Accessions: COI:Schiffornis_major|EF458612.1 CYTB:Schiffornis_major|EF458571.1 ND2:Schiffornis_major|GU985513.1 CO2:missing
+Schiffornis_turdina           : 3398 bp (4/4 genes)
+  Accessions: COI:Schiffornis_turdina|JX487853.1 CYTB:Schiffornis_turdina|KM081058.1 ND2:Schiffornis_turdina|DQ363971.1 CO2:Schiffornis_turdina|AY489478.1
+Schiffornis_virescens         : 3398 bp (3/4 genes)
+  Accessions: COI:Schiffornis_virescens|FJ028245.1 CYTB:Schiffornis_virescens|JX477712.1 ND2:Schiffornis_virescens|AY136618.1 CO2:missing
+Tityra_cayana                 : 3398 bp (3/4 genes)
+  Accessions: COI:Tityra_cayana|JQ176494.1 CYTB:Tityra_cayana|KM081392.1 ND2:Tityra_cayana|DQ363964.1 CO2:missing
+Tityra_inquisitor             : 3398 bp (3/4 genes)
+  Accessions: COI:Tityra_inquisitor|JQ176499.1 CYTB:Tityra_inquisitor|FJ899385.1 ND2:Tityra_inquisitor|DQ363965.1 CO2:missing
+Tityra_leucura                : 3398 bp (4/4 genes)
+  Accessions: COI:Tityra_leucura|NA CYTB:Tityra_leucura|NA ND2:Tityra_leucura|NA CO2:Tityra_leucura|NA
+Tityra_semifasciata           : 3398 bp (4/4 genes)
+  Accessions: COI:Tityra_semifasciata|JQ176501.1 CYTB:Tityra_semifasciata|FJ899402.1 ND2:Tityra_semifasciata|FJ175987.1 CO2:Tityra_semifasciata|AY489476.1
+Xenopsaris_albinucha          : 3398 bp (2/4 genes)
+  Accessions: COI:Xenopsaris_albinucha|JQ176631.1 CYTB:missing ND2:Xenopsaris_albinucha|DQ363962.1 CO2:missing
+
+Concatenated sequences written to: /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/concatenated_all_genes.fasta
+Total sequences: 24
+Concatenated length: 3398 bp
+Partition file written to: /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/partitions.txt
+
+===================================================================
+Concatenation completed
+Completed: Fr Mai  1 10:16:32 CEST 2026
+===================================================================
+===================================================================
+Concatenating Mitochondrial Genes by Species (Assembly-based)
+Started: Fr Mai  1 10:19:11 CEST 2026
+===================================================================
+Using maximum of 4 genes: COI CYTB ND2 CO2
+Will ensure at least one species per genus
+Will filter out species with >50% missing data (within genus priority)
+
+Checking for aligned gene files...
+  ✓ COI: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_assembly/alignments/COI_aligned_gblocks.fasta
+  ✓ CYTB: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_assembly/alignments/CYTB_aligned_gblocks.fasta
+  ✓ ND2: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_assembly/alignments/ND2_aligned_gblocks.fasta
+  ✓ CO2: /media/inter/mkapun/projects/Tityra/results/phylogenetic_analysis_assembly/alignments/CO2_aligned_gblocks.fasta
+
+Will concatenate 4 genes: COI CYTB ND2 CO2
+
+===================================================================
+Building species-level concatenated sequences
+===================================================================
+Processing 4 genes: COI, CYTB, ND2, CO2
+
+Reading COI...
+  COI: 651 bp, 23 species
+Reading CYTB...
+  CYTB: 1031 bp, 23 species
+Reading ND2...
+  ND2: 1041 bp, 29 species
+Reading CO2...
+  CO2: 684 bp, 29 species
+
+===================================================================
+Species summary:
+===================================================================
+Iodopleura_fusca              :  3/4 genes
+Iodopleura_isabellae          :  2/4 genes
+Laniisoma_elegans             :  3/4 genes
+Laniocera_hypopyrra           :  4/4 genes
+Onychorhynchus_coronatus      :  4/4 genes
+Pachyramphus_aglaiae          :  2/4 genes
+Pachyramphus_albogriseus      :  1/4 genes
+Pachyramphus_castaneus        :  1/4 genes
+Pachyramphus_cinnamomeus      :  2/4 genes
+Pachyramphus_homochrous       :  1/4 genes
+Pachyramphus_major            :  1/4 genes
+Pachyramphus_marginatus       :  3/4 genes
+Pachyramphus_minor            :  2/4 genes
+Pachyramphus_polychopterus    :  3/4 genes
+Pachyramphus_rufus            :  2/4 genes
+Pachyramphus_spodiurus        :  1/4 genes
+Pachyramphus_surinamus        :  2/4 genes
+Pachyramphus_validus          :  2/4 genes
+Pachyramphus_versicolor       :  2/4 genes
+Pachyramphus_viridis          :  2/4 genes
+Pachyramphus_xanthogenys      :  3/4 genes
+Schiffornis_major             :  3/4 genes
+Schiffornis_turdina           :  4/4 genes
+Schiffornis_virescens         :  3/4 genes
+Tityra_cayana                 :  3/4 genes
+Tityra_inquisitor             :  3/4 genes
+Tityra_leucura                :  4/4 genes
+Tityra_semifasciata           :  4/4 genes
+Xenopsaris_albinucha          :  2/4 genes
+
+Total species: 29
+Species with all genes: 5
+Species with ≥50% genes: 24
+
+Filtering strategy: At least one species per genus + species with ≥2.0 genes
+Number of genera: 8
+Species before filtering: 29
+Species after filtering: 24
+Excluded 5 species
+
+===================================================================
+Creating concatenated sequences
+===================================================================
+Iodopleura_fusca              : 3407 bp (3/4 genes)
+  Accessions: COI:Iodopleura_fusca|JQ175161.1 CYTB:Iodopleura_fusca|KJ810467.1 ND2:Iodopleura_fusca|JQ445533.1 CO2:missing
+Iodopleura_isabellae          : 3407 bp (2/4 genes)
+  Accessions: COI:missing CYTB:missing ND2:Iodopleura_isabellae|JQ445531.1 CO2:Iodopleura_isabellae|AY489475.1
+Laniisoma_elegans             : 3407 bp (3/4 genes)
+  Accessions: COI:Laniisoma_elegans|EF458614.1 CYTB:Laniisoma_elegans|KJ810468.1 ND2:Laniisoma_elegans|KJ810375.1 CO2:missing
+Laniocera_hypopyrra           : 3407 bp (4/4 genes)
+  Accessions: COI:Laniocera_hypopyrra|JN801760.1 CYTB:Laniocera_hypopyrra|EF458572.1 ND2:Laniocera_hypopyrra|DQ363976.1 CO2:Laniocera_hypopyrra|AY489474.1
+Onychorhynchus_coronatus      : 3407 bp (4/4 genes)
+  Accessions: COI:Onychorhynchus_coronatus|JN801877.1 CYTB:Onychorhynchus_coronatus|MN356341.1 ND2:Onychorhynchus_coronatus|OM161005.1 CO2:Onychorhynchus_coronatus|MN356341.1
+Pachyramphus_aglaiae          : 3407 bp (2/4 genes)
+  Accessions: COI:Pachyramphus_aglaiae|DQ433057.1 CYTB:missing ND2:Pachyramphus_aglaiae|DQ363934.1 CO2:missing
+Pachyramphus_cinnamomeus      : 3407 bp (2/4 genes)
+  Accessions: COI:Pachyramphus_cinnamomeus|JQ175651.2 CYTB:missing ND2:Pachyramphus_cinnamomeus|DQ363938.1 CO2:missing
+Pachyramphus_marginatus       : 3407 bp (3/4 genes)
+  Accessions: COI:Pachyramphus_marginatus|JQ175653.1 CYTB:missing ND2:Pachyramphus_marginatus|DQ363942.1 CO2:Pachyramphus_marginatus|AY489477.1
+Pachyramphus_minor            : 3407 bp (2/4 genes)
+  Accessions: COI:Pachyramphus_minor|JQ175655.1 CYTB:missing ND2:Pachyramphus_minor|DQ363944.1 CO2:missing
+Pachyramphus_polychopterus    : 3407 bp (3/4 genes)
+  Accessions: COI:Pachyramphus_polychopterus|JQ175659.1 CYTB:Pachyramphus_polychopterus|KJ810479.1 ND2:Pachyramphus_polychopterus|DQ363948.1 CO2:missing
+Pachyramphus_rufus            : 3407 bp (2/4 genes)
+  Accessions: COI:Pachyramphus_rufus|JQ175662.1 CYTB:missing ND2:Pachyramphus_rufus|DQ363950.1 CO2:missing
+Pachyramphus_surinamus        : 3407 bp (2/4 genes)
+  Accessions: COI:Pachyramphus_surinamus|JQ175663.1 CYTB:missing ND2:Pachyramphus_surinamus|DQ363952.1 CO2:missing
+Pachyramphus_validus          : 3407 bp (2/4 genes)
+  Accessions: COI:Pachyramphus_validus|FJ027934.1 CYTB:missing ND2:Pachyramphus_validus|DQ363956.1 CO2:missing
+Pachyramphus_versicolor       : 3407 bp (2/4 genes)
+  Accessions: COI:Pachyramphus_versicolor|PV403248.1 CYTB:missing ND2:Pachyramphus_versicolor|DQ363957.1 CO2:missing
+Pachyramphus_viridis          : 3407 bp (2/4 genes)
+  Accessions: COI:Pachyramphus_viridis|FJ027937.1 CYTB:missing ND2:Pachyramphus_viridis_griseigularis|MH161179.1 CO2:missing
+Pachyramphus_xanthogenys      : 3407 bp (3/4 genes)
+  Accessions: COI:Pachyramphus_xanthogenys|PV402909.1 CYTB:Pachyramphus_xanthogenys|PV391388.1 ND2:Pachyramphus_xanthogenys|DQ363961.1 CO2:missing
+Schiffornis_major             : 3407 bp (3/4 genes)
+  Accessions: COI:Schiffornis_major|EF458612.1 CYTB:Schiffornis_major|EF458571.1 ND2:Schiffornis_major|GU985513.1 CO2:missing
+Schiffornis_turdina           : 3407 bp (4/4 genes)
+  Accessions: COI:Schiffornis_turdina|EF458600.1 CYTB:Schiffornis_turdina|KM081182.1 ND2:Schiffornis_turdina|EF458498.1 CO2:Schiffornis_turdina|AY489478.1
+Schiffornis_virescens         : 3407 bp (3/4 genes)
+  Accessions: COI:Schiffornis_virescens|FJ028247.1 CYTB:Schiffornis_virescens|JX477697.1 ND2:Schiffornis_virescens|KF228511.1 CO2:missing
+Tityra_cayana                 : 3407 bp (3/4 genes)
+  Accessions: COI:Tityra_cayana|JQ176495.1 CYTB:Tityra_cayana|KM081392.1 ND2:Tityra_cayana|DQ363963.1 CO2:missing
+Tityra_inquisitor             : 3407 bp (3/4 genes)
+  Accessions: COI:Tityra_inquisitor|JQ176498.1 CYTB:Tityra_inquisitor|FJ899384.1 ND2:Tityra_inquisitor|DQ363965.1 CO2:missing
+Tityra_leucura                : 3407 bp (4/4 genes)
+  Accessions: COI:Tityra_leucura|NA CYTB:Tityra_leucura|NA ND2:Tityra_leucura|NA CO2:Tityra_leucura|NA
+Tityra_semifasciata           : 3407 bp (4/4 genes)
+  Accessions: COI:Tityra_semifasciata|JQ176501.1 CYTB:Tityra_semifasciata|KM081364.1 ND2:Tityra_semifasciata|FJ175987.1 CO2:Tityra_semifasciata|AY489476.1
+Xenopsaris_albinucha          : 3407 bp (2/4 genes)
+  Accessions: COI:Xenopsaris_albinucha|JQ176631.1 CYTB:missing ND2:Xenopsaris_albinucha|DQ363962.1 CO2:missing
+
+Concatenated sequences written to: /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/concatenated_all_genes.fasta
+Total sequences: 24
+Concatenated length: 3407 bp
+Partition file written to: /media/inter/mkapun/projects/Tityra/results/concatenated_genes_assembly/partitions.txt
+
+===================================================================
+Concatenation completed
+Completed: Fr Mai  1 10:19:11 CEST 2026
+===================================================================
