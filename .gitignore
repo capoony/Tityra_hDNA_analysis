@@ -1,5 +1,6 @@
 # Data directories - ignore all large raw/processed data files
 data/*
+old
 !data/.gitkeep
 !data/trimmed/
 data/trimmed/*

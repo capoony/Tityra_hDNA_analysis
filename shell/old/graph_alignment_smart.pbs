@@ -1,4 +1,0 @@
-WD=/media/inter/mkapun/projects/Tityra
-THREADS=50
-
-bash ${WD}/shell/graph_alignment_smart.sh ${WD} ${THREADS}

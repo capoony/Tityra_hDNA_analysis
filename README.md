@@ -580,14 +580,6 @@ Tityra/
 
 ---
 
-## Detailed Documentation
-
-For comprehensive methods, statistical analyses, and interpretation:
-
-- **Full documentation**: [`docs/Methods_and_Results.md`](docs/Methods_and_Results.md)
-- **Word format**: `docs/Methods_and_Results.docx` (for manuscripts)
-
----
 
 ## Citation
 
@@ -633,18 +625,3 @@ If you use this pipeline, please cite:
 - Verify gene name synonyms (COI=COX1, etc.)
 
 ---
-
-## License
-
-This pipeline is released under the MIT License.
-
-## Contact
-
-For questions or issues:
-
-- GitHub Issues: [Tityra_hDNA_analysis](https://github.com/capoony/Tityra_hDNA_analysis)
-- Email: <capopony@gmail.com>
-
----
-
-**Last updated**: May 1, 2026
