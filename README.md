@@ -580,7 +580,6 @@ Tityra/
 
 ---
 
-
 ## Citation
 
 If you use this pipeline, please cite:
