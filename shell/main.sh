@@ -106,6 +106,9 @@ python "${WD}/scripts/summarizeKraken.py" \
     --input "${WD}/results/kraken2/" \
     --output "${WD}/results/kraken2/kraken_summary.csv"
 
+# Create combined visualization with Kraken2 and ECMSD results (3 panels)
+Rscript "${WD}/scripts/visualize_combined_taxonomy.R" "${WD}"
+
 ###############################################################################
 # 5. mapDamage Analysis
 ###############################################################################
