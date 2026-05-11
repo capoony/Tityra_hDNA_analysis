@@ -583,10 +583,6 @@ Tityra/
 
 ---
 
-## Citation
-
-If you use this pipeline, please cite:
-
 **Tools**:
 
 - Chen et al. (2018). fastp: an ultra-fast all-in-one FASTQ preprocessor. *Bioinformatics* 34(17):i884-i890.
@@ -597,33 +593,5 @@ If you use this pipeline, please cite:
 - Katoh & Standley (2013). MAFFT multiple sequence alignment software version 7. *Molecular Biology and Evolution* 30(4):772-780.
 - Nguyen et al. (2015). IQ-TREE: A fast and effective stochastic algorithm for estimating maximum-likelihood phylogenies. *Molecular Biology and Evolution* 32(1):268-274.
 - Yu et al. (2017). ggtree: an R package for visualization and annotation of phylogenetic trees. *Methods in Ecology and Evolution* 8(1):28-36.
-
----
-
-## Troubleshooting
-
-**Low genome coverage?**
-
-- Expected for historical DNA (0.5-2× typical)
-- Focus on high-copy mitochondrial DNA
-- Consider target enrichment for nuclear loci
-
-**High contamination?**
-
-- Review ECMSD and Kraken2 reports
-- Adjust contaminant filtering thresholds
-- Check for cross-contamination during extraction
-
-**Poor tree resolution?**
-
-- Increase gene sampling (add more loci)
-- Use longer alignments or more taxa
-- Consider partitioned models or codon-based models
-
-**Missing sequences in concatenation?**
-
-- Adjust species inclusion threshold (default: ≥50% genes)
-- Check GenBank for additional sequences
-- Verify gene name synonyms (COI=COX1, etc.)
 
 ---
