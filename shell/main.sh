@@ -70,8 +70,7 @@ bash /media/inter/pipelines/ECMSD/shell/ECMSD.sh \
     --merged "${WD}/data/trimmed/Tityra_leucura_merged.fastq.gz" \
     --out "${WD}/results/ECMSD" \
     --threads 200 \
-    --Binsize 1000 \
-    --RMUS-threshold 0.15 \
+    --cov-threshold 10 \
     --mapping_quality 20 \
     --taxonomic-hierarchy genus \
     --force
@@ -243,6 +242,52 @@ samtools index "${WD}/results/contaminants/mappings/Tityra_leucura_contaminants_
 samtools fastq "${WD}/results/contaminants/mappings/Tityra_leucura_contaminants_merged.bam" \
     | pigz >"${WD}/data/trimmed2/Tityra_leucura_contaminants_merged_unmapped.fastq.gz"
 
+# Map merged reads to joint contaminant reference and retain unmapped reads
+echo """
+#!/bin/bash
+#PBS -S /bin/bash
+#PBS -N freebayes
+#PBS -o ${WD}/data/log_cluster.txt
+#PBS -j oe
+#PBS -l select=1:ncpus=100:mem=200gb
+
+# Load Conda and FreeBayes environment
+source /opt/anaconda3/etc/profile.d/conda.sh
+
+module load NGSmapper/minimap2-2.17
+module load Tools/samtools-1.18
+
+minimap2 -ax sr --secondary=no -t 100 \
+    ${WD}/data/contaminants/joint_reference.fna.gz \
+    ${WD}/data/trimmed2/Tityra_leucura_1_trimmed.fastq.gz \
+    ${WD}/data/trimmed2/Tityra_leucura_2_trimmed.fastq.gz \
+    | samtools view -bS - | samtools sort >${WD}/results/contaminants/mappings/Tityra_leucura_contaminants.bam
+
+samtools index ${WD}/results/contaminants/mappings/Tityra_leucura_contaminants.bam
+""" > ${WD}/shell/run_minimap2.sh
+qsub ${WD}/shell/run_minimap2.sh
+
+samtools coverage ${WD}/results/contaminants/mappings/Tityra_leucura_contaminants.bam > ${WD}/results/contaminants/mappings/Tityra_leucura_contaminants_coverage.txt
+
+###############################################################################
+# 8. Run AutDeNovo Pipeline
+# for documentation, see: https:/github.com/nhmvienna/AutDeNovo
+###############################################################################
+# Run AutDeNovo pipeline for de novo assembly and annotation
+/media/inter/pipelines/AutDeNovo/AutDeNovo_exp.sh \
+    Name=Tityra \
+    OutputFolder="${WD}/results/denovo" \
+    Fwd="${WD}/data/trimmed/Tityra_leucura_contaminants_merged_unmapped.fastq.gz" \
+    threads=150 \
+    RAM=200 \
+    RAMAssembly=1000 \
+    decont=no \
+    SmudgePlot=no \
+    BLASTdb=/media/scratch/NCBI_nt_DB_210714/nt \
+    BuscoDB=vertebrata_odb10 \
+    Taxdump=/media/scratch/NCBI_taxdump/ \
+    Racon=4
+
 ###############################################################################
 # 7. Assemble Mitochondrial Genome
 ###############################################################################
@@ -312,3 +357,53 @@ echo "Running phylogenetic analysis on concatenated genes (assembly-based)..."
 echo "==================================================================="
 
 bash ${WD}/shell/phylogenetic_analysis_concatenated_assembly.sh
+
+###############################################################################
+# 11. Complete Mitogenome Analysis from GenBank/RefSeq
+###############################################################################
+echo ""
+echo "==================================================================="
+echo "Downloading complete mitochondrial genomes from GenBank..."
+echo "==================================================================="
+
+bash ${WD}/shell/download_complete_mitogenomes.sh
+
+echo ""
+echo "==================================================================="
+echo "Reorienting and circularizing Tityra mitochondrial genome..."
+echo "==================================================================="
+
+bash ${WD}/shell/reorient_circularize_tityra.sh
+
+echo ""
+echo "==================================================================="
+echo "Aligning complete mitochondrial genomes..."
+echo "==================================================================="
+
+bash ${WD}/shell/align_complete_mitogenomes.sh
+
+echo ""
+echo "==================================================================="
+echo "Visualizing complete mitogenome alignments..."
+echo "==================================================================="
+
+bash ${WD}/shell/visualize_mitogenome_alignment.sh
+
+echo ""
+echo "==================================================================="
+echo "Phylogenetic analysis of complete mitogenomes..."
+echo "==================================================================="
+
+bash ${WD}/shell/phylogenetic_analysis_complete_mitogenome.sh
+
+echo ""
+echo "==================================================================="
+echo "Mitochondrial genome synteny analysis..."
+echo "==================================================================="
+
+bash ${WD}/shell/synteny_analysis.sh
+
+echo ""
+echo "==================================================================="
+echo "All analyses complete!"
+echo "==================================================================="

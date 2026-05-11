@@ -69,35 +69,7 @@ fastp -i R1.fastq.gz -I R2.fastq.gz \
 
 ---
 
-### 3. Taxonomic Classification
-
-**Tool**: Kraken2 v2.1.2 (PlusPFP database)
-
-Reads are classified against a comprehensive taxonomic database to identify contamination sources.
-
-**Command**:
-
-```bash
-kraken2 --db pluspfp_20240904 --threads 150 \
-    --report report.txt --paired R1 R2
-```
-
-**Outputs**:
-
-- Classification reports: `results/kraken2/report_*.txt`
-- Summary CSV: [`results/kraken2/kraken_summary.csv`](results/kraken2/kraken_summary.csv)
-
-**Interpretation**: Typical contamination profile:
-
-- 26% of reads classified
-- Human: 2.1% (lab contamination)
-- Bacteria: 14.8% (environmental)
-- Fungi: 2.0% (*Penicillium*, *Aspergillus*)
-- Target organism: 73.99% unclassified (not in database)
-
----
-
-### 4. ECMSD Metagenomic Analysis
+### 3. ECMSD Metagenomic Analysis
 
 **Tool**: ECMSD pipeline
 
@@ -116,6 +88,37 @@ bash ECMSD.sh --fwd R1 --rev R2 --merged merged \
 - Read length plots: [`results/ECMSD/mapping/Mito_summary_genus_ReadLengths.png`](results/ECMSD/mapping/Mito_summary_genus_ReadLengths.png)
 
 **Interpretation**: Identifies *Pachyramphus* (Tyrannidae) as ninth-most abundant taxon, confirming endogenous DNA presence. Short read lengths typical for historical DNA.
+
+---
+
+### 4. Taxonomic Classification
+
+**Tool**: Kraken2 v2.1.2 (PlusPFP database)
+
+Reads are classified against a comprehensive taxonomic database to identify contamination sources.
+
+**Command**:
+
+```bash
+kraken2 --db pluspfp_20240904 --threads 150 \
+    --report report.txt --paired R1 R2
+```
+
+**Outputs**:
+
+- Classification reports: `results/kraken2/report_*.txt`
+- Summary CSV: [`results/kraken2/kraken_summary.csv`](results/kraken2/kraken_summary.csv)
+- Combined visualization: [`results/taxonomy_combined.pdf`](results/taxonomy_combined.pdf)
+
+**Interpretation**: Typical contamination profile:
+
+- 26% of reads classified
+- Human: 2.1% (lab contamination)
+- Bacteria: 14.8% (environmental)
+- Fungi: 2.0% (*Penicillium*, *Aspergillus*)
+- Target organism: 73.99% unclassified (not in database)
+
+A combined taxonomic figure is generated showing: (A) Kraken2 top genera comparison (merged vs paired-end reads, colored by phylum), (B) ECMSD top 20 genera by proportion, and (C) ECMSD read length distributions for top 10 genera (faceted).
 
 ---
 

@@ -7,6 +7,9 @@ data/trimmed/*
 !data/trimmed/Tityra_leucura.html
 !data/trimmed/.gitkeep
 
+## conda installation
+scripts/programs
+
 # Results directories - ignore all large result files except key outputs
 results/*
 !results/.gitkeep
@@ -97,3 +100,4 @@ results/phylogeny_DNA_Tsav/phylogeny/*
 !results/phylogeny_DNA_Tsav/phylogeny/Tityra_BUSCO.png
 !results/phylogeny_DNA_Tsav/phylogeny/*.FINAL
 shell/GCA_013397135.1_ASM1339713v1_genomic.fna.gz
+results/ECMSD/mapping/Mito_summary.txt
