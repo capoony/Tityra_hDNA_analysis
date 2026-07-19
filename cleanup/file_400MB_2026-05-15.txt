@@ -1,0 +1,11 @@
+5,2G /media/inter/mkapun/projects/Tityra/results/contaminants/mappings/Tityra_leucura_contaminants_merged.bam 
+4,2G /media/inter/mkapun/projects/Tityra/results/denovo/results/mapping/Tityra.bam 
+1,3G /media/inter/mkapun/projects/Tityra/data/trimmed2/Tityra_leucura_ecmsd.bam 
+1,1G /media/inter/mkapun/projects/Tityra/results/contaminants/mappings/Tityra_leucura_contaminants.bam 
+1022M /media/inter/mkapun/projects/Tityra/data/ref/Pachyramphus_minor.fna 
+1022M /media/inter/mkapun/projects/Tityra/data/ref/GCA_013397135.1_ASM1339713v1_genomic.fna 
+1021M /media/inter/mkapun/projects/Tityra/results/contaminants/mappings/Tityra_leucura_contaminants_PE.bam 
+732M /media/inter/mkapun/projects/Tityra/results/mapDamage/Tityra_leucura/Tityra_leucura.rescaled.bam 
+715M /media/inter/mkapun/projects/Tityra/results/minimap2/Tityra_leucura.bam 
+671M /media/inter/mkapun/projects/Tityra/results/minimap2/Tityra_leucura_merged.bam 
+504M /media/inter/mkapun/projects/Tityra/results/mapDamage/Tityra_leucura/misincorporation.txt 

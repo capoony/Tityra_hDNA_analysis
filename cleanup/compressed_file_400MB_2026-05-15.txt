@@ -1,0 +1,16 @@
+15G /media/inter/mkapun/projects/Tityra/data/raw/Tityra_leucura_2.fastq.gz 
+12G /media/inter/mkapun/projects/Tityra/data/raw/Tityra_leucura_1.fastq.gz 
+5,4G /media/inter/mkapun/projects/Tityra/data/trimmed/Tityra_leucura_merged.fastq.gz 
+5,4G /media/inter/mkapun/projects/Tityra/data/trimmed2/Tityra_leucura_merged.fastq.gz 
+4,8G /media/inter/mkapun/projects/Tityra/results/denovo/results/assembly/Tityra/corrected/Tityra_1_val_1.fq.00.0_0.cor.fastq.gz 
+4,4G /media/inter/mkapun/projects/Tityra/data/trimmed2/Tityra_leucura_contaminants_merged_unmapped.fastq.gz 
+4,3G /media/inter/mkapun/projects/Tityra/results/denovo/data/Illumina/Tityra_1_val_1.fq.gz 
+4,3G /media/inter/mkapun/projects/Tityra/results/denovo/data/Illumina/Tityra_1.fq.gz 
+4,3G /media/inter/mkapun/projects/Tityra/data/trimmed/Tityra_leucura_contaminants_merged_unmapped.fastq.gz 
+955M /media/inter/mkapun/projects/Tityra/data/contaminants/joint_reference.fna.gz 
+928M /media/inter/mkapun/projects/Tityra/data/contaminants/Homo_sapiens.fna.gz 
+654M /media/inter/mkapun/projects/Tityra/data/trimmed/Tityra_leucura_2_trimmed.fastq.gz 
+651M /media/inter/mkapun/projects/Tityra/data/trimmed/Tityra_leucura_contaminants_PE_unmapped_2.fastq.gz 
+649M /media/inter/mkapun/projects/Tityra/data/trimmed2/Tityra_leucura_2_trimmed.fastq.gz 
+431M /media/inter/mkapun/projects/Tityra/data/trimmed/Tityra_leucura_1_trimmed.fastq.gz 
+429M /media/inter/mkapun/projects/Tityra/data/trimmed2/Tityra_leucura_1_trimmed.fastq.gz 
